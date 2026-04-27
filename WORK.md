@@ -31,9 +31,31 @@ _(vuoto)_
 
 ## Setup di sicurezza già attivo
 
-- **Git**: repo locale inizializzato in `z:/SAAS/BYLO/BYLO/.git/`. Branch corrente: `main`. Nessun remote ancora configurato — quando si apre il GitHub aziendale, si aggiunge il remote.
+- **Repo GitHub**: https://github.com/poweragency/bylo-group (private, branch `main`).
+- **Locale**: `z:/SAAS/BYLO/BYLO/.git/`, tracking `origin/main`.
 - **Path sicuro**: aggiunto in `git config --global safe.directory` (necessario perché Z: è UNC mappato).
 - **Polling watcher**: gli `astro.config.mjs` di logistica e racing usano `vite.server.watch.usePolling: true` (workaround `fs.watch` su drive di rete).
+
+## Convenzione branch (parallelismo via PR)
+
+Da ora in avanti **non si committa direttamente su `main`**. Ogni modifica passa per un branch + PR:
+
+```bash
+# Prima di iniziare a lavorare:
+git -C z:/SAAS/BYLO/BYLO checkout main
+git -C z:/SAAS/BYLO/BYLO pull
+git -C z:/SAAS/BYLO/BYLO checkout -b feat/<nome-feature>
+
+# Dopo aver committato:
+git -C z:/SAAS/BYLO/BYLO push -u origin feat/<nome-feature>
+gh pr create --fill
+```
+
+Naming branch: `feat/...` (nuove feature), `fix/...` (bug fix), `chore/...` (build/config/refactor non funzionale), `docs/...`. Esempi reali per il refactor SEO in corso: `feat/seo-fase-0-foundation`, `feat/seo-fase-1-bylo-group`.
+
+## Inviti collaboratori
+
+Per dare accesso al socio: `gh api -X PUT repos/poweragency/bylo-group/collaborators/<github-username> -f permission=push` (o invito via web sull'URL del repo).
 
 ## Comandi rapidi
 
