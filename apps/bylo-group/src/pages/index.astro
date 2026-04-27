@@ -1,0 +1,62 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+import { InternalLinkBlock } from '@bylo/ui/seo/index.ts';
+
+const title = 'BYLO Group — Trasporti, logistica e automotive';
+const description =
+  'BYLO Group è la holding che riunisce BYL Logistica (trasporti ADR e logistica integrata) e Tommy By (officina e carrozzeria). Servizi per imprese italiane.';
+
+const pillars = [
+  {
+    href: 'https://logistica.bylogroup.it',
+    label: 'BYL Logistica — Trasporti ADR e logistica integrata',
+    description:
+      'Trasporti nazionali di merci pericolose, logistica integrata e magazzinaggio. Sede operativa in provincia di Milano.',
+    external: true,
+  },
+  {
+    href: 'https://tommy.bylogroup.it',
+    label: 'Tommy By — Officina e carrozzeria multimarca',
+    description:
+      'Officina autorizzata, carrozzeria, verniciatura e revisioni a Rho (MI). Tutte le marche, tutti gli interventi.',
+    external: true,
+  },
+];
+---
+
+<Layout title={title} description={description}>
+  <Header />
+  <main>
+    <section class="section-pad bg-byl-black text-byl-white relative overflow-hidden">
+      <div
+        class="absolute inset-0 opacity-[0.04] pointer-events-none"
+        style="background-image: linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px); background-size: 80px 80px;"
+      />
+      <div class="container-page relative">
+        <div class="max-w-3xl">
+          <span class="eyebrow text-byl-yellow">Holding · Gruppo BYLO</span>
+          <h1 class="h-display mt-6">
+            Trasporti, logistica e automotive
+            <span class="text-byl-yellow">in un unico gruppo.</span>
+          </h1>
+          <p class="lede mt-6 text-white/70">
+            BYLO Group riunisce due aziende complementari: BYL Logistica per
+            trasporti ADR e logistica integrata, Tommy By per officina e
+            carrozzeria multimarca. Insieme copriamo tutto il ciclo di vita
+            del mezzo, dalla produzione al servizio post-vendita.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <InternalLinkBlock
+      eyebrow="Le aziende del gruppo"
+      title="Due specializzazioni, una sola visione."
+      links={pillars}
+      columns={2}
+    />
+  </main>
+  <Footer />
+</Layout>

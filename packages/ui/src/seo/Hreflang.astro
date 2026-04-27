@@ -1,0 +1,18 @@
+---
+interface AltLink {
+  hreflang: string;
+  href: string;
+}
+
+interface Props {
+  alternates: AltLink[];
+  xDefault?: string;
+}
+
+const { alternates, xDefault } = Astro.props;
+---
+
+{alternates.map((alt) => (
+  <link rel="alternate" hreflang={alt.hreflang} href={alt.href} />
+))}
+{xDefault && <link rel="alternate" hreflang="x-default" href={xDefault} />}

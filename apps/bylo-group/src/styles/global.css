@@ -1,0 +1,103 @@
+@import 'tailwindcss';
+@import '@bylo/ui/tokens.css';
+
+/* ---------- Custom utilities (Tailwind v4) ---------- */
+
+@utility btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: var(--color-byl-yellow);
+  color: var(--color-byl-black);
+  box-shadow: 0 4px 0 0 var(--color-byl-black);
+  transition: all 200ms ease;
+
+  &:hover {
+    background: var(--color-byl-yellow-bright);
+    box-shadow: 0 2px 0 0 var(--color-byl-black);
+    transform: translateY(2px);
+  }
+}
+
+@utility btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: transparent;
+  color: var(--color-byl-black);
+  border: 1px solid var(--color-byl-black);
+  transition: all 200ms ease;
+
+  &:hover {
+    background: var(--color-byl-black);
+    color: var(--color-byl-white);
+  }
+}
+
+@utility container-page {
+  margin-inline: auto;
+  max-width: 80rem;
+  padding-inline: 1.5rem;
+
+  @media (min-width: 1024px) {
+    padding-inline: 2.5rem;
+  }
+}
+
+@utility section-pad {
+  padding-block: 5rem;
+
+  @media (min-width: 768px) {
+    padding-block: 7rem;
+  }
+}
+
+@utility eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-byl-yellow-dark);
+}
+
+@utility h-display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  font-size: clamp(2.5rem, 5vw + 1rem, 5rem);
+}
+
+@utility h-section {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  font-size: clamp(2rem, 3vw + 1rem, 3.5rem);
+}
+
+@utility lede {
+  font-size: 1.125rem;
+  color: var(--color-byl-mute);
+  line-height: 1.65;
+  max-width: 58ch;
+
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+  }
+}

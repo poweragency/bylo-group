@@ -1,0 +1,52 @@
+---
+import { GROUP } from '@bylo/ui/index.ts';
+
+const currentLocale = (Astro.currentLocale ?? 'it') as 'it' | 'en';
+const isEN = currentLocale === 'en';
+
+const t = {
+  it: {
+    group: 'Il gruppo',
+    transport: 'Trasporti',
+    tommy: 'Officina & Carrozzeria',
+    contact: 'Contatti',
+    cta: 'Scrivici',
+  },
+  en: {
+    group: 'The group',
+    transport: 'Transport',
+    tommy: 'Auto repair & body shop',
+    contact: 'Contact',
+    cta: 'Get in touch',
+  },
+}[currentLocale];
+
+const base = isEN ? '/en' : '';
+const switchHref = isEN
+  ? Astro.url.pathname.replace(/^\/en(\/|$)/, '/')
+  : `/en${Astro.url.pathname === '/' ? '' : Astro.url.pathname}`;
+---
+
+<header class="sticky top-0 z-50 bg-byl-white border-b border-byl-stone">
+  <div class="container-page flex items-center justify-between h-16 md:h-20">
+    <a href={base || '/'} class="font-display font-bold text-lg tracking-tight" aria-label={GROUP.name}>
+      {GROUP.name}
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href={`${base}/${isEN ? 'group' : 'gruppo'}`} class="hover:text-byl-yellow-dark transition-colors">{t.group}</a>
+      <a href="https://logistica.bylogroup.it" class="hover:text-byl-yellow-dark transition-colors">{t.transport}</a>
+      <a href="https://tommy.bylogroup.it" class="hover:text-byl-yellow-dark transition-colors">{t.tommy}</a>
+      <a href={`${base}/${isEN ? 'contact' : 'contatti'}`} class="hover:text-byl-yellow-dark transition-colors">{t.contact}</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href={switchHref} class="text-xs uppercase tracking-wider text-byl-mute hover:text-byl-black transition-colors" aria-label={isEN ? 'Italiano' : 'English'}>
+        {isEN ? 'IT' : 'EN'}
+      </a>
+      <a href={`${base}/${isEN ? 'contact' : 'contatti'}`} class="btn-primary hidden sm:inline-flex">
+        {t.cta}
+      </a>
+    </div>
+  </div>
+</header>

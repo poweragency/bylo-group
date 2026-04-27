@@ -1,0 +1,97 @@
+---
+import '@/styles/global.css';
+import { Seo, Hreflang, SchemaOrg } from '@bylo/ui/seo/index.ts';
+import { GROUP, LEGAL_TRANSPORT, LEGAL_TOMMY, CONTACTS, CONTACTS_RACING } from '@bylo/ui/index.ts';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  noindex?: boolean;
+}
+
+const { title, description, ogImage, noindex } = Astro.props;
+
+const currentLocale = (Astro.currentLocale ?? 'it') as 'it' | 'en';
+const ogLocale = currentLocale === 'en' ? 'en_US' : 'it_IT';
+const htmlLang = currentLocale === 'en' ? 'en' : 'it';
+
+const siteOrigin = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const path = Astro.url.pathname;
+
+function altUrl(target: 'it' | 'en'): string {
+  if (target === 'it') {
+    const stripped = path.replace(/^\/en(\/|$)/, '/');
+    return `${siteOrigin}${stripped}`;
+  }
+  if (path.startsWith('/en/') || path === '/en') {
+    return `${siteOrigin}${path}`;
+  }
+  return `${siteOrigin}/en${path === '/' ? '' : path}`;
+}
+
+const alternates = [
+  { hreflang: 'it', href: altUrl('it') },
+  { hreflang: 'en', href: altUrl('en') },
+];
+
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: GROUP.name,
+  url: GROUP.website,
+  logo: `${siteOrigin}/logo.png`,
+  subOrganization: [
+    {
+      '@type': 'Organization',
+      name: LEGAL_TRANSPORT.name,
+      vatID: LEGAL_TRANSPORT.vat,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: CONTACTS.hq.address,
+        addressCountry: 'IT',
+      },
+      telephone: CONTACTS.hq.phone,
+      email: CONTACTS.hq.email,
+    },
+    {
+      '@type': 'Organization',
+      name: LEGAL_TOMMY.name,
+      vatID: LEGAL_TOMMY.vat,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: CONTACTS_RACING.officina.address,
+        addressCountry: 'IT',
+      },
+      telephone: CONTACTS_RACING.officina.phone,
+      email: CONTACTS_RACING.officina.email,
+    },
+  ],
+};
+---
+
+<!doctype html>
+<html lang={htmlLang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+
+    <Seo
+      title={title}
+      description={description}
+      ogImage={ogImage}
+      locale={ogLocale}
+      noindex={noindex}
+      siteName={GROUP.name}
+    />
+    <Hreflang alternates={alternates} xDefault={altUrl('it')} />
+    <SchemaOrg data={orgSchema} />
+  </head>
+  <body class="bg-byl-white text-byl-black antialiased">
+    <slot />
+  </body>
+</html>

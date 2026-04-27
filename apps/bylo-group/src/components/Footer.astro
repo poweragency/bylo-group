@@ -1,0 +1,61 @@
+---
+import { GROUP, LEGAL_TRANSPORT, LEGAL_TOMMY } from '@bylo/ui/index.ts';
+
+const currentLocale = (Astro.currentLocale ?? 'it') as 'it' | 'en';
+const year = new Date().getFullYear();
+
+const t = {
+  it: {
+    tagline: 'Holding del gruppo. Trasporti, logistica e automotive.',
+    companies: 'Aziende del gruppo',
+    legal: 'Note legali',
+    privacy: 'Privacy',
+    cookies: 'Cookie',
+  },
+  en: {
+    tagline: 'Group holding. Transport, logistics and automotive.',
+    companies: 'Group companies',
+    legal: 'Legal',
+    privacy: 'Privacy',
+    cookies: 'Cookies',
+  },
+}[currentLocale];
+
+const isEN = currentLocale === 'en';
+const base = isEN ? '/en' : '';
+---
+
+<footer class="bg-byl-black text-byl-white">
+  <div class="container-page py-16">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+      <div class="md:col-span-6">
+        <div class="font-display font-bold text-xl">{GROUP.name}</div>
+        <p class="mt-4 text-white/60 max-w-md leading-relaxed">{t.tagline}</p>
+      </div>
+
+      <div class="md:col-span-6">
+        <h4 class="text-xs font-semibold uppercase tracking-[0.18em] text-byl-yellow">{t.companies}</h4>
+        <ul class="mt-4 space-y-2 text-white/80 text-sm">
+          <li>
+            <a href="https://logistica.bylogroup.it" class="hover:text-byl-yellow transition-colors">
+              {LEGAL_TRANSPORT.name}
+            </a>
+          </li>
+          <li>
+            <a href="https://tommy.bylogroup.it" class="hover:text-byl-yellow transition-colors">
+              {LEGAL_TOMMY.name}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm text-white/50">
+      <p>© {year} {GROUP.name}</p>
+      <div class="flex gap-6">
+        <a href={`${base}/${isEN ? 'privacy' : 'privacy'}`} class="hover:text-byl-yellow transition-colors">{t.privacy}</a>
+        <a href={`${base}/${isEN ? 'cookies' : 'cookie'}`} class="hover:text-byl-yellow transition-colors">{t.cookies}</a>
+      </div>
+    </div>
+  </div>
+</footer>

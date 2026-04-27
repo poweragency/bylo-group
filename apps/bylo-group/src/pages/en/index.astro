@@ -1,0 +1,62 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+import { InternalLinkBlock } from '@bylo/ui/seo/index.ts';
+
+const title = 'BYLO Group — Transport, logistics and automotive';
+const description =
+  'BYLO Group is the holding company behind BYL Logistica (ADR transport and integrated logistics) and Tommy By (auto repair and body shop). Services for Italian businesses.';
+
+const pillars = [
+  {
+    href: 'https://logistica.bylogroup.it',
+    label: 'BYL Logistica — ADR transport & integrated logistics',
+    description:
+      'National transport of dangerous goods, integrated logistics and warehousing. Operational HQ near Milan.',
+    external: true,
+  },
+  {
+    href: 'https://tommy.bylogroup.it',
+    label: 'Tommy By — Multi-brand auto repair & body shop',
+    description:
+      'Authorized workshop, body shop, paint and inspections in Rho (MI). All brands, all repairs.',
+    external: true,
+  },
+];
+---
+
+<Layout title={title} description={description}>
+  <Header />
+  <main>
+    <section class="section-pad bg-byl-black text-byl-white relative overflow-hidden">
+      <div
+        class="absolute inset-0 opacity-[0.04] pointer-events-none"
+        style="background-image: linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px); background-size: 80px 80px;"
+      />
+      <div class="container-page relative">
+        <div class="max-w-3xl">
+          <span class="eyebrow text-byl-yellow">Holding · BYLO Group</span>
+          <h1 class="h-display mt-6">
+            Transport, logistics and automotive
+            <span class="text-byl-yellow">under one roof.</span>
+          </h1>
+          <p class="lede mt-6 text-white/70">
+            BYLO Group brings together two complementary companies: BYL
+            Logistica for ADR transport and integrated logistics, Tommy By
+            for multi-brand auto repair and body shop. Together we cover the
+            full lifecycle of a vehicle, from production to after-sales.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <InternalLinkBlock
+      eyebrow="Group companies"
+      title="Two specializations, one vision."
+      links={pillars}
+      columns={2}
+    />
+  </main>
+  <Footer />
+</Layout>
