@@ -1,0 +1,57 @@
+---
+import { BRAND_RACING, CONTACTS_RACING, GROUP } from '@bylo/ui/index.ts';
+const year = new Date().getFullYear();
+const { officina, carrozzeria } = CONTACTS_RACING;
+---
+
+<footer class="bg-byl-black text-byl-white">
+  <div class="container-page py-20">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+      <div class="md:col-span-5">
+        <img
+          src="/logo.png"
+          alt="Tommy Racing — BYLO Group"
+          width="800"
+          height="316"
+          class="h-14 w-auto"
+        />
+        <p class="mt-6 text-white/60 max-w-md leading-relaxed">
+          Officina autorizzata, carrozzeria con verniciatura a forno ad acqua
+          e vendita auto selezionate. Tommy Racing fa parte di {GROUP.name},
+          rete italiana dedicata a trasporti, logistica e automotive.
+        </p>
+      </div>
+
+      <div class="md:col-span-4">
+        <h4 class="text-xs font-semibold uppercase tracking-[0.18em] text-byl-yellow">
+          {officina.label}
+        </h4>
+        <p class="mt-4 text-white/80 leading-relaxed text-sm">
+          {officina.address}<br />
+          <a href={`tel:${officina.phone.replace(/\s/g, '')}`} class="hover:text-byl-yellow transition-colors">{officina.phone}</a><br />
+          <a href={`mailto:${officina.email}`} class="hover:text-byl-yellow transition-colors">{officina.email}</a>
+        </p>
+      </div>
+
+      <div class="md:col-span-3">
+        <h4 class="text-xs font-semibold uppercase tracking-[0.18em] text-byl-yellow">
+          {carrozzeria.label}
+        </h4>
+        <p class="mt-4 text-white/80 leading-relaxed text-sm">
+          {carrozzeria.address}<br />
+          <a href={`tel:${carrozzeria.phone.replace(/\s/g, '')}`} class="hover:text-byl-yellow transition-colors">{carrozzeria.phone}</a><br />
+          <a href={`mailto:${carrozzeria.email}`} class="hover:text-byl-yellow transition-colors">{carrozzeria.email}</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm text-white/50">
+      <p>© {year} {BRAND_RACING.legalName} — P.IVA {BRAND_RACING.vat}</p>
+      <div class="flex gap-6">
+        <a href={GROUP.website} class="hover:text-byl-yellow transition-colors">{GROUP.name}</a>
+        <a href="/privacy" class="hover:text-byl-yellow transition-colors">Privacy</a>
+        <a href="/cookie" class="hover:text-byl-yellow transition-colors">Cookie</a>
+      </div>
+    </div>
+  </div>
+</footer>

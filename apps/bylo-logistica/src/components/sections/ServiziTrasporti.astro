@@ -1,0 +1,88 @@
+---
+const classiADR = [
+  { classe: '2', nome: 'Gas' },
+  { classe: '3', nome: 'Liquidi infiammabili' },
+  { classe: '4.1', nome: 'Solidi infiammabili' },
+  { classe: '4.2', nome: 'Combustione spontanea' },
+  { classe: '5.1', nome: 'Ossidanti' },
+  { classe: '5.2', nome: 'Perossidi organici' },
+  { classe: '6.1', nome: 'Tossici' },
+  { classe: '8', nome: 'Corrosivi' },
+  { classe: '9', nome: 'Materie varie' },
+];
+
+const features = [
+  'Autisti certificati con patentino ADR in corso di validità',
+  'Mezzi conformi alle normative più recenti, controllati periodicamente',
+  'Pianificazione delle rotte in conformità alle restrizioni ADR',
+  'Documentazione di trasporto completa e conforme',
+];
+---
+
+<section id="servizi" class="section-pad bg-byl-off relative overflow-hidden">
+  <div class="container-page relative">
+    <div class="max-w-3xl">
+      <span class="eyebrow">I nostri servizi</span>
+      <h2 class="h-section mt-4">
+        Trasporti nazionali di <span class="text-byl-yellow-dark">merci in ADR</span>.
+      </h2>
+      <p class="lede mt-6">
+        Il trasporto di merci pericolose non ammette improvvisazione.
+        Ogni spedizione è preparata, autorizzata e seguita da personale
+        qualificato, nel pieno rispetto della normativa ADR e delle
+        procedure interne di sicurezza.
+      </p>
+    </div>
+
+    <div class="mt-16 grid grid-cols-1 lg:grid-cols-12 gap-10">
+      <!-- Left: classes -->
+      <div class="lg:col-span-7">
+        <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-byl-black">
+          Classi autorizzate
+        </h3>
+        <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3">
+          {
+            classiADR.map((c) => (
+              <div class="group flex items-center gap-4 p-4 bg-white rounded-lg border border-byl-stone hover:border-byl-black hover:shadow-[var(--shadow-card)] transition-all">
+                <div class="flex-shrink-0 w-11 h-11 rounded-md bg-byl-black text-byl-yellow flex items-center justify-center font-display font-bold text-sm group-hover:bg-byl-yellow group-hover:text-byl-black transition-colors">
+                  {c.classe}
+                </div>
+                <span class="text-sm font-medium leading-tight">{c.nome}</span>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+
+      <!-- Right: features -->
+      <div class="lg:col-span-5 bg-byl-black text-byl-white rounded-2xl p-8 md:p-10 relative overflow-hidden">
+        <div
+          class="absolute -top-20 -right-20 w-64 h-64 rounded-full blur-3xl opacity-30"
+          style="background: radial-gradient(circle, var(--color-byl-yellow) 0%, transparent 70%);"
+        >
+        </div>
+
+        <h3 class="text-byl-yellow font-semibold uppercase tracking-[0.18em] text-sm">
+          Cosa garantiamo
+        </h3>
+        <p class="font-display font-bold text-2xl md:text-3xl mt-3 tracking-tight leading-tight">
+          Sicurezza documentata su ogni tratta.
+        </p>
+        <ul class="mt-8 space-y-4">
+          {
+            features.map((f) => (
+              <li class="flex gap-3 text-white/80 leading-relaxed">
+                <svg class="flex-shrink-0 mt-1 text-byl-yellow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>{f}</span>
+              </li>
+            ))
+          }
+        </ul>
+
+        <a href="#contatti" class="mt-10 btn-primary w-full sm:w-auto">
+          Richiedi il servizio ADR
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

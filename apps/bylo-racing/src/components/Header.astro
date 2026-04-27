@@ -1,0 +1,75 @@
+---
+const nav = [
+  { href: '/#officina', label: 'Officina' },
+  { href: '/#carrozzeria', label: 'Carrozzeria' },
+  { href: '/auto/', label: 'Le nostre auto' },
+  { href: '/#sedi', label: 'Sedi' },
+  { href: '/#contatti', label: 'Contatti' },
+];
+---
+
+<header
+  class="sticky top-0 z-50 bg-byl-black/90 backdrop-blur-md border-b border-white/5 text-byl-white"
+>
+  <div class="container-page flex items-center justify-between h-16 md:h-20">
+    <a href="/" class="flex items-center group" aria-label="Tommy Racing — home">
+      <img
+        src="/logo.png"
+        alt="Tommy Racing"
+        width="800"
+        height="316"
+        class="h-10 md:h-12 w-auto"
+      />
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-8">
+      {
+        nav.map((item) => (
+          <a
+            href={item.href}
+            class="text-sm font-medium text-white/80 hover:text-byl-yellow transition-colors"
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="/#contatti" class="btn-primary hidden sm:inline-flex text-sm">
+        Prenota un servizio
+      </a>
+      <button
+        id="mobile-menu-btn"
+        class="lg:hidden p-2 text-byl-white"
+        aria-label="Apri menu"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 bg-byl-black">
+    <nav class="container-page py-4 flex flex-col gap-1">
+      {
+        nav.map((item) => (
+          <a
+            href={item.href}
+            class="py-3 text-base font-medium text-white/80 hover:text-byl-yellow"
+          >
+            {item.label}
+          </a>
+        ))
+      }
+      <a href="/#contatti" class="btn-primary mt-3 text-sm w-full">
+        Prenota un servizio
+      </a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+</script>

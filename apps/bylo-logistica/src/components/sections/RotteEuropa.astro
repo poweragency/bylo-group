@@ -1,0 +1,124 @@
+---
+import { ITALY_VIEWBOX, ITALY_PATH } from '@bylo/ui/italy.ts';
+---
+
+<section class="section-pad bg-byl-black text-byl-white relative overflow-hidden">
+  <!-- Subtle grid pattern -->
+  <div
+    class="absolute inset-0 opacity-[0.04] pointer-events-none"
+    style="background-image: linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px); background-size: 80px 80px;"
+  >
+  </div>
+
+  <div class="container-page relative">
+    <div class="max-w-3xl mx-auto text-center">
+      <span class="eyebrow-on-dark justify-center">Copertura nazionale</span>
+      <h2 class="h-section mt-4 text-byl-white">
+        Al servizio delle imprese <span class="text-byl-yellow">in tutta Italia</span>.
+      </h2>
+    </div>
+
+    <div class="mt-16 relative mx-auto max-w-3xl">
+      <svg
+        viewBox={ITALY_VIEWBOX}
+        class="w-full h-auto"
+        aria-hidden="true"
+      >
+        <defs>
+          <linearGradient id="route-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0"></stop>
+            <stop offset="50%" stop-color="#ffffff" stop-opacity="1"></stop>
+            <stop offset="100%" stop-color="#ffffff" stop-opacity="0"></stop>
+          </linearGradient>
+        </defs>
+
+        <!-- Italy fill -->
+        <path d={ITALY_PATH} fill="var(--color-byl-graphite)" stroke="none" />
+
+        <!-- Italy border -->
+        <path
+          d={ITALY_PATH}
+          fill="none"
+          stroke="var(--color-byl-yellow)"
+          stroke-opacity="0.45"
+          stroke-width="0.8"
+          stroke-linejoin="round"
+          stroke-linecap="round"
+        />
+
+        <!-- City markers -->
+        <g fill="var(--color-byl-yellow)">
+          <circle cx="472" cy="478" r="2.2"></circle>
+          <circle cx="493" cy="552" r="2.2"></circle>
+          <circle cx="535" cy="582" r="2.2"></circle>
+          <circle cx="510" cy="592" r="2.2"></circle>
+          <circle cx="519" cy="645" r="2.2"></circle>
+        </g>
+
+        <!-- Animated routes (Italian internal lanes) -->
+        <g
+          fill="none"
+          stroke="url(#route-grad)"
+          stroke-width="1.2"
+          stroke-linecap="round"
+        >
+          <path class="route-line route-1" d="M472,478 Q485,520 493,552"></path>
+          <path class="route-line route-2" d="M493,552 Q515,565 535,582"></path>
+          <path class="route-line route-3" d="M493,552 Q505,600 519,645"></path>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<style>
+  .eyebrow-on-dark {
+    justify-content: center;
+  }
+
+  .route-line {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: draw-route 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+
+  .route-1 {
+    animation-delay: 0s;
+  }
+  .route-2 {
+    animation-delay: 0.8s;
+  }
+  .route-3 {
+    animation-delay: 1.6s;
+  }
+
+  @keyframes draw-route {
+    0% {
+      stroke-dashoffset: 200;
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    55% {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+    80% {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+    100% {
+      stroke-dashoffset: -200;
+      opacity: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .route-line {
+      animation: none;
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+  }
+</style>

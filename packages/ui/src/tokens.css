@@ -1,0 +1,74 @@
+/* BYL Design Tokens — used across all BYLO Group landings */
+
+@theme {
+  /* ---------- Colors: BYL brand ---------- */
+  --color-byl-yellow: #f5d000;
+  --color-byl-yellow-bright: #ffd900;
+  --color-byl-yellow-dark: #d4b400;
+
+  --color-byl-black: #0a0a0a;
+  --color-byl-ink: #121212;
+  --color-byl-graphite: #1f1f1f;
+
+  --color-byl-white: #ffffff;
+  --color-byl-off: #f7f7f5;
+  --color-byl-stone: #e7e7e3;
+  --color-byl-mute: #8a8a85;
+
+  /* Semantic aliases */
+  --color-bg: var(--color-byl-white);
+  --color-bg-inverse: var(--color-byl-black);
+  --color-fg: var(--color-byl-black);
+  --color-fg-inverse: var(--color-byl-white);
+  --color-accent: var(--color-byl-yellow);
+  --color-border: var(--color-byl-stone);
+
+  /* ---------- Typography ---------- */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+
+  /* ---------- Spacing & radius ---------- */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+
+  /* ---------- Shadows ---------- */
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 4px 8px rgba(0, 0, 0, 0.06), 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Base reset layer ---------- */
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-fg);
+    background: var(--color-bg);
+    font-feature-settings: 'ss01', 'cv11';
+  }
+
+  ::selection {
+    background: var(--color-byl-yellow);
+    color: var(--color-byl-black);
+  }
+}

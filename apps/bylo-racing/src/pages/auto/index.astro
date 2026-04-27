@@ -1,0 +1,114 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import CarCard from '@/components/CarCard.astro';
+import { cars } from '@/lib/cars';
+
+const brands = Array.from(new Set(cars.map((c) => c.brand))).sort();
+const fuels = Array.from(new Set(cars.map((c) => c.fuel))).sort();
+const transmissions = Array.from(new Set(cars.map((c) => c.transmission))).sort();
+---
+
+<Layout title="Le nostre auto — Tommy Racing" description="Auto selezionate in vendita presso Tommy Racing: controllate, con storia verificata e pronte alla consegna.">
+  <section class="bg-byl-black text-byl-white">
+    <div class="container-page py-20 md:py-24">
+      <span class="eyebrow-on-dark">Le nostre auto</span>
+      <h1 class="h-display mt-4 text-byl-white">
+        Auto <span class="text-byl-yellow">selezionate</span>, pronte alla consegna.
+      </h1>
+      <p class="lede mt-6 text-white/70 max-w-2xl">
+        Ogni vettura passa per i nostri tecnici prima di essere messa in
+        vendita. Storia verificata, manutenzione documentata, prova su strada
+        disponibile su appuntamento.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-byl-off py-12">
+    <div class="container-page">
+      <div class="bg-white p-6 rounded-2xl border border-byl-stone shadow-[var(--shadow-card)]">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div>
+            <label for="filter-brand" class="text-xs uppercase tracking-wider font-semibold text-byl-mute">Marca</label>
+            <select id="filter-brand" class="mt-1.5 w-full px-3 py-2.5 bg-byl-off border border-byl-stone rounded-md focus:outline-none focus:border-byl-black text-sm">
+              <option value="">Tutte</option>
+              {brands.map((b) => <option value={b}>{b}</option>)}
+            </select>
+          </div>
+          <div>
+            <label for="filter-fuel" class="text-xs uppercase tracking-wider font-semibold text-byl-mute">Alimentazione</label>
+            <select id="filter-fuel" class="mt-1.5 w-full px-3 py-2.5 bg-byl-off border border-byl-stone rounded-md focus:outline-none focus:border-byl-black text-sm capitalize">
+              <option value="">Tutte</option>
+              {fuels.map((f) => <option value={f}>{f}</option>)}
+            </select>
+          </div>
+          <div>
+            <label for="filter-transmission" class="text-xs uppercase tracking-wider font-semibold text-byl-mute">Cambio</label>
+            <select id="filter-transmission" class="mt-1.5 w-full px-3 py-2.5 bg-byl-off border border-byl-stone rounded-md focus:outline-none focus:border-byl-black text-sm capitalize">
+              <option value="">Tutti</option>
+              {transmissions.map((t) => <option value={t}>{t}</option>)}
+            </select>
+          </div>
+          <div>
+            <label for="filter-price" class="text-xs uppercase tracking-wider font-semibold text-byl-mute">Prezzo max</label>
+            <select id="filter-price" class="mt-1.5 w-full px-3 py-2.5 bg-byl-off border border-byl-stone rounded-md focus:outline-none focus:border-byl-black text-sm">
+              <option value="">Tutti</option>
+              <option value="15000">Fino a 15.000 €</option>
+              <option value="25000">Fino a 25.000 €</option>
+              <option value="35000">Fino a 35.000 €</option>
+              <option value="50000">Fino a 50.000 €</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-byl-off pb-24">
+    <div class="container-page">
+      <div id="cars-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {cars.map((car, i) => (
+          <div
+            data-car
+            data-brand={car.brand}
+            data-fuel={car.fuel}
+            data-transmission={car.transmission}
+            data-price={car.price}
+          >
+            <CarCard car={car} priority={i < 3} />
+          </div>
+        ))}
+      </div>
+
+      <p id="no-results" class="hidden text-center py-20 text-byl-mute">
+        Nessuna auto corrisponde ai filtri selezionati.
+      </p>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  const filters = {
+    brand: document.getElementById('filter-brand') as HTMLSelectElement,
+    fuel: document.getElementById('filter-fuel') as HTMLSelectElement,
+    transmission: document.getElementById('filter-transmission') as HTMLSelectElement,
+    price: document.getElementById('filter-price') as HTMLSelectElement,
+  };
+  const items = document.querySelectorAll<HTMLElement>('[data-car]');
+  const noResults = document.getElementById('no-results');
+
+  function applyFilters() {
+    let visible = 0;
+    items.forEach((el) => {
+      const pass =
+        (!filters.brand.value || el.dataset.brand === filters.brand.value) &&
+        (!filters.fuel.value || el.dataset.fuel === filters.fuel.value) &&
+        (!filters.transmission.value || el.dataset.transmission === filters.transmission.value) &&
+        (!filters.price.value || Number(el.dataset.price) <= Number(filters.price.value));
+      el.style.display = pass ? '' : 'none';
+      if (pass) visible++;
+    });
+    if (noResults) noResults.classList.toggle('hidden', visible > 0);
+  }
+
+  Object.values(filters).forEach((el) => el?.addEventListener('change', applyFilters));
+</script>

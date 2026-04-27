@@ -1,0 +1,53 @@
+---
+const values = [
+  {
+    title: 'Sicurezza prima di tutto',
+    body: 'Controlli continui, procedure testate, normative ADR rispettate in ogni fase. La tutela del conducente, del carico e delle persone non è negoziabile.',
+  },
+  {
+    title: 'Innovazione concreta',
+    body: 'Investiamo in tecnologia, formazione e mezzi moderni per garantire efficienza operativa e tracciabilità completa di ogni spedizione.',
+  },
+  {
+    title: 'Flessibilità operativa',
+    body: 'Ogni cliente ha esigenze diverse. Adattiamo rotte, tempi e modalità alla tua logistica, non il contrario.',
+  },
+];
+---
+
+<section class="section-pad bg-byl-white">
+  <div class="container-page">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+      <div class="lg:col-span-5">
+        <span class="eyebrow">Chi siamo</span>
+        <h2 class="h-section mt-4">
+          Un partner di fiducia per la logistica italiana.
+        </h2>
+        <p class="lede mt-6">
+          BYL Logistica è il ramo trasporti e logistica di
+          <strong class="text-byl-black">BYLO Group</strong>,
+          realtà italiana specializzata nel movimento di merci pericolose
+          e nella gestione di flussi logistici complessi. Lavoriamo con
+          metodo, competenza e la consapevolezza che ogni carico
+          racconta la storia di un'impresa.
+        </p>
+      </div>
+
+      <div class="lg:col-span-7 space-y-6">
+        {
+          values.map((v, i) => (
+            <div class="group flex gap-5 p-6 rounded-xl border border-byl-stone hover:border-byl-black transition-colors bg-white hover:shadow-[var(--shadow-hover)]">
+              <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-byl-yellow flex items-center justify-center font-display font-bold text-byl-black text-lg">
+                {String(i + 1).padStart(2, '0')}
+              </div>
+              <div>
+                <h3 class="h-card">{v.title}</h3>
+                <p class="mt-2 text-byl-mute leading-relaxed">{v.body}</p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+{
+  "name": "bylo-monorepo",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:logistica": "npm run dev -w apps/bylo-logistica",
+    "build:logistica": "npm run build -w apps/bylo-logistica",
+    "preview:logistica": "npm run preview -w apps/bylo-logistica",
+    "dev:racing": "npm run dev -w apps/bylo-racing",
+    "build:racing": "npm run build -w apps/bylo-racing",
+    "preview:racing": "npm run preview -w apps/bylo-racing"
+  }
+}

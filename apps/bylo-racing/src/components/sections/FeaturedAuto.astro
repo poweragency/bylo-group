@@ -1,0 +1,32 @@
+---
+import { cars } from '@/lib/cars';
+import CarCard from '@/components/CarCard.astro';
+
+const featured = cars.slice(0, 3);
+---
+
+<section id="auto" class="section-pad bg-byl-off">
+  <div class="container-page">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+      <div class="max-w-2xl">
+        <span class="eyebrow">Le nostre auto</span>
+        <h2 class="h-section mt-4">
+          Auto selezionate, <span class="text-byl-yellow-dark">pronte alla consegna</span>.
+        </h2>
+        <p class="lede mt-6">
+          Vetture controllate dai nostri tecnici, con storia verificata e
+          garanzia. Vieni a trovarci o richiedi informazioni: ti aiutiamo
+          a trovare l'auto giusta per le tue esigenze.
+        </p>
+      </div>
+      <a href="/auto/" class="btn-outline flex-shrink-0">
+        Vedi tutte le auto
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {featured.map((car, i) => <CarCard car={car} priority={i === 0} />)}
+    </div>
+  </div>
+</section>

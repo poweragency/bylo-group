@@ -1,0 +1,89 @@
+---
+interface Props {
+  before: string;
+  after: string;
+  alt?: string;
+  beforeAlt?: string;
+  afterAlt?: string;
+}
+
+const {
+  before,
+  after,
+  alt = 'Prima e dopo lavorazione',
+  beforeAlt = `${alt} — prima`,
+  afterAlt = `${alt} — dopo`,
+} = Astro.props;
+---
+
+<div
+  class="ba relative aspect-[4/5] rounded-2xl overflow-hidden bg-byl-graphite border border-byl-stone select-none touch-none"
+  data-ba
+>
+  <!-- AFTER (sotto, sempre visibile) -->
+  <picture class="absolute inset-0">
+    <source srcset={`${after}.avif`} type="image/avif" />
+    <source srcset={`${after}.webp`} type="image/webp" />
+    <img
+      src={`${after}.jpg`}
+      alt={afterAlt}
+      class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+      loading="lazy"
+      decoding="async"
+      draggable="false"
+    />
+  </picture>
+
+  <!-- BEFORE (sopra, clipped) -->
+  <picture
+    class="ba-before absolute inset-0"
+    style="clip-path: inset(0 50% 0 0);"
+  >
+    <source srcset={`${before}.avif`} type="image/avif" />
+    <source srcset={`${before}.webp`} type="image/webp" />
+    <img
+      src={`${before}.jpg`}
+      alt={beforeAlt}
+      class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+      loading="lazy"
+      decoding="async"
+      draggable="false"
+    />
+  </picture>
+
+  <!-- Labels -->
+  <div class="ba-label absolute top-4 left-4 bg-byl-black/80 backdrop-blur text-byl-white px-3 py-1.5 text-xs font-bold uppercase tracking-wider rounded-sm border border-white/10">
+    Prima
+  </div>
+  <div class="ba-label absolute top-4 right-4 bg-byl-yellow text-byl-black px-3 py-1.5 text-xs font-bold uppercase tracking-wider rounded-sm">
+    Dopo
+  </div>
+
+  <!-- Divider line + handle -->
+  <div
+    class="ba-line absolute top-0 bottom-0 w-[3px] bg-byl-yellow shadow-[0_0_24px_rgba(245,208,0,0.6)] pointer-events-none"
+    style="left: 50%; transform: translateX(-50%);"
+  >
+  </div>
+  <button
+    class="ba-handle absolute top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-byl-yellow text-byl-black flex items-center justify-center shadow-xl hover:scale-110 active:scale-95 transition-transform cursor-ew-resize border-2 border-byl-black"
+    style="left: 50%; transform: translate(-50%, -50%);"
+    aria-label="Trascina per confrontare prima e dopo"
+    type="button"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="15 18 9 12 15 6"></polyline>
+      <polyline points="9 18 3 12 9 6" transform="translate(12 0)"></polyline>
+    </svg>
+  </button>
+
+  <!-- Hidden range for accessibility -->
+  <input
+    type="range"
+    min="0"
+    max="100"
+    value="50"
+    class="ba-range sr-only"
+    aria-label="Confronto prima/dopo (percentuale)"
+  />
+</div>

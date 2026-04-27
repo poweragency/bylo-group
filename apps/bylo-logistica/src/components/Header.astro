@@ -1,0 +1,79 @@
+---
+const nav = [
+  { href: '#servizi', label: 'Servizi' },
+  { href: '#perche-byl', label: 'Perché BYL' },
+  { href: '#come-lavoriamo', label: 'Come lavoriamo' },
+  { href: '#contatti', label: 'Contatti' },
+  { href: '#dove-siamo', label: 'Dove siamo' },
+];
+---
+
+<header
+  class="sticky top-0 z-50 bg-byl-white border-b border-byl-stone text-byl-black"
+>
+  <div class="container-page flex items-center justify-between h-16 md:h-20">
+    <a href="/" class="flex items-center group" aria-label="BYL Logistica — home">
+      <img
+        src="/logo.png"
+        alt="BYL Transports & Commerce"
+        width="276"
+        height="100"
+        class="h-10 md:h-12 w-auto"
+      />
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8">
+      {
+        nav.map((item) => (
+          <a
+            href={item.href}
+            class="text-sm font-medium text-byl-black hover:text-byl-yellow-dark transition-colors"
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="#contatti" class="btn-primary hidden sm:inline-flex text-sm">
+        Richiedi preventivo
+      </a>
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden p-2 text-byl-black"
+        aria-label="Apri menu"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="hidden md:hidden border-t border-byl-stone bg-byl-white">
+    <nav class="container-page py-4 flex flex-col gap-1">
+      {
+        nav.map((item) => (
+          <a
+            href={item.href}
+            class="py-3 text-base font-medium text-byl-black hover:text-byl-yellow-dark"
+          >
+            {item.label}
+          </a>
+        ))
+      }
+      <a href="#contatti" class="btn-primary mt-3 text-sm w-full">
+        Richiedi preventivo
+      </a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+</script>

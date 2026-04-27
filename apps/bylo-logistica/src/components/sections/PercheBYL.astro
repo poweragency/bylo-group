@@ -1,0 +1,99 @@
+---
+const benefits = [
+  {
+    title: 'Certificazioni ADR',
+    body: 'Autorizzazione completa al trasporto di merci pericolose. Normativa rispettata, documentazione sempre in ordine.',
+  },
+  {
+    title: 'Officina interna',
+    body: 'Manutenzione in casa presso la nostra officina autorizzata. Ogni mezzo su strada è un mezzo controllato.',
+  },
+  {
+    title: 'Copertura capillare',
+    body: 'Magazzini sulle principali direttrici autostradali del Nord. Distribuzione capillare su tutto il territorio nazionale.',
+  },
+  {
+    title: 'Persone prima dei mezzi',
+    body: 'Autisti formati, operatori competenti, interlocutori dedicati. Dietro ogni consegna c’è un team che conosce il mestiere.',
+  },
+];
+
+const steps = [
+  {
+    n: '01',
+    title: 'Richiesta',
+    body: 'Ci racconti cosa devi muovere, da dove a dove, con che tempi. Risposta in 24 ore.',
+  },
+  {
+    n: '02',
+    title: 'Pianificazione',
+    body: 'Analizziamo la rotta, verifichiamo requisiti ADR se necessari, definiamo mezzi e personale.',
+  },
+  {
+    n: '03',
+    title: 'Trasporto',
+    body: 'Il carico parte con documentazione completa. Rimaniamo reperibili per ogni necessità.',
+  },
+  {
+    n: '04',
+    title: 'Consegna',
+    body: 'Consegna nei tempi concordati, firma di ricevuta, archiviazione documenti. Semplice e tracciato.',
+  },
+];
+---
+
+<section id="perche-byl" class="section-pad bg-byl-black text-byl-white relative overflow-hidden">
+  <div
+    class="absolute inset-0 opacity-[0.04] pointer-events-none"
+    style="background-image: linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px); background-size: 80px 80px;"
+  >
+  </div>
+
+  <div class="container-page relative">
+    <div class="max-w-3xl">
+      <span class="eyebrow-on-dark">Perché BYL</span>
+      <h2 class="h-section mt-4 text-byl-white">
+        Quattro buoni motivi per <span class="text-byl-yellow">sceglierci</span>.
+      </h2>
+    </div>
+
+    <div class="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+      {
+        benefits.map((b, i) => (
+          <div class="group relative p-7 rounded-xl bg-byl-graphite border border-white/5 hover:border-byl-yellow transition-all overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-[2px] bg-byl-yellow transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+            <div class="text-byl-yellow font-display font-bold text-sm tracking-widest">
+              0{i + 1}
+            </div>
+            <h3 class="h-card mt-4 text-byl-white">{b.title}</h3>
+            <p class="mt-3 text-white/60 leading-relaxed text-sm">{b.body}</p>
+          </div>
+        ))
+      }
+    </div>
+
+    <!-- Come lavoriamo -->
+    <div id="come-lavoriamo" class="mt-28 pt-20 border-t border-white/10">
+      <div class="max-w-2xl">
+        <span class="eyebrow-on-dark">Come lavoriamo</span>
+        <h3 class="h-section mt-4 text-byl-white">
+          Un processo <span class="text-byl-yellow">lineare</span>, dall’inizio alla consegna.
+        </h3>
+      </div>
+
+      <div class="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 relative">
+        {
+          steps.map((s, i) => (
+            <div class="relative p-7 border-t-2 border-byl-yellow md:border-t-0 md:border-l-2 md:first:border-l-0 md:border-white/10 md:hover:border-byl-yellow transition-colors">
+              <div class="font-display font-bold text-5xl text-byl-yellow/30">
+                {s.n}
+              </div>
+              <h4 class="h-card mt-3 text-byl-white">{s.title}</h4>
+              <p class="mt-2 text-white/60 text-sm leading-relaxed">{s.body}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
