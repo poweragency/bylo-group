@@ -2,8 +2,13 @@
 import '@/styles/global.css';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
-import { Seo, Hreflang } from '@bylo/ui/seo/index.ts';
-import { BRAND_RACING } from '@bylo/ui/index.ts';
+import { Seo, Hreflang, SchemaOrg } from '@bylo/ui/seo/index.ts';
+import {
+  BRAND_RACING,
+  GROUP,
+  LEGAL_TOMMY,
+  CONTACTS_RACING,
+} from '@bylo/ui/index.ts';
 
 interface Props {
   title?: string;
@@ -49,6 +54,82 @@ const alternates = [
   { hreflang: 'it', href: altUrl('it') },
   { hreflang: 'en', href: altUrl('en') },
 ];
+
+const standardHours = [
+  {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '08:30',
+    closes: '12:30',
+  },
+  {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '14:00',
+    closes: '18:00',
+  },
+];
+
+// 2 LocalBusiness distinte: AutoRepair (Milano) + AutoBodyShop (Mazzo di Rho)
+const officinaSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AutoRepair',
+  '@id': `${siteOrigin}/#officina`,
+  name: `${BRAND_RACING.name} — Officina`,
+  legalName: LEGAL_TOMMY.name,
+  url: siteOrigin,
+  logo: `${siteOrigin}/logo.png`,
+  vatID: LEGAL_TOMMY.vat,
+  parentOrganization: {
+    '@type': 'Organization',
+    name: GROUP.name,
+    url: GROUP.website,
+  },
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Via A. Brunetti 14',
+    postalCode: '20156',
+    addressLocality: 'Milano',
+    addressRegion: 'MI',
+    addressCountry: 'IT',
+  },
+  telephone: CONTACTS_RACING.officina.phone,
+  email: CONTACTS_RACING.officina.email,
+  openingHoursSpecification: standardHours,
+  description: isEN
+    ? 'Multi-brand authorized workshop for cars and motorcycles in Milan. Scheduled services with official manufacturer warranty, mechanical and electronic repairs, tires, vehicle sanitization, replacement cars. Mandatory inspections up to 3.5 tons.'
+    : 'Officina autorizzata multimarche per auto e moto a Milano. Tagliandi con garanzie ufficiali delle case, riparazioni meccaniche ed elettroniche, pneumatici, igienizzazione, auto sostitutive. Revisioni ministeriali fino a 35 quintali.',
+};
+
+const carrozzeriaSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AutoBodyShop',
+  '@id': `${siteOrigin}/#carrozzeria`,
+  name: `${BRAND_RACING.name} — Carrozzeria`,
+  legalName: LEGAL_TOMMY.name,
+  url: siteOrigin,
+  logo: `${siteOrigin}/logo.png`,
+  vatID: LEGAL_TOMMY.vat,
+  parentOrganization: {
+    '@type': 'Organization',
+    name: GROUP.name,
+    url: GROUP.website,
+  },
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Via Venanzio Buzzi 9',
+    postalCode: '20017',
+    addressLocality: 'Mazzo di Rho',
+    addressRegion: 'MI',
+    addressCountry: 'IT',
+  },
+  telephone: CONTACTS_RACING.carrozzeria.phone,
+  email: CONTACTS_RACING.carrozzeria.email,
+  openingHoursSpecification: standardHours,
+  description: isEN
+    ? 'Body shop with water-based oven painting in Mazzo di Rho (Milan). Collision repairs, full repainting, professional spectrophotometer for precise color matching.'
+    : 'Carrozzeria con verniciatura a forno ad acqua a Mazzo di Rho (MI). Riparazioni post-sinistro, verniciatura completa, tintometro professionale per abbinamento tinta preciso.',
+};
 ---
 
 <!doctype html>
@@ -70,6 +151,8 @@ const alternates = [
       siteName={BRAND_RACING.name}
     />
     <Hreflang alternates={alternates} xDefault={altUrl('it')} />
+    <SchemaOrg data={officinaSchema} />
+    <SchemaOrg data={carrozzeriaSchema} />
   </head>
   <body class="bg-byl-white text-byl-black antialiased">
     <Header />

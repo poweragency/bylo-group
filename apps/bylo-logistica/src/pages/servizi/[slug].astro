@@ -1,7 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '@/layouts/Layout.astro';
-import { Faq, Breadcrumb, InternalLinkBlock } from '@bylo/ui/seo/index.ts';
+import { Faq, Breadcrumb, InternalLinkBlock, SchemaOrg } from '@bylo/ui/seo/index.ts';
+import { BRAND } from '@bylo/ui/index.ts';
 
 export async function getStaticPaths() {
   const services = await getCollection('services', ({ data }) => data.locale === 'it');
@@ -22,12 +23,32 @@ const crumbs = [
 
 const allServices = await getCollection('services', ({ data }) => data.locale === 'it');
 const related = allServices
-  .filter((s) => service.data.relatedServices.includes(s.data.slug))
+  .filter((s) => service.data.relatedServices.includes(s.slug))
   .map((s) => ({
-    href: `/servizi/${s.data.slug}/`,
+    href: `/servizi/${s.slug}/`,
     label: s.data.title,
     description: s.data.intro.length > 140 ? s.data.intro.slice(0, 140) + '…' : s.data.intro,
   }));
+
+const siteOrigin = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: service.data.title,
+  description: service.data.intro,
+  serviceType: service.data.eyebrow ?? 'Trasporti e logistica',
+  provider: {
+    '@type': 'Organization',
+    '@id': `${siteOrigin}/#localbusiness`,
+    name: BRAND.name,
+    url: siteOrigin,
+  },
+  areaServed: [
+    { '@type': 'Country', name: 'Italy' },
+    { '@type': 'Country', name: 'Europe' },
+  ],
+  url: `${siteOrigin}/servizi/${service.slug}/`,
+};
 ---
 
 <Layout
@@ -35,6 +56,7 @@ const related = allServices
   description={service.data.seo.description}
   noindex={service.data.seo.noindex}
 >
+  <SchemaOrg data={serviceSchema} />
   <Breadcrumb items={crumbs} />
 
   <section class="section-pad bg-byl-white">

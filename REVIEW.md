@@ -26,6 +26,8 @@ Questo file lista tutti i punti dei contenuti che sono **placeholder, deduzione 
 - [ ] **ISO certificazioni** (9001, 14001, 45001) — non dichiarate sul sito, utente non sa. Lasciate fuori dai content.
 - [ ] **Onboarding tempi/processo logistica integrata** — in `services/it/logistica-integrata.md` ho usato un processo generico (4 step). Verificare se corrisponde al modo reale di operare.
 - [ ] **FAQ chimica/farmaceutica** — i 6 Q&A nei file settori sono contenuto SEO-plausibile ma generico. Da rileggere con il cliente per verificare che le risposte rispettino come l'azienda descrive davvero i propri servizi.
+- [ ] **Orari Transport** — usato `Lun–Ven 9:00–12:00 / 14:00–18:00` in `packages/ui/src/index.ts` e nello schema.org `LocalBusiness` di Bollate (Layout). Memoria precedente, NON dichiarato sul sito ufficiale. Verificare se sono gli orari reali della sede di Bollate.
+- [x] **Orari Tommy** (officina + carrozzeria): `Lun–Ven 8:30–12:30 / 14:00–18:00` — confermati dal sito ufficiale `bylogroup.it/automotive`, usati in schema.org.
 
 ## 3. Tommy By — content
 

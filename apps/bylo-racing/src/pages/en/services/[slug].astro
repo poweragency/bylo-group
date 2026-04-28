@@ -1,7 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '@/layouts/Layout.astro';
-import { Faq, Breadcrumb, InternalLinkBlock } from '@bylo/ui/seo/index.ts';
+import { Faq, Breadcrumb, InternalLinkBlock, SchemaOrg } from '@bylo/ui/seo/index.ts';
+import { BRAND_RACING } from '@bylo/ui/index.ts';
 
 export async function getStaticPaths() {
   const services = await getCollection('services', ({ data }) => data.locale === 'en');
@@ -28,7 +29,27 @@ const related = allServices
     label: s.data.title,
     description: s.data.intro.length > 140 ? s.data.intro.slice(0, 140) + '…' : s.data.intro,
   }));
+
+const siteOrigin = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const providerId = service.data.category === 'carrozzeria'
+  ? `${siteOrigin}/#carrozzeria`
+  : `${siteOrigin}/#officina`;
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: service.data.title,
+  description: service.data.intro,
+  serviceType: service.data.category,
+  provider: {
+    '@id': providerId,
+  },
+  areaServed: { '@type': 'AdministrativeArea', name: 'Milan and north-west metropolitan area' },
+  url: `${siteOrigin}/en/services/${service.slug}/`,
+};
 ---
+
+<SchemaOrg data={serviceSchema} />
+
 
 <Layout
   title={service.data.seo.title}

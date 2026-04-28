@@ -2,8 +2,13 @@
 import '@/styles/global.css';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
-import { Seo, Hreflang } from '@bylo/ui/seo/index.ts';
-import { BRAND } from '@bylo/ui/index.ts';
+import { Seo, Hreflang, SchemaOrg } from '@bylo/ui/seo/index.ts';
+import {
+  BRAND,
+  GROUP,
+  LEGAL_TRANSPORT,
+  CONTACTS,
+} from '@bylo/ui/index.ts';
 
 interface Props {
   title?: string;
@@ -49,6 +54,54 @@ const alternates = [
   { hreflang: 'it', href: altUrl('it') },
   { hreflang: 'en', href: altUrl('en') },
 ];
+
+// LocalBusiness JSON-LD per la sede di Bollate
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  '@id': `${siteOrigin}/#localbusiness`,
+  name: BRAND.name,
+  legalName: LEGAL_TRANSPORT.name,
+  url: siteOrigin,
+  logo: `${siteOrigin}/logo.png`,
+  vatID: LEGAL_TRANSPORT.vat,
+  parentOrganization: {
+    '@type': 'Organization',
+    name: GROUP.name,
+    url: GROUP.website,
+  },
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Via Ghisalba 7',
+    postalCode: '20021',
+    addressLocality: 'Ospiate di Bollate',
+    addressRegion: 'MI',
+    addressCountry: 'IT',
+  },
+  telephone: CONTACTS.hq.phone,
+  email: CONTACTS.hq.email,
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '09:00',
+      closes: '12:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '14:00',
+      closes: '18:00',
+    },
+  ],
+  areaServed: [
+    { '@type': 'Country', name: 'Italy' },
+    { '@type': 'Country', name: 'Europe' },
+  ],
+  description: isEN
+    ? 'BYLO Transport runs ADR transport for dangerous goods (classes 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 and 9) and integrated logistics on national and international routes from Ospiate di Bollate (Milan).'
+    : 'BYLO Transport esegue trasporti ADR di merci pericolose (classi 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 e 9) e logistica integrata su tratte nazionali e internazionali, dalla sede di Ospiate di Bollate (MI).',
+};
 ---
 
 <!doctype html>
@@ -70,6 +123,7 @@ const alternates = [
       siteName={BRAND.name}
     />
     <Hreflang alternates={alternates} xDefault={altUrl('it')} />
+    <SchemaOrg data={localBusinessSchema} />
   </head>
   <body class="bg-byl-white text-byl-black antialiased">
     <Header />

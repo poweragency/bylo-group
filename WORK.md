@@ -10,15 +10,15 @@
 - **@nome** — `apps/bylo-logistica/src/components/sections/` (in lavorazione, dal 2026-04-27 15:00)
 -->
 
-- **@claude** — refactor SEO **Fase 2 (content + GAIO + dynamic pages)**, dal 2026-04-28 pomeriggio. Branch `feat/seo-fase-2-content`. Tocca:
-  - `apps/bylo-logistica/src/content/{services,sectors,routes,faqs,blog}/` (popolamento markdown IT + EN)
-  - `apps/bylo-racing/src/content/{services,brands,zones,faqs,blog}/`
-  - `apps/bylo-group/src/content/{pages,blog}/`
-  - Pagine dinamiche `[...slug].astro` sotto `apps/*/src/pages/{servizi,settori,tratte,marche,zone,blog,faq}/` e mirror EN
-  - `apps/*/public/llms.txt` (nuovi)
-  - **NON** modifica file Fase 1 (header, footer, layout, naming) — già committati e pushati su `feat/seo-fase-1-i18n-apps`.
+- **@claude** — refactor SEO **Fase 3 (schema.org pesante)**, dal 2026-04-28 sera. Branch `feat/seo-fase-3-schemaorg`. Tocca:
+  - `apps/bylo-logistica/src/layouts/Layout.astro` (aggiunta LocalBusiness JSON-LD per Bollate)
+  - `apps/bylo-racing/src/layouts/Layout.astro` (aggiunta 2 LocalBusiness — AutoRepair Milano + AutoBodyShop Mazzo di Rho)
+  - `apps/bylo-logistica/src/pages/servizi/[slug].astro` + EN (Service JSON-LD per ogni servizio)
+  - `apps/bylo-racing/src/pages/servizi/[slug].astro` + EN (Service JSON-LD)
+  - Eventuale aggiornamento `REVIEW.md` per orari da verificare.
 
-- **@claude** — Fase 1 (committata e pushata, branch `feat/seo-fase-1-i18n-apps`): i18n + naming refresh + group landing arricchita + fix logo. Lasciato qui in archivio finché la PR non viene mergiata.
+- **@claude** — Fase 2 (committata e pushata, branch `feat/seo-fase-2-content`, commit `1040a7f`): content + dynamic pages + llms.txt. 66 pagine totali.
+- **@claude** — Fase 1 (committata e pushata, branch `feat/seo-fase-1-i18n-apps`): i18n + naming refresh + group landing arricchita + fix logo.
 
 ## Aree riservate Claude (refactor SEO in corso)
 
