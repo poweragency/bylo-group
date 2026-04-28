@@ -29,8 +29,14 @@ const switchHref = isEN
 
 <header class="sticky top-0 z-50 bg-byl-white border-b border-byl-stone">
   <div class="container-page flex items-center justify-between h-16 md:h-20">
-    <a href={base || '/'} class="font-display font-bold text-lg tracking-tight" aria-label={GROUP.name}>
-      {GROUP.name}
+    <a href={base || '/'} class="flex items-center group" aria-label={GROUP.name}>
+      <img
+        src="/logo.png"
+        alt={GROUP.name}
+        width="800"
+        height="316"
+        class="h-10 md:h-12 w-auto"
+      />
     </a>
 
     <nav class="hidden md:flex items-center gap-8 text-sm font-medium">

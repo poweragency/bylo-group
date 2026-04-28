@@ -47,14 +47,13 @@ const switchHref = isEN
   class="sticky top-0 z-50 bg-byl-white border-b border-byl-stone text-byl-black"
 >
   <div class="container-page flex items-center justify-between h-16 md:h-20">
-    <a href={base || '/'} class="flex items-center group" aria-label={t.home}>
-      <img
-        src="/logo.png"
-        alt="BYLO Transport"
-        width="276"
-        height="100"
-        class="h-10 md:h-12 w-auto"
-      />
+    <a href={base || '/'} class="flex items-baseline gap-1.5" aria-label={t.home}>
+      <span class="font-display font-black text-2xl md:text-3xl tracking-tight text-byl-black">
+        BYLO
+      </span>
+      <span class="font-display font-medium text-base md:text-lg tracking-[0.22em] uppercase text-byl-mute">
+        Transport
+      </span>
     </a>
 
     <nav class="hidden md:flex items-center gap-8">
