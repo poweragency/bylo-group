@@ -71,6 +71,21 @@ Questo file lista tutti i punti dei contenuti che sono **placeholder, deduzione 
 - [ ] **Foto sedi** (officina, carrozzeria, magazzino) — oggi assenti.
 - [ ] **Foto carrozzeria** già presente: `apps/bylo-racing/public/photos/carrozzeria-forno.{avif,webp,jpg}` (forno verniciatura). OK.
 
+## 8. Deploy Vercel (Fase 4) — completato 2026-04-28
+
+- [x] 3 progetti Vercel attivi su scope `poweragency`:
+  - `bylo-group` → https://bylo-group.vercel.app
+  - `bylo-transport` → https://bylo-transport.vercel.app
+  - `bylo-tommy` → https://bylo-tommy.vercel.app
+- [ ] **Trasferire ownership** dei 3 progetti al cliente quando si va in produzione (Vercel "Project Transfer", niente rebuild/downtime).
+- [ ] **DNS custom**: aggiungere `transport.bylogroup.it`, `tommy.bylogroup.it`, `bylogroup.it` (apex) + `www.bylogroup.it` quando arrivano credenziali Dominiok del cliente. Comando CLI per ognuno: `vercel domains add <fqdn> <progetto>`.
+- [ ] **Redirect 301** dei 6 URL vecchi (`/trasporti-nazionali-adr`, `/logistica`, `/automotive`, `/chi-siamo`, `/contatti`) → da inserire in `vercel-group.json` come `redirects` quando si fa cutover apex.
+- [ ] **GA4**: aggiungere snippet di tracking nei Layout (script tag in head) quando il cliente conferma/crea property GA4. Property ID da configurare via env var Vercel.
+- [ ] **GSC submit sitemap**: dopo il cutover DNS, submit dei 3 sitemap su `search.google.com/search-console`:
+  - `https://www.bylogroup.it/sitemap-index.xml`
+  - `https://transport.bylogroup.it/sitemap-index.xml`
+  - `https://tommy.bylogroup.it/sitemap-index.xml`
+
 ---
 
 ## Verificati (history)

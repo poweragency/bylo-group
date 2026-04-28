@@ -16,6 +16,9 @@
     "dev:group": "npm run dev -w apps/bylo-group",
     "build:group": "npm run build -w apps/bylo-group",
     "preview:group": "npm run preview -w apps/bylo-group",
-    "build:all": "npm run build:group && npm run build:logistica && npm run build:racing"
+    "build:all": "npm run build:group && npm run build:logistica && npm run build:racing",
+    "deploy:group": "vercel link --project=bylo-group --yes && vercel deploy --prod --yes --local-config=vercel-group.json",
+    "deploy:transport": "vercel link --project=bylo-transport --yes && vercel deploy --prod --yes --local-config=vercel-logistica.json",
+    "deploy:tommy": "vercel link --project=bylo-tommy --yes && vercel deploy --prod --yes --local-config=vercel-racing.json"
   }
 }
