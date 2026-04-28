@@ -74,7 +74,7 @@ const blog = defineCollection({
     title: z.string(),
     excerpt: z.string(),
     cover: z.string().optional(),
-    author: z.string().default('BYL Logistica'),
+    author: z.string().default('BYLO Transport'),
     tags: z.array(z.string()).default([]),
     publishedAt: z.coerce.date(),
     updatedAt: z.coerce.date().optional(),

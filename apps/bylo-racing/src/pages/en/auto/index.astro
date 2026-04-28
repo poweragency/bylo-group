@@ -1,0 +1,40 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import { CONTACTS_RACING } from '@bylo/ui/index.ts';
+const { officina } = CONTACTS_RACING;
+---
+
+<Layout
+  title="Used cars for sale — Tommy By"
+  description="Selected used cars for sale near Milan. Inspected, with verified history and ready for delivery. Italian-language catalog with full English support on request."
+>
+  <section class="bg-byl-black text-byl-white">
+    <div class="container-page py-20 md:py-24">
+      <span class="text-byl-yellow text-xs font-semibold uppercase tracking-[0.18em]">Our cars</span>
+      <h1 class="font-display font-bold text-4xl md:text-6xl leading-tight mt-4 text-byl-white">
+        Selected cars, <span class="text-byl-yellow">ready to drive</span>.
+      </h1>
+      <p class="mt-6 text-lg text-white/70 max-w-2xl leading-relaxed">
+        Every car passes through our technicians before being listed for sale. Verified history, documented maintenance, test drives by appointment.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-byl-off py-16">
+    <div class="container-page max-w-3xl">
+      <div class="p-6 md:p-8 bg-white rounded-2xl border border-byl-stone shadow-[var(--shadow-card)]">
+        <h2 class="font-display font-bold text-xl md:text-2xl text-byl-black">English catalog rolling out</h2>
+        <p class="mt-4 text-byl-black/70 leading-relaxed">
+          The full multilingual catalog with filters by brand, fuel, transmission and price is being localized. In the meantime you can browse the current inventory in our Italian listing — vehicle data (year, mileage, price) is universal — or contact us directly in English for a curated suggestion.
+        </p>
+        <div class="mt-6 flex flex-col sm:flex-row gap-3">
+          <a href="/auto/" class="btn-primary">Browse the Italian listing</a>
+          <a href={`mailto:${officina.email}`} class="btn-outline">Contact us in English</a>
+        </div>
+        <p class="mt-6 text-sm text-byl-mute">
+          Or call <a href={`tel:${officina.phone.replace(/\s/g, '')}`} class="text-byl-yellow-dark font-medium hover:underline">{officina.phone}</a> — Mon–Fri 8:30–12:30 / 14:00–18:00.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

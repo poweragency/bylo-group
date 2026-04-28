@@ -1,21 +1,56 @@
 ---
+const currentLocale = (Astro.currentLocale ?? 'it') as 'it' | 'en';
+const isEN = currentLocale === 'en';
+
+const t = {
+  it: {
+    servizi: 'Servizi',
+    perche: 'Perché BYL',
+    come: 'Come lavoriamo',
+    contatti: 'Contatti',
+    dove: 'Dove siamo',
+    cta: 'Richiedi preventivo',
+    home: 'BYLO Transport — home',
+    menuLabel: 'Apri menu',
+    switchLabel: 'English',
+  },
+  en: {
+    servizi: 'Services',
+    perche: 'Why BYL',
+    come: 'How we work',
+    contatti: 'Contact',
+    dove: 'Where we are',
+    cta: 'Request a quote',
+    home: 'BYLO Transport — home',
+    menuLabel: 'Open menu',
+    switchLabel: 'Italiano',
+  },
+}[currentLocale];
+
+const base = isEN ? '/en' : '';
+const anchor = (id: string) => `${base}/#${id}`;
+
 const nav = [
-  { href: '#servizi', label: 'Servizi' },
-  { href: '#perche-byl', label: 'Perché BYL' },
-  { href: '#come-lavoriamo', label: 'Come lavoriamo' },
-  { href: '#contatti', label: 'Contatti' },
-  { href: '#dove-siamo', label: 'Dove siamo' },
+  { href: anchor('servizi'), label: t.servizi },
+  { href: anchor('perche-byl'), label: t.perche },
+  { href: anchor('come-lavoriamo'), label: t.come },
+  { href: anchor('contatti'), label: t.contatti },
+  { href: anchor('dove-siamo'), label: t.dove },
 ];
+
+const switchHref = isEN
+  ? Astro.url.pathname.replace(/^\/en(\/|$)/, '/')
+  : `/en${Astro.url.pathname === '/' ? '' : Astro.url.pathname}`;
 ---
 
 <header
   class="sticky top-0 z-50 bg-byl-white border-b border-byl-stone text-byl-black"
 >
   <div class="container-page flex items-center justify-between h-16 md:h-20">
-    <a href="/" class="flex items-center group" aria-label="BYL Logistica — home">
+    <a href={base || '/'} class="flex items-center group" aria-label={t.home}>
       <img
         src="/logo.png"
-        alt="BYL Transports & Commerce"
+        alt="BYLO Transport"
         width="276"
         height="100"
         class="h-10 md:h-12 w-auto"
@@ -36,13 +71,20 @@ const nav = [
     </nav>
 
     <div class="flex items-center gap-3">
-      <a href="#contatti" class="btn-primary hidden sm:inline-flex text-sm">
-        Richiedi preventivo
+      <a
+        href={switchHref}
+        class="text-xs uppercase tracking-wider font-medium text-byl-mute hover:text-byl-black transition-colors"
+        aria-label={t.switchLabel}
+      >
+        {isEN ? 'IT' : 'EN'}
+      </a>
+      <a href={anchor('contatti')} class="btn-primary hidden sm:inline-flex text-sm">
+        {t.cta}
       </a>
       <button
         id="mobile-menu-btn"
         class="md:hidden p-2 text-byl-black"
-        aria-label="Apri menu"
+        aria-label={t.menuLabel}
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -65,8 +107,11 @@ const nav = [
           </a>
         ))
       }
-      <a href="#contatti" class="btn-primary mt-3 text-sm w-full">
-        Richiedi preventivo
+      <a href={switchHref} class="py-3 text-base font-medium text-byl-mute hover:text-byl-black">
+        {t.switchLabel}
+      </a>
+      <a href={anchor('contatti')} class="btn-primary mt-3 text-sm w-full">
+        {t.cta}
       </a>
     </nav>
   </div>

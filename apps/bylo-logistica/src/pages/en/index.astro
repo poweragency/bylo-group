@@ -1,0 +1,58 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import { CONTACTS } from '@bylo/ui/index.ts';
+---
+
+<Layout>
+  <section class="bg-byl-black text-byl-white relative overflow-hidden">
+    <div
+      class="absolute inset-0 opacity-[0.04] pointer-events-none"
+      style="background-image: linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px); background-size: 80px 80px;"
+    />
+    <div class="container-page py-24 md:py-32 relative">
+      <div class="max-w-3xl">
+        <span class="text-byl-yellow text-xs font-semibold uppercase tracking-[0.18em]">
+          BYLO Transport · BYLO Group
+        </span>
+        <h1 class="font-display font-bold text-4xl md:text-6xl leading-tight mt-6">
+          ADR transport and <span class="text-byl-yellow">integrated logistics</span> for Italian businesses.
+        </h1>
+        <p class="mt-6 text-lg text-white/70 max-w-2xl leading-relaxed">
+          Reliable national cargo transport with ADR-certified drivers,
+          warehousing, and full-service logistics from a single operator
+          near Milan.
+        </p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4">
+          <a href={`mailto:${CONTACTS.hq.email}`} class="btn-primary">
+            Request a quote
+          </a>
+          <a href="/" class="btn-ghost">Versione italiana</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-byl-white py-16">
+    <div class="container-page max-w-3xl">
+      <h2 class="font-display font-bold text-2xl md:text-3xl text-byl-black">What we do</h2>
+      <ul class="mt-6 space-y-4 text-byl-black/80 leading-relaxed">
+        <li><strong>National ADR cargo transport</strong> — certified for the carriage of dangerous goods (classes 2, 3, 4, 5, 6, 8, 9).</li>
+        <li><strong>Integrated logistics</strong> — warehousing, picking, packing and last-mile distribution from our hub near Milan.</li>
+        <li><strong>Dedicated transport solutions</strong> — for businesses that need flexibility, traceability and a single point of contact.</li>
+      </ul>
+
+      <div class="mt-12 p-6 bg-byl-off rounded-2xl border border-byl-stone">
+        <h3 class="font-semibold text-byl-black">Get in touch in English</h3>
+        <p class="mt-3 text-sm text-byl-black/70">
+          A full English version of this site is rolling out. In the meantime, write to
+          <a href={`mailto:${CONTACTS.hq.email}`} class="text-byl-yellow-dark font-medium hover:underline">{CONTACTS.hq.email}</a>
+          or call
+          <a href={`tel:${CONTACTS.hq.phone.replace(/\s/g, '')}`} class="text-byl-yellow-dark font-medium hover:underline">{CONTACTS.hq.phone}</a>.
+        </p>
+        <p class="mt-2 text-sm text-byl-black/70">
+          Office hours: {CONTACTS.hq.hours}.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -10,8 +10,8 @@ export function getStaticPaths() {
 }
 
 const { car } = Astro.props;
-const title = `${car.brand} ${car.model} ${car.version ?? ''} — Tommy Racing`;
-const description = `${car.brand} ${car.model} ${car.version ?? ''}, ${car.year}, ${formatKm(car.km)}, ${formatFuel(car.fuel)}. In vendita presso Tommy Racing a ${formatPrice(car.price)}.`;
+const title = `${car.brand} ${car.model} ${car.version ?? ''} — Tommy By`;
+const description = `${car.brand} ${car.model} ${car.version ?? ''}, ${car.year}, ${formatKm(car.km)}, ${formatFuel(car.fuel)}. In vendita presso Tommy By a ${formatPrice(car.price)}.`;
 
 const specs = [
   { label: 'Anno', value: car.year },

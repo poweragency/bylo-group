@@ -2,33 +2,74 @@
 import '@/styles/global.css';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
+import { Seo, Hreflang } from '@bylo/ui/seo/index.ts';
+import { BRAND } from '@bylo/ui/index.ts';
 
 interface Props {
   title?: string;
   description?: string;
+  ogImage?: string;
+  noindex?: boolean;
 }
 
+const currentLocale = (Astro.currentLocale ?? 'it') as 'it' | 'en';
+const isEN = currentLocale === 'en';
+const ogLocale = isEN ? 'en_US' : 'it_IT';
+const htmlLang = isEN ? 'en' : 'it';
+
+const defaultTitle = isEN
+  ? 'BYLO Transport — National ADR Transport & Integrated Logistics'
+  : 'BYLO Transport — Trasporti ADR e Logistica Integrata';
+const defaultDescription = isEN
+  ? 'National ADR cargo transport and integrated logistics services. Reliability, safety and nationwide coverage for Italian companies.'
+  : 'Trasporti nazionali di merci in ADR e servizi logistici integrati. Affidabilità, sicurezza e copertura nazionale al servizio delle imprese italiane.';
+
 const {
-  title = 'BYL Logistica — Trasporti ADR e Logistica Integrata',
-  description = 'Trasporti nazionali di merci in ADR e servizi logistici integrati. Affidabilità, sicurezza e copertura nazionale al servizio delle imprese italiane.',
+  title = defaultTitle,
+  description = defaultDescription,
+  ogImage,
+  noindex,
 } = Astro.props;
+
+const siteOrigin = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const path = Astro.url.pathname;
+
+function altUrl(target: 'it' | 'en'): string {
+  if (target === 'it') {
+    const stripped = path.replace(/^\/en(\/|$)/, '/');
+    return `${siteOrigin}${stripped}`;
+  }
+  if (path.startsWith('/en/') || path === '/en') {
+    return `${siteOrigin}${path}`;
+  }
+  return `${siteOrigin}/en${path === '/' ? '' : path}`;
+}
+
+const alternates = [
+  { hreflang: 'it', href: altUrl('it') },
+  { hreflang: 'en', href: altUrl('en') },
+];
 ---
 
 <!doctype html>
-<html lang="it">
+<html lang={htmlLang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content={description} />
     <meta name="theme-color" content="#0a0a0a" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://rsms.me/" />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:locale" content="it_IT" />
-    <title>{title}</title>
+
+    <Seo
+      title={title}
+      description={description}
+      ogImage={ogImage}
+      locale={ogLocale}
+      noindex={noindex}
+      siteName={BRAND.name}
+    />
+    <Hreflang alternates={alternates} xDefault={altUrl('it')} />
   </head>
   <body class="bg-byl-white text-byl-black antialiased">
     <Header />

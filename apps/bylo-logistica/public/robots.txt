@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://transport.bylogroup.it/sitemap-index.xml

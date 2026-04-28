@@ -3,6 +3,16 @@ export const GROUP = {
   website: 'https://www.bylogroup.it',
 } as const;
 
+// TODO: verificare email/telefono ufficiali del gruppo con il cliente.
+// Per ora placeholder ragionevoli; se non esiste un'email "group" si può
+// reindirizzare info@bylogroup.it sulla casella amministrazione.
+export const CONTACTS_GROUP = {
+  email: 'info@bylogroup.it',
+  press: 'press@bylogroup.it',
+  // numero principale del gruppo: per ora rimanda all'HQ Transport
+  phone: '+39 02 7862 0860',
+} as const;
+
 // ---------- Entità legali ----------
 
 export const LEGAL_TRANSPORT = {
@@ -20,13 +30,13 @@ export const LEGAL_TOMMY = {
   pec: 'tommybysrl@legalmail.it',
 } as const;
 
-// ---------- Brand 1: Logistica ----------
+// ---------- Brand 1: BYLO Transport ----------
 
 export const BRAND = {
-  name: 'BYL Logistica',
+  name: 'BYLO Transport',
   parent: 'BYLO Group',
   legalName: LEGAL_TRANSPORT.name,
-  domain: 'logistica.bylogroup.it',
+  domain: 'transport.bylogroup.it',
   vat: LEGAL_TRANSPORT.vat,
 } as const;
 
@@ -42,10 +52,10 @@ export const CONTACTS = {
   },
 } as const;
 
-// ---------- Brand 2: Tommy Racing (era "Bylo Racing") ----------
+// ---------- Brand 2: Tommy By ----------
 
 export const BRAND_RACING = {
-  name: 'Tommy Racing',
+  name: 'Tommy By',
   parent: 'BYLO Group',
   legalName: LEGAL_TOMMY.name,
   domain: 'tommy.bylogroup.it',

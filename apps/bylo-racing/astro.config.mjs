@@ -2,9 +2,28 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
+const SITE = process.env.BYLO_RACING_SITE_URL ?? 'https://tommy.bylogroup.it';
+
 export default defineConfig({
-  site: 'https://tommy.bylogroup.it',
-  integrations: [sitemap()],
+  site: SITE,
+  i18n: {
+    defaultLocale: 'it',
+    locales: ['it', 'en'],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
+  integrations: [
+    sitemap({
+      i18n: {
+        defaultLocale: 'it',
+        locales: {
+          it: 'it-IT',
+          en: 'en-US',
+        },
+      },
+    }),
+  ],
   vite: {
     plugins: [tailwindcss()],
     server: {

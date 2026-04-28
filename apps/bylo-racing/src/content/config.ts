@@ -76,7 +76,7 @@ const blog = defineCollection({
     title: z.string(),
     excerpt: z.string(),
     cover: z.string().optional(),
-    author: z.string().default('Tommy Racing'),
+    author: z.string().default('Tommy By'),
     tags: z.array(z.string()).default([]),
     publishedAt: z.coerce.date(),
     updatedAt: z.coerce.date().optional(),

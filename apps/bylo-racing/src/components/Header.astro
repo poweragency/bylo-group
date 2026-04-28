@@ -1,21 +1,56 @@
 ---
+const currentLocale = (Astro.currentLocale ?? 'it') as 'it' | 'en';
+const isEN = currentLocale === 'en';
+
+const t = {
+  it: {
+    officina: 'Officina',
+    carrozzeria: 'Carrozzeria',
+    auto: 'Le nostre auto',
+    sedi: 'Sedi',
+    contatti: 'Contatti',
+    cta: 'Prenota un servizio',
+    home: 'Tommy By — home',
+    menuLabel: 'Apri menu',
+    switchLabel: 'English',
+  },
+  en: {
+    officina: 'Auto repair',
+    carrozzeria: 'Body shop',
+    auto: 'Our cars',
+    sedi: 'Locations',
+    contatti: 'Contact',
+    cta: 'Book a service',
+    home: 'Tommy By — home',
+    menuLabel: 'Open menu',
+    switchLabel: 'Italiano',
+  },
+}[currentLocale];
+
+const base = isEN ? '/en' : '';
+const anchor = (id: string) => `${base}/#${id}`;
+
 const nav = [
-  { href: '/#officina', label: 'Officina' },
-  { href: '/#carrozzeria', label: 'Carrozzeria' },
-  { href: '/auto/', label: 'Le nostre auto' },
-  { href: '/#sedi', label: 'Sedi' },
-  { href: '/#contatti', label: 'Contatti' },
+  { href: anchor('officina'), label: t.officina },
+  { href: anchor('carrozzeria'), label: t.carrozzeria },
+  { href: `${base}/auto/`, label: t.auto },
+  { href: anchor('sedi'), label: t.sedi },
+  { href: anchor('contatti'), label: t.contatti },
 ];
+
+const switchHref = isEN
+  ? Astro.url.pathname.replace(/^\/en(\/|$)/, '/')
+  : `/en${Astro.url.pathname === '/' ? '' : Astro.url.pathname}`;
 ---
 
 <header
   class="sticky top-0 z-50 bg-byl-black/90 backdrop-blur-md border-b border-white/5 text-byl-white"
 >
   <div class="container-page flex items-center justify-between h-16 md:h-20">
-    <a href="/" class="flex items-center group" aria-label="Tommy Racing — home">
+    <a href={base || '/'} class="flex items-center group" aria-label={t.home}>
       <img
         src="/logo.png"
-        alt="Tommy Racing"
+        alt="Tommy By"
         width="800"
         height="316"
         class="h-10 md:h-12 w-auto"
@@ -36,13 +71,20 @@ const nav = [
     </nav>
 
     <div class="flex items-center gap-3">
-      <a href="/#contatti" class="btn-primary hidden sm:inline-flex text-sm">
-        Prenota un servizio
+      <a
+        href={switchHref}
+        class="text-xs uppercase tracking-wider font-medium text-white/60 hover:text-byl-yellow transition-colors"
+        aria-label={t.switchLabel}
+      >
+        {isEN ? 'IT' : 'EN'}
+      </a>
+      <a href={anchor('contatti')} class="btn-primary hidden sm:inline-flex text-sm">
+        {t.cta}
       </a>
       <button
         id="mobile-menu-btn"
         class="lg:hidden p-2 text-byl-white"
-        aria-label="Apri menu"
+        aria-label={t.menuLabel}
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
       </button>
@@ -61,8 +103,11 @@ const nav = [
           </a>
         ))
       }
-      <a href="/#contatti" class="btn-primary mt-3 text-sm w-full">
-        Prenota un servizio
+      <a href={switchHref} class="py-3 text-base font-medium text-white/60 hover:text-byl-yellow">
+        {t.switchLabel}
+      </a>
+      <a href={anchor('contatti')} class="btn-primary mt-3 text-sm w-full">
+        {t.cta}
       </a>
     </nav>
   </div>

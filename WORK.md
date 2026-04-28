@@ -10,7 +10,19 @@
 - **@nome** — `apps/bylo-logistica/src/components/sections/` (in lavorazione, dal 2026-04-27 15:00)
 -->
 
-_(nessuna area attiva al momento)_
+- **@claude** — refactor SEO **Fase 1 (i18n) + naming refresh**, dal 2026-04-28. Tocca:
+  - `apps/bylo-logistica/` (astro.config, layouts, components, pages, public/robots.txt)
+  - `apps/bylo-racing/` (idem)
+  - `apps/bylo-group/src/pages/` (aggiornamento label "BYL Logistica" → "BYLO Transport" nei pillar)
+  - `packages/ui/src/index.ts` (rinomina `BRAND.name`, `BRAND.domain`, `BRAND_RACING.name`)
+  - `apps/bylo-logistica/src/components/sections/ChiSiamo.astro` (body text "BYL Logistica")
+  - `apps/bylo-logistica/src/components/sections/DoveSiamo.astro` (title attr mappa)
+  - `apps/bylo-racing/src/components/sections/PercheRacing.astro` (eyebrow "Tommy Racing")
+  - `apps/bylo-racing/src/components/sections/ServiziCarrozzeria.astro` (alt foto)
+  - `apps/bylo-logistica/src/content/config.ts` + `apps/bylo-racing/src/content/config.ts` (default `author` nei blog schema)
+  - `package.json` root (script `dev:group`/`build:group`/`preview:group`)
+  - **Le altre sezioni (Hero, Servizi, Contatti, ecc.) NON sono toccate** — restano IT-only fino alla Fase 2 (content + GAIO)
+  - **AGGIUNTA 2026-04-28**: arricchimento landing `apps/bylo-group/src/pages/index.astro` + `pages/en/index.astro` con sezioni vere (Chi siamo, Numeri, Pillars ricchi, Valori, Sedi, Contatti corporate, CTA). Anticipa parte di Fase 2 solo per la holding perché lo stub originale era troppo povero per essere mostrato. + `packages/ui/src/index.ts` per `CONTACTS_GROUP`.
 
 ## Aree riservate Claude (refactor SEO in corso)
 

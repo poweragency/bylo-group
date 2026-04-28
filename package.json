@@ -12,6 +12,10 @@
     "preview:logistica": "npm run preview -w apps/bylo-logistica",
     "dev:racing": "npm run dev -w apps/bylo-racing",
     "build:racing": "npm run build -w apps/bylo-racing",
-    "preview:racing": "npm run preview -w apps/bylo-racing"
+    "preview:racing": "npm run preview -w apps/bylo-racing",
+    "dev:group": "npm run dev -w apps/bylo-group",
+    "build:group": "npm run build -w apps/bylo-group",
+    "preview:group": "npm run preview -w apps/bylo-group",
+    "build:all": "npm run build:group && npm run build:logistica && npm run build:racing"
   }
 }

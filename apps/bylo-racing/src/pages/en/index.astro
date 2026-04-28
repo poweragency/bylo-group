@@ -1,0 +1,61 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import { CONTACTS_RACING } from '@bylo/ui/index.ts';
+const { officina, carrozzeria } = CONTACTS_RACING;
+---
+
+<Layout>
+  <section class="bg-byl-black text-byl-white relative overflow-hidden">
+    <div class="container-page py-24 md:py-32 relative">
+      <div class="max-w-3xl">
+        <span class="text-byl-yellow text-xs font-semibold uppercase tracking-[0.18em]">
+          Tommy By · BYLO Group
+        </span>
+        <h1 class="font-display font-bold text-4xl md:text-6xl leading-tight mt-6">
+          Multi-brand <span class="text-byl-yellow">auto repair</span>, body shop and used car sales near Milan.
+        </h1>
+        <p class="mt-6 text-lg text-white/70 max-w-2xl leading-relaxed">
+          Authorized workshop for all car brands, body shop with water-based oven painting, and a curated catalog of used cars — verified, documented, and ready to drive.
+        </p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4">
+          <a href="#contact" class="btn-primary">Book a service</a>
+          <a href="/" class="btn-ghost">Versione italiana</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-byl-white py-16">
+    <div class="container-page max-w-3xl">
+      <h2 class="font-display font-bold text-2xl md:text-3xl text-byl-black">What we do</h2>
+      <ul class="mt-6 space-y-4 text-byl-black/80 leading-relaxed">
+        <li><strong>Multi-brand authorized auto repair</strong> — scheduled maintenance, diagnostics, brakes, suspensions, electronics. All makes, all models.</li>
+        <li><strong>Body shop & paint</strong> — collision repair, dent removal, water-based oven painting at our dedicated facility in Rho.</li>
+        <li><strong>Selected used car sales</strong> — every car is inspected and documented before sale. Test drives available by appointment.</li>
+      </ul>
+
+      <div id="contact" class="mt-12 grid md:grid-cols-2 gap-6">
+        <div class="p-6 bg-byl-off rounded-2xl border border-byl-stone">
+          <h3 class="font-semibold text-byl-black">Auto repair shop</h3>
+          <p class="mt-3 text-sm text-byl-black/70">
+            {officina.address}<br />
+            <a href={`tel:${officina.phone.replace(/\s/g, '')}`} class="text-byl-yellow-dark font-medium hover:underline">{officina.phone}</a><br />
+            <a href={`mailto:${officina.email}`} class="text-byl-yellow-dark font-medium hover:underline">{officina.email}</a>
+          </p>
+        </div>
+        <div class="p-6 bg-byl-off rounded-2xl border border-byl-stone">
+          <h3 class="font-semibold text-byl-black">Body shop</h3>
+          <p class="mt-3 text-sm text-byl-black/70">
+            {carrozzeria.address}<br />
+            <a href={`tel:${carrozzeria.phone.replace(/\s/g, '')}`} class="text-byl-yellow-dark font-medium hover:underline">{carrozzeria.phone}</a><br />
+            <a href={`mailto:${carrozzeria.email}`} class="text-byl-yellow-dark font-medium hover:underline">{carrozzeria.email}</a>
+          </p>
+        </div>
+      </div>
+
+      <p class="mt-8 text-sm text-byl-mute">
+        A full English version of this site is rolling out. For the catalog of cars currently for sale, see <a href="/auto/" class="text-byl-yellow-dark font-medium hover:underline">our Italian listing</a>.
+      </p>
+    </div>
+  </section>
+</Layout>

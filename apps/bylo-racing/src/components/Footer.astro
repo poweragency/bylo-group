@@ -2,6 +2,30 @@
 import { BRAND_RACING, CONTACTS_RACING, GROUP } from '@bylo/ui/index.ts';
 const year = new Date().getFullYear();
 const { officina, carrozzeria } = CONTACTS_RACING;
+
+const currentLocale = (Astro.currentLocale ?? 'it') as 'it' | 'en';
+const isEN = currentLocale === 'en';
+const base = isEN ? '/en' : '';
+
+const t = isEN
+  ? {
+      tagline:
+        'Authorized auto repair shop, body shop with water-based oven painting, and selected used car sales. Tommy By is part of',
+      taglineSuffix:
+        ', the Italian network dedicated to transport, logistics and automotive.',
+      vat: 'VAT',
+      privacy: 'Privacy',
+      cookie: 'Cookie',
+    }
+  : {
+      tagline:
+        'Officina autorizzata, carrozzeria con verniciatura a forno ad acqua e vendita auto selezionate. Tommy By fa parte di',
+      taglineSuffix:
+        ', rete italiana dedicata a trasporti, logistica e automotive.',
+      vat: 'P.IVA',
+      privacy: 'Privacy',
+      cookie: 'Cookie',
+    };
 ---
 
 <footer class="bg-byl-black text-byl-white">
@@ -10,15 +34,13 @@ const { officina, carrozzeria } = CONTACTS_RACING;
       <div class="md:col-span-5">
         <img
           src="/logo.png"
-          alt="Tommy Racing — BYLO Group"
+          alt="Tommy By — BYLO Group"
           width="800"
           height="316"
           class="h-14 w-auto"
         />
         <p class="mt-6 text-white/60 max-w-md leading-relaxed">
-          Officina autorizzata, carrozzeria con verniciatura a forno ad acqua
-          e vendita auto selezionate. Tommy Racing fa parte di {GROUP.name},
-          rete italiana dedicata a trasporti, logistica e automotive.
+          {t.tagline} {GROUP.name}{t.taglineSuffix}
         </p>
       </div>
 
@@ -46,11 +68,11 @@ const { officina, carrozzeria } = CONTACTS_RACING;
     </div>
 
     <div class="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm text-white/50">
-      <p>© {year} {BRAND_RACING.legalName} — P.IVA {BRAND_RACING.vat}</p>
+      <p>© {year} {BRAND_RACING.legalName} — {t.vat} {BRAND_RACING.vat}</p>
       <div class="flex gap-6">
         <a href={GROUP.website} class="hover:text-byl-yellow transition-colors">{GROUP.name}</a>
-        <a href="/privacy" class="hover:text-byl-yellow transition-colors">Privacy</a>
-        <a href="/cookie" class="hover:text-byl-yellow transition-colors">Cookie</a>
+        <a href={`${base}/privacy`} class="hover:text-byl-yellow transition-colors">{t.privacy}</a>
+        <a href={`${base}/cookie`} class="hover:text-byl-yellow transition-colors">{t.cookie}</a>
       </div>
     </div>
   </div>
