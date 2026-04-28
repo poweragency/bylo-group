@@ -2,26 +2,94 @@
 import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
-import { InternalLinkBlock } from '@bylo/ui/seo/index.ts';
+import {
+  GROUP,
+  LEGAL_TRANSPORT,
+  LEGAL_TOMMY,
+  CONTACTS,
+  CONTACTS_RACING,
+  CONTACTS_GROUP,
+} from '@bylo/ui/index.ts';
 
 const title = 'BYLO Group — Trasporti, logistica e automotive';
 const description =
-  'BYLO Group è la holding che riunisce BYL Logistica (trasporti ADR e logistica integrata) e Tommy By (officina e carrozzeria). Servizi per imprese italiane.';
+  'BYLO Group è la holding che riunisce BYLO Transport (trasporti ADR e logistica integrata) e Tommy By (officina e carrozzeria). Servizi per imprese italiane.';
+
+// TODO verificare con cliente i numeri reali del gruppo (anni, dipendenti, mezzi).
+const numbers = [
+  { value: '25+', label: 'Anni di esperienza' },
+  { value: '3', label: 'Sedi operative' },
+  { value: '30+', label: 'Mezzi della flotta' },
+  { value: 'Tutte', label: 'Le marche servite' },
+];
+
+const values = [
+  {
+    title: 'Sicurezza & qualità',
+    body:
+      'Trasporti ADR certificati, officina autorizzata, carrozzeria con verniciatura a forno. Standard alti, controlli su ogni passaggio.',
+  },
+  {
+    title: 'Italianità & territorio',
+    body:
+      'Imprese a conduzione familiare radicate in Lombardia, al servizio di clienti italiani che parlano la nostra stessa lingua.',
+  },
+  {
+    title: 'Multimarca & competenza',
+    body:
+      'Officina autorizzata su tutte le marche, trasporti per ogni settore. Una sola squadra, mille combinazioni di problemi risolti.',
+  },
+  {
+    title: 'Trasparenza & affidabilità',
+    body:
+      'Preventivi chiari, tempi rispettati, comunicazione diretta. Lavoriamo con imprese che vogliono un interlocutore unico, non un call center.',
+  },
+];
 
 const pillars = [
   {
-    href: 'https://logistica.bylogroup.it',
-    label: 'BYL Logistica — Trasporti ADR e logistica integrata',
-    description:
-      'Trasporti nazionali di merci pericolose, logistica integrata e magazzinaggio. Sede operativa in provincia di Milano.',
-    external: true,
+    href: 'https://transport.bylogroup.it',
+    eyebrow: 'BYLO TRANSPORT S.R.L.',
+    title: 'BYLO Transport',
+    tagline: 'Trasporti ADR e logistica integrata',
+    bullets: [
+      'Trasporti nazionali di merci pericolose (classi 2, 3, 4, 5, 6, 8, 9)',
+      'Logistica integrata, magazzinaggio e distribuzione',
+      'Sede operativa e magazzino a Ospiate di Bollate (MI)',
+      'Iscrizione Albo Autotrasportatori MI/8906297N',
+    ],
+    cta: 'Scopri BYLO Transport',
   },
   {
     href: 'https://tommy.bylogroup.it',
-    label: 'Tommy By — Officina e carrozzeria multimarca',
-    description:
-      'Officina autorizzata, carrozzeria, verniciatura e revisioni a Rho (MI). Tutte le marche, tutti gli interventi.',
-    external: true,
+    eyebrow: 'TOMMY BY S.R.L.',
+    title: 'Tommy By',
+    tagline: 'Officina e carrozzeria multimarca',
+    bullets: [
+      'Officina autorizzata su tutte le marche',
+      'Carrozzeria con verniciatura a forno ad acqua',
+      'Vendita auto selezionate, controllate e documentate',
+      'Due sedi a Rho (MI): officina e carrozzeria dedicate',
+    ],
+    cta: 'Scopri Tommy By',
+  },
+];
+
+const locations = [
+  {
+    label: 'BYLO Transport — Sede operativa',
+    address: CONTACTS.hq.address,
+    phone: CONTACTS.hq.phone,
+  },
+  {
+    label: 'Tommy By — Officina',
+    address: CONTACTS_RACING.officina.address,
+    phone: CONTACTS_RACING.officina.phone,
+  },
+  {
+    label: 'Tommy By — Carrozzeria',
+    address: CONTACTS_RACING.carrozzeria.address,
+    phone: CONTACTS_RACING.carrozzeria.phone,
   },
 ];
 ---
@@ -29,6 +97,7 @@ const pillars = [
 <Layout title={title} description={description}>
   <Header />
   <main>
+    <!-- HERO -->
     <section class="section-pad bg-byl-black text-byl-white relative overflow-hidden">
       <div
         class="absolute inset-0 opacity-[0.04] pointer-events-none"
@@ -42,21 +111,266 @@ const pillars = [
             <span class="text-byl-yellow">in un unico gruppo.</span>
           </h1>
           <p class="lede mt-6 text-white/70">
-            BYLO Group riunisce due aziende complementari: BYL Logistica per
+            BYLO Group riunisce due aziende complementari: BYLO Transport per
             trasporti ADR e logistica integrata, Tommy By per officina e
             carrozzeria multimarca. Insieme copriamo tutto il ciclo di vita
             del mezzo, dalla produzione al servizio post-vendita.
+          </p>
+          <div class="mt-10 flex flex-col sm:flex-row gap-4">
+            <a href="#aziende" class="btn-primary">
+              Scopri le aziende del gruppo
+            </a>
+            <a href="#contatti" class="btn-ghost">
+              Contatti corporate
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHI SIAMO -->
+    <section class="section-pad bg-byl-white">
+      <div class="container-page">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+          <div class="lg:col-span-5">
+            <span class="eyebrow text-byl-yellow-dark">Chi siamo</span>
+            <h2 class="h-section mt-4">
+              Due specializzazioni, <span class="text-byl-yellow-dark">una sola visione.</span>
+            </h2>
+          </div>
+          <div class="lg:col-span-7 space-y-5 text-byl-black/80 leading-relaxed">
+            <p>
+              {GROUP.name} è il nome della holding che riunisce due imprese
+              italiane di lunga storia: BYLO Transport, attiva nei trasporti
+              di merci pericolose e nella logistica integrata, e Tommy By,
+              officina e carrozzeria multimarca con sede a Rho (MI).
+            </p>
+            <p>
+              Le due aziende lavorano in modo indipendente ma si supportano
+              quando il cliente ha bisogno di soluzioni che attraversino i
+              due mondi: dalla manutenzione di una flotta aziendale alla
+              gestione di un singolo veicolo.
+            </p>
+            <p>
+              Siamo realtà a conduzione familiare. Niente call center, niente
+              filiere lunghe: chi risponde al telefono è chi risolve il
+              problema.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUMERI -->
+    <section class="bg-byl-off py-16 md:py-20 border-y border-byl-stone">
+      <div class="container-page">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+          {numbers.map((n) => (
+            <div class="text-center md:text-left">
+              <div class="font-display font-bold text-4xl md:text-5xl text-byl-black">
+                {n.value}
+              </div>
+              <div class="mt-2 text-sm text-byl-mute uppercase tracking-wider">
+                {n.label}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- AZIENDE DEL GRUPPO (PILLARS RICCHI) -->
+    <section id="aziende" class="section-pad bg-byl-white">
+      <div class="container-page">
+        <div class="max-w-3xl">
+          <span class="eyebrow text-byl-yellow-dark">Le aziende del gruppo</span>
+          <h2 class="h-section mt-4">
+            Due imprese, un <span class="text-byl-yellow-dark">unico standard</span>.
+          </h2>
+          <p class="lede mt-6 text-byl-mute">
+            Ogni azienda del gruppo ha la sua specializzazione e il suo sito dedicato. Scopri quella che ti serve.
+          </p>
+        </div>
+
+        <div class="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {pillars.map((p) => (
+            <a
+              href={p.href}
+              class="group block p-8 md:p-10 rounded-2xl border border-byl-stone bg-byl-white hover:border-byl-black hover:shadow-[var(--shadow-hover)] transition-all"
+            >
+              <span class="text-xs font-semibold uppercase tracking-[0.18em] text-byl-mute">
+                {p.eyebrow}
+              </span>
+              <h3 class="font-display font-bold text-3xl md:text-4xl mt-3 text-byl-black">
+                {p.title}
+              </h3>
+              <p class="mt-2 text-byl-yellow-dark font-medium">{p.tagline}</p>
+
+              <ul class="mt-6 space-y-3">
+                {p.bullets.map((b) => (
+                  <li class="flex gap-3 text-sm text-byl-black/80 leading-relaxed">
+                    <span class="flex-shrink-0 w-1.5 h-1.5 mt-2 rounded-full bg-byl-yellow-dark"></span>
+                    <span>{b}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div class="mt-8 inline-flex items-center gap-2 text-byl-black font-semibold group-hover:text-byl-yellow-dark transition-colors">
+                {p.cta}
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-1 transition-transform">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- VALORI -->
+    <section class="section-pad bg-byl-black text-byl-white">
+      <div class="container-page">
+        <div class="max-w-3xl">
+          <span class="eyebrow text-byl-yellow">Valori del gruppo</span>
+          <h2 class="h-section mt-4 text-byl-white">
+            Quattro pilastri, <span class="text-byl-yellow">un solo modo di lavorare</span>.
+          </h2>
+        </div>
+
+        <div class="mt-14 grid grid-cols-1 md:grid-cols-2 gap-6">
+          {values.map((v, i) => (
+            <div class="p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/[0.07] transition-colors">
+              <div class="flex items-start gap-5">
+                <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-byl-yellow flex items-center justify-center font-display font-bold text-byl-black text-lg">
+                  {String(i + 1).padStart(2, '0')}
+                </div>
+                <div>
+                  <h3 class="font-display font-bold text-xl text-byl-white">{v.title}</h3>
+                  <p class="mt-2 text-white/70 leading-relaxed text-sm">{v.body}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- SEDI -->
+    <section class="section-pad bg-byl-off">
+      <div class="container-page">
+        <div class="max-w-3xl">
+          <span class="eyebrow text-byl-yellow-dark">Dove siamo</span>
+          <h2 class="h-section mt-4">
+            Tre sedi operative <span class="text-byl-yellow-dark">in Lombardia</span>.
+          </h2>
+        </div>
+
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+          {locations.map((loc) => (
+            <div class="p-6 rounded-2xl bg-white border border-byl-stone">
+              <h3 class="font-display font-bold text-base text-byl-black">
+                {loc.label}
+              </h3>
+              <p class="mt-3 text-sm text-byl-mute leading-relaxed">
+                {loc.address}
+              </p>
+              <a
+                href={`tel:${loc.phone.replace(/\s/g, '')}`}
+                class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-byl-black hover:text-byl-yellow-dark transition-colors"
+              >
+                {loc.phone}
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATTI CORPORATE -->
+    <section id="contatti" class="section-pad bg-byl-white">
+      <div class="container-page">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+          <div class="lg:col-span-5">
+            <span class="eyebrow text-byl-yellow-dark">Contatti corporate</span>
+            <h2 class="h-section mt-4">
+              Parla con il <span class="text-byl-yellow-dark">gruppo</span>, non con un call center.
+            </h2>
+            <p class="lede mt-6 text-byl-mute">
+              Per richieste corporate, fornitori, partnership o stampa scrivi al gruppo. Per servizi specifici (trasporti o officina) vai al sito dedicato.
+            </p>
+          </div>
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <a
+              href={`mailto:${CONTACTS_GROUP.email}`}
+              class="p-6 rounded-2xl border border-byl-stone bg-byl-off hover:border-byl-black transition-colors"
+            >
+              <span class="text-xs uppercase tracking-wider font-semibold text-byl-mute">
+                Email gruppo
+              </span>
+              <p class="mt-2 font-display font-bold text-byl-black break-all">
+                {CONTACTS_GROUP.email}
+              </p>
+            </a>
+            <a
+              href={`mailto:${CONTACTS_GROUP.press}`}
+              class="p-6 rounded-2xl border border-byl-stone bg-byl-off hover:border-byl-black transition-colors"
+            >
+              <span class="text-xs uppercase tracking-wider font-semibold text-byl-mute">
+                Stampa
+              </span>
+              <p class="mt-2 font-display font-bold text-byl-black break-all">
+                {CONTACTS_GROUP.press}
+              </p>
+            </a>
+            <a
+              href={`tel:${CONTACTS_GROUP.phone.replace(/\s/g, '')}`}
+              class="sm:col-span-2 p-6 rounded-2xl border border-byl-stone bg-byl-off hover:border-byl-black transition-colors"
+            >
+              <span class="text-xs uppercase tracking-wider font-semibold text-byl-mute">
+                Telefono
+              </span>
+              <p class="mt-2 font-display font-bold text-byl-black">
+                {CONTACTS_GROUP.phone}
+              </p>
+              <p class="mt-1 text-sm text-byl-mute">
+                Centralino BYLO Transport — risponde al gruppo
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-16 p-8 rounded-2xl bg-byl-black text-white text-center">
+          <p class="text-white/80">
+            <strong class="text-byl-yellow">{LEGAL_TRANSPORT.name}</strong>
+            · P.IVA {LEGAL_TRANSPORT.vat}
+            <span class="mx-3 text-white/30">·</span>
+            <strong class="text-byl-yellow">{LEGAL_TOMMY.name}</strong>
+            · P.IVA {LEGAL_TOMMY.vat}
           </p>
         </div>
       </div>
     </section>
 
-    <InternalLinkBlock
-      eyebrow="Le aziende del gruppo"
-      title="Due specializzazioni, una sola visione."
-      links={pillars}
-      columns={2}
-    />
+    <!-- CTA FINALE -->
+    <section class="section-pad bg-byl-yellow">
+      <div class="container-page text-center">
+        <h2 class="h-section text-byl-black">
+          Pronto a lavorare con il gruppo BYLO?
+        </h2>
+        <p class="lede mt-4 text-byl-black/70 max-w-2xl mx-auto">
+          Scegli l'azienda giusta per il tuo bisogno: trasporti e logistica con BYLO Transport, officina e carrozzeria con Tommy By.
+        </p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://transport.bylogroup.it" class="btn-primary bg-byl-black text-byl-yellow shadow-[0_4px_0_0_rgba(0,0,0,0.4)] hover:bg-byl-graphite">
+            Vai a BYLO Transport
+          </a>
+          <a href="https://tommy.bylogroup.it" class="btn-outline">
+            Vai a Tommy By
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
   <Footer />
 </Layout>
