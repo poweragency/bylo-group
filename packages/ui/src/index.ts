@@ -1,15 +1,17 @@
 export const GROUP = {
   name: 'BYLO Group',
   website: 'https://www.bylogroup.it',
+  vat: '12651890969',
+  payoff: 'Professionale, veloce e affidabile',
 } as const;
 
-// TODO: verificare email/telefono ufficiali del gruppo con il cliente.
-// Per ora placeholder ragionevoli; se non esiste un'email "group" si può
-// reindirizzare info@bylogroup.it sulla casella amministrazione.
+// PLACEHOLDER: utente non ha confermato l'esistenza di info@/press@bylogroup.it.
+// Da verificare con il cliente. Nel frattempo le UI dovrebbero usare gli indirizzi
+// ufficiali (operativo.t@, officina@, carrozzeria@) finché non c'è una casella
+// "info" reale. Il telefono group è il centralino Transport.
 export const CONTACTS_GROUP = {
-  email: 'info@bylogroup.it',
-  press: 'press@bylogroup.it',
-  // numero principale del gruppo: per ora rimanda all'HQ Transport
+  emailPlaceholder: 'info@bylogroup.it',
+  pressPlaceholder: 'press@bylogroup.it',
   phone: '+39 02 7862 0860',
 } as const;
 
@@ -20,6 +22,8 @@ export const LEGAL_TRANSPORT = {
   vat: '13044730961',
   pec: 'bylotransportsrl@legalmail.it',
   ccia: 'Milano Monza Brianza MI-2701343',
+  // Albo Autotrasportatori MI/8906297N era nella memoria precedente ma NON
+  // dichiarato sul sito ufficiale: trattare come [DA VERIFICARE].
   albo: 'Albo Autotrasportatori MI/8906297N',
   capital: '€ 50.000,00 i.v.',
 } as const;
@@ -46,7 +50,11 @@ export const CONTACTS = {
     address: 'Via Ghisalba 7, 20021 Ospiate di Bollate (MI)',
     phone: '+39 02 7862 0860',
     phoneAlt: '+39 02 7862 0861',
-    email: 'amministrazione.t@bylogroup.it',
+    phoneAlt2: '+39 02 7862 0862',
+    // operativo.t@ è quello dichiarato sul sito ufficiale; amministrazione.t@
+    // è probabilmente la casella admin (memoria, da verificare se attiva).
+    email: 'operativo.t@bylogroup.it',
+    emailAdmin: 'amministrazione.t@bylogroup.it',
     pec: LEGAL_TRANSPORT.pec,
     hours: 'Lun–Ven 9:00–12:00 / 14:00–18:00',
   },
@@ -65,19 +73,21 @@ export const BRAND_RACING = {
 export const CONTACTS_RACING = {
   officina: {
     key: 'officina',
-    label: 'Sede legale & Officina',
-    address: 'Via Eugenio Curiel 53, 20017 Rho (MI)',
-    city: 'Rho',
+    label: 'Officina',
+    // Indirizzo aggiornato 2026-04-28 dal sito ufficiale: Brunetti 14 Milano,
+    // NON Via Curiel 53 Rho come riportava la vecchia memoria.
+    address: 'Via A. Brunetti 14, 20156 Milano',
+    city: 'Milano',
     phone: '+39 02 334 90 890',
     mobile: '+39 347 38 61 577',
-    email: 'tommy.by@bylogroup.it',
+    email: 'officina@bylogroup.it',
     hours: 'Lun–Ven 8:30–12:30 / 14:00–18:00',
   },
   carrozzeria: {
     key: 'carrozzeria',
     label: 'Carrozzeria & Verniciatura',
-    address: 'Via Venanzio Buzzi 9, 20017 Rho (MI)',
-    city: 'Rho',
+    address: 'Via Venanzio Buzzi 9, 20017 Mazzo di Rho (MI)',
+    city: 'Mazzo di Rho',
     phone: '+39 331 80 49 728',
     mobile: null,
     email: 'carrozzeria@bylogroup.it',

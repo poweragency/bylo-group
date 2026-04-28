@@ -1,0 +1,64 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+import { Faq, Breadcrumb, InternalLinkBlock } from '@bylo/ui/seo/index.ts';
+
+export async function getStaticPaths() {
+  const zones = await getCollection('zones', ({ data }) => data.locale === 'it');
+  return zones.map((zone) => ({
+    params: { slug: zone.slug.split('/').pop() },
+    props: { zone },
+  }));
+}
+
+const { zone } = Astro.props;
+const { Content } = await zone.render();
+
+const crumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Zone servite', href: '/zone/' },
+  { label: zone.data.name, href: `/zone/${zone.slug.split('/').pop()}/` },
+];
+
+const allServices = await getCollection('services', ({ data }) => data.locale === 'it');
+const related = allServices.map((s) => ({
+  href: `/servizi/${s.slug}/`,
+  label: s.data.title,
+  description: s.data.intro.length > 140 ? s.data.intro.slice(0, 140) + '…' : s.data.intro,
+}));
+---
+
+<Layout
+  title={zone.data.seo.title}
+  description={zone.data.seo.description}
+  noindex={zone.data.seo.noindex}
+>
+  <Breadcrumb items={crumbs} />
+
+  <section class="section-pad bg-byl-white">
+    <div class="container-page max-w-4xl">
+      <span class="eyebrow text-byl-yellow-dark">Zona servita ({zone.data.province})</span>
+      <h1 class="h-display mt-4">Officina e carrozzeria a {zone.data.name}</h1>
+      <p class="lede mt-6 text-byl-black/80">{zone.data.intro}</p>
+
+      <article class="mt-12 max-w-none text-byl-black/80 leading-relaxed [&_h2]:font-display [&_h2]:font-bold [&_h2]:text-2xl [&_h2]:text-byl-black [&_h2]:mt-12 [&_h2]:mb-4 [&_p]:mb-4 [&_ul]:my-4 [&_ul]:space-y-2 [&_ul]:pl-6 [&_ul]:list-disc [&_strong]:text-byl-black [&_strong]:font-semibold">
+        <Content />
+      </article>
+    </div>
+  </section>
+
+  {zone.data.faq.length > 0 && (
+    <Faq
+      items={zone.data.faq}
+      eyebrow="FAQ"
+      title={`Domande frequenti per i clienti di ${zone.data.name}`}
+    />
+  )}
+
+  <InternalLinkBlock
+    title="I nostri servizi"
+    eyebrow="Cosa puoi richiedere"
+    links={related}
+    columns={3}
+  />
+</Layout>

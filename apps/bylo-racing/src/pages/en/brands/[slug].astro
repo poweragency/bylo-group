@@ -1,0 +1,68 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+import { Faq, Breadcrumb, InternalLinkBlock } from '@bylo/ui/seo/index.ts';
+
+export async function getStaticPaths() {
+  const brands = await getCollection('brands', ({ data }) => data.locale === 'en');
+  return brands.map((brand) => ({
+    params: { slug: brand.slug.split('/').pop() },
+    props: { brand },
+  }));
+}
+
+const { brand } = Astro.props;
+const { Content } = await brand.render();
+
+const crumbs = [
+  { label: 'Home', href: '/en/' },
+  { label: 'Brands', href: '/en/brands/' },
+  { label: brand.data.name, href: `/en/brands/${brand.slug.split('/').pop()}/` },
+];
+
+const allServices = await getCollection('services', ({ data }) => data.locale === 'en');
+const related = allServices
+  .filter((s) => brand.data.services.includes(s.slug))
+  .map((s) => ({
+    href: `/en/services/${s.slug}/`,
+    label: s.data.title,
+    description: s.data.intro.length > 140 ? s.data.intro.slice(0, 140) + '…' : s.data.intro,
+  }));
+---
+
+<Layout
+  title={brand.data.seo.title}
+  description={brand.data.seo.description}
+  noindex={brand.data.seo.noindex}
+>
+  <Breadcrumb items={crumbs} />
+
+  <section class="section-pad bg-byl-white">
+    <div class="container-page max-w-4xl">
+      <span class="eyebrow text-byl-yellow-dark">Brand serviced</span>
+      <h1 class="h-display mt-4">{brand.data.name} workshop and body shop</h1>
+      <p class="lede mt-6 text-byl-black/80">{brand.data.intro}</p>
+
+      <article class="mt-12 max-w-none text-byl-black/80 leading-relaxed [&_h2]:font-display [&_h2]:font-bold [&_h2]:text-2xl [&_h2]:text-byl-black [&_h2]:mt-12 [&_h2]:mb-4 [&_p]:mb-4 [&_ul]:my-4 [&_ul]:space-y-2 [&_ul]:pl-6 [&_ul]:list-disc [&_strong]:text-byl-black [&_strong]:font-semibold">
+        <Content />
+      </article>
+    </div>
+  </section>
+
+  {brand.data.faq.length > 0 && (
+    <Faq
+      items={brand.data.faq}
+      eyebrow="FAQ"
+      title={`Frequently asked questions about ${brand.data.name}`}
+    />
+  )}
+
+  {related.length > 0 && (
+    <InternalLinkBlock
+      title={`Services we do on ${brand.data.name}`}
+      eyebrow="Related services"
+      links={related}
+      columns={2}
+    />
+  )}
+</Layout>

@@ -1,0 +1,70 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+import { Breadcrumb } from '@bylo/ui/seo/index.ts';
+
+const services = await getCollection('services', ({ data }) => data.locale === 'it');
+services.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const crumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Servizi', href: '/servizi/' },
+];
+---
+
+<Layout
+  title="Servizi — BYLO Transport"
+  description="Servizi di trasporto e logistica di BYLO Transport: trasporti ADR su tutto il territorio nazionale, logistica integrata e magazzinaggio in provincia di Milano."
+>
+  <Breadcrumb items={crumbs} />
+
+  <section class="section-pad bg-byl-black text-byl-white relative overflow-hidden">
+    <div
+      class="absolute inset-0 opacity-[0.04] pointer-events-none"
+      style="background-image: linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px); background-size: 80px 80px;"
+    />
+    <div class="container-page relative">
+      <div class="max-w-3xl">
+        <span class="eyebrow text-byl-yellow">Servizi</span>
+        <h1 class="h-display mt-4">
+          Trasporti e <span class="text-byl-yellow">logistica</span> dal Nord Italia.
+        </h1>
+        <p class="lede mt-6 text-white/70">
+          Tre specializzazioni complementari che coprono l'intero ciclo del tuo prodotto: dal viaggio al deposito, fino alla distribuzione.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad bg-byl-white">
+    <div class="container-page">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {services.map((s) => (
+          <a
+            href={`/servizi/${s.slug}/`}
+            class="group block p-7 rounded-2xl border border-byl-stone bg-byl-white hover:border-byl-black hover:shadow-[var(--shadow-hover)] transition-all"
+          >
+            {s.data.eyebrow && (
+              <span class="text-xs font-semibold uppercase tracking-[0.18em] text-byl-mute">
+                {s.data.eyebrow}
+              </span>
+            )}
+            <h2 class="font-display font-bold text-xl md:text-2xl mt-3 text-byl-black">
+              {s.data.title}
+            </h2>
+            <p class="mt-3 text-sm text-byl-mute leading-relaxed line-clamp-4">
+              {s.data.intro}
+            </p>
+            <div class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-byl-black group-hover:text-byl-yellow-dark transition-colors">
+              Scopri di più
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-0.5 transition-transform">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,62 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+import { Breadcrumb } from '@bylo/ui/seo/index.ts';
+
+const services = await getCollection('services', ({ data }) => data.locale === 'en');
+services.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const crumbs = [
+  { label: 'Home', href: '/en/' },
+  { label: 'Services', href: '/en/services/' },
+];
+---
+
+<Layout
+  title="Services — Tommy By"
+  description="Tommy By's services: multi-brand workshop, body shop with water-based oven painting, mandatory inspections up to 3.5 tons. On cars and motorcycles, any model."
+>
+  <Breadcrumb items={crumbs} />
+
+  <section class="section-pad bg-byl-black text-byl-white">
+    <div class="container-page">
+      <span class="eyebrow text-byl-yellow">Services</span>
+      <h1 class="h-display mt-4">
+        Everything <span class="text-byl-yellow">Tommy By</span> does.
+      </h1>
+      <p class="lede mt-6 text-white/70 max-w-2xl">
+        Workshop, body shop and mandatory inspections. On cars and motorcycles, any brand.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-pad bg-byl-white">
+    <div class="container-page">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {services.map((s) => (
+          <a
+            href={`/en/services/${s.slug}/`}
+            class="group block p-7 rounded-2xl border border-byl-stone bg-byl-white hover:border-byl-black hover:shadow-[var(--shadow-hover)] transition-all"
+          >
+            <span class="text-xs font-semibold uppercase tracking-[0.18em] text-byl-mute">
+              {s.data.category}
+            </span>
+            <h2 class="font-display font-bold text-xl md:text-2xl mt-3 text-byl-black">
+              {s.data.title}
+            </h2>
+            <p class="mt-3 text-sm text-byl-mute leading-relaxed line-clamp-4">
+              {s.data.intro}
+            </p>
+            <div class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-byl-black group-hover:text-byl-yellow-dark transition-colors">
+              Read more
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-0.5 transition-transform">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

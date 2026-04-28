@@ -1,0 +1,65 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+import { Breadcrumb } from '@bylo/ui/seo/index.ts';
+
+const sectors = await getCollection('sectors', ({ data }) => data.locale === 'en');
+sectors.sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+const crumbs = [
+  { label: 'Home', href: '/en/' },
+  { label: 'Sectors', href: '/en/sectors/' },
+];
+---
+
+<Layout
+  title="Sectors served — BYLO Transport"
+  description="Industrial sectors served by BYLO Transport for ADR transport and logistics: chemicals, pharmaceutical and other industries handling dangerous goods."
+>
+  <Breadcrumb items={crumbs} />
+
+  <section class="section-pad bg-byl-black text-byl-white relative overflow-hidden">
+    <div
+      class="absolute inset-0 opacity-[0.04] pointer-events-none"
+      style="background-image: linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px); background-size: 80px 80px;"
+    />
+    <div class="container-page relative">
+      <div class="max-w-3xl">
+        <span class="eyebrow text-byl-yellow">Sectors served</span>
+        <h1 class="h-display mt-4">
+          The <span class="text-byl-yellow">sectors</span> we move goods for.
+        </h1>
+        <p class="lede mt-6 text-white/70">
+          ADR transport and integrated logistics for industries handling dangerous or sensitive goods.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad bg-byl-white">
+    <div class="container-page">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {sectors.map((s) => (
+          <a
+            href={`/en/sectors/${s.slug}/`}
+            class="group block p-7 rounded-2xl border border-byl-stone bg-byl-white hover:border-byl-black hover:shadow-[var(--shadow-hover)] transition-all"
+          >
+            <h2 class="font-display font-bold text-xl md:text-2xl text-byl-black">
+              {s.data.title}
+            </h2>
+            <p class="mt-3 text-sm text-byl-mute leading-relaxed line-clamp-4">
+              {s.data.intro}
+            </p>
+            <div class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-byl-black group-hover:text-byl-yellow-dark transition-colors">
+              Read more
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-0.5 transition-transform">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

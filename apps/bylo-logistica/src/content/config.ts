@@ -1,5 +1,4 @@
 import { defineCollection, z } from 'astro:content';
-import { glob } from 'astro/loaders';
 
 const localeSchema = z.enum(['it', 'en']);
 
@@ -16,10 +15,9 @@ const faqItem = z.object({
 });
 
 const services = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/services' }),
+  type: 'content',
   schema: z.object({
     locale: localeSchema,
-    slug: z.string(),
     seo: seoSchema,
     eyebrow: z.string().optional(),
     title: z.string(),
@@ -35,10 +33,9 @@ const services = defineCollection({
 });
 
 const sectors = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/sectors' }),
+  type: 'content',
   schema: z.object({
     locale: localeSchema,
-    slug: z.string(),
     seo: seoSchema,
     title: z.string(),
     intro: z.string(),
@@ -49,10 +46,9 @@ const sectors = defineCollection({
 });
 
 const routes = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/routes' }),
+  type: 'content',
   schema: z.object({
     locale: localeSchema,
-    slug: z.string(),
     seo: seoSchema,
     origin: z.string(),
     destination: z.string(),
@@ -66,10 +62,9 @@ const routes = defineCollection({
 });
 
 const blog = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/blog' }),
+  type: 'content',
   schema: z.object({
     locale: localeSchema,
-    slug: z.string(),
     seo: seoSchema,
     title: z.string(),
     excerpt: z.string(),
@@ -82,10 +77,9 @@ const blog = defineCollection({
 });
 
 const faqs = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/faqs' }),
+  type: 'content',
   schema: z.object({
     locale: localeSchema,
-    slug: z.string(),
     title: z.string(),
     items: z.array(faqItem),
   }),

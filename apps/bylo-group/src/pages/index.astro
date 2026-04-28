@@ -13,31 +13,30 @@ import {
 
 const title = 'BYLO Group — Trasporti, logistica e automotive';
 const description =
-  'BYLO Group è la holding che riunisce BYLO Transport (trasporti ADR e logistica integrata) e Tommy By (officina e carrozzeria). Servizi per imprese italiane.';
+  'BYLO Group è la holding che riunisce BYLO Transport (trasporti ADR e logistica) e Tommy By (officina e carrozzeria multimarca per auto e moto). Imprese italiane a conduzione familiare.';
 
-// TODO verificare con cliente i numeri reali del gruppo (anni, dipendenti, mezzi).
 const numbers = [
-  { value: '25+', label: 'Anni di esperienza' },
+  { value: '2', label: 'Generazioni in famiglia' },
   { value: '3', label: 'Sedi operative' },
-  { value: '30+', label: 'Mezzi della flotta' },
-  { value: 'Tutte', label: 'Le marche servite' },
+  { value: '10+', label: 'Mezzi della flotta ADR' },
+  { value: 'Auto e moto', label: 'Multimarche' },
 ];
 
 const values = [
   {
     title: 'Sicurezza & qualità',
     body:
-      'Trasporti ADR certificati, officina autorizzata, carrozzeria con verniciatura a forno. Standard alti, controlli su ogni passaggio.',
+      'Trasporti ADR su classi normate, officina autorizzata, carrozzeria con verniciatura a forno ad acqua. Procedure operative testate e aggiornate.',
   },
   {
     title: 'Italianità & territorio',
     body:
-      'Imprese a conduzione familiare radicate in Lombardia, al servizio di clienti italiani che parlano la nostra stessa lingua.',
+      'Imprese a conduzione familiare radicate in Lombardia, due generazioni in continuità. Clienti italiani, lingua italiana, contatti diretti.',
   },
   {
-    title: 'Multimarca & competenza',
+    title: 'Multimarche & competenza',
     body:
-      'Officina autorizzata su tutte le marche, trasporti per ogni settore. Una sola squadra, mille combinazioni di problemi risolti.',
+      'Officina per auto e moto di qualsiasi modello, trasporti ADR su classi 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 e 9. Una squadra unica per più mestieri.',
   },
   {
     title: 'Trasparenza & affidabilità',
@@ -51,12 +50,12 @@ const pillars = [
     href: 'https://transport.bylogroup.it',
     eyebrow: 'BYLO TRANSPORT S.R.L.',
     title: 'BYLO Transport',
-    tagline: 'Trasporti ADR e logistica integrata',
+    tagline: 'Trasporti ADR e logistica, nazionali e internazionali',
     bullets: [
-      'Trasporti nazionali di merci pericolose (classi 2, 3, 4, 5, 6, 8, 9)',
-      'Logistica integrata, magazzinaggio e distribuzione',
-      'Sede operativa e magazzino a Ospiate di Bollate (MI)',
-      'Iscrizione Albo Autotrasportatori MI/8906297N',
+      'Trasporti ADR di merci pericolose (classi 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8, 9)',
+      'Logistica e magazzinaggio per il Nord Italia',
+      'Operatività su tratte nazionali e internazionali',
+      'Sede operativa e magazzino a Ospiate di Bollate (MI), accesso A4 / A8 / tangenziale ovest',
     ],
     cta: 'Scopri BYLO Transport',
   },
@@ -64,12 +63,12 @@ const pillars = [
     href: 'https://tommy.bylogroup.it',
     eyebrow: 'TOMMY BY S.R.L.',
     title: 'Tommy By',
-    tagline: 'Officina e carrozzeria multimarca',
+    tagline: 'Officina e carrozzeria multimarche, auto e moto',
     bullets: [
-      'Officina autorizzata su tutte le marche',
-      'Carrozzeria con verniciatura a forno ad acqua',
-      'Vendita auto selezionate, controllate e documentate',
-      'Due sedi a Rho (MI): officina e carrozzeria dedicate',
+      'Officina per auto e moto, qualsiasi marca e modello',
+      'Revisioni ministeriali fino a 35 quintali, tagliandi, riparazioni meccaniche ed elettroniche, pneumatici',
+      'Carrozzeria con verniciatura a forno ad acqua, igienizzazione veicoli e auto sostitutive',
+      'Due sedi: Officina a Milano (Via Brunetti 14), Carrozzeria a Mazzo di Rho (Via Buzzi 9)',
     ],
     cta: 'Scopri Tommy By',
   },
@@ -82,12 +81,12 @@ const locations = [
     phone: CONTACTS.hq.phone,
   },
   {
-    label: 'Tommy By — Officina',
+    label: 'Tommy By — Officina (Milano)',
     address: CONTACTS_RACING.officina.address,
     phone: CONTACTS_RACING.officina.phone,
   },
   {
-    label: 'Tommy By — Carrozzeria',
+    label: 'Tommy By — Carrozzeria (Mazzo di Rho)',
     address: CONTACTS_RACING.carrozzeria.address,
     phone: CONTACTS_RACING.carrozzeria.phone,
   },
@@ -112,9 +111,9 @@ const locations = [
           </h1>
           <p class="lede mt-6 text-white/70">
             BYLO Group riunisce due aziende complementari: BYLO Transport per
-            trasporti ADR e logistica integrata, Tommy By per officina e
-            carrozzeria multimarca. Insieme copriamo tutto il ciclo di vita
-            del mezzo, dalla produzione al servizio post-vendita.
+            trasporti ADR e logistica, Tommy By per officina e carrozzeria
+            multimarche su auto e moto. Insieme copriamo tutto il ciclo di vita
+            del mezzo, dal viaggio al servizio post-vendita.
           </p>
           <div class="mt-10 flex flex-col sm:flex-row gap-4">
             <a href="#aziende" class="btn-primary">
@@ -141,20 +140,21 @@ const locations = [
           <div class="lg:col-span-7 space-y-5 text-byl-black/80 leading-relaxed">
             <p>
               {GROUP.name} è il nome della holding che riunisce due imprese
-              italiane di lunga storia: BYLO Transport, attiva nei trasporti
-              di merci pericolose e nella logistica integrata, e Tommy By,
-              officina e carrozzeria multimarca con sede a Rho (MI).
+              italiane: <strong>BYLO Transport</strong>, attiva nei trasporti
+              ADR e nella logistica, e <strong>Tommy By</strong>, officina e
+              carrozzeria multimarche per auto e moto, con due sedi fra
+              Milano e Mazzo di Rho.
             </p>
             <p>
               Le due aziende lavorano in modo indipendente ma si supportano
-              quando il cliente ha bisogno di soluzioni che attraversino i
-              due mondi: dalla manutenzione di una flotta aziendale alla
-              gestione di un singolo veicolo.
+              quando il cliente ha bisogno di soluzioni che attraversino i due
+              mondi: dalla manutenzione di una flotta aziendale alla gestione
+              di un singolo veicolo.
             </p>
             <p>
-              Siamo realtà a conduzione familiare. Niente call center, niente
-              filiere lunghe: chi risponde al telefono è chi risolve il
-              problema.
+              Siamo un'impresa familiare alla seconda generazione. Niente call
+              center, niente filiere lunghe: chi risponde al telefono è chi
+              risolve il problema.
             </p>
           </div>
         </div>
@@ -167,7 +167,7 @@ const locations = [
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {numbers.map((n) => (
             <div class="text-center md:text-left">
-              <div class="font-display font-bold text-4xl md:text-5xl text-byl-black">
+              <div class="font-display font-bold text-3xl md:text-5xl text-byl-black">
                 {n.value}
               </div>
               <div class="mt-2 text-sm text-byl-mute uppercase tracking-wider">
@@ -292,56 +292,67 @@ const locations = [
       <div class="container-page">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           <div class="lg:col-span-5">
-            <span class="eyebrow text-byl-yellow-dark">Contatti corporate</span>
+            <span class="eyebrow text-byl-yellow-dark">Contatti</span>
             <h2 class="h-section mt-4">
               Parla con il <span class="text-byl-yellow-dark">gruppo</span>, non con un call center.
             </h2>
             <p class="lede mt-6 text-byl-mute">
-              Per richieste corporate, fornitori, partnership o stampa scrivi al gruppo. Per servizi specifici (trasporti o officina) vai al sito dedicato.
+              Per servizi specifici scrivi all'azienda corretta. Per richieste corporate, fornitori o partnership, usa il centralino del gruppo.
             </p>
           </div>
           <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <a
-              href={`mailto:${CONTACTS_GROUP.email}`}
+              href={`mailto:${CONTACTS.hq.email}`}
               class="p-6 rounded-2xl border border-byl-stone bg-byl-off hover:border-byl-black transition-colors"
             >
               <span class="text-xs uppercase tracking-wider font-semibold text-byl-mute">
-                Email gruppo
+                Trasporti & logistica
               </span>
               <p class="mt-2 font-display font-bold text-byl-black break-all">
-                {CONTACTS_GROUP.email}
+                {CONTACTS.hq.email}
               </p>
             </a>
             <a
-              href={`mailto:${CONTACTS_GROUP.press}`}
+              href={`mailto:${CONTACTS_RACING.officina.email}`}
               class="p-6 rounded-2xl border border-byl-stone bg-byl-off hover:border-byl-black transition-colors"
             >
               <span class="text-xs uppercase tracking-wider font-semibold text-byl-mute">
-                Stampa
+                Officina (auto/moto)
               </span>
               <p class="mt-2 font-display font-bold text-byl-black break-all">
-                {CONTACTS_GROUP.press}
+                {CONTACTS_RACING.officina.email}
+              </p>
+            </a>
+            <a
+              href={`mailto:${CONTACTS_RACING.carrozzeria.email}`}
+              class="p-6 rounded-2xl border border-byl-stone bg-byl-off hover:border-byl-black transition-colors"
+            >
+              <span class="text-xs uppercase tracking-wider font-semibold text-byl-mute">
+                Carrozzeria
+              </span>
+              <p class="mt-2 font-display font-bold text-byl-black break-all">
+                {CONTACTS_RACING.carrozzeria.email}
               </p>
             </a>
             <a
               href={`tel:${CONTACTS_GROUP.phone.replace(/\s/g, '')}`}
-              class="sm:col-span-2 p-6 rounded-2xl border border-byl-stone bg-byl-off hover:border-byl-black transition-colors"
+              class="p-6 rounded-2xl border border-byl-stone bg-byl-off hover:border-byl-black transition-colors"
             >
               <span class="text-xs uppercase tracking-wider font-semibold text-byl-mute">
-                Telefono
+                Centralino gruppo
               </span>
               <p class="mt-2 font-display font-bold text-byl-black">
                 {CONTACTS_GROUP.phone}
-              </p>
-              <p class="mt-1 text-sm text-byl-mute">
-                Centralino BYLO Transport — risponde al gruppo
               </p>
             </a>
           </div>
         </div>
 
         <div class="mt-16 p-8 rounded-2xl bg-byl-black text-white text-center">
-          <p class="text-white/80">
+          <p class="text-white/80 text-sm md:text-base">
+            <strong class="text-byl-yellow">{GROUP.name}</strong>
+            · P.IVA {GROUP.vat}
+            <span class="mx-3 text-white/30">·</span>
             <strong class="text-byl-yellow">{LEGAL_TRANSPORT.name}</strong>
             · P.IVA {LEGAL_TRANSPORT.vat}
             <span class="mx-3 text-white/30">·</span>

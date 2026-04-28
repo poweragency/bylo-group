@@ -1,0 +1,79 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+import { Faq, Breadcrumb, InternalLinkBlock } from '@bylo/ui/seo/index.ts';
+
+export async function getStaticPaths() {
+  const services = await getCollection('services', ({ data }) => data.locale === 'it');
+  return services.map((service) => ({
+    params: { slug: service.slug },
+    props: { service },
+  }));
+}
+
+const { service } = Astro.props;
+const { Content } = await service.render();
+
+const crumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Servizi', href: '/servizi/' },
+  { label: service.data.title, href: `/servizi/${service.slug}/` },
+];
+
+const allServices = await getCollection('services', ({ data }) => data.locale === 'it');
+const related = allServices
+  .filter((s) => service.data.relatedServices.includes(s.slug))
+  .map((s) => ({
+    href: `/servizi/${s.slug}/`,
+    label: s.data.title,
+    description: s.data.intro.length > 140 ? s.data.intro.slice(0, 140) + '…' : s.data.intro,
+  }));
+---
+
+<Layout
+  title={service.data.seo.title}
+  description={service.data.seo.description}
+  noindex={service.data.seo.noindex}
+>
+  <Breadcrumb items={crumbs} />
+
+  <section class="section-pad bg-byl-white">
+    <div class="container-page max-w-4xl">
+      <span class="eyebrow text-byl-yellow-dark">{service.data.category}</span>
+      <h1 class="h-display mt-4">{service.data.title}</h1>
+      <p class="lede mt-6 text-byl-black/80">{service.data.intro}</p>
+
+      {service.data.bullets.length > 0 && (
+        <ul class="mt-10 space-y-4">
+          {service.data.bullets.map((b) => (
+            <li class="flex gap-4 text-byl-black/85 leading-relaxed">
+              <span class="flex-shrink-0 w-2 h-2 mt-2.5 rounded-full bg-byl-yellow-dark"></span>
+              <span set:html={b} />
+            </li>
+          ))}
+        </ul>
+      )}
+
+      <article class="mt-14 max-w-none text-byl-black/80 leading-relaxed [&_h2]:font-display [&_h2]:font-bold [&_h2]:text-2xl [&_h2]:md:text-3xl [&_h2]:text-byl-black [&_h2]:mt-12 [&_h2]:mb-4 [&_h3]:font-display [&_h3]:font-semibold [&_h3]:text-xl [&_h3]:text-byl-black [&_h3]:mt-8 [&_h3]:mb-3 [&_p]:mb-4 [&_ul]:my-4 [&_ul]:space-y-2 [&_ul]:pl-6 [&_ul]:list-disc [&_ol]:my-4 [&_ol]:space-y-2 [&_ol]:pl-6 [&_ol]:list-decimal [&_strong]:text-byl-black [&_strong]:font-semibold [&_a]:text-byl-yellow-dark [&_a]:underline hover:[&_a]:no-underline">
+        <Content />
+      </article>
+    </div>
+  </section>
+
+  {service.data.faq.length > 0 && (
+    <Faq
+      items={service.data.faq}
+      eyebrow="FAQ"
+      title="Domande frequenti su questo servizio"
+    />
+  )}
+
+  {related.length > 0 && (
+    <InternalLinkBlock
+      title="Servizi correlati"
+      eyebrow="Approfondisci"
+      links={related}
+      columns={2}
+    />
+  )}
+</Layout>

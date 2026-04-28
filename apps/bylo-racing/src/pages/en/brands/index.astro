@@ -1,0 +1,59 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+import { Breadcrumb } from '@bylo/ui/seo/index.ts';
+
+const brands = await getCollection('brands', ({ data }) => data.locale === 'en');
+brands.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const crumbs = [
+  { label: 'Home', href: '/en/' },
+  { label: 'Brands', href: '/en/brands/' },
+];
+---
+
+<Layout
+  title="Brands serviced — Tommy By"
+  description="We service all car and motorcycle brands. Dedicated pages for the main ones — BMW, Audi, Mercedes-Benz, FIAT, Volkswagen — but we serve any model."
+>
+  <Breadcrumb items={crumbs} />
+
+  <section class="section-pad bg-byl-black text-byl-white">
+    <div class="container-page">
+      <span class="eyebrow text-byl-yellow">Brands serviced</span>
+      <h1 class="h-display mt-4">
+        We service <span class="text-byl-yellow">any brand</span>.
+      </h1>
+      <p class="lede mt-6 text-white/70 max-w-2xl">
+        Multi-brand workshop and body shop for cars and motorcycles. Below are the brands with dedicated pages, but we service any model.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-pad bg-byl-white">
+    <div class="container-page">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {brands.map((b) => (
+          <a
+            href={`/en/brands/${b.slug.split('/').pop()}/`}
+            class="group block p-6 rounded-2xl border border-byl-stone bg-byl-white hover:border-byl-black hover:shadow-[var(--shadow-hover)] transition-all"
+          >
+            <h2 class="font-display font-bold text-2xl text-byl-black">
+              {b.data.name}
+            </h2>
+            <p class="mt-3 text-sm text-byl-mute leading-relaxed line-clamp-3">
+              {b.data.intro}
+            </p>
+            <div class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-byl-black group-hover:text-byl-yellow-dark transition-colors">
+              Details
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-0.5 transition-transform">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

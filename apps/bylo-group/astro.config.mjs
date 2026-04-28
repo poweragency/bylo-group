@@ -6,6 +6,9 @@ const SITE = process.env.BYLO_GROUP_SITE_URL ?? 'https://www.bylogroup.it';
 
 export default defineConfig({
   site: SITE,
+  legacy: {
+    collections: true,
+  },
   i18n: {
     defaultLocale: 'it',
     locales: ['it', 'en'],

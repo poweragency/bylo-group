@@ -1,0 +1,68 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+import { Faq, Breadcrumb, InternalLinkBlock } from '@bylo/ui/seo/index.ts';
+
+export async function getStaticPaths() {
+  const sectors = await getCollection('sectors', ({ data }) => data.locale === 'it');
+  return sectors.map((sector) => ({
+    params: { slug: sector.slug },
+    props: { sector },
+  }));
+}
+
+const { sector } = Astro.props;
+const { Content } = await sector.render();
+
+const crumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Settori', href: '/settori/' },
+  { label: sector.data.title, href: `/settori/${sector.slug}/` },
+];
+
+const allServices = await getCollection('services', ({ data }) => data.locale === 'it');
+const related = allServices
+  .filter((s) => sector.data.relatedServices.includes(s.slug))
+  .map((s) => ({
+    href: `/servizi/${s.slug}/`,
+    label: s.data.title,
+    description: s.data.intro.length > 140 ? s.data.intro.slice(0, 140) + '…' : s.data.intro,
+  }));
+---
+
+<Layout
+  title={sector.data.seo.title}
+  description={sector.data.seo.description}
+  noindex={sector.data.seo.noindex}
+>
+  <Breadcrumb items={crumbs} />
+
+  <section class="section-pad bg-byl-white">
+    <div class="container-page max-w-4xl">
+      <span class="eyebrow text-byl-yellow-dark">Settore servito</span>
+      <h1 class="h-display mt-4">{sector.data.title}</h1>
+      <p class="lede mt-6 text-byl-black/80">{sector.data.intro}</p>
+
+      <article class="mt-14 max-w-none text-byl-black/80 leading-relaxed [&_h2]:font-display [&_h2]:font-bold [&_h2]:text-2xl [&_h2]:md:text-3xl [&_h2]:text-byl-black [&_h2]:mt-12 [&_h2]:mb-4 [&_h3]:font-display [&_h3]:font-semibold [&_h3]:text-xl [&_h3]:text-byl-black [&_h3]:mt-8 [&_h3]:mb-3 [&_p]:mb-4 [&_ul]:my-4 [&_ul]:space-y-2 [&_ul]:pl-6 [&_ul]:list-disc [&_ol]:my-4 [&_ol]:space-y-2 [&_ol]:pl-6 [&_ol]:list-decimal [&_strong]:text-byl-black [&_strong]:font-semibold [&_a]:text-byl-yellow-dark [&_a]:underline hover:[&_a]:no-underline">
+        <Content />
+      </article>
+    </div>
+  </section>
+
+  {sector.data.faq.length > 0 && (
+    <Faq
+      items={sector.data.faq}
+      eyebrow="FAQ"
+      title="Domande frequenti su questo settore"
+    />
+  )}
+
+  {related.length > 0 && (
+    <InternalLinkBlock
+      title="I servizi che ci richiedono i clienti di questo settore"
+      eyebrow="Servizi correlati"
+      links={related}
+      columns={2}
+    />
+  )}
+</Layout>

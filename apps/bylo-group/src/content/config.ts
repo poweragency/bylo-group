@@ -1,5 +1,4 @@
 import { defineCollection, z } from 'astro:content';
-import { glob } from 'astro/loaders';
 
 const localeSchema = z.enum(['it', 'en']);
 
@@ -16,10 +15,9 @@ const faqItem = z.object({
 });
 
 const pages = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/pages' }),
+  type: 'content',
   schema: z.object({
     locale: localeSchema,
-    slug: z.string(),
     seo: seoSchema,
     eyebrow: z.string().optional(),
     title: z.string(),
@@ -32,10 +30,9 @@ const pages = defineCollection({
 });
 
 const blog = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/blog' }),
+  type: 'content',
   schema: z.object({
     locale: localeSchema,
-    slug: z.string(),
     seo: seoSchema,
     title: z.string(),
     excerpt: z.string(),

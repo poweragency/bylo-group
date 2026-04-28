@@ -1,0 +1,89 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+import { Faq, Breadcrumb, InternalLinkBlock } from '@bylo/ui/seo/index.ts';
+
+export async function getStaticPaths() {
+  const routes = await getCollection('routes', ({ data }) => data.locale === 'en');
+  return routes.map((route) => ({
+    params: { slug: route.slug },
+    props: { route },
+  }));
+}
+
+const { route } = Astro.props;
+const { Content } = await route.render();
+
+const crumbs = [
+  { label: 'Home', href: '/en/' },
+  { label: 'Routes', href: '/en/routes/' },
+  { label: `${route.data.origin}-${route.data.destination}`, href: `/en/routes/${route.slug}/` },
+];
+
+const allServices = await getCollection('services', ({ data }) => data.locale === 'en');
+const related = allServices
+  .filter((s) => route.data.relatedServices.includes(s.slug))
+  .map((s) => ({
+    href: `/en/services/${s.slug}/`,
+    label: s.data.title,
+    description: s.data.intro.length > 140 ? s.data.intro.slice(0, 140) + '…' : s.data.intro,
+  }));
+---
+
+<Layout
+  title={route.data.seo.title}
+  description={route.data.seo.description}
+  noindex={route.data.seo.noindex}
+>
+  <Breadcrumb items={crumbs} />
+
+  <section class="section-pad bg-byl-white">
+    <div class="container-page max-w-4xl">
+      <span class="eyebrow text-byl-yellow-dark">National route</span>
+      <h1 class="h-display mt-4">
+        {route.data.origin} <span class="text-byl-yellow-dark">→</span> {route.data.destination}
+      </h1>
+      <p class="lede mt-6 text-byl-black/80">{route.data.intro}</p>
+
+      <div class="mt-10 grid grid-cols-2 md:grid-cols-3 gap-4">
+        {route.data.distanceKm && (
+          <div class="p-5 rounded-2xl bg-byl-off border border-byl-stone">
+            <div class="text-xs uppercase tracking-wider text-byl-mute">Distance</div>
+            <div class="mt-1 font-display font-bold text-2xl text-byl-black">{route.data.distanceKm} km</div>
+          </div>
+        )}
+        {route.data.transitTimeHours && (
+          <div class="p-5 rounded-2xl bg-byl-off border border-byl-stone">
+            <div class="text-xs uppercase tracking-wider text-byl-mute">Driving</div>
+            <div class="mt-1 font-display font-bold text-2xl text-byl-black">~{route.data.transitTimeHours}h</div>
+          </div>
+        )}
+        <div class="p-5 rounded-2xl bg-byl-off border border-byl-stone">
+          <div class="text-xs uppercase tracking-wider text-byl-mute">ADR classes</div>
+          <div class="mt-1 font-display font-bold text-base text-byl-black">2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8, 9</div>
+        </div>
+      </div>
+
+      <article class="mt-12 max-w-none text-byl-black/80 leading-relaxed [&_h2]:font-display [&_h2]:font-bold [&_h2]:text-2xl [&_h2]:md:text-3xl [&_h2]:text-byl-black [&_h2]:mt-12 [&_h2]:mb-4 [&_h3]:font-display [&_h3]:font-semibold [&_h3]:text-xl [&_h3]:text-byl-black [&_h3]:mt-8 [&_h3]:mb-3 [&_p]:mb-4 [&_ul]:my-4 [&_ul]:space-y-2 [&_ul]:pl-6 [&_ul]:list-disc [&_ol]:my-4 [&_ol]:space-y-2 [&_ol]:pl-6 [&_ol]:list-decimal [&_strong]:text-byl-black [&_strong]:font-semibold [&_a]:text-byl-yellow-dark [&_a]:underline hover:[&_a]:no-underline">
+        <Content />
+      </article>
+    </div>
+  </section>
+
+  {route.data.faq.length > 0 && (
+    <Faq
+      items={route.data.faq}
+      eyebrow="FAQ"
+      title="Frequently asked questions about this route"
+    />
+  )}
+
+  {related.length > 0 && (
+    <InternalLinkBlock
+      title="Services typically used on this route"
+      eyebrow="Related services"
+      links={related}
+      columns={2}
+    />
+  )}
+</Layout>

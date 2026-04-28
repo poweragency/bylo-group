@@ -6,6 +6,9 @@ const SITE = process.env.BYLO_RACING_SITE_URL ?? 'https://tommy.bylogroup.it';
 
 export default defineConfig({
   site: SITE,
+  legacy: {
+    collections: true,
+  },
   i18n: {
     defaultLocale: 'it',
     locales: ['it', 'en'],

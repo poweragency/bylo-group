@@ -1,0 +1,70 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '@/layouts/Layout.astro';
+import { Breadcrumb } from '@bylo/ui/seo/index.ts';
+
+const routes = await getCollection('routes', ({ data }) => data.locale === 'it');
+routes.sort((a, b) => a.data.origin.localeCompare(b.data.origin));
+
+const crumbs = [
+  { label: 'Home', href: '/' },
+  { label: 'Tratte', href: '/tratte/' },
+];
+---
+
+<Layout
+  title="Tratte servite — BYLO Transport"
+  description="Tratte nazionali di BYLO Transport per il movimento di merci pericolose ADR. Partenze dall'hub di Bollate (MI) verso le principali destinazioni italiane."
+>
+  <Breadcrumb items={crumbs} />
+
+  <section class="section-pad bg-byl-black text-byl-white relative overflow-hidden">
+    <div
+      class="absolute inset-0 opacity-[0.04] pointer-events-none"
+      style="background-image: linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px); background-size: 80px 80px;"
+    />
+    <div class="container-page relative">
+      <div class="max-w-3xl">
+        <span class="eyebrow text-byl-yellow">Tratte servite</span>
+        <h1 class="h-display mt-4">
+          Le <span class="text-byl-yellow">tratte</span> più frequenti.
+        </h1>
+        <p class="lede mt-6 text-white/70">
+          Trasporti ADR e logistica dalla nostra sede di Bollate verso le principali destinazioni italiane. Operiamo anche tratte internazionali su richiesta.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad bg-byl-white">
+    <div class="container-page">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {routes.map((r) => (
+          <a
+            href={`/tratte/${r.slug}/`}
+            class="group block p-7 rounded-2xl border border-byl-stone bg-byl-white hover:border-byl-black hover:shadow-[var(--shadow-hover)] transition-all"
+          >
+            <div class="flex items-baseline gap-2 text-byl-mute text-xs uppercase tracking-wider">
+              {r.data.distanceKm && <span>{r.data.distanceKm} km</span>}
+              {r.data.distanceKm && r.data.transitTimeHours && <span>·</span>}
+              {r.data.transitTimeHours && <span>~{r.data.transitTimeHours}h di guida</span>}
+            </div>
+            <h2 class="font-display font-bold text-xl md:text-2xl mt-3 text-byl-black">
+              {r.data.origin} → {r.data.destination}
+            </h2>
+            <p class="mt-3 text-sm text-byl-mute leading-relaxed line-clamp-3">
+              {r.data.intro}
+            </p>
+            <div class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-byl-black group-hover:text-byl-yellow-dark transition-colors">
+              Dettagli tratta
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-0.5 transition-transform">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
