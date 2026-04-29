@@ -152,15 +152,11 @@ Sul sito nuovo abbiamo usato:
 - "tommy.bylogroup.it" → Tommy By (ovvio)
 - Per la logistica, stiamo usando "**transport.bylogroup.it**" (allineato al brand "BYLO Transport"). Alternativa era "logistica.bylogroup.it" (in italiano). Confermi `transport.`?
 
-### 18. Form di contatto
-
-Sul sito nuovo NON ci sono form (tutti i contatti sono link `mailto:` ed `tel:`). Vuoi un **form di contatto reale** con backend (lead salvati, anti-spam, eventuale notifica WhatsApp)? Se sì, scegliamo l'integrazione (Formspree gratis fino a 50/mese, oppure Vercel Functions con Resend per più controllo).
-
-### 19. WhatsApp
+### 18. WhatsApp
 
 - [ ] Vuoi un **bottone "scrivici su WhatsApp"** sul sito? Se sì, mi serve **il numero WhatsApp Business** (deve essere un numero diverso dai telefoni fissi, oppure può essere lo stesso se è abilitato).
 
-### 20. Vecchio sito `bylogroup.it`
+### 19. Vecchio sito `bylogroup.it`
 
 Quando il cliente recupera DNS e si fa cutover, il sito vecchio viene rimpiazzato dalla nuova landing holding.
 - [ ] OK così? Oppure vuoi tenere alcune sezioni del vecchio sito (es. una pagina "Storico" o "Press"?)

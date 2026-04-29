@@ -49,8 +49,7 @@ Dettaglio in `INFO-DA-CLIENTE.md`. Riassunto:
 
 1. **Lighthouse audit** sui 3 URL — performance/SEO/accessibility/best practices score. 15 min check + eventuali fix
 2. **OG image dinamiche per pagina** (con titolo della pagina renderizzato) — oggi 1 OG default per app, non per singola pagina. ~1h con Vercel OG Image Function
-3. **Form di contatto** (se cliente confermerà nel punto 18) — Vercel Function + Resend. ~1-2h
-4. **WhatsApp button** (se cliente fornirà numero al punto 19) — 15 min
+3. **WhatsApp button** (quando cliente fornisce il numero) — 15 min
 5. **A11y audit** approfondito — keyboard nav, screen reader, contrast. 30 min
 6. **Content review umano** — leggere ogni pagina cercando frasi che "suonano da AI". 1-2h
 7. **Conversione SVG OG → PNG** — alcuni social non supportano SVG. Solo se serve

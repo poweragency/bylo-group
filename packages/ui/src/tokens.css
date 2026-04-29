@@ -4,7 +4,7 @@
   /* ---------- Colors: BYL brand ---------- */
   --color-byl-yellow: #f5d000;
   --color-byl-yellow-bright: #ffd900;
-  --color-byl-yellow-dark: #d4b400;
+  --color-byl-yellow-dark: #7a6700;
 
   --color-byl-black: #0a0a0a;
   --color-byl-ink: #121212;
@@ -13,7 +13,7 @@
   --color-byl-white: #ffffff;
   --color-byl-off: #f7f7f5;
   --color-byl-stone: #e7e7e3;
-  --color-byl-mute: #8a8a85;
+  --color-byl-mute: #6b6b65;
 
   /* Semantic aliases */
   --color-bg: var(--color-byl-white);
