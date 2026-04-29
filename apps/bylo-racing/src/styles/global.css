@@ -1,6 +1,9 @@
 @import 'tailwindcss';
 @import '@bylo/ui/tokens.css';
 
+/* Tailwind v4: scansiona anche i componenti del package @bylo/ui (workspace link) */
+@source "../../../../packages/ui/src/**/*.{astro,html,js,ts}";
+
 /* ---------- Custom utilities (Tailwind v4) ---------- */
 
 @utility btn {
