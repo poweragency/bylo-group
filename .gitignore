@@ -52,3 +52,6 @@ coverage/
 *.rej
 
 .vercel
+
+# PDF generati on-demand (es. INFO-DA-CLIENTE.pdf via md-to-pdf)
+*.pdf
