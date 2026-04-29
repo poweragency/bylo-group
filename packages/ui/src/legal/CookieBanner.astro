@@ -1,0 +1,343 @@
+---
+const currentLocale = (Astro.currentLocale ?? 'it') as 'it' | 'en';
+const isEN = currentLocale === 'en';
+const cookiePolicyUrl = isEN ? '/en/cookie' : '/cookie';
+
+const t = isEN
+  ? {
+      title: 'Cookies on this site',
+      body: 'We use technical cookies for site functionality and, with your consent, analytics cookies to improve your experience. You can accept all, only essential, or customize your choice anytime.',
+      acceptAll: 'Accept all',
+      onlyNecessary: 'Only essential',
+      customize: 'Customize',
+      readMore: 'Cookie policy',
+      modalTitle: 'Cookie preferences',
+      modalIntro: 'Choose which categories of cookies to allow. You can change this anytime from the footer link.',
+      necessary: 'Strictly necessary',
+      necessaryDesc: 'Required for site functionality, security and basic navigation. Always on.',
+      analytics: 'Analytics',
+      analyticsDesc: 'Help us understand how the site is used so we can improve it. No personal data is sold.',
+      marketing: 'Marketing',
+      marketingDesc: 'Personalized content and ads from third parties. Currently not active on this site.',
+      save: 'Save preferences',
+      close: 'Close',
+      alwaysOn: 'Always on',
+    }
+  : {
+      title: 'Cookie su questo sito',
+      body: 'Usiamo cookie tecnici per il funzionamento del sito e, con il tuo consenso, cookie analitici per migliorare l’esperienza. Puoi accettare tutto, accettare solo quelli essenziali, oppure personalizzare la scelta in qualsiasi momento.',
+      acceptAll: 'Accetta tutti',
+      onlyNecessary: 'Solo essenziali',
+      customize: 'Personalizza',
+      readMore: 'Cookie policy',
+      modalTitle: 'Preferenze cookie',
+      modalIntro: 'Scegli quali categorie di cookie autorizzare. Puoi modificare questa scelta in qualunque momento dal link in fondo alla pagina.',
+      necessary: 'Strettamente necessari',
+      necessaryDesc: 'Necessari per il funzionamento del sito, la sicurezza e la navigazione di base. Sempre attivi.',
+      analytics: 'Analitici',
+      analyticsDesc: 'Ci aiutano a capire come viene usato il sito per poterlo migliorare. Nessun dato personale viene venduto.',
+      marketing: 'Marketing',
+      marketingDesc: 'Contenuti e annunci personalizzati da terze parti. Attualmente non attivi su questo sito.',
+      save: 'Salva preferenze',
+      close: 'Chiudi',
+      alwaysOn: 'Sempre attivi',
+    };
+---
+
+<div
+  id="bylo-cookie-banner"
+  class="fixed inset-x-0 bottom-0 z-[60] p-3 sm:p-5 md:p-6 transition-transform duration-500 ease-out translate-y-full pointer-events-none"
+  role="region"
+  aria-label={t.title}
+  hidden
+>
+  <div
+    class="pointer-events-auto max-w-4xl mx-auto bg-byl-black text-byl-white rounded-2xl shadow-2xl border border-white/10 p-5 sm:p-7 md:p-8"
+  >
+    <div class="flex items-start gap-4">
+      <div class="hidden sm:flex w-12 h-12 rounded-xl bg-byl-yellow/15 flex-shrink-0 items-center justify-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="text-byl-yellow"
+          aria-hidden="true"
+        >
+          <path d="M21.598 11.063a1 1 0 0 0-.7-1.1 5.5 5.5 0 0 1-3.95-7.5 1 1 0 0 0-1.32-1.36 9.5 9.5 0 1 0 5.97 9.96zM12 19a7 7 0 0 1-1-13.93A7.5 7.5 0 0 0 19.43 14 7 7 0 0 1 12 19z"/>
+          <circle cx="9" cy="11" r="1.25"/>
+          <circle cx="13.5" cy="14.5" r="1"/>
+          <circle cx="9.5" cy="15.5" r="0.75"/>
+        </svg>
+      </div>
+      <div class="flex-1 min-w-0">
+        <h2 class="font-display font-semibold text-lg sm:text-xl text-byl-yellow">
+          {t.title}
+        </h2>
+        <p class="mt-2 text-sm text-white/75 leading-relaxed">
+          {t.body}
+          {' '}
+          <a
+            href={cookiePolicyUrl}
+            class="underline underline-offset-2 hover:text-byl-yellow transition-colors"
+          >
+            {t.readMore}
+          </a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+      <button
+        type="button"
+        data-cc-action="accept-all"
+        class="order-1 sm:order-3 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-md bg-byl-yellow text-byl-black font-semibold text-sm hover:bg-byl-yellow-bright transition-colors"
+      >
+        {t.acceptAll}
+      </button>
+      <button
+        type="button"
+        data-cc-action="reject-all"
+        class="order-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-md border border-white/20 text-byl-white text-sm font-medium hover:border-byl-yellow hover:text-byl-yellow transition-colors"
+      >
+        {t.onlyNecessary}
+      </button>
+      <button
+        type="button"
+        data-cc-action="customize"
+        class="order-3 sm:order-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-md text-byl-white/80 text-sm font-medium hover:text-byl-yellow transition-colors"
+      >
+        {t.customize}
+      </button>
+    </div>
+  </div>
+</div>
+
+<div
+  id="bylo-cookie-modal"
+  class="fixed inset-0 z-[70] flex items-end md:items-center justify-center p-0 md:p-4 transition-opacity duration-300 opacity-0 pointer-events-none"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="bylo-cookie-modal-title"
+  hidden
+>
+  <div
+    data-cc-backdrop
+    class="absolute inset-0 bg-black/60 backdrop-blur-sm"
+  ></div>
+
+  <div
+    class="relative bg-byl-white text-byl-black rounded-t-2xl md:rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+  >
+    <div class="sticky top-0 bg-byl-white border-b border-byl-stone px-6 py-4 flex items-center justify-between">
+      <h2 id="bylo-cookie-modal-title" class="font-display font-semibold text-lg">
+        {t.modalTitle}
+      </h2>
+      <button
+        type="button"
+        data-cc-action="close"
+        class="p-1.5 rounded-md text-byl-mute hover:text-byl-black hover:bg-byl-off transition-colors"
+        aria-label={t.close}
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="p-6 space-y-5">
+      <p class="text-sm text-byl-mute leading-relaxed">{t.modalIntro}</p>
+
+      <div class="border border-byl-stone rounded-xl p-5">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <h3 class="font-semibold text-byl-black">{t.necessary}</h3>
+            <p class="mt-1 text-sm text-byl-mute leading-relaxed">{t.necessaryDesc}</p>
+          </div>
+          <span class="text-xs uppercase tracking-wider font-semibold text-byl-yellow-dark whitespace-nowrap">
+            {t.alwaysOn}
+          </span>
+        </div>
+      </div>
+
+      <label class="block border border-byl-stone rounded-xl p-5 cursor-pointer hover:border-byl-black transition-colors has-[:checked]:border-byl-black has-[:checked]:bg-byl-off/50">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <h3 class="font-semibold text-byl-black">{t.analytics}</h3>
+            <p class="mt-1 text-sm text-byl-mute leading-relaxed">{t.analyticsDesc}</p>
+          </div>
+          <span class="relative inline-block w-11 h-6 flex-shrink-0">
+            <input
+              type="checkbox"
+              data-cc-toggle="analytics"
+              class="peer sr-only"
+            />
+            <span class="absolute inset-0 rounded-full bg-byl-stone peer-checked:bg-byl-black transition-colors"></span>
+            <span class="absolute left-0.5 top-0.5 w-5 h-5 rounded-full bg-byl-white shadow transition-transform peer-checked:translate-x-5"></span>
+          </span>
+        </div>
+      </label>
+
+      <label class="block border border-byl-stone rounded-xl p-5 cursor-pointer hover:border-byl-black transition-colors has-[:checked]:border-byl-black has-[:checked]:bg-byl-off/50">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <h3 class="font-semibold text-byl-black">{t.marketing}</h3>
+            <p class="mt-1 text-sm text-byl-mute leading-relaxed">{t.marketingDesc}</p>
+          </div>
+          <span class="relative inline-block w-11 h-6 flex-shrink-0">
+            <input
+              type="checkbox"
+              data-cc-toggle="marketing"
+              class="peer sr-only"
+            />
+            <span class="absolute inset-0 rounded-full bg-byl-stone peer-checked:bg-byl-black transition-colors"></span>
+            <span class="absolute left-0.5 top-0.5 w-5 h-5 rounded-full bg-byl-white shadow transition-transform peer-checked:translate-x-5"></span>
+          </span>
+        </div>
+      </label>
+    </div>
+
+    <div class="sticky bottom-0 bg-byl-white border-t border-byl-stone px-6 py-4 flex flex-col-reverse sm:flex-row sm:justify-end gap-3">
+      <button
+        type="button"
+        data-cc-action="close"
+        class="px-5 py-2.5 rounded-md text-sm font-medium text-byl-mute hover:text-byl-black transition-colors"
+      >
+        {t.close}
+      </button>
+      <button
+        type="button"
+        data-cc-action="save"
+        class="px-5 py-2.5 rounded-md bg-byl-black text-byl-yellow text-sm font-semibold hover:bg-byl-graphite transition-colors"
+      >
+        {t.save}
+      </button>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  (() => {
+    const STORAGE_KEY = 'bylo-cc';
+    const TTL_MS = 1000 * 60 * 60 * 24 * 180; // 180 days
+
+    const banner = document.getElementById('bylo-cookie-banner');
+    const modal = document.getElementById('bylo-cookie-modal');
+    if (!banner || !modal) return;
+
+    const toggleAnalytics = modal.querySelector('[data-cc-toggle="analytics"]');
+    const toggleMarketing = modal.querySelector('[data-cc-toggle="marketing"]');
+
+    function read() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return null;
+        const data = JSON.parse(raw);
+        if (!data || !data.ts || Date.now() - data.ts > TTL_MS) return null;
+        return data;
+      } catch (_) {
+        return null;
+      }
+    }
+
+    function write(categories) {
+      const data = { ts: Date.now(), v: 1, categories };
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      } catch (_) {}
+      document.dispatchEvent(
+        new CustomEvent('bylocookieconsent', { detail: data })
+      );
+    }
+
+    function showBanner() {
+      banner.hidden = false;
+      requestAnimationFrame(() => {
+        banner.classList.remove('translate-y-full');
+      });
+    }
+    function hideBanner() {
+      banner.classList.add('translate-y-full');
+      setTimeout(() => {
+        banner.hidden = true;
+      }, 500);
+    }
+    function showModal(prefs) {
+      const current = prefs || read()?.categories || {
+        necessary: true,
+        analytics: false,
+        marketing: false,
+      };
+      toggleAnalytics.checked = !!current.analytics;
+      toggleMarketing.checked = !!current.marketing;
+      modal.hidden = false;
+      requestAnimationFrame(() => {
+        modal.classList.remove('opacity-0', 'pointer-events-none');
+        modal.classList.add('opacity-100');
+      });
+      document.body.style.overflow = 'hidden';
+    }
+    function hideModal() {
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      modal.classList.remove('opacity-100');
+      setTimeout(() => {
+        modal.hidden = true;
+      }, 300);
+      document.body.style.overflow = '';
+    }
+
+    const stored = read();
+    if (!stored) {
+      setTimeout(showBanner, 600);
+    }
+
+    document.addEventListener('click', (e) => {
+      const trigger = e.target.closest('[data-cc-action]');
+      if (!trigger) return;
+      const action = trigger.dataset.ccAction;
+      if (action === 'accept-all') {
+        write({ necessary: true, analytics: true, marketing: true });
+        hideBanner();
+        hideModal();
+      } else if (action === 'reject-all') {
+        write({ necessary: true, analytics: false, marketing: false });
+        hideBanner();
+        hideModal();
+      } else if (action === 'customize' || action === 'open-preferences') {
+        showModal();
+      } else if (action === 'save') {
+        write({
+          necessary: true,
+          analytics: !!toggleAnalytics.checked,
+          marketing: !!toggleMarketing.checked,
+        });
+        hideBanner();
+        hideModal();
+      } else if (action === 'close') {
+        hideModal();
+      }
+    });
+
+    modal.querySelector('[data-cc-backdrop]')?.addEventListener('click', hideModal);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.hidden) hideModal();
+    });
+
+    window.byloCookies = {
+      openPreferences: () => showModal(),
+      consent: () => read()?.categories || null,
+      reset: () => {
+        try {
+          localStorage.removeItem(STORAGE_KEY);
+        } catch (_) {}
+        showBanner();
+      },
+    };
+  })();
+</script>

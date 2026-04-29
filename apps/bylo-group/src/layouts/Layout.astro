@@ -1,6 +1,7 @@
 ---
 import '@/styles/global.css';
 import { Seo, Hreflang, SchemaOrg } from '@bylo/ui/seo/index.ts';
+import CookieBanner from '@bylo/ui/legal/CookieBanner.astro';
 import { GROUP, LEGAL_TRANSPORT, LEGAL_TOMMY, CONTACTS, CONTACTS_RACING } from '@bylo/ui/index.ts';
 
 interface Props {
@@ -93,5 +94,6 @@ const orgSchema = {
   </head>
   <body class="bg-byl-white text-byl-black antialiased">
     <slot />
+    <CookieBanner />
   </body>
 </html>

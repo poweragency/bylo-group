@@ -1,0 +1,28 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+import PrivacyPolicy from '@bylo/ui/legal/PrivacyPolicy.astro';
+import { LEGAL_GROUP, CONTACTS_GROUP, PRIVACY_CONTACT, GROUP } from '@bylo/ui/index.ts';
+---
+
+<Layout
+  title={`Privacy Policy — ${GROUP.name}`}
+  description={`GDPR privacy notice for the ${GROUP.name} website.`}
+  noindex={false}
+>
+  <Header />
+  <main>
+    <PrivacyPolicy
+      entityName={LEGAL_GROUP.name}
+      vat={LEGAL_GROUP.vat}
+      legalAddress={LEGAL_GROUP.legalAddress}
+      email={PRIVACY_CONTACT.email}
+      phone={CONTACTS_GROUP.phone}
+      pec={LEGAL_GROUP.pec}
+      domain="bylogroup.it"
+      lang="en"
+    />
+  </main>
+  <Footer />
+</Layout>

@@ -1,0 +1,21 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import PrivacyPolicy from '@bylo/ui/legal/PrivacyPolicy.astro';
+import { LEGAL_TOMMY, CONTACTS_RACING, PRIVACY_CONTACT, BRAND_RACING } from '@bylo/ui/index.ts';
+---
+
+<Layout
+  title={`Privacy Policy — ${BRAND_RACING.name}`}
+  description={`Informativa privacy ai sensi del GDPR per il sito ${BRAND_RACING.domain}.`}
+>
+  <PrivacyPolicy
+    entityName={LEGAL_TOMMY.name}
+    vat={LEGAL_TOMMY.vat}
+    legalAddress={LEGAL_TOMMY.legalAddress}
+    email={PRIVACY_CONTACT.email}
+    phone={CONTACTS_RACING.officina.phone}
+    pec={LEGAL_TOMMY.pec}
+    domain={BRAND_RACING.domain}
+    lang="it"
+  />
+</Layout>

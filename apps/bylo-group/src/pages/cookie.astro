@@ -1,0 +1,24 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+import CookiePolicy from '@bylo/ui/legal/CookiePolicy.astro';
+import { LEGAL_GROUP, PRIVACY_CONTACT, GROUP } from '@bylo/ui/index.ts';
+---
+
+<Layout
+  title={`Cookie Policy — ${GROUP.name}`}
+  description={`Informativa sui cookie utilizzati dal sito ${GROUP.name}.`}
+  noindex={false}
+>
+  <Header />
+  <main>
+    <CookiePolicy
+      entityName={LEGAL_GROUP.name}
+      domain="bylogroup.it"
+      email={PRIVACY_CONTACT.email}
+      lang="it"
+    />
+  </main>
+  <Footer />
+</Layout>

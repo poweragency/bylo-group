@@ -1,0 +1,17 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import CookiePolicy from '@bylo/ui/legal/CookiePolicy.astro';
+import { LEGAL_TOMMY, PRIVACY_CONTACT, BRAND_RACING } from '@bylo/ui/index.ts';
+---
+
+<Layout
+  title={`Cookie Policy — ${BRAND_RACING.name}`}
+  description={`Informativa sui cookie utilizzati dal sito ${BRAND_RACING.domain}.`}
+>
+  <CookiePolicy
+    entityName={LEGAL_TOMMY.name}
+    domain={BRAND_RACING.domain}
+    email={PRIVACY_CONTACT.email}
+    lang="it"
+  />
+</Layout>

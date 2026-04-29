@@ -5,6 +5,30 @@ export const GROUP = {
   payoff: 'Professionale, veloce e affidabile',
 } as const;
 
+// ---------- Holding legal entity (BYLO Group Srl) ----------
+// PLACEHOLDER: ragione sociale, sede legale e capitale sociale stimati
+// (la holding ha P.IVA 12651890969 estratta dal sito vecchio).
+// DA CONFERMARE col cliente nel documento INFO-DA-CLIENTE.md.
+export const LEGAL_GROUP = {
+  name: 'BYLO Group Srl',
+  vat: '12651890969',
+  // Sede legale ipotizzata = sede operativa Transport (Bollate). Da confermare.
+  legalAddress: 'Via Ghisalba 7, 20021 Ospiate di Bollate (MI)',
+  pec: 'bylogroupsrl@legalmail.it',
+  capital: null,
+} as const;
+
+// Email privacy/diritti interessato — placeholder ufficiale unico per il
+// gruppo. Quando il cliente conferma quale casella usare per richieste GDPR
+// (privacy@bylogroup.it consigliato), aggiornare qui.
+export const PRIVACY_CONTACT = {
+  email: 'privacy@bylogroup.it',
+  // DPO non designato: BYLO Group ha < 250 dipendenti e nessun trattamento
+  // su larga scala di dati sensibili → la nomina non è obbligatoria. Da
+  // valutare con legale del cliente.
+  dpo: null,
+} as const;
+
 // PLACEHOLDER: utente non ha confermato l'esistenza di info@/press@bylogroup.it.
 // Da verificare con il cliente. Nel frattempo le UI dovrebbero usare gli indirizzi
 // ufficiali (operativo.t@, officina@, carrozzeria@) finché non c'è una casella
@@ -26,12 +50,17 @@ export const LEGAL_TRANSPORT = {
   // dichiarato sul sito ufficiale: trattare come [DA VERIFICARE].
   albo: 'Albo Autotrasportatori MI/8906297N',
   capital: '€ 50.000,00 i.v.',
+  // Sede legale ipotizzata = sede operativa. Da confermare.
+  legalAddress: 'Via Ghisalba 7, 20021 Ospiate di Bollate (MI)',
 } as const;
 
 export const LEGAL_TOMMY = {
   name: 'TOMMY BY S.R.L.',
   vat: '14194470960',
   pec: 'tommybysrl@legalmail.it',
+  // Sede legale ipotizzata = sede officina. Da confermare.
+  legalAddress: 'Via A. Brunetti 14, 20156 Milano',
+  capital: null,
 } as const;
 
 // ---------- Brand 1: BYLO Transport ----------

@@ -1,0 +1,21 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import PrivacyPolicy from '@bylo/ui/legal/PrivacyPolicy.astro';
+import { LEGAL_TRANSPORT, CONTACTS, PRIVACY_CONTACT, BRAND } from '@bylo/ui/index.ts';
+---
+
+<Layout
+  title={`Privacy Policy — ${BRAND.name}`}
+  description={`GDPR privacy notice for the ${BRAND.domain} website.`}
+>
+  <PrivacyPolicy
+    entityName={LEGAL_TRANSPORT.name}
+    vat={LEGAL_TRANSPORT.vat}
+    legalAddress={LEGAL_TRANSPORT.legalAddress}
+    email={PRIVACY_CONTACT.email}
+    phone={CONTACTS.hq.phone}
+    pec={LEGAL_TRANSPORT.pec}
+    domain={BRAND.domain}
+    lang="en"
+  />
+</Layout>

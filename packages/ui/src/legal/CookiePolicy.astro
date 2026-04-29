@@ -1,0 +1,199 @@
+---
+interface Props {
+  entityName: string;
+  domain: string;
+  email: string;
+  lang?: 'it' | 'en';
+  lastUpdated?: string;
+}
+
+const {
+  entityName,
+  domain,
+  email,
+  lang = 'it',
+  lastUpdated = '2026-04-29',
+} = Astro.props;
+
+const isEN = lang === 'en';
+const privacyHref = isEN ? '/en/privacy' : '/privacy';
+
+const t = isEN
+  ? {
+      title: 'Cookie Policy',
+      lastUpdate: 'Last updated',
+      intro: `This document describes the cookies and similar technologies used by ${entityName} on ${domain}, the categories of cookies, their purposes, and how you can manage your preferences.`,
+      draftWarning: 'Document under review by our legal counsel. Final version coming soon.',
+      manageTitle: 'Manage your preferences',
+      manageBody: 'You can change your cookie preferences at any time by clicking the button below or the "Cookie preferences" link in the footer of every page.',
+      manageBtn: 'Cookie preferences',
+      whatTitle: '1. What are cookies',
+      whatBody: 'Cookies are small text files placed on your device by the websites you visit. They are widely used to make websites work efficiently, to improve performance, and to provide aggregated statistical information to site owners. Similar technologies (e.g. local storage, pixel tags) may be used for the same purposes.',
+      catTitle: '2. Categories of cookies used',
+      catNecessaryName: 'Strictly necessary',
+      catNecessaryBody: 'These cookies are essential for site functionality, security, and basic navigation. They do not store personal data and cannot be disabled. Includes session cookies set by the hosting provider (Vercel) for routing and DDoS protection, and a local cookie consent record (`bylo-cc`) that stores your choice.',
+      catAnalyticsName: 'Analytics (consent-based)',
+      catAnalyticsBody: 'Currently no analytics cookies are active on this site. When Google Analytics 4 is activated, it will be loaded only after explicit consent through the cookie banner. Analytics cookies allow us to understand aggregated usage patterns to improve the site.',
+      catMarketingName: 'Marketing',
+      catMarketingBody: 'Currently no marketing or advertising cookies are present on this site. If introduced in the future, they will be loaded only after explicit consent.',
+      tableHead: ['Cookie', 'Provider', 'Purpose', 'Duration'],
+      tableRows: [
+        ['_vercel_*', 'Vercel (hosting)', 'Routing, security, DDoS protection', 'Session / max 1 year'],
+        ['bylo-cc', 'First party (this site)', 'Stores your cookie consent choice', '180 days'],
+      ],
+      thirdTitle: '3. Third-party cookies',
+      thirdBody: 'When loaded with your consent, third-party services receive your data subject to their own privacy policies. Currently no third-party tracking is active. WhatsApp links open the official WhatsApp service in a new window: opening that link triggers WhatsApp’s own cookies and is governed by WhatsApp’s policies.',
+      browserTitle: '4. Browser settings',
+      browserBody: 'You can also manage cookies directly from your browser. Disabling all cookies may compromise the proper functioning of the site. Find browser-specific instructions on the official websites of:',
+      browsers: [
+        ['Chrome', 'https://support.google.com/chrome/answer/95647'],
+        ['Firefox', 'https://support.mozilla.org/kb/cookies-information-websites-store-on-your-computer'],
+        ['Safari', 'https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac'],
+        ['Edge', 'https://support.microsoft.com/help/4027947'],
+      ],
+      contactTitle: '5. Contact',
+      contactBody: 'For any question regarding this Cookie Policy or to exercise your privacy rights, you can contact us at',
+      relatedTitle: '6. Related documents',
+      privacyLink: 'Privacy Policy',
+    }
+  : {
+      title: 'Cookie Policy',
+      lastUpdate: 'Ultimo aggiornamento',
+      intro: `Il presente documento descrive i cookie e le tecnologie simili utilizzate da ${entityName} su ${domain}, le categorie di cookie, le loro finalità e come puoi gestire le tue preferenze.`,
+      draftWarning: 'Documento in fase di revisione legale. Versione definitiva in arrivo.',
+      manageTitle: 'Gestisci le tue preferenze',
+      manageBody: 'Puoi modificare le tue preferenze sui cookie in qualsiasi momento cliccando il bottone qui sotto, oppure il link "Preferenze cookie" presente nel footer di ogni pagina.',
+      manageBtn: 'Preferenze cookie',
+      whatTitle: '1. Cosa sono i cookie',
+      whatBody: 'I cookie sono piccoli file di testo che i siti web visitati posizionano sul tuo dispositivo. Sono ampiamente utilizzati per far funzionare i siti web in modo efficiente, migliorarne le prestazioni e fornire ai proprietari informazioni statistiche aggregate. Tecnologie simili (es. local storage, pixel tag) possono essere utilizzate per le stesse finalità.',
+      catTitle: '2. Categorie di cookie utilizzati',
+      catNecessaryName: 'Strettamente necessari',
+      catNecessaryBody: 'Sono essenziali per il funzionamento del sito, la sicurezza e la navigazione di base. Non memorizzano dati personali e non possono essere disabilitati. Includono cookie di sessione impostati dal provider di hosting (Vercel) per il routing e la protezione DDoS, e un cookie locale di consenso (`bylo-cc`) che conserva la tua scelta.',
+      catAnalyticsName: 'Analitici (su consenso)',
+      catAnalyticsBody: 'Attualmente nessun cookie analitico è attivo su questo sito. Quando verrà attivato Google Analytics 4, sarà caricato solo dopo il tuo consenso esplicito tramite il banner cookie. I cookie analitici ci permettono di comprendere come viene usato il sito a livello aggregato per migliorarlo.',
+      catMarketingName: 'Marketing',
+      catMarketingBody: 'Attualmente non sono presenti cookie di marketing o pubblicitari su questo sito. Qualora venissero introdotti in futuro, saranno caricati solo dopo il tuo consenso esplicito.',
+      tableHead: ['Cookie', 'Fornitore', 'Finalità', 'Durata'],
+      tableRows: [
+        ['_vercel_*', 'Vercel (hosting)', 'Routing, sicurezza, protezione DDoS', 'Sessione / max 1 anno'],
+        ['bylo-cc', 'Prima parte (questo sito)', 'Memorizza la tua scelta di consenso', '180 giorni'],
+      ],
+      thirdTitle: '3. Cookie di terze parti',
+      thirdBody: 'Quando caricati con il tuo consenso, i servizi di terze parti ricevono i tuoi dati nel rispetto delle loro privacy policy. Attualmente nessun tracker di terze parti è attivo. I link WhatsApp aprono il servizio WhatsApp ufficiale in una nuova finestra: aprendoli vengono attivati i cookie di WhatsApp e si applicano le sue policy.',
+      browserTitle: '4. Impostazioni browser',
+      browserBody: 'Puoi gestire i cookie direttamente anche dal tuo browser. Disabilitare tutti i cookie può compromettere il corretto funzionamento del sito. Trovi le istruzioni specifiche sui siti ufficiali di:',
+      browsers: [
+        ['Chrome', 'https://support.google.com/chrome/answer/95647'],
+        ['Firefox', 'https://support.mozilla.org/it/kb/Attivare%20e%20disattivare%20i%20cookie'],
+        ['Safari', 'https://support.apple.com/it-it/guide/safari/manage-cookies-sfri11471/mac'],
+        ['Edge', 'https://support.microsoft.com/it-it/help/4027947'],
+      ],
+      contactTitle: '5. Contatti',
+      contactBody: 'Per qualsiasi domanda relativa a questa Cookie Policy o per esercitare i tuoi diritti privacy, puoi contattarci a',
+      relatedTitle: '6. Documenti correlati',
+      privacyLink: 'Privacy Policy',
+    };
+---
+
+<article class="container-page py-16 md:py-20 max-w-3xl">
+  <header class="mb-10">
+    <span class="eyebrow">Legal</span>
+    <h1 class="font-display font-black text-4xl md:text-5xl tracking-tight mt-4">{t.title}</h1>
+    <p class="mt-4 text-sm text-byl-mute">
+      {t.lastUpdate}: <time datetime={lastUpdated}>{lastUpdated}</time>
+    </p>
+    <div class="mt-6 p-4 bg-byl-yellow/10 border-l-4 border-byl-yellow rounded text-sm text-byl-black">
+      <strong class="font-semibold">⚠ {isEN ? 'Draft' : 'Bozza'}:</strong> {t.draftWarning}
+    </div>
+    <p class="mt-6 leading-relaxed text-byl-black/80">{t.intro}</p>
+  </header>
+
+  <section class="space-y-10 text-byl-black/85">
+    <div class="bg-byl-off border border-byl-stone rounded-xl p-6">
+      <h2 class="font-display font-semibold text-xl text-byl-black">{t.manageTitle}</h2>
+      <p class="mt-2 leading-relaxed">{t.manageBody}</p>
+      <button
+        type="button"
+        data-cc-action="open-preferences"
+        class="mt-5 inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-byl-black text-byl-yellow font-semibold text-sm hover:bg-byl-graphite transition-colors"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+        </svg>
+        {t.manageBtn}
+      </button>
+    </div>
+
+    <div>
+      <h2 class="font-display font-semibold text-2xl text-byl-black">{t.whatTitle}</h2>
+      <p class="mt-3 leading-relaxed">{t.whatBody}</p>
+    </div>
+
+    <div>
+      <h2 class="font-display font-semibold text-2xl text-byl-black">{t.catTitle}</h2>
+
+      <div class="mt-5 border border-byl-stone rounded-xl p-5">
+        <h3 class="font-semibold text-byl-black">{t.catNecessaryName}</h3>
+        <p class="mt-2 leading-relaxed text-sm">{t.catNecessaryBody}</p>
+      </div>
+
+      <div class="mt-4 border border-byl-stone rounded-xl p-5">
+        <h3 class="font-semibold text-byl-black">{t.catAnalyticsName}</h3>
+        <p class="mt-2 leading-relaxed text-sm">{t.catAnalyticsBody}</p>
+      </div>
+
+      <div class="mt-4 border border-byl-stone rounded-xl p-5">
+        <h3 class="font-semibold text-byl-black">{t.catMarketingName}</h3>
+        <p class="mt-2 leading-relaxed text-sm">{t.catMarketingBody}</p>
+      </div>
+
+      <div class="mt-6 overflow-x-auto">
+        <table class="w-full text-sm border border-byl-stone rounded-lg overflow-hidden">
+          <thead class="bg-byl-off text-left">
+            <tr>
+              {t.tableHead.map((h) => <th class="px-4 py-3 font-semibold text-byl-black">{h}</th>)}
+            </tr>
+          </thead>
+          <tbody>
+            {t.tableRows.map((row) => (
+              <tr class="border-t border-byl-stone">
+                {row.map((cell) => <td class="px-4 py-3 align-top">{cell}</td>)}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="font-display font-semibold text-2xl text-byl-black">{t.thirdTitle}</h2>
+      <p class="mt-3 leading-relaxed">{t.thirdBody}</p>
+    </div>
+
+    <div>
+      <h2 class="font-display font-semibold text-2xl text-byl-black">{t.browserTitle}</h2>
+      <p class="mt-3 leading-relaxed">{t.browserBody}</p>
+      <ul class="mt-3 list-disc pl-6 space-y-1">
+        {t.browsers.map(([name, url]) => (
+          <li><a href={url} target="_blank" rel="noopener noreferrer" class="underline hover:text-byl-yellow-dark">{name}</a></li>
+        ))}
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="font-display font-semibold text-2xl text-byl-black">{t.contactTitle}</h2>
+      <p class="mt-3 leading-relaxed">
+        {t.contactBody}{' '}
+        <a href={`mailto:${email}`} class="underline hover:text-byl-yellow-dark">{email}</a>.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="font-display font-semibold text-2xl text-byl-black">{t.relatedTitle}</h2>
+      <p class="mt-3 leading-relaxed">
+        <a href={privacyHref} class="underline hover:text-byl-yellow-dark">{t.privacyLink}</a>
+      </p>
+    </div>
+  </section>
+</article>

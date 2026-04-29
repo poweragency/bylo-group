@@ -19,6 +19,7 @@ const t = isEN
       contact: 'Contact',
       privacy: 'Privacy Policy',
       cookie: 'Cookie Policy',
+      cookiePrefs: 'Cookie preferences',
       vat: 'VAT',
     }
   : {
@@ -33,6 +34,7 @@ const t = isEN
       contact: 'Contatti',
       privacy: 'Privacy Policy',
       cookie: 'Cookie Policy',
+      cookiePrefs: 'Preferenze cookie',
       vat: 'P.IVA',
     };
 
@@ -104,9 +106,10 @@ const sectionPath = isEN ? {
 
     <div class="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm text-white/50">
       <p>© {year} {BRAND.legalName} — {t.vat} {BRAND.vat}</p>
-      <div class="flex gap-6">
+      <div class="flex flex-wrap gap-x-6 gap-y-2">
         <a href={`${base}/privacy`} class="hover:text-byl-yellow transition-colors">{t.privacy}</a>
         <a href={`${base}/cookie`} class="hover:text-byl-yellow transition-colors">{t.cookie}</a>
+        <button type="button" data-cc-action="open-preferences" class="hover:text-byl-yellow transition-colors">{t.cookiePrefs}</button>
       </div>
     </div>
   </div>

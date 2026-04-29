@@ -1,0 +1,278 @@
+---
+interface Props {
+  entityName: string;
+  vat: string;
+  legalAddress: string;
+  email: string;
+  phone?: string;
+  pec?: string;
+  domain: string;
+  /** Default 'it'. */
+  lang?: 'it' | 'en';
+  /** ISO date dell'ultima revisione, es. '2026-04-29'. */
+  lastUpdated?: string;
+}
+
+const {
+  entityName,
+  vat,
+  legalAddress,
+  email,
+  phone,
+  pec,
+  domain,
+  lang = 'it',
+  lastUpdated = '2026-04-29',
+} = Astro.props;
+
+const isEN = lang === 'en';
+const cookiePolicyHref = isEN ? '/en/cookie' : '/cookie';
+
+const t = isEN
+  ? {
+      title: 'Privacy Policy',
+      lastUpdate: 'Last updated',
+      intro: `This privacy policy describes how ${entityName} ("we", "us") processes personal data collected through the website ${domain}, in compliance with EU Regulation 2016/679 (GDPR) and Italian Legislative Decree 196/2003 as amended.`,
+      draftWarning: 'Document under review by our legal counsel. Final version coming soon.',
+      sections: {
+        controller: {
+          title: '1. Data controller',
+          body: `The data controller for the personal data processed through this site is ${entityName}, with registered office at ${legalAddress}, VAT no. ${vat}.`,
+          contact: 'Contact for privacy matters:',
+        },
+        dataCollected: {
+          title: '2. Categories of personal data collected',
+          intro: 'We may collect the following categories of personal data:',
+          items: [
+            'Identification and contact data (name, surname, email, phone) provided when you contact us via email, WhatsApp or telephone.',
+            'Browsing data automatically collected by the site (IP address, browser type, pages visited, timestamps) — see the section on cookies.',
+            'Communication content (text of emails or messages you send us).',
+          ],
+        },
+        purposes: {
+          title: '3. Purposes and legal basis',
+          intro: 'We process your data for the following purposes:',
+          items: [
+            'To respond to your requests for information, quotes or services (legal basis: pre-contractual measures at your request, art. 6.1.b GDPR).',
+            'To fulfil our legal and tax obligations (legal basis: legal obligation, art. 6.1.c GDPR).',
+            'To ensure security of the website and prevent fraud (legal basis: legitimate interest, art. 6.1.f GDPR).',
+            'For aggregated, anonymous statistical analysis of website usage (legal basis: consent, art. 6.1.a GDPR — only if you accept analytics cookies).',
+          ],
+        },
+        retention: {
+          title: '4. Data retention',
+          body: 'Personal data is kept only for the time strictly necessary to achieve the purposes for which it was collected, and in any case no longer than: 24 months for commercial communications without a follow-up contract, 10 years for accounting/tax data as required by Italian law, the duration of the contract plus 10 years for client data.',
+        },
+        sharing: {
+          title: '5. Recipients and processors',
+          intro: 'Your data may be shared with the following categories of recipients:',
+          items: [
+            'IT service providers (hosting, email, analytics) acting as data processors under art. 28 GDPR.',
+            'Professional consultants (accountants, lawyers) when required for legal or tax obligations.',
+            'Public authorities when required by law.',
+          ],
+          note: 'A complete and updated list of data processors is available upon request to the controller.',
+        },
+        transfers: {
+          title: '6. Transfers outside the EU',
+          body: 'Some of our service providers (e.g. hosting, analytics) may process data in countries outside the European Economic Area. In such cases, transfers are protected by Standard Contractual Clauses approved by the European Commission or by other legal mechanisms provided by the GDPR.',
+        },
+        rights: {
+          title: '7. Your rights',
+          intro: 'Under articles 15-22 GDPR, you have the right to:',
+          items: [
+            'Access your personal data and obtain a copy.',
+            'Rectify inaccurate or incomplete data.',
+            'Erase your data ("right to be forgotten") in the cases provided by law.',
+            'Restrict processing in the cases provided by law.',
+            'Object to processing based on legitimate interest.',
+            'Data portability (in machine-readable format).',
+            'Withdraw consent at any time, without affecting the lawfulness of processing carried out before withdrawal.',
+            'Lodge a complaint with the Italian Data Protection Authority (Garante per la protezione dei dati personali).',
+          ],
+          howTo: `To exercise your rights you can write to ${email}.`,
+        },
+        cookies: {
+          title: '8. Cookies',
+          body: 'For detailed information on the cookies used by this site and to manage your preferences,',
+          link: 'see the Cookie Policy',
+        },
+        changes: {
+          title: '9. Changes to this policy',
+          body: 'We may update this policy from time to time. The "last updated" date at the top of this page indicates the date of the latest revision. We invite you to consult this page periodically.',
+        },
+      },
+    }
+  : {
+      title: 'Privacy Policy',
+      lastUpdate: 'Ultimo aggiornamento',
+      intro: `La presente informativa descrive come ${entityName} ("noi", "Titolare") tratta i dati personali raccolti tramite il sito ${domain}, ai sensi del Regolamento UE 2016/679 (GDPR) e del D.Lgs. 196/2003 e successive modifiche.`,
+      draftWarning: 'Documento in fase di revisione legale. Versione definitiva in arrivo.',
+      sections: {
+        controller: {
+          title: '1. Titolare del trattamento',
+          body: `Il titolare del trattamento dei dati personali raccolti tramite questo sito è ${entityName}, con sede legale in ${legalAddress}, P.IVA ${vat}.`,
+          contact: 'Contatto per questioni privacy:',
+        },
+        dataCollected: {
+          title: '2. Categorie di dati personali raccolti',
+          intro: 'Possiamo raccogliere le seguenti categorie di dati personali:',
+          items: [
+            'Dati di identificazione e contatto (nome, cognome, email, telefono) forniti spontaneamente quando ci contatti via email, WhatsApp o telefono.',
+            'Dati di navigazione raccolti automaticamente dal sito (indirizzo IP, tipo di browser, pagine visitate, orari) — vedi sezione sui cookie.',
+            'Contenuto delle comunicazioni (testo delle email o dei messaggi che ci invii).',
+          ],
+        },
+        purposes: {
+          title: '3. Finalità e base giuridica',
+          intro: 'Trattiamo i tuoi dati per le seguenti finalità:',
+          items: [
+            'Riscontro alle tue richieste di informazioni, preventivi o servizi (base giuridica: misure precontrattuali su tua richiesta, art. 6.1.b GDPR).',
+            'Adempimento di obblighi di legge e fiscali (base giuridica: obbligo legale, art. 6.1.c GDPR).',
+            'Garantire la sicurezza del sito e prevenire frodi (base giuridica: legittimo interesse, art. 6.1.f GDPR).',
+            'Analisi statistiche aggregate e anonime sull’uso del sito (base giuridica: consenso, art. 6.1.a GDPR — solo se accetti i cookie analitici).',
+          ],
+        },
+        retention: {
+          title: '4. Conservazione dei dati',
+          body: 'I dati personali sono conservati per il tempo strettamente necessario al raggiungimento delle finalità per cui sono stati raccolti, e comunque non oltre: 24 mesi per comunicazioni commerciali non seguite da contratto, 10 anni per dati contabili/fiscali come richiesto dalla normativa italiana, durata del contratto più 10 anni per i dati dei clienti.',
+        },
+        sharing: {
+          title: '5. Destinatari e responsabili',
+          intro: 'I tuoi dati possono essere comunicati alle seguenti categorie di destinatari:',
+          items: [
+            'Fornitori di servizi IT (hosting, email, analytics) nominati responsabili del trattamento ai sensi dell’art. 28 GDPR.',
+            'Consulenti professionali (commercialisti, avvocati) quando necessario per obblighi di legge.',
+            'Autorità pubbliche quando richiesto dalla legge.',
+          ],
+          note: 'L’elenco completo e aggiornato dei responsabili del trattamento è disponibile su richiesta al Titolare.',
+        },
+        transfers: {
+          title: '6. Trasferimenti extra-UE',
+          body: 'Alcuni fornitori di servizi (es. hosting, analytics) possono trattare i dati in Paesi al di fuori dello Spazio Economico Europeo. In tali casi, i trasferimenti sono protetti tramite Clausole Contrattuali Standard approvate dalla Commissione Europea o altri meccanismi previsti dal GDPR.',
+        },
+        rights: {
+          title: '7. I tuoi diritti',
+          intro: 'Ai sensi degli artt. 15-22 GDPR, hai diritto a:',
+          items: [
+            'Accedere ai tuoi dati personali e ottenerne copia.',
+            'Rettificare dati inesatti o incompleti.',
+            'Cancellare i tuoi dati ("diritto all’oblio") nei casi previsti dalla legge.',
+            'Limitare il trattamento nei casi previsti dalla legge.',
+            'Opporti al trattamento basato sul legittimo interesse.',
+            'Portabilità dei dati (in formato leggibile da macchina).',
+            'Revocare il consenso in qualsiasi momento, senza pregiudicare la liceità del trattamento effettuato prima della revoca.',
+            'Proporre reclamo al Garante per la protezione dei dati personali.',
+          ],
+          howTo: `Per esercitare i tuoi diritti puoi scrivere a ${email}.`,
+        },
+        cookies: {
+          title: '8. Cookie',
+          body: 'Per informazioni dettagliate sui cookie utilizzati da questo sito e per gestire le tue preferenze,',
+          link: 'consulta la Cookie Policy',
+        },
+        changes: {
+          title: '9. Modifiche a questa informativa',
+          body: 'Potremmo aggiornare periodicamente questa informativa. La data di "ultimo aggiornamento" in cima alla pagina indica la data dell’ultima revisione. Ti invitiamo a consultare periodicamente questa pagina.',
+        },
+      },
+    };
+---
+
+<article class="container-page py-16 md:py-20 max-w-3xl">
+  <header class="mb-10">
+    <span class="eyebrow">Legal</span>
+    <h1 class="font-display font-black text-4xl md:text-5xl tracking-tight mt-4">{t.title}</h1>
+    <p class="mt-4 text-sm text-byl-mute">
+      {t.lastUpdate}: <time datetime={lastUpdated}>{lastUpdated}</time>
+    </p>
+    <div class="mt-6 p-4 bg-byl-yellow/10 border-l-4 border-byl-yellow rounded text-sm text-byl-black">
+      <strong class="font-semibold">⚠ {isEN ? 'Draft' : 'Bozza'}:</strong> {t.draftWarning}
+    </div>
+    <p class="mt-6 leading-relaxed text-byl-black/80">{t.intro}</p>
+  </header>
+
+  <section class="prose-legal space-y-10 text-byl-black/85">
+    <div>
+      <h2 class="font-display font-semibold text-2xl text-byl-black">{t.sections.controller.title}</h2>
+      <p class="mt-3 leading-relaxed">{t.sections.controller.body}</p>
+      <p class="mt-3 leading-relaxed">
+        {t.sections.controller.contact}{' '}
+        <a href={`mailto:${email}`} class="underline hover:text-byl-yellow-dark">{email}</a>
+        {phone && (
+          <>
+            {' · '}
+            <a href={`tel:${phone.replace(/\s/g, '')}`} class="underline hover:text-byl-yellow-dark">{phone}</a>
+          </>
+        )}
+        {pec && (
+          <>
+            {' · PEC: '}
+            <a href={`mailto:${pec}`} class="underline hover:text-byl-yellow-dark">{pec}</a>
+          </>
+        )}
+      </p>
+    </div>
+
+    <div>
+      <h2 class="font-display font-semibold text-2xl text-byl-black">{t.sections.dataCollected.title}</h2>
+      <p class="mt-3 leading-relaxed">{t.sections.dataCollected.intro}</p>
+      <ul class="mt-3 list-disc pl-6 space-y-2">
+        {t.sections.dataCollected.items.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="font-display font-semibold text-2xl text-byl-black">{t.sections.purposes.title}</h2>
+      <p class="mt-3 leading-relaxed">{t.sections.purposes.intro}</p>
+      <ul class="mt-3 list-disc pl-6 space-y-2">
+        {t.sections.purposes.items.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="font-display font-semibold text-2xl text-byl-black">{t.sections.retention.title}</h2>
+      <p class="mt-3 leading-relaxed">{t.sections.retention.body}</p>
+    </div>
+
+    <div>
+      <h2 class="font-display font-semibold text-2xl text-byl-black">{t.sections.sharing.title}</h2>
+      <p class="mt-3 leading-relaxed">{t.sections.sharing.intro}</p>
+      <ul class="mt-3 list-disc pl-6 space-y-2">
+        {t.sections.sharing.items.map((item) => <li>{item}</li>)}
+      </ul>
+      <p class="mt-3 text-sm text-byl-mute italic">{t.sections.sharing.note}</p>
+    </div>
+
+    <div>
+      <h2 class="font-display font-semibold text-2xl text-byl-black">{t.sections.transfers.title}</h2>
+      <p class="mt-3 leading-relaxed">{t.sections.transfers.body}</p>
+    </div>
+
+    <div>
+      <h2 class="font-display font-semibold text-2xl text-byl-black">{t.sections.rights.title}</h2>
+      <p class="mt-3 leading-relaxed">{t.sections.rights.intro}</p>
+      <ul class="mt-3 list-disc pl-6 space-y-2">
+        {t.sections.rights.items.map((item) => <li>{item}</li>)}
+      </ul>
+      <p class="mt-4 leading-relaxed">
+        {t.sections.rights.howTo.split(email)[0]}
+        <a href={`mailto:${email}`} class="underline hover:text-byl-yellow-dark">{email}</a>
+        {t.sections.rights.howTo.split(email)[1]}
+      </p>
+    </div>
+
+    <div>
+      <h2 class="font-display font-semibold text-2xl text-byl-black">{t.sections.cookies.title}</h2>
+      <p class="mt-3 leading-relaxed">
+        {t.sections.cookies.body}{' '}
+        <a href={cookiePolicyHref} class="underline hover:text-byl-yellow-dark">{t.sections.cookies.link}</a>.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="font-display font-semibold text-2xl text-byl-black">{t.sections.changes.title}</h2>
+      <p class="mt-3 leading-relaxed">{t.sections.changes.body}</p>
+    </div>
+  </section>
+</article>

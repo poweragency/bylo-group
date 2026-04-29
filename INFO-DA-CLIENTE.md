@@ -162,16 +162,36 @@ Quando il cliente recupera DNS e si fa cutover, il sito vecchio viene rimpiazzat
 - [ ] OK così? Oppure vuoi tenere alcune sezioni del vecchio sito (es. una pagina "Storico" o "Press"?)
 - [ ] I 6 URL vecchi (`/trasporti-nazionali-adr`, `/logistica`, `/automotive`, `/chi-siamo`, `/contatti`) li redirigiamo automaticamente alle nuove pagine — OK così?
 
+### 20. Privacy & Cookie — Parte legale ⚠ PRIORITÀ ALTA
+
+Sul sito vecchio bylogroup.it esiste una privacy policy su Iubenda (ID `72984250`) ma è **OBSOLETA**: dichiara come Titolare *"BYLO TRANSPORT & COMMERCE Srl"* (vecchio nome, prima del refactor a BYLO Group) e copre solo `bylogroup.it`, non i sotto-domini `transport.bylogroup.it` e `tommy.bylogroup.it`.
+
+Cosa abbiamo già fatto sui 3 nuovi siti (in attesa tua revisione):
+
+- ✅ **Pagine /privacy e /cookie** scritte in IT + EN per ciascun sito (3 siti × 2 lingue × 2 pagine = **12 pagine totali**), basate su template Garante Privacy con dati corretti delle 3 entità legali (BYLO Group Srl, BYLO TRANSPORT S.R.L., TOMMY BY S.R.L.).
+- ✅ **Cookie banner brand-coherent** custom (giallo/nero, riapribile da footer, persistenza 180 gg in localStorage, 3 livelli: Accetta tutti / Solo essenziali / Personalizza con toggle Analytics+Marketing). Quando attiveremo GA4, il banner gestirà già il consent automaticamente (GA4 carica solo se utente accetta analytics).
+- ✅ **Disclaimer "Bozza"** in cima a ogni pagina legale che invita alla revisione del legale prima del go-live definitivo.
+
+**Cosa serve da te / dal tuo legale:**
+
+- [ ] **Revisione testi privacy + cookie policy** dal commercialista o avvocato del gruppo, per validare contenuti prima del go-live definitivo.
+- [ ] **Email per richieste GDPR**: stiamo usando placeholder `privacy@bylogroup.it`. Va bene o vuoi un'altra casella (es. `info@bylogroup.it`, oppure rinnoviamo Iubenda)?
+- [ ] **Sede legale** delle 3 entità — ipotizzata uguale a sede operativa (Bollate per Group + Transport, Brunetti Milano per Tommy). Da confermare con visure camerali aggiornate.
+- [ ] **DPO designato?** Probabilmente non obbligatorio (BYLO ha < 250 dipendenti e nessun trattamento dati su larga scala), ma se è stato nominato dimmi nome+contatto.
+- [ ] **Iubenda esistente**: lo aggiorniamo (titolare obsoleto + estendere ai sotto-domini) o dismettiamo e usiamo le pagine native scritte da noi? L'opzione native è gratuita e brand-coherent; l'opzione Iubenda costa ~27€/anno × 3 domini ma ha aggiornamenti automatici.
+- [ ] **Cookie tecnici aggiuntivi**: oggi abbiamo solo `_vercel_*` (hosting) e `bylo-cc` (consenso locale). Se aggiungiamo Mailchimp / chat tipo Tawk / mappa Google embed, vanno aggiunti alla cookie policy — fammi sapere se ne vuoi.
+
 ---
 
 ## 📞 Risposta veloce — sintesi minima per partire
 
-Se vuoi rispondere veloce e farci procedere col deploy reale (cutover su `bylogroup.it`), bastano queste 4 cose:
+Se vuoi rispondere veloce e farci procedere col deploy reale (cutover su `bylogroup.it`), bastano queste 5 cose:
 
 1. **Credenziali pannello Dominiok** (per DNS) — punto 1
 2. **Account Google ufficiale** azienda (per GSC + GA4) — punto 2-3-4
 3. **Conferma indirizzi/email/orari/classi ADR** già usati — punti 9-13
 4. **Conferma naming "BYLO Transport" + dominio "transport.bylogroup.it"** — punti 16-17
+5. **Revisione legale privacy/cookie + email privacy ufficiale** — punto 20
 
 Tutto il resto può arrivare a grappolo dopo, e si aggiorna il sito in 1-2 ore di lavoro per ogni "pacchetto" di info ricevuto.
 

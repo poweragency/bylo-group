@@ -21,6 +21,7 @@ const t = isEN
       vat: 'VAT',
       privacy: 'Privacy',
       cookie: 'Cookie',
+      cookiePrefs: 'Cookie preferences',
     }
   : {
       tagline:
@@ -35,6 +36,7 @@ const t = isEN
       vat: 'P.IVA',
       privacy: 'Privacy',
       cookie: 'Cookie',
+      cookiePrefs: 'Preferenze cookie',
     };
 
 const sectionPath = isEN ? {
@@ -104,10 +106,11 @@ const sectionPath = isEN ? {
 
     <div class="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm text-white/50">
       <p>© {year} {BRAND_RACING.legalName} — {t.vat} {BRAND_RACING.vat}</p>
-      <div class="flex gap-6">
+      <div class="flex flex-wrap gap-x-6 gap-y-2">
         <a href={GROUP.website} class="hover:text-byl-yellow transition-colors">{GROUP.name}</a>
         <a href={`${base}/privacy`} class="hover:text-byl-yellow transition-colors">{t.privacy}</a>
         <a href={`${base}/cookie`} class="hover:text-byl-yellow transition-colors">{t.cookie}</a>
+        <button type="button" data-cc-action="open-preferences" class="hover:text-byl-yellow transition-colors">{t.cookiePrefs}</button>
       </div>
     </div>
   </div>

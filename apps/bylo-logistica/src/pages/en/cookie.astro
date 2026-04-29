@@ -1,0 +1,17 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import CookiePolicy from '@bylo/ui/legal/CookiePolicy.astro';
+import { LEGAL_TRANSPORT, PRIVACY_CONTACT, BRAND } from '@bylo/ui/index.ts';
+---
+
+<Layout
+  title={`Cookie Policy — ${BRAND.name}`}
+  description={`Cookie policy for the ${BRAND.domain} website.`}
+>
+  <CookiePolicy
+    entityName={LEGAL_TRANSPORT.name}
+    domain={BRAND.domain}
+    email={PRIVACY_CONTACT.email}
+    lang="en"
+  />
+</Layout>
