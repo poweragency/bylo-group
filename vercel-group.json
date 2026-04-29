@@ -1,8 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "astro",
-  "buildCommand": "npm run build:group",
-  "outputDirectory": "apps/bylo-group/dist",
+  "buildCommand": "cd ../.. && npm install && npm run build:group",
+  "outputDirectory": "dist",
+  "installCommand": "echo skip-default",
   "headers": [
     {
       "source": "/_astro/:path*",

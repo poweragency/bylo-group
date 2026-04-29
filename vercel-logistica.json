@@ -1,8 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "astro",
-  "buildCommand": "npm run build:logistica",
-  "outputDirectory": "apps/bylo-logistica/dist",
+  "buildCommand": "cd ../.. && npm install && npm run build:logistica",
+  "outputDirectory": "dist",
+  "installCommand": "echo skip-default",
   "headers": [
     {
       "source": "/_astro/:path*",
