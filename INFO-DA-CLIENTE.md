@@ -152,6 +152,26 @@ Sul sito nuovo abbiamo usato:
 - "tommy.bylogroup.it" → Tommy By (ovvio)
 - Per la logistica, stiamo usando "**transport.bylogroup.it**" (allineato al brand "BYLO Transport"). Alternativa era "logistica.bylogroup.it" (in italiano). Confermi `transport.`?
 
+### 18a. Form di contatto — Access key Web3Forms ⚠ RAPIDO
+
+Il form di contatto è stato implementato sui siti `transport.bylogroup.it` e `tommy.bylogroup.it`. Per attivarlo serve solo una **access key gratuita di Web3Forms** — niente account, niente domain verification: si inserisce semplicemente l'email su cui vuoi ricevere le richieste, ti arriva la key via email.
+
+**Cosa serve da te:**
+1. Vai su https://web3forms.com (o ti registri tu, oppure facciamo insieme — 30 secondi)
+2. Inserisci l'email su cui vuoi ricevere le richieste form (es. `operativo.t@bylogroup.it` per Transport, `officina@bylogroup.it` per Tommy — oppure una casella unica `info@bylogroup.it`)
+3. Web3Forms ti manda subito la **access key** (formato `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`)
+4. Mi giri la key e in 5 minuti la attivo
+
+**Note:**
+- Free tier: 250 invii/mese (sufficiente per sito vetrina B2B). Se serve di più si passa a piano pro a pagamento.
+- Una sola key vale per i form di entrambi i siti (Transport + Tommy).
+- L'utente che invia il form vedrà subito un messaggio di conferma in pagina, e poi una pagina dedicata `/grazie`.
+- Antispam built-in (honeypot + rate limiting Web3Forms server-side).
+- Reply-to automatico: rispondendo all'email che ricevi parli direttamente al cliente.
+
+- [ ] Vuoi una sola casella destinazione (es. `info@bylogroup.it`) o casella diversa per Transport vs Tommy?
+- [ ] Mi giri la access key Web3Forms?
+
 ### 18. WhatsApp
 
 - [ ] Vuoi un **bottone "scrivici su WhatsApp"** sul sito? Se sì, mi serve **il numero WhatsApp Business** (deve essere un numero diverso dai telefoni fissi, oppure può essere lo stesso se è abilitato).
@@ -185,13 +205,14 @@ Cosa abbiamo già fatto sui 3 nuovi siti (in attesa tua revisione):
 
 ## 📞 Risposta veloce — sintesi minima per partire
 
-Se vuoi rispondere veloce e farci procedere col deploy reale (cutover su `bylogroup.it`), bastano queste 5 cose:
+Se vuoi rispondere veloce e farci procedere col deploy reale (cutover su `bylogroup.it`), bastano queste 6 cose:
 
 1. **Credenziali pannello Dominiok** (per DNS) — punto 1
 2. **Account Google ufficiale** azienda (per GSC + GA4) — punto 2-3-4
 3. **Conferma indirizzi/email/orari/classi ADR** già usati — punti 9-13
 4. **Conferma naming "BYLO Transport" + dominio "transport.bylogroup.it"** — punti 16-17
-5. **Revisione legale privacy/cookie + email privacy ufficiale** — punto 20
+5. **Access key Web3Forms** + email destinazione richieste form — punto 18a
+6. **Revisione legale privacy/cookie + email privacy ufficiale** — punto 20
 
 Tutto il resto può arrivare a grappolo dopo, e si aggiorna il sito in 1-2 ore di lavoro per ogni "pacchetto" di info ricevuto.
 

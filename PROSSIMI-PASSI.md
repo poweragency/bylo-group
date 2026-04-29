@@ -49,7 +49,8 @@ Dettaglio in `INFO-DA-CLIENTE.md`. Riassunto:
 
 1. **Lighthouse audit** sui 3 URL — performance/SEO/accessibility/best practices score. 15 min check + eventuali fix
 2. **OG image dinamiche per pagina** (con titolo della pagina renderizzato) — oggi 1 OG default per app, non per singola pagina. ~1h con Vercel OG Image Function
-3. **WhatsApp button** (quando cliente fornisce il numero) — 15 min
+3. **Web3Forms access key** (quando cliente fornisce la key) — 5 min: setto `PUBLIC_WEB3FORMS_KEY` env var su Vercel per le 2 app + redeploy. Form già implementato e funzionante a livello UI/UX, manca solo la key.
+4. **WhatsApp button** (quando cliente fornisce il numero) — 15 min
 5. **A11y audit** approfondito — keyboard nav, screen reader, contrast. 30 min
 6. **Content review umano** — leggere ogni pagina cercando frasi che "suonano da AI". 1-2h
 7. **Conversione SVG OG → PNG** — alcuni social non supportano SVG. Solo se serve

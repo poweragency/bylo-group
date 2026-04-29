@@ -1,50 +1,252 @@
 ---
-import { CONTACTS } from '@bylo/ui/index.ts';
+import { CONTACTS, BRAND } from '@bylo/ui/index.ts';
+
+const tipiServizio = [
+  'Trasporto ADR',
+  'Logistica & magazzino',
+  'Spedizione nazionale',
+  'Altro',
+];
+
+const accessKey = import.meta.env.PUBLIC_WEB3FORMS_KEY ?? '';
+const isConfigured = accessKey.length > 0;
+const subject = `Nuova richiesta da ${BRAND.name}`;
 ---
 
 <section id="contatti" class="section-pad bg-byl-off">
   <div class="container-page">
-    <div class="max-w-3xl mx-auto text-center">
-      <span class="eyebrow">Parliamone</span>
-      <h2 class="h-section mt-4">
-        Raccontaci cosa devi <span class="text-byl-yellow-dark">muovere</span>.
-      </h2>
-      <p class="lede mt-6">
-        Scrivici o chiamaci direttamente. Ti rispondiamo entro 24 ore
-        lavorative con una proposta operativa concreta.
-      </p>
-    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <!-- Left: info -->
+      <div class="lg:col-span-5">
+        <span class="eyebrow">Parliamone</span>
+        <h2 class="h-section mt-4">
+          Raccontaci cosa devi <span class="text-byl-yellow-dark">muovere</span>.
+        </h2>
+        <p class="lede mt-6">
+          Compila il modulo oppure scrivici direttamente. Ti rispondiamo
+          entro 24 ore lavorative con una proposta operativa concreta.
+        </p>
 
-    <div class="mt-12 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-      <a
-        href={`tel:${CONTACTS.hq.phone.replace(/\s/g, '')}`}
-        class="group flex flex-col p-8 bg-white border border-byl-stone rounded-xl hover:border-byl-black hover:shadow-[var(--shadow-card)] transition-all"
-      >
-        <span class="text-xs uppercase tracking-[0.18em] font-semibold text-byl-mute">Telefono</span>
-        <span class="mt-3 text-xl font-semibold text-byl-black group-hover:text-byl-yellow-dark transition-colors">
-          {CONTACTS.hq.phone}
-        </span>
-        <span class="mt-1 text-sm text-byl-mute">{CONTACTS.hq.hours}</span>
-      </a>
-      <a
-        href={`mailto:${CONTACTS.hq.email}`}
-        class="group flex flex-col p-8 bg-white border border-byl-stone rounded-xl hover:border-byl-black hover:shadow-[var(--shadow-card)] transition-all"
-      >
-        <span class="text-xs uppercase tracking-[0.18em] font-semibold text-byl-mute">Email</span>
-        <span class="mt-3 text-xl font-semibold text-byl-black group-hover:text-byl-yellow-dark transition-colors break-all">
-          {CONTACTS.hq.email}
-        </span>
-        <span class="mt-1 text-sm text-byl-mute">Risposta entro 24h lavorative</span>
-      </a>
-    </div>
+        <div class="mt-10 space-y-6">
+          <div>
+            <div class="text-xs uppercase tracking-[0.18em] font-semibold text-byl-mute">
+              {CONTACTS.hq.label}
+            </div>
+            <div class="mt-2 text-byl-black font-medium leading-relaxed">
+              {CONTACTS.hq.address}
+            </div>
+          </div>
 
-    <div class="mt-10 max-w-4xl mx-auto pt-8 border-t border-byl-stone text-center">
-      <div class="text-xs uppercase tracking-[0.18em] font-semibold text-byl-mute">
-        {CONTACTS.hq.label}
+          <div class="grid grid-cols-2 gap-4">
+            <a
+              href={`tel:${CONTACTS.hq.phone.replace(/\s/g, '')}`}
+              class="group flex flex-col p-5 bg-white border border-byl-stone rounded-lg hover:border-byl-black transition-colors"
+            >
+              <span class="text-xs uppercase tracking-wider text-byl-mute">Telefono</span>
+              <span class="mt-1 font-semibold text-byl-black group-hover:text-byl-yellow-dark transition-colors">
+                {CONTACTS.hq.phone}
+              </span>
+            </a>
+            <a
+              href={`mailto:${CONTACTS.hq.email}`}
+              class="group flex flex-col p-5 bg-white border border-byl-stone rounded-lg hover:border-byl-black transition-colors"
+            >
+              <span class="text-xs uppercase tracking-wider text-byl-mute">Email</span>
+              <span class="mt-1 font-semibold text-byl-black group-hover:text-byl-yellow-dark transition-colors text-sm truncate">
+                {CONTACTS.hq.email}
+              </span>
+            </a>
+          </div>
+
+          <div class="text-sm text-byl-mute">
+            <span class="font-semibold text-byl-black">Orari:</span> {CONTACTS.hq.hours}
+          </div>
+        </div>
       </div>
-      <div class="mt-2 text-byl-black font-medium">
-        {CONTACTS.hq.address}
+
+      <!-- Right: form -->
+      <div class="lg:col-span-7">
+        <form
+          id="contact-form-logistica"
+          data-bylo-form
+          class="bg-white p-8 md:p-10 rounded-2xl border border-byl-stone shadow-[var(--shadow-card)]"
+          method="POST"
+          action="https://api.web3forms.com/submit"
+          novalidate
+        >
+          <input type="hidden" name="access_key" value={accessKey} />
+          <input type="hidden" name="subject" value={subject} />
+          <input type="hidden" name="from_name" value={BRAND.name} />
+          <input type="hidden" name="redirect" value="/grazie" />
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+          />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div>
+              <label for="nome" class="text-sm font-medium text-byl-black">
+                Nome e cognome *
+              </label>
+              <input
+                id="nome"
+                name="nome"
+                type="text"
+                required
+                class="mt-2 w-full px-4 py-3 bg-byl-off border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all"
+              />
+            </div>
+            <div>
+              <label for="azienda" class="text-sm font-medium text-byl-black">
+                Azienda
+              </label>
+              <input
+                id="azienda"
+                name="azienda"
+                type="text"
+                class="mt-2 w-full px-4 py-3 bg-byl-off border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all"
+              />
+            </div>
+            <div>
+              <label for="email" class="text-sm font-medium text-byl-black">
+                Email *
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                class="mt-2 w-full px-4 py-3 bg-byl-off border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all"
+              />
+            </div>
+            <div>
+              <label for="telefono" class="text-sm font-medium text-byl-black">
+                Telefono
+              </label>
+              <input
+                id="telefono"
+                name="telefono"
+                type="tel"
+                class="mt-2 w-full px-4 py-3 bg-byl-off border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all"
+              />
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <label class="text-sm font-medium text-byl-black">
+              Di cosa hai bisogno?
+            </label>
+            <div class="mt-3 flex flex-wrap gap-2">
+              {
+                tipiServizio.map((t) => (
+                  <label class="group inline-flex items-center gap-2 px-4 py-2 bg-byl-off border border-byl-stone rounded-full cursor-pointer hover:border-byl-black has-[:checked]:bg-byl-black has-[:checked]:text-byl-yellow has-[:checked]:border-byl-black transition-all">
+                    <input
+                      type="checkbox"
+                      name="tipo"
+                      value={t}
+                      class="sr-only"
+                    />
+                    <span class="text-sm font-medium">{t}</span>
+                  </label>
+                ))
+              }
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <label for="messaggio" class="text-sm font-medium text-byl-black">
+              Dettagli *
+            </label>
+            <textarea
+              id="messaggio"
+              name="messaggio"
+              rows="5"
+              required
+              placeholder="Cosa devi trasportare, da dove a dove, entro quando…"
+              class="mt-2 w-full px-4 py-3 bg-byl-off border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all resize-none"
+            ></textarea>
+          </div>
+
+          <label class="mt-5 flex items-start gap-3 text-sm text-byl-mute cursor-pointer">
+            <input type="checkbox" name="privacy" required class="mt-1 accent-byl-black" />
+            <span>
+              Ho letto e accetto la <a href="/privacy" class="underline hover:text-byl-black">Privacy Policy</a>
+              e acconsento al trattamento dei dati.
+            </span>
+          </label>
+
+          <button type="submit" class="btn-primary mt-8 w-full md:w-auto" data-form-submit>
+            <span data-label-idle>Invia richiesta</span>
+            <span data-label-loading class="hidden">Invio in corso…</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+
+          <div data-form-feedback aria-live="polite" class="mt-4 text-sm hidden"></div>
+
+          {!isConfigured && (
+            <p class="mt-4 text-xs text-byl-mute italic">
+              ⚠ Form non ancora attivato. Per ora puoi scriverci a {CONTACTS.hq.email} oppure chiamarci al {CONTACTS.hq.phone}.
+            </p>
+          )}
+        </form>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  const form = document.querySelector('#contact-form-logistica') as HTMLFormElement | null;
+  if (form) {
+    const feedback = form.querySelector('[data-form-feedback]') as HTMLElement;
+    const submit = form.querySelector('[data-form-submit]') as HTMLButtonElement;
+    const labelIdle = submit?.querySelector('[data-label-idle]');
+    const labelLoading = submit?.querySelector('[data-label-loading]');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      // Honeypot: i bot riempiono botcheck → silenziamo
+      if (data.get('botcheck')) return;
+      // Privacy obbligatoria
+      if (!data.get('privacy')) {
+        feedback.textContent = 'Devi accettare la Privacy Policy per inviare la richiesta.';
+        feedback.className = 'mt-4 text-sm text-red-600';
+        feedback.classList.remove('hidden');
+        return;
+      }
+
+      submit.disabled = true;
+      labelIdle?.classList.add('hidden');
+      labelLoading?.classList.remove('hidden');
+      feedback.classList.add('hidden');
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: data,
+          headers: { Accept: 'application/json' },
+        });
+        const json = await res.json();
+        if (json.success) {
+          form.reset();
+          feedback.innerHTML = `<strong class="text-byl-black">Grazie!</strong> Abbiamo ricevuto la tua richiesta — ti rispondiamo entro 24 ore lavorative.`;
+          feedback.className = 'mt-4 p-4 bg-byl-yellow/15 border border-byl-yellow rounded-md text-sm text-byl-black';
+          feedback.classList.remove('hidden');
+        } else {
+          throw new Error(json.message || 'Submit failed');
+        }
+      } catch (err) {
+        feedback.innerHTML = `Errore nell'invio. Riprova oppure scrivici a <a href="mailto:operativo.t@bylogroup.it" class="underline">operativo.t@bylogroup.it</a>.`;
+        feedback.className = 'mt-4 text-sm text-red-600';
+        feedback.classList.remove('hidden');
+      } finally {
+        submit.disabled = false;
+        labelIdle?.classList.remove('hidden');
+        labelLoading?.classList.add('hidden');
+      }
+    });
+  }
+</script>

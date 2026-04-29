@@ -1,0 +1,32 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import { CONTACTS_RACING } from '@bylo/ui/index.ts';
+const { officina } = CONTACTS_RACING;
+const waNum = officina.phone.replace(/[^\d]/g, '');
+---
+
+<Layout
+  title="Richiesta inviata — Tommy By"
+  description="Grazie per averci contattato. Ti ricontattiamo il prima possibile."
+  noindex={true}
+>
+  <section class="section-pad">
+    <div class="container-page max-w-2xl text-center">
+      <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-byl-yellow/15 mb-8">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-byl-yellow-dark" aria-hidden="true">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <span class="eyebrow">Richiesta ricevuta</span>
+      <h1 class="h-section mt-4">Grazie! Ti <span class="text-byl-yellow-dark">ricontattiamo presto</span>.</h1>
+      <p class="lede mt-6 mx-auto">
+        Abbiamo ricevuto la tua richiesta. Ti rispondiamo il prima possibile
+        con una proposta concreta sui tempi e sui costi.
+      </p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/" class="btn-primary">Torna alla home</a>
+        <a href={`https://wa.me/${waNum}`} target="_blank" rel="noopener noreferrer" class="btn-outline">Scrivici su WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</Layout>
