@@ -10,7 +10,7 @@ interface Props {
   noindex?: boolean;
 }
 
-const { title, description, ogImage, noindex } = Astro.props;
+const { title, description, ogImage = '/og-default.svg', noindex } = Astro.props;
 
 const currentLocale = (Astro.currentLocale ?? 'it') as 'it' | 'en';
 const ogLocale = currentLocale === 'en' ? 'en_US' : 'it_IT';

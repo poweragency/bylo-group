@@ -1,0 +1,36 @@
+---
+import Layout from '@/layouts/Layout.astro';
+---
+
+<Layout
+  title="Pagina non trovata — Tommy By"
+  description="La pagina che cercavi non esiste o è stata spostata. Torna alla home di Tommy By o esplora servizi, marche e zone servite."
+  noindex={true}
+>
+  <section class="section-pad bg-byl-black text-byl-white relative overflow-hidden min-h-[70vh] flex items-center">
+    <div
+      class="absolute inset-0 opacity-[0.04] pointer-events-none"
+      style="background-image: linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px); background-size: 80px 80px;"
+    />
+    <div class="container-page relative">
+      <div class="max-w-2xl">
+        <span class="text-byl-yellow text-xs font-semibold uppercase tracking-[0.18em]">Errore 404</span>
+        <h1 class="font-display font-black text-7xl md:text-9xl mt-6 text-byl-white leading-none">
+          404
+        </h1>
+        <h2 class="font-display font-bold text-2xl md:text-3xl mt-6 text-byl-white">
+          Questa pagina non esiste.
+        </h2>
+        <p class="mt-4 text-lg text-white/70 leading-relaxed">
+          Il link che hai seguito è rotto o la pagina è stata spostata. Prova una di queste:
+        </p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4 flex-wrap">
+          <a href="/" class="btn-primary">Torna alla home</a>
+          <a href="/servizi/" class="btn-ghost">Servizi</a>
+          <a href="/marche/" class="btn-ghost">Marche</a>
+          <a href="/zone/" class="btn-ghost">Zone</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

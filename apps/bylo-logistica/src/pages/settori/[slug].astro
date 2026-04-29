@@ -1,7 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '@/layouts/Layout.astro';
-import { Faq, Breadcrumb, InternalLinkBlock } from '@bylo/ui/seo/index.ts';
+import { Faq, Breadcrumb, InternalLinkBlock, SchemaOrg } from '@bylo/ui/seo/index.ts';
+import { BRAND } from '@bylo/ui/index.ts';
 
 export async function getStaticPaths() {
   const sectors = await getCollection('sectors', ({ data }) => data.locale === 'it');
@@ -28,6 +29,30 @@ const related = allServices
     label: s.data.title,
     description: s.data.intro.length > 140 ? s.data.intro.slice(0, 140) + '…' : s.data.intro,
   }));
+
+const siteOrigin = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const sectorSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: sector.data.title,
+  description: sector.data.intro,
+  serviceType: 'Trasporti ADR per settore industriale',
+  audience: {
+    '@type': 'BusinessAudience',
+    audienceType: sector.data.title,
+  },
+  provider: {
+    '@type': 'Organization',
+    '@id': `${siteOrigin}/#localbusiness`,
+    name: BRAND.name,
+    url: siteOrigin,
+  },
+  areaServed: [
+    { '@type': 'Country', name: 'Italy' },
+    { '@type': 'Country', name: 'Europe' },
+  ],
+  url: `${siteOrigin}/settori/${sector.slug}/`,
+};
 ---
 
 <Layout
@@ -35,6 +60,7 @@ const related = allServices
   description={sector.data.seo.description}
   noindex={sector.data.seo.noindex}
 >
+  <SchemaOrg data={sectorSchema} />
   <Breadcrumb items={crumbs} />
 
   <section class="section-pad bg-byl-white">

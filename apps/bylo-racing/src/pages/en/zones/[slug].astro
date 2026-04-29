@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '@/layouts/Layout.astro';
-import { Faq, Breadcrumb, InternalLinkBlock } from '@bylo/ui/seo/index.ts';
+import { Faq, Breadcrumb, InternalLinkBlock, SchemaOrg } from '@bylo/ui/seo/index.ts';
 
 export async function getStaticPaths() {
   const zones = await getCollection('zones', ({ data }) => data.locale === 'en');
@@ -26,6 +26,26 @@ const related = allServices.map((s) => ({
   label: s.data.title,
   description: s.data.intro.length > 140 ? s.data.intro.slice(0, 140) + '…' : s.data.intro,
 }));
+
+const siteOrigin = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const cleanSlug = zone.slug.split('/').pop();
+const zoneSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: `Workshop and body shop in ${zone.data.name}`,
+  description: zone.data.intro,
+  serviceType: 'Multi-brand workshop and body shop',
+  provider: {
+    '@id': `${siteOrigin}/#officina`,
+  },
+  areaServed: {
+    '@type': 'AdministrativeArea',
+    name: zone.data.name,
+    addressRegion: zone.data.province,
+    addressCountry: 'IT',
+  },
+  url: `${siteOrigin}/en/zones/${cleanSlug}/`,
+};
 ---
 
 <Layout
@@ -33,6 +53,7 @@ const related = allServices.map((s) => ({
   description={zone.data.seo.description}
   noindex={zone.data.seo.noindex}
 >
+  <SchemaOrg data={zoneSchema} />
   <Breadcrumb items={crumbs} />
 
   <section class="section-pad bg-byl-white">

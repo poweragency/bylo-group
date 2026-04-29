@@ -1,0 +1,41 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+---
+
+<Layout
+  title="Pagina non trovata — BYLO Group"
+  description="La pagina che cercavi non esiste o è stata spostata. Torna alla home di BYLO Group o esplora le aziende del gruppo."
+  noindex={true}
+>
+  <Header />
+  <main>
+    <section class="section-pad bg-byl-black text-byl-white relative overflow-hidden min-h-[70vh] flex items-center">
+      <div
+        class="absolute inset-0 opacity-[0.04] pointer-events-none"
+        style="background-image: linear-gradient(to right, #fff 1px, transparent 1px), linear-gradient(to bottom, #fff 1px, transparent 1px); background-size: 80px 80px;"
+      />
+      <div class="container-page relative">
+        <div class="max-w-2xl">
+          <span class="text-byl-yellow text-xs font-semibold uppercase tracking-[0.18em]">Errore 404</span>
+          <h1 class="font-display font-black text-7xl md:text-9xl mt-6 text-byl-white leading-none">
+            404
+          </h1>
+          <h2 class="font-display font-bold text-2xl md:text-3xl mt-6 text-byl-white">
+            Questa pagina non esiste.
+          </h2>
+          <p class="mt-4 text-lg text-white/70 leading-relaxed">
+            La pagina che cercavi è stata spostata o non è mai esistita. Torna alla home del gruppo o vai direttamente all'azienda che ti serve.
+          </p>
+          <div class="mt-10 flex flex-col sm:flex-row gap-4">
+            <a href="/" class="btn-primary">Torna alla home</a>
+            <a href="https://transport.bylogroup.it" class="btn-ghost">BYLO Transport</a>
+            <a href="https://tommy.bylogroup.it" class="btn-ghost">Tommy By</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
