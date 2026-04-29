@@ -4,10 +4,10 @@ const isEN = currentLocale === 'en';
 
 const t = {
   it: {
-    officina: 'Officina',
-    carrozzeria: 'Carrozzeria',
+    servizi: 'Servizi',
+    marche: 'Marche',
+    zone: 'Zone',
     auto: 'Le nostre auto',
-    sedi: 'Sedi',
     contatti: 'Contatti',
     cta: 'Prenota un servizio',
     home: 'Tommy By — home',
@@ -15,10 +15,10 @@ const t = {
     switchLabel: 'English',
   },
   en: {
-    officina: 'Auto repair',
-    carrozzeria: 'Body shop',
+    servizi: 'Services',
+    marche: 'Brands',
+    zone: 'Zones',
     auto: 'Our cars',
-    sedi: 'Locations',
     contatti: 'Contact',
     cta: 'Book a service',
     home: 'Tommy By — home',
@@ -28,14 +28,25 @@ const t = {
 }[currentLocale];
 
 const base = isEN ? '/en' : '';
-const anchor = (id: string) => `${base}/#${id}`;
+const sectionPath = isEN ? {
+  servizi: '/en/services/',
+  marche: '/en/brands/',
+  zone: '/en/zones/',
+  auto: '/en/auto/',
+} : {
+  servizi: '/servizi/',
+  marche: '/marche/',
+  zone: '/zone/',
+  auto: '/auto/',
+};
+const contattiAnchor = `${base}/#contatti`;
 
 const nav = [
-  { href: anchor('officina'), label: t.officina },
-  { href: anchor('carrozzeria'), label: t.carrozzeria },
-  { href: `${base}/auto/`, label: t.auto },
-  { href: anchor('sedi'), label: t.sedi },
-  { href: anchor('contatti'), label: t.contatti },
+  { href: sectionPath.servizi, label: t.servizi },
+  { href: sectionPath.marche, label: t.marche },
+  { href: sectionPath.zone, label: t.zone },
+  { href: sectionPath.auto, label: t.auto },
+  { href: contattiAnchor, label: t.contatti },
 ];
 
 const switchHref = isEN
@@ -77,7 +88,7 @@ const switchHref = isEN
       >
         {isEN ? 'IT' : 'EN'}
       </a>
-      <a href={anchor('contatti')} class="btn-primary hidden sm:inline-flex text-sm">
+      <a href={contattiAnchor} class="btn-primary hidden sm:inline-flex text-sm">
         {t.cta}
       </a>
       <button
@@ -105,7 +116,7 @@ const switchHref = isEN
       <a href={switchHref} class="py-3 text-base font-medium text-white/60 hover:text-byl-yellow">
         {t.switchLabel}
       </a>
-      <a href={anchor('contatti')} class="btn-primary mt-3 text-sm w-full">
+      <a href={contattiAnchor} class="btn-primary mt-3 text-sm w-full">
         {t.cta}
       </a>
     </nav>

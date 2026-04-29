@@ -11,9 +11,11 @@ const t = isEN
       tagline:
         'ADR transport and integrated logistics for Italian businesses. Part of BYLO Group, a network of companies dedicated to transport, logistics and automotive.',
       operativeHQ: 'Operating headquarters',
+      explore: 'Explore',
+      services: 'Services',
+      sectors: 'Sectors',
+      routes: 'Routes',
       group: 'Group',
-      transports: 'ADR transport',
-      logistics: 'Logistics',
       contact: 'Contact',
       privacy: 'Privacy Policy',
       cookie: 'Cookie Policy',
@@ -23,14 +25,26 @@ const t = isEN
       tagline:
         'Trasporti ADR e logistica integrata per le imprese italiane. Parte del gruppo BYLO Group, rete di aziende dedicate a trasporti, logistica e automotive.',
       operativeHQ: 'Sede operativa',
+      explore: 'Esplora',
+      services: 'Servizi',
+      sectors: 'Settori',
+      routes: 'Tratte',
       group: 'Gruppo',
-      transports: 'Trasporti ADR',
-      logistics: 'Logistica',
       contact: 'Contatti',
       privacy: 'Privacy Policy',
       cookie: 'Cookie Policy',
       vat: 'P.IVA',
     };
+
+const sectionPath = isEN ? {
+  servizi: '/en/services/',
+  settori: '/en/sectors/',
+  tratte: '/en/routes/',
+} : {
+  servizi: '/servizi/',
+  settori: '/settori/',
+  tratte: '/tratte/',
+};
 ---
 
 <footer class="bg-byl-black text-byl-white">
@@ -76,13 +90,14 @@ const t = isEN
 
       <div class="md:col-span-3">
         <h4 class="text-xs font-semibold uppercase tracking-[0.18em] text-byl-yellow">
-          {t.group}
+          {t.explore}
         </h4>
         <ul class="mt-4 space-y-2 text-white/80 text-sm">
-          <li><a href="https://www.bylogroup.it/" class="hover:text-byl-yellow transition-colors">BYLO Group</a></li>
-          <li><a href={`${base}/#servizi`} class="hover:text-byl-yellow transition-colors">{t.transports}</a></li>
-          <li><a href={`${base}/#servizi`} class="hover:text-byl-yellow transition-colors">{t.logistics}</a></li>
+          <li><a href={sectionPath.servizi} class="hover:text-byl-yellow transition-colors">{t.services}</a></li>
+          <li><a href={sectionPath.settori} class="hover:text-byl-yellow transition-colors">{t.sectors}</a></li>
+          <li><a href={sectionPath.tratte} class="hover:text-byl-yellow transition-colors">{t.routes}</a></li>
           <li><a href={`${base}/#contatti`} class="hover:text-byl-yellow transition-colors">{t.contact}</a></li>
+          <li class="pt-2 border-t border-white/10 mt-2"><a href="https://www.bylogroup.it/" class="hover:text-byl-yellow transition-colors">{t.group}: BYLO Group</a></li>
         </ul>
       </div>
     </div>

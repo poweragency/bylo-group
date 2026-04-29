@@ -4,7 +4,10 @@
       "Bash(grep -iE \"tommy|bylogroup|\\\\.\\(png|jpg|jpeg|webp\\)$\")",
       "Bash(mkdir -p /tmp/tommy-extract)",
       "Bash(pdfimages -all \"/Users/ecombrand/Downloads/DATI SOCIETA' TOMMY BY SRL  \\(2\\).pdf\" /tmp/tommy-extract/img)",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(git push:*)",
+      "Bash(git merge:*)",
+      "Bash(git checkout:*)"
     ]
   }
 }

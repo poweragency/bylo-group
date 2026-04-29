@@ -13,6 +13,11 @@ const t = isEN
         'Authorized auto repair shop, body shop with water-based oven painting, and selected used car sales. Tommy By is part of',
       taglineSuffix:
         ', the Italian network dedicated to transport, logistics and automotive.',
+      explore: 'Explore',
+      services: 'Services',
+      brands: 'Brands',
+      zones: 'Zones',
+      cars: 'Our cars',
       vat: 'VAT',
       privacy: 'Privacy',
       cookie: 'Cookie',
@@ -22,16 +27,33 @@ const t = isEN
         'Officina autorizzata, carrozzeria con verniciatura a forno ad acqua e vendita auto selezionate. Tommy By fa parte di',
       taglineSuffix:
         ', rete italiana dedicata a trasporti, logistica e automotive.',
+      explore: 'Esplora',
+      services: 'Servizi',
+      brands: 'Marche',
+      zones: 'Zone',
+      cars: 'Le nostre auto',
       vat: 'P.IVA',
       privacy: 'Privacy',
       cookie: 'Cookie',
     };
+
+const sectionPath = isEN ? {
+  servizi: '/en/services/',
+  marche: '/en/brands/',
+  zone: '/en/zones/',
+  auto: '/en/auto/',
+} : {
+  servizi: '/servizi/',
+  marche: '/marche/',
+  zone: '/zone/',
+  auto: '/auto/',
+};
 ---
 
 <footer class="bg-byl-black text-byl-white">
   <div class="container-page py-20">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
-      <div class="md:col-span-5">
+      <div class="md:col-span-4">
         <div class="flex items-baseline gap-1.5">
           <span class="font-display font-black text-3xl md:text-4xl tracking-tight text-byl-yellow">
             Tommy
@@ -40,12 +62,12 @@ const t = isEN
             By
           </span>
         </div>
-        <p class="mt-6 text-white/60 max-w-md leading-relaxed">
+        <p class="mt-6 text-white/60 max-w-md leading-relaxed text-sm">
           {t.tagline} {GROUP.name}{t.taglineSuffix}
         </p>
       </div>
 
-      <div class="md:col-span-4">
+      <div class="md:col-span-3">
         <h4 class="text-xs font-semibold uppercase tracking-[0.18em] text-byl-yellow">
           {officina.label}
         </h4>
@@ -65,6 +87,18 @@ const t = isEN
           <a href={`tel:${carrozzeria.phone.replace(/\s/g, '')}`} class="hover:text-byl-yellow transition-colors">{carrozzeria.phone}</a><br />
           <a href={`mailto:${carrozzeria.email}`} class="hover:text-byl-yellow transition-colors">{carrozzeria.email}</a>
         </p>
+      </div>
+
+      <div class="md:col-span-2">
+        <h4 class="text-xs font-semibold uppercase tracking-[0.18em] text-byl-yellow">
+          {t.explore}
+        </h4>
+        <ul class="mt-4 space-y-2 text-white/80 text-sm">
+          <li><a href={sectionPath.servizi} class="hover:text-byl-yellow transition-colors">{t.services}</a></li>
+          <li><a href={sectionPath.marche} class="hover:text-byl-yellow transition-colors">{t.brands}</a></li>
+          <li><a href={sectionPath.zone} class="hover:text-byl-yellow transition-colors">{t.zones}</a></li>
+          <li><a href={sectionPath.auto} class="hover:text-byl-yellow transition-colors">{t.cars}</a></li>
+        </ul>
       </div>
     </div>
 
