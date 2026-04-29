@@ -10,15 +10,7 @@
 - **@nome** — `apps/bylo-logistica/src/components/sections/` (in lavorazione, dal 2026-04-27 15:00)
 -->
 
-- **@claude** — refactor SEO **Fase 3 (schema.org pesante)**, dal 2026-04-28 sera. Branch `feat/seo-fase-3-schemaorg`. Tocca:
-  - `apps/bylo-logistica/src/layouts/Layout.astro` (aggiunta LocalBusiness JSON-LD per Bollate)
-  - `apps/bylo-racing/src/layouts/Layout.astro` (aggiunta 2 LocalBusiness — AutoRepair Milano + AutoBodyShop Mazzo di Rho)
-  - `apps/bylo-logistica/src/pages/servizi/[slug].astro` + EN (Service JSON-LD per ogni servizio)
-  - `apps/bylo-racing/src/pages/servizi/[slug].astro` + EN (Service JSON-LD)
-  - Eventuale aggiornamento `REVIEW.md` per orari da verificare.
-
-- **@claude** — Fase 2 (committata e pushata, branch `feat/seo-fase-2-content`, commit `1040a7f`): content + dynamic pages + llms.txt. 66 pagine totali.
-- **@claude** — Fase 1 (committata e pushata, branch `feat/seo-fase-1-i18n-apps`): i18n + naming refresh + group landing arricchita + fix logo.
+_(nessuna area attiva al momento — refactor SEO Fasi 0-5 chiuso e mergiato in `main` il 2026-04-29. 3 progetti deployati su Vercel: bylo-group, bylo-transport, bylo-tommy. Vedi `PROSSIMI-PASSI.md` per cosa resta in attesa del cliente.)_
 
 ## Aree riservate Claude (refactor SEO in corso)
 
