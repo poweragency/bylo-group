@@ -1,0 +1,19 @@
+{
+  "name": "Tommy By — Officina, Carrozzeria, Vendita Auto",
+  "short_name": "Tommy By",
+  "description": "Officina autorizzata multimarca, carrozzeria e vendita auto a Milano",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "lang": "it",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any maskable"
+    }
+  ]
+}

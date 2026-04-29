@@ -58,6 +58,10 @@
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
+    /* Mobile: rimuovi tap highlight blu/grigio default */
+    -webkit-tap-highlight-color: transparent;
+    /* Previeni zoom-on-input iOS quando input < 16px */
+    -webkit-text-size-adjust: 100%;
   }
 
   body {
@@ -65,10 +69,35 @@
     color: var(--color-fg);
     background: var(--color-bg);
     font-feature-settings: 'ss01', 'cv11';
+    /* Evita scroll orizzontale accidentale su mobile */
+    overflow-x: hidden;
   }
 
   ::selection {
     background: var(--color-byl-yellow);
     color: var(--color-byl-black);
   }
+
+  /* Touch target minimo 44x44 su elementi interattivi piccoli */
+  button,
+  a {
+    touch-action: manipulation;
+  }
+
+  /* Previeni layout shift durante caricamento font */
+  img,
+  svg,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Utility per supporto safe-area iOS (notch / home indicator) */
+@utility safe-bottom {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+}
+
+@utility safe-top {
+  padding-top: max(0.75rem, env(safe-area-inset-top));
 }

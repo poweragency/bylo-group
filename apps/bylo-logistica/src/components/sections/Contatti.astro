@@ -96,7 +96,10 @@ const subject = `Nuova richiesta da ${BRAND.name}`;
                 name="nome"
                 type="text"
                 required
-                class="mt-2 w-full px-4 py-3 bg-byl-off border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all"
+                autocomplete="name"
+                autocapitalize="words"
+                enterkeyhint="next"
+                class="mt-2 w-full px-4 py-3 text-base bg-byl-off border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all"
               />
             </div>
             <div>
@@ -107,7 +110,10 @@ const subject = `Nuova richiesta da ${BRAND.name}`;
                 id="azienda"
                 name="azienda"
                 type="text"
-                class="mt-2 w-full px-4 py-3 bg-byl-off border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all"
+                autocomplete="organization"
+                autocapitalize="words"
+                enterkeyhint="next"
+                class="mt-2 w-full px-4 py-3 text-base bg-byl-off border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all"
               />
             </div>
             <div>
@@ -119,7 +125,12 @@ const subject = `Nuova richiesta da ${BRAND.name}`;
                 name="email"
                 type="email"
                 required
-                class="mt-2 w-full px-4 py-3 bg-byl-off border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all"
+                autocomplete="email"
+                inputmode="email"
+                autocapitalize="off"
+                spellcheck="false"
+                enterkeyhint="next"
+                class="mt-2 w-full px-4 py-3 text-base bg-byl-off border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all"
               />
             </div>
             <div>
@@ -130,7 +141,10 @@ const subject = `Nuova richiesta da ${BRAND.name}`;
                 id="telefono"
                 name="telefono"
                 type="tel"
-                class="mt-2 w-full px-4 py-3 bg-byl-off border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all"
+                autocomplete="tel"
+                inputmode="tel"
+                enterkeyhint="next"
+                class="mt-2 w-full px-4 py-3 text-base bg-byl-off border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all"
               />
             </div>
           </div>
@@ -165,8 +179,10 @@ const subject = `Nuova richiesta da ${BRAND.name}`;
               name="messaggio"
               rows="5"
               required
+              enterkeyhint="enter"
+              autocapitalize="sentences"
               placeholder="Cosa devi trasportare, da dove a dove, entro quando…"
-              class="mt-2 w-full px-4 py-3 bg-byl-off border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all resize-none"
+              class="mt-2 w-full px-4 py-3 text-base bg-byl-off border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all resize-none"
             ></textarea>
           </div>
 

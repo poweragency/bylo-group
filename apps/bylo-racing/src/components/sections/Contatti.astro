@@ -90,19 +90,19 @@ const subject = `Nuova richiesta da ${BRAND_RACING.name}`;
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div>
               <label for="nome" class="text-sm font-medium text-byl-black">Nome e cognome *</label>
-              <input id="nome" name="nome" type="text" required class="mt-2 w-full px-4 py-3 bg-white border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all" />
+              <input id="nome" name="nome" type="text" required autocomplete="name" autocapitalize="words" enterkeyhint="next" class="mt-2 w-full px-4 py-3 text-base bg-white border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all" />
             </div>
             <div>
               <label for="telefono" class="text-sm font-medium text-byl-black">Telefono *</label>
-              <input id="telefono" name="telefono" type="tel" required class="mt-2 w-full px-4 py-3 bg-white border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all" />
+              <input id="telefono" name="telefono" type="tel" required autocomplete="tel" inputmode="tel" enterkeyhint="next" class="mt-2 w-full px-4 py-3 text-base bg-white border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all" />
             </div>
             <div class="md:col-span-2">
               <label for="email" class="text-sm font-medium text-byl-black">Email</label>
-              <input id="email" name="email" type="email" class="mt-2 w-full px-4 py-3 bg-white border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all" />
+              <input id="email" name="email" type="email" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false" enterkeyhint="next" class="mt-2 w-full px-4 py-3 text-base bg-white border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all" />
             </div>
             <div class="md:col-span-2">
               <label for="auto" class="text-sm font-medium text-byl-black">Marca / modello auto</label>
-              <input id="auto" name="auto" type="text" placeholder="Es. Fiat 500, VW Golf 2018…" class="mt-2 w-full px-4 py-3 bg-white border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all" />
+              <input id="auto" name="auto" type="text" autocomplete="off" autocapitalize="words" enterkeyhint="next" placeholder="Es. Fiat 500, VW Golf 2018…" class="mt-2 w-full px-4 py-3 text-base bg-white border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all" />
             </div>
           </div>
 
@@ -122,7 +122,7 @@ const subject = `Nuova richiesta da ${BRAND_RACING.name}`;
 
           <div class="mt-5">
             <label for="messaggio" class="text-sm font-medium text-byl-black">Dettagli *</label>
-            <textarea id="messaggio" name="messaggio" rows="5" required placeholder="Cosa ti serve, quando, eventuali riferimenti…" class="mt-2 w-full px-4 py-3 bg-white border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all resize-none"></textarea>
+            <textarea id="messaggio" name="messaggio" rows="5" required enterkeyhint="enter" autocapitalize="sentences" placeholder="Cosa ti serve, quando, eventuali riferimenti…" class="mt-2 w-full px-4 py-3 text-base bg-white border border-byl-stone rounded-md focus:outline-none focus:border-byl-black focus:ring-2 focus:ring-byl-yellow/40 transition-all resize-none"></textarea>
           </div>
 
           <label class="mt-5 flex items-start gap-3 text-sm text-byl-mute cursor-pointer">

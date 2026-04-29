@@ -93,8 +93,10 @@ const switchHref = isEN
       </a>
       <button
         id="mobile-menu-btn"
-        class="lg:hidden p-2 text-byl-white"
+        class="lg:hidden -mr-2 p-2.5 text-byl-white rounded-md hover:bg-white/10 transition-colors"
         aria-label={t.menuLabel}
+        aria-expanded="false"
+        aria-controls="mobile-menu"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
       </button>
@@ -126,5 +128,8 @@ const switchHref = isEN
 <script>
   const btn = document.getElementById('mobile-menu-btn');
   const menu = document.getElementById('mobile-menu');
-  btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+  btn?.addEventListener('click', () => {
+    const isHidden = menu?.classList.toggle('hidden');
+    btn.setAttribute('aria-expanded', String(isHidden === false));
+  });
 </script>
