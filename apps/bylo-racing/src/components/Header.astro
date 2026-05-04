@@ -55,7 +55,7 @@ const switchHref = isEN
 ---
 
 <header
-  class="sticky top-0 z-50 bg-byl-black/90 backdrop-blur-md border-b border-white/5 text-byl-white"
+  class="sticky top-0 z-50 bg-byl-white border-b border-byl-stone text-byl-black"
 >
   <div class="container-page flex items-center justify-between h-16 md:h-20">
     <a href={base || '/'} class="flex items-center" aria-label={t.home}>
@@ -76,7 +76,7 @@ const switchHref = isEN
         nav.map((item) => (
           <a
             href={item.href}
-            class="text-sm font-medium text-white/80 hover:text-byl-yellow transition-colors"
+            class="text-sm font-medium text-byl-black hover:text-byl-yellow-dark transition-colors"
           >
             {item.label}
           </a>
@@ -87,7 +87,7 @@ const switchHref = isEN
     <div class="flex items-center gap-3">
       <a
         href={switchHref}
-        class="text-xs uppercase tracking-wider font-medium text-white/60 hover:text-byl-yellow transition-colors"
+        class="text-xs uppercase tracking-wider font-medium text-byl-mute hover:text-byl-black transition-colors"
         aria-label={t.switchLabel}
       >
         {isEN ? 'IT' : 'EN'}
@@ -97,7 +97,7 @@ const switchHref = isEN
       </a>
       <button
         id="mobile-menu-btn"
-        class="lg:hidden -mr-2 p-2.5 text-byl-white rounded-md hover:bg-white/10 transition-colors"
+        class="lg:hidden -mr-2 p-2.5 text-byl-black rounded-md hover:bg-byl-off transition-colors"
         aria-label={t.menuLabel}
         aria-expanded="false"
         aria-controls="mobile-menu"
@@ -107,19 +107,19 @@ const switchHref = isEN
     </div>
   </div>
 
-  <div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 bg-byl-black">
+  <div id="mobile-menu" class="hidden lg:hidden border-t border-byl-stone bg-byl-white">
     <nav class="container-page py-4 flex flex-col gap-1">
       {
         nav.map((item) => (
           <a
             href={item.href}
-            class="py-3 text-base font-medium text-white/80 hover:text-byl-yellow"
+            class="py-3 text-base font-medium text-byl-black hover:text-byl-yellow-dark"
           >
             {item.label}
           </a>
         ))
       }
-      <a href={switchHref} class="py-3 text-base font-medium text-white/60 hover:text-byl-yellow">
+      <a href={switchHref} class="py-3 text-base font-medium text-byl-mute hover:text-byl-black">
         {t.switchLabel}
       </a>
       <a href={contattiAnchor} class="btn-primary mt-3 text-sm w-full">
