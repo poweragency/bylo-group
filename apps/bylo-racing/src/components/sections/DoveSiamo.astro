@@ -1,7 +1,13 @@
 ---
 import { CONTACTS_RACING } from '@bylo/ui/index.ts';
 
-const sedi = [CONTACTS_RACING.carrozzeria];
+// Officina e carrozzeria condividono la stessa sede a Mazzo di Rho:
+// mostriamo una sola mappa, etichettata in modo unificato.
+const sede = {
+  ...CONTACTS_RACING.officina,
+  label: 'Tommy By — Officina & Carrozzeria',
+};
+const sedi = [sede];
 
 function mapsEmbed(address: string) {
   return `https://maps.google.com/maps?q=${encodeURIComponent(address)}&z=15&output=embed`;

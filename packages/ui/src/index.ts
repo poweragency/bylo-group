@@ -58,8 +58,8 @@ export const LEGAL_TOMMY = {
   name: 'TOMMY BY S.R.L.',
   vat: '14194470960',
   pec: 'tommybysrl@legalmail.it',
-  // Sede legale ipotizzata = sede officina. Da confermare.
-  legalAddress: 'Via A. Brunetti 14, 20156 Milano',
+  // Sede legale ipotizzata = sede unica. Da confermare.
+  legalAddress: 'Via Venanzio Buzzi 9, 20017 Mazzo di Rho (MI)',
   capital: null,
 } as const;
 
@@ -99,28 +99,36 @@ export const BRAND_RACING = {
   vat: LEGAL_TOMMY.vat,
 } as const;
 
+// Sede unica: officina e carrozzeria coabitano allo stesso indirizzo
+// (Mazzo di Rho). Restano due entry distinte perche' sono due linee
+// di servizio con email e referente dedicati.
+const TOMMY_ADDRESS = 'Via Venanzio Buzzi 9, 20017 Mazzo di Rho (MI)';
+const TOMMY_CITY = 'Mazzo di Rho';
+const TOMMY_PHONE = '+39 331 80 49 728';
+const TOMMY_HOURS = 'Lun–Ven 8:30–12:30 / 14:00–18:00';
+
 export const CONTACTS_RACING = {
   officina: {
     key: 'officina',
     label: 'Officina',
-    // Indirizzo aggiornato 2026-04-28 dal sito ufficiale: Brunetti 14 Milano,
-    // NON Via Curiel 53 Rho come riportava la vecchia memoria.
-    address: 'Via A. Brunetti 14, 20156 Milano',
-    city: 'Milano',
-    phone: '+39 02 334 90 890',
-    mobile: '+39 347 38 61 577',
+    address: TOMMY_ADDRESS,
+    city: TOMMY_CITY,
+    phone: TOMMY_PHONE,
+    mobile: null,
     email: 'officina@bylogroup.it',
-    hours: 'Lun–Ven 8:30–12:30 / 14:00–18:00',
+    referent: 'Federico',
+    hours: TOMMY_HOURS,
   },
   carrozzeria: {
     key: 'carrozzeria',
     label: 'Carrozzeria & Verniciatura',
-    address: 'Via Venanzio Buzzi 9, 20017 Mazzo di Rho (MI)',
-    city: 'Mazzo di Rho',
-    phone: '+39 331 80 49 728',
+    address: TOMMY_ADDRESS,
+    city: TOMMY_CITY,
+    phone: TOMMY_PHONE,
     mobile: null,
     email: 'carrozzeria@bylogroup.it',
-    hours: 'Lun–Ven 8:30–12:30 / 14:00–18:00',
+    referent: 'Tommaso',
+    hours: TOMMY_HOURS,
   },
 } as const;
 

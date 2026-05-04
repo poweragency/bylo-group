@@ -47,20 +47,28 @@ const subject = `Nuova richiesta da ${BRAND_RACING.name}`;
             </div>
           </a>
 
-          <div class="grid grid-cols-2 gap-4">
+          <a
+            href={`tel:${officina.phone.replace(/\s/g, '')}`}
+            class="flex flex-col p-5 bg-byl-off border border-byl-stone rounded-lg hover:border-byl-black transition-colors"
+          >
+            <span class="text-xs uppercase tracking-wider text-byl-mute">Officina &amp; Carrozzeria</span>
+            <span class="mt-1 font-semibold text-byl-black text-base">{officina.phone}</span>
+          </a>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <a
-              href={`tel:${officina.phone.replace(/\s/g, '')}`}
-              class="flex flex-col p-5 bg-byl-off border border-byl-stone rounded-lg hover:border-byl-black transition-colors"
+              href={`mailto:${officina.email}`}
+              class="flex flex-col p-4 bg-byl-off border border-byl-stone rounded-lg hover:border-byl-black transition-colors"
             >
-              <span class="text-xs uppercase tracking-wider text-byl-mute">Officina</span>
-              <span class="mt-1 font-semibold text-byl-black text-sm">{officina.phone}</span>
+              <span class="text-xs uppercase tracking-wider text-byl-mute">Officina · Ref. {officina.referent}</span>
+              <span class="mt-1 font-medium text-byl-black text-sm break-all">{officina.email}</span>
             </a>
             <a
-              href={`tel:${carrozzeria.phone.replace(/\s/g, '')}`}
-              class="flex flex-col p-5 bg-byl-off border border-byl-stone rounded-lg hover:border-byl-black transition-colors"
+              href={`mailto:${carrozzeria.email}`}
+              class="flex flex-col p-4 bg-byl-off border border-byl-stone rounded-lg hover:border-byl-black transition-colors"
             >
-              <span class="text-xs uppercase tracking-wider text-byl-mute">Carrozzeria</span>
-              <span class="mt-1 font-semibold text-byl-black text-sm">{carrozzeria.phone}</span>
+              <span class="text-xs uppercase tracking-wider text-byl-mute">Carrozzeria · Ref. {carrozzeria.referent}</span>
+              <span class="mt-1 font-medium text-byl-black text-sm break-all">{carrozzeria.email}</span>
             </a>
           </div>
         </div>

@@ -1,6 +1,6 @@
 # Tommy By
 
-> Officina e carrozzeria multimarche italiana per auto e moto. Tagliandi, riparazioni meccaniche ed elettroniche, pneumatici, igienizzazione, auto sostitutive. Carrozzeria con verniciatura a forno ad acqua. Revisioni ministeriali fino a 35 quintali. Due sedi: Milano (Via Brunetti) e Mazzo di Rho (Via Buzzi). Parte del gruppo BYLO Group.
+> Officina e carrozzeria multimarche italiana per auto e moto. Tagliandi, riparazioni meccaniche ed elettroniche, pneumatici, igienizzazione, auto sostitutive. Carrozzeria con verniciatura a forno ad acqua. Revisioni ministeriali fino a 35 quintali. Sede unica a Mazzo di Rho (MI), Via Venanzio Buzzi 9, alle porte di Milano. Parte del gruppo BYLO Group.
 
 ## Servizi
 
@@ -25,5 +25,6 @@
 ## Identità legale e contatti
 
 - TOMMY BY S.R.L. · P.IVA 14194470960
-- Officina: Via A. Brunetti 14, 20156 Milano · +39 02 334 90 890 · officina@bylogroup.it
-- Carrozzeria: Via Venanzio Buzzi 9, 20017 Mazzo di Rho (MI) · +39 331 80 49 728 · carrozzeria@bylogroup.it
+- Sede: Via Venanzio Buzzi 9, 20017 Mazzo di Rho (MI) · +39 331 80 49 728
+- Officina (Ref. Federico): officina@bylogroup.it
+- Carrozzeria (Ref. Tommaso): carrozzeria@bylogroup.it

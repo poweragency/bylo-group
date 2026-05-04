@@ -26,10 +26,10 @@ const htmlLang = isEN ? 'en' : 'it';
 
 const defaultTitle = isEN
   ? 'Tommy By — Auto Repair, Body Shop and Used Car Sales near Milan'
-  : 'Tommy By — Officina, Carrozzeria e Vendita Auto a Milano';
+  : 'Tommy By — Officina, Carrozzeria e Vendita Auto a Mazzo di Rho';
 const defaultDescription = isEN
-  ? 'Multi-brand authorized auto repair shop, body shop with water-based oven painting, and selected used car sales. Tommy By, in Rho near Milan.'
-  : 'Officina autorizzata multimarca, carrozzeria con verniciatura a forno ad acqua e vendita auto selezionate. Tommy By, a Milano e Mazzo di Rho.';
+  ? 'Multi-brand authorized auto repair shop, body shop with water-based oven painting, and selected used car sales. Tommy By, in Mazzo di Rho near Milan.'
+  : 'Officina autorizzata multimarca, carrozzeria con verniciatura a forno ad acqua e vendita auto selezionate. Tommy By, a Mazzo di Rho (alle porte di Milano).';
 
 const {
   title = defaultTitle,
@@ -72,7 +72,9 @@ const standardHours = [
   },
 ];
 
-// 2 LocalBusiness distinte: AutoRepair (Milano) + AutoBodyShop (Mazzo di Rho)
+// 2 LocalBusiness distinte (AutoRepair + AutoBodyShop) coabitanti nella
+// stessa sede di Mazzo di Rho. Entry separate per dare a Google entita'
+// distinte sui due servizi.
 const officinaSchema = {
   '@context': 'https://schema.org',
   '@type': 'AutoRepair',
@@ -89,9 +91,9 @@ const officinaSchema = {
   },
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Via A. Brunetti 14',
-    postalCode: '20156',
-    addressLocality: 'Milano',
+    streetAddress: 'Via Venanzio Buzzi 9',
+    postalCode: '20017',
+    addressLocality: 'Mazzo di Rho',
     addressRegion: 'MI',
     addressCountry: 'IT',
   },
@@ -99,8 +101,8 @@ const officinaSchema = {
   email: CONTACTS_RACING.officina.email,
   openingHoursSpecification: standardHours,
   description: isEN
-    ? 'Multi-brand authorized workshop for cars and motorcycles in Milan. Scheduled services with official manufacturer warranty, mechanical and electronic repairs, tires, vehicle sanitization, replacement cars. Mandatory inspections up to 3.5 tons.'
-    : 'Officina autorizzata multimarche per auto e moto a Milano. Tagliandi con garanzie ufficiali delle case, riparazioni meccaniche ed elettroniche, pneumatici, igienizzazione, auto sostitutive. Revisioni ministeriali fino a 35 quintali.',
+    ? 'Multi-brand authorized workshop for cars and motorcycles in Mazzo di Rho (Milan). Scheduled services with official manufacturer warranty, mechanical and electronic repairs, tires, vehicle sanitization, replacement cars. Mandatory inspections up to 3.5 tons.'
+    : 'Officina autorizzata multimarche per auto e moto a Mazzo di Rho (MI). Tagliandi con garanzie ufficiali delle case, riparazioni meccaniche ed elettroniche, pneumatici, igienizzazione, auto sostitutive. Revisioni ministeriali fino a 35 quintali.',
 };
 
 const carrozzeriaSchema = {

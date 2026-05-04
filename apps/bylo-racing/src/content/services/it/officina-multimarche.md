@@ -2,11 +2,11 @@
 locale: it
 slug: officina-multimarche
 seo:
-  title: Officina multimarche per auto e moto a Milano | Tommy By
-  description: Officina autorizzata Tommy By a Milano. Tagliandi multimarche con garanzie ufficiali, riparazioni meccaniche ed elettroniche, pneumatici, igienizzazione e auto sostitutive.
+  title: Officina multimarche per auto e moto a Mazzo di Rho (Milano) | Tommy By
+  description: Officina autorizzata Tommy By a Mazzo di Rho (MI), alle porte di Milano. Tagliandi multimarche con garanzie ufficiali, riparazioni meccaniche ed elettroniche, pneumatici, igienizzazione e auto sostitutive.
 category: officina
 title: Officina multimarche per auto e moto
-intro: La nostra officina lavora su auto e moto di qualsiasi marca. Tagliandi con garanzie ufficiali delle case costruttrici, riparazioni meccaniche ed elettroniche, servizio pneumatici, igienizzazione veicoli. Sede in Via Brunetti 14, Milano.
+intro: La nostra officina lavora su auto e moto di qualsiasi marca. Tagliandi con garanzie ufficiali delle case costruttrici, riparazioni meccaniche ed elettroniche, servizio pneumatici, igienizzazione veicoli. Sede in Via Venanzio Buzzi 9, Mazzo di Rho (MI), alle porte di Milano.
 bullets:
   - Tagliandi multimarche con mantenimento delle garanzie ufficiali
   - Riparazioni meccaniche ed elettroniche, sia per privati sia per flotte aziendali
@@ -29,7 +29,7 @@ publishedAt: 2026-04-28
 
 ## Cosa facciamo in officina
 
-L'officina di Via Brunetti opera su auto e moto di qualsiasi marca, con un'attenzione particolare alle flotte aziendali e ai clienti privati con esigenze di affidabilità.
+L'officina di Via Venanzio Buzzi a Mazzo di Rho opera su auto e moto di qualsiasi marca, con un'attenzione particolare alle flotte aziendali e ai clienti privati con esigenze di affidabilità.
 
 Servizi standard:
 
@@ -41,6 +41,6 @@ Servizi standard:
 
 ## Per chi è pensato
 
-- Privati con un'unica auto o moto che cercano un meccanico di fiducia con sede a Milano
+- Privati con un'unica auto o moto che cercano un meccanico di fiducia alle porte di Milano
 - Aziende con piccole flotte (commerciali, dirigenza, auto pool) che vogliono un fornitore unico per la manutenzione
 - Officine che necessitano di tagliandi senza vincolarsi alla concessionaria di marca

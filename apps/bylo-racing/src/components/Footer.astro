@@ -72,22 +72,22 @@ const sectionPath = isEN ? {
 
       <div class="md:col-span-3">
         <h4 class="text-xs font-semibold uppercase tracking-[0.18em] text-byl-yellow">
-          {officina.label}
+          Sede
         </h4>
         <p class="mt-4 text-white/80 leading-relaxed text-sm">
           {officina.address}<br />
-          <a href={`tel:${officina.phone.replace(/\s/g, '')}`} class="inline-block py-1 hover:text-byl-yellow transition-colors">{officina.phone}</a><br />
-          <a href={`mailto:${officina.email}`} class="inline-block py-1 hover:text-byl-yellow transition-colors">{officina.email}</a>
+          <a href={`tel:${officina.phone.replace(/\s/g, '')}`} class="inline-block py-1 hover:text-byl-yellow transition-colors">{officina.phone}</a>
         </p>
       </div>
 
       <div class="md:col-span-3">
         <h4 class="text-xs font-semibold uppercase tracking-[0.18em] text-byl-yellow">
-          {carrozzeria.label}
+          Contatti email
         </h4>
         <p class="mt-4 text-white/80 leading-relaxed text-sm">
-          {carrozzeria.address}<br />
-          <a href={`tel:${carrozzeria.phone.replace(/\s/g, '')}`} class="inline-block py-1 hover:text-byl-yellow transition-colors">{carrozzeria.phone}</a><br />
+          <span class="text-white/50 text-xs uppercase tracking-wider">Officina · Ref. {officina.referent}</span><br />
+          <a href={`mailto:${officina.email}`} class="inline-block py-1 hover:text-byl-yellow transition-colors">{officina.email}</a><br />
+          <span class="text-white/50 text-xs uppercase tracking-wider mt-2 inline-block">Carrozzeria · Ref. {carrozzeria.referent}</span><br />
           <a href={`mailto:${carrozzeria.email}`} class="inline-block py-1 hover:text-byl-yellow transition-colors">{carrozzeria.email}</a>
         </p>
       </div>
