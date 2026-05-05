@@ -8,14 +8,18 @@ origin: Milano
 destination: Torino
 distanceKm: 140
 transitTimeHours: 2
-intro: Tratta breve fra Milano e Torino, due dei principali poli industriali del Nord-Ovest. La distanza ridotta e il volume di clienti chimici e automotive in entrambe le aree rendono questa tratta una delle più frequenti per BYLO Transport.
+intro: >-
+  Tratta breve fra Milano e Torino, due dei principali poli industriali del Nord-Ovest. La distanza ridotta e il volume di clienti chimici e automotive in entrambe le aree rendono questa tratta una delle più frequenti per BYLO Transport.
 faq:
   - q: Quanto dura il viaggio Milano-Torino?
-    a: La distanza è di circa 140 km via A4, il tempo di guida è di 1.5-2 ore in condizioni standard. Su tratte ADR il tempo finale dipende dalle soste obbligatorie e dalle fasce orarie con limitazioni in zona urbana di Torino.
+    a: >-
+      La distanza è di circa 140 km via A4, il tempo di guida è di 1.5-2 ore in condizioni standard. Su tratte ADR il tempo finale dipende dalle soste obbligatorie e dalle fasce orarie con limitazioni in zona urbana di Torino.
   - q: Si possono fare viaggi A/R in giornata?
-    a: Sì, è una delle tratte tipiche su cui organizziamo andata e ritorno in giornata, sia per consegne dirette sia per ritiro merce dai produttori del Nord-Ovest.
+    a: >-
+      Sì, è una delle tratte tipiche su cui organizziamo andata e ritorno in giornata, sia per consegne dirette sia per ritiro merce dai produttori del Nord-Ovest.
   - q: Quali settori movimentano merce su questa tratta?
-    a: Principalmente settore chimico e automotive (sia produttori sia indotto). Anche farmaceutica e agroalimentare, in funzione della tipologia di prodotto.
+    a: >-
+      Principalmente settore chimico e automotive (sia produttori sia indotto). Anche farmaceutica e agroalimentare, in funzione della tipologia di prodotto.
 relatedServices:
   - trasporti-adr
 publishedAt: 2026-04-28

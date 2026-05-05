@@ -6,7 +6,8 @@ seo:
   description: BYLO Transport delivers integrated logistics and warehousing from our Ospiate di Bollate (Milan) hub. One contact for transport, storage and distribution.
 eyebrow: Logistics services
 title: Integrated logistics — one contact for transport, storage and distribution
-intro: Integrated logistics is the management of a company's goods flow — from warehouse intake to final customer delivery. Instead of coordinating multiple vendors (carrier, warehouse, last mile), the client talks to a single operator. BYLO Transport runs the service from our hub in Ospiate di Bollate.
+intro: >-
+  Integrated logistics is the management of a company's goods flow — from warehouse intake to final customer delivery. Instead of coordinating multiple vendors (carrier, warehouse, last mile), the client talks to a single operator. BYLO Transport runs the service from our hub in Ospiate di Bollate.
 bullets:
   - Flexible service, both national and international
   - Own fleet and dedicated personnel
@@ -15,11 +16,14 @@ bullets:
   - Strategic location for Northern Italy (Bollate, near Milan) — A4, A8 and Milan ring road access
 faq:
   - q: What kind of company is integrated logistics designed for?
-    a: Italian companies producing or distributing industrial and technical goods that want a single point of contact for transport, warehousing and distribution. We don't handle temperature-controlled perishables or hazardous waste (which require dedicated authorizations).
+    a: >-
+      Italian companies producing or distributing industrial and technical goods that want a single point of contact for transport, warehousing and distribution. We don't handle temperature-controlled perishables or hazardous waste (which require dedicated authorizations).
   - q: Do you only operate in Italy or also abroad?
-    a: Both. International shipments are organized case by case depending on the destination.
+    a: >-
+      Both. International shipments are organized case by case depending on the destination.
   - q: Can I combine integrated logistics with ADR transport?
-    a: Yes, it's one of the service's advantages. For clients moving ADR goods who also need temporary warehousing, we run both flows from the same Bollate site, cutting out intermediate handoffs.
+    a: >-
+      Yes, it's one of the service's advantages. For clients moving ADR goods who also need temporary warehousing, we run both flows from the same Bollate site, cutting out intermediate handoffs.
 relatedServices:
   - adr-transport
   - warehousing

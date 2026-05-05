@@ -6,7 +6,8 @@ seo:
   description: Tommy By's authorized workshop in Mazzo di Rho (MI), just outside Milan. Multi-brand services with official manufacturer warranties, mechanical and electronic repairs, tires, sanitization and replacement cars.
 category: officina
 title: Multi-brand workshop for cars and motorcycles
-intro: Our workshop services cars and motorcycles of any brand. Scheduled services with official manufacturer warranties, mechanical and electronic repairs, full tire service, vehicle sanitization. Located at Via Venanzio Buzzi 9, Mazzo di Rho (MI), just outside Milan.
+intro: >-
+  Our workshop services cars and motorcycles of any brand. Scheduled services with official manufacturer warranties, mechanical and electronic repairs, full tire service, vehicle sanitization. Located at Via Venanzio Buzzi 9, Mazzo di Rho (MI), just outside Milan.
 bullets:
   - Multi-brand scheduled services with retained official manufacturer warranty
   - Mechanical and electronic repairs, for both private clients and corporate fleets
@@ -16,11 +17,14 @@ bullets:
   - We work on cars AND motorcycles, any model
 faq:
   - q: Can I have my under-warranty car serviced here without losing the official warranty?
-    a: Yes. We are an authorized workshop and our scheduled services preserve the manufacturer's official warranty, because we use parts and procedures compliant with the manufacturer's specifications.
+    a: >-
+      Yes. We are an authorized workshop and our scheduled services preserve the manufacturer's official warranty, because we use parts and procedures compliant with the manufacturer's specifications.
   - q: Do you also work on motorcycles?
-    a: Yes, the workshop is multi-brand for both cars and motorcycles. For motorcycles we cover routine maintenance, electronic diagnostics, tires and minor mechanics.
+    a: >-
+      Yes, the workshop is multi-brand for both cars and motorcycles, any brand and model.
   - q: Do you offer replacement cars?
-    a: Yes, when the vehicle needs to stay in for more than a day we provide a replacement car (subject to availability). We agree on the replacement car at the start of the job.
+    a: >-
+      Yes, when the vehicle needs to stay in for more than a day we provide a replacement car (subject to availability). We agree on the replacement car at the start of the job.
 relatedServices:
   - body-shop-and-painting
   - mandatory-inspections

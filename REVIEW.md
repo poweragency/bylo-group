@@ -9,21 +9,21 @@ Questo file lista tutti i punti dei contenuti che sono **placeholder, deduzione 
 
 ## 1. Dati anagrafici / aziendali
 
-- [ ] **Anno di fondazione** — di nessuna delle 3 aziende è dichiarato. Andrebbe aggiunto in `bylo-group/src/pages/index.astro` (sezione "Chi siamo") e nei content `services/*.md`.
-- [ ] **Dipendenti totali gruppo** — sconosciuti. Oggi nei "Numeri" landing group non li mostriamo.
+- [x] **Anno di fondazione** — DECISIONE CLIENTE 2026-05-05: NON da mostrare sul sito. Punto chiuso, non più richiesto.
+- [x] **Dipendenti totali gruppo** — DECISIONE CLIENTE 2026-05-05: NON da mostrare sul sito. Punto chiuso, non più richiesto.
 - [ ] **Iscrizione Albo Autotrasportatori MI/8906297N** — era nella memoria precedente, NON dichiarato sul sito ufficiale `bylogroup.it`. Confermare se valido e attivo (`packages/ui/src/index.ts` → `LEGAL_TRANSPORT.albo`).
 - [ ] **Email "info@bylogroup.it" e "press@bylogroup.it"** — placeholder, utente non sa se esistono. Oggi `packages/ui/src/index.ts` li tiene come `emailPlaceholder`/`pressPlaceholder`. Le pagine non li mostrano (uso le 3 email reali: `operativo.t@`, `officina@`, `carrozzeria@`).
 
 ## 2. BYLO Transport — content
 
-- [ ] **Magazzino Bollate**: dimensione reale in mq sconosciuta. Nei contenuti (es. `services/it/magazzinaggio.md`) non menziono cifre, solo "magazzino" generico.
-- [ ] **Numero mezzi** — utente ha detto "circa 10 bilici + qualche mezzo piccolo". Usato in `bylo-group/index.astro` ("10+ Mezzi della flotta ADR") e nei servizi. Verificare numero esatto.
-- [ ] **GPS / tracking sui mezzi** — nei content non l'ho mai dichiarato. Se esiste, aggiungere come bullet. Se non esiste, ok.
-- [ ] **WMS / software gestionale** — nei content non l'ho dichiarato. Se esiste, aggiungere.
-- [ ] **Tratte tipiche internazionali** — utente non sa. Nei content scrivo "tratte nazionali e internazionali" generico. Se ci sono destinazioni ricorrenti (Francia, Germania, Spagna, Est Europa) andrebbero menzionate per SEO.
-- [ ] **Settori clienti reali** — sito non ne dichiara, utente ha detto "valli a vedere sul sito" ma il sito non dice settori specifici. Per ora ho scritto **CHIMICA** e **FARMACEUTICA** come settori ipotizzati (file `content/sectors/it/{chimica,farmaceutica}.md` + EN). Sono settori naturali per ADR, ma da verificare se sono i settori effettivamente serviti o se invece il cliente lavora in altri (alimentare, automotive industriale, edilizia, cosmetica).
-- [ ] **Tratte ipotizzate**: ho scritto **Milano-Roma** e **Milano-Torino** (`content/routes/it/{milano-roma,milano-torino}.md` + EN). Sono plausibili ma non confermate dal cliente. Verificare se sono fra le tratte ricorrenti, e quali altre andrebbero aggiunte.
-- [ ] **ISO certificazioni** (9001, 14001, 45001) — non dichiarate sul sito, utente non sa. Lasciate fuori dai content.
+- [x] **Magazzino Bollate**: confermato 2026-05-05 come **magazzino con scaffalature** (no mq dichiarati per scelta cliente). Aggiornato `services/{it,en}/magazzinaggio.md` + `warehousing.md`.
+- [ ] **Numero mezzi** — utente ha detto "circa 10 bilici + qualche mezzo piccolo". Usato in `bylo-group/index.astro` ("10+ Mezzi della flotta ADR") e nei servizi. Verificare numero esatto (resta come stima).
+- [x] **GPS / tracking sui mezzi** — confermato 2026-05-05. Aggiunto come bullet in `services/it/trasporti-adr.md` (e EN `adr-transport.md`) + `magazzinaggio.md` (e EN `warehousing.md`).
+- [ ] **WMS / software gestionale** — non chiesto in tornata 2. Lasciato non dichiarato.
+- [x] **Tratte tipiche internazionali** — DECISIONE CLIENTE 2026-05-05: non specificare nulla, generare le tipiche più cercate. Generate **Milano-Francia, Milano-Germania, Milano-Spagna** in IT + EN con vincoli tunnel reali (Frejus, Brennero, Gottardo, Ventimiglia).
+- [x] **Settori clienti reali** — DECISIONE CLIENTE 2026-05-05: non specificare, generare quelli più cercati. Aggiunti **cosmetica, vernici-solventi, automotive, alimentare** in IT + EN con copy unico (no duplicate content). Mantenuti chimica + farmaceutica.
+- [x] **Tratte ipotizzate**: DECISIONE CLIENTE 2026-05-05: il cliente conferma Milano-Roma e Milano-Torino come "ok come SEO", chiede di generare altre tipiche. Aggiunte **Milano-Napoli, Milano-Bologna, Milano-Genova** in IT + EN.
+- [x] **Certificazioni** — DECISIONE CLIENTE 2026-05-05: copy generico, niente ISO specifiche. Aggiunto bullet "Certificazioni di settore aggiornate per il trasporto ADR" in `trasporti-adr.md` (IT+EN). Confermato Albo Autotrasportatori MI/8906297N (rimosso `[DA VERIFICARE]` da `LEGAL_TRANSPORT.albo`).
 - [ ] **Onboarding tempi/processo logistica integrata** — in `services/it/logistica-integrata.md` ho usato un processo generico (4 step). Verificare se corrisponde al modo reale di operare.
 - [ ] **FAQ chimica/farmaceutica** — i 6 Q&A nei file settori sono contenuto SEO-plausibile ma generico. Da rileggere con il cliente per verificare che le risposte rispettino come l'azienda descrive davvero i propri servizi.
 - [ ] **Orari Transport** — usato `Lun–Ven 9:00–12:00 / 14:00–18:00` in `packages/ui/src/index.ts` e nello schema.org `LocalBusiness` di Bollate (Layout). Memoria precedente, NON dichiarato sul sito ufficiale. Verificare se sono gli orari reali della sede di Bollate.
@@ -31,18 +31,20 @@ Questo file lista tutti i punti dei contenuti che sono **placeholder, deduzione 
 
 ## 3. Tommy By — content
 
-- [ ] **Anno fondazione officina + carrozzeria** — sconosciuti.
-- [ ] **Numero dipendenti** tra le due sedi — sconosciuto.
-- [ ] **Marche servite** — sito dice "qualsiasi modello / multimarche". Ho scritto pagine dedicate per **5 marche placeholder ragionevoli**: BMW, Audi, Mercedes-Benz, FIAT, Volkswagen (`content/brands/it/*.md` + EN). Da chiedere al cliente quali sono effettivamente le top 5-10 marche servite. Le pagine sono "generiche" — descrivono che facciamo manutenzione su quella marca, ma non dicono niente di specifico che potrebbe essere falso.
-- [ ] **Zone clientela** (per SEO local) — ho scritto pagine per **5 zone placeholder**: Milano, Rho, Pero, Arese, Lainate (`content/zones/it/*.md` + EN). Sono zone vicine alle due sedi (Milano + Mazzo di Rho) quindi sono ragionevoli, ma da concordare con utente la lista corretta — eventuali aggiunte: Pogliano, Cornaredo, Pregnana, Vanzago, Settimo Milanese, Garbagnate Milanese, Bollate, Novate, Cusano Milanino, Cinisello.
-- [ ] **Convenzioni assicurative** — utente ha detto NESSUNA. Confermato: non scriviamo nei content.
-- [ ] **Vendita auto**: il sito menziona "auto sostitutive" ma non parla di vendita auto in evidenza. La parte `apps/bylo-racing/src/pages/auto/` (catalogo placeholder) è da rivedere: confermare che vendono auto e se sì come funziona.
-- [ ] **FAQ marche** — le 2 FAQ per marca usano testo SEO-plausibile (es. "posso mantenere la garanzia ufficiale?"). Verificare con il cliente che le risposte siano corrette.
-- [ ] **Indirizzo officina** — su tutta la base contenuti uso `Via A. Brunetti 14, 20156 Milano` come dichiarato dal sito ufficiale. Se l'indirizzo è cambiato in seguito, va aggiornato in `packages/ui/src/index.ts` (CONTACTS_RACING.officina).
+- [x] **Anno fondazione officina + carrozzeria** — DECISIONE CLIENTE 2026-05-05: NON da mostrare sul sito.
+- [x] **Numero dipendenti** tra le due sedi — DECISIONE CLIENTE 2026-05-05: NON da mostrare sul sito.
+- [x] **Indirizzo officina/carrozzeria** — CONFERMATO 2026-05-05: sede unica a **Via Venanzio Buzzi 9, Mazzo di Rho (MI)** (già a posto in `packages/ui/src/index.ts` → CONTACTS_RACING).
+- [x] **Marche servite** — DECISIONE CLIENTE 2026-05-05: tutte le marche, generate in autonomia. Generate **15 marche aggiuntive** (Toyota, Peugeot, Renault, Ford, Dacia, Citroën, Opel, Hyundai, Jeep, Nissan, Kia, Skoda, MINI, Volvo, Alfa Romeo) in IT + EN con copy unico (no duplicate content). Totale marche disponibili: **20** (5 originali + 15 nuove).
+- [x] **Zone clientela** (per SEO local) — DECISIONE TORNATA 3 2026-05-05: 15 zone totali con copy unico. Le 5 esistenti (Milano, Rho, Pero, Arese, Lainate) sono state **rifatte** per evitare duplicate content (avevano bullet/FAQ identici). Nuove (10): Mazzo di Rho, Pregnana Milanese, Cornaredo, Pogliano Milanese, Vanzago, Bollate, Garbagnate Milanese, Settimo Milanese, Legnano, Sesto San Giovanni. Ognuna con distanza/tempo precisi, strada specifica di accesso, caratteristica locale reale (es. Centro Commerciale Il Centro Arese, Fiera Milano Pero, Ospedale Civile Garbagnate, distretto manifatturiero Legnano, ex-Falck Sesto, ecc.) e 2-3 FAQ uniche.
+- [x] **Convenzioni assicurative** — utente ha detto NESSUNA. Non scritte nei content.
+- [ ] **Vendita auto**: CONFERMATO 2026-05-05 dal cliente che SI fa vendita auto. Serve **codice AutoScout24 / API key** per pubblicazione automatica del listino dal sito AutoScout al sito Tommy. Task tecnico da implementare: integrazione AutoScout24 → `apps/bylo-racing/src/pages/auto/`. Aspettare credenziali cliente prima di sviluppare.
+- [x] **Moto** — DECISIONE CLIENTE 2026-05-05: copy generico, no specificare se officina o carrozzeria. Pulita la FAQ in `officina-multimarche.md` (IT+EN) che limitava le moto a "manutenzione ordinaria, controllo elettronico, pneumatici e piccola meccanica" → ora è semplicemente "qualsiasi marca e modello".
+- [ ] **FAQ marche** — le FAQ delle marche generate in tornata 2 (15 nuove) usano testo SEO-plausibile basato su problemi noti pubblici dei modelli (es. PureTech 1.2 timing belt, EcoBoost 1.0, MultiAir Giulietta). Vanno bene per SEO, ma da rileggere col cliente per verificare che il messaggio sia corretto rispetto alla loro esperienza in officina.
+- [x] **Indirizzo officina** — CONFERMATO 2026-05-05 dal cliente: sede unica a **Mazzo di Rho** (Via Venanzio Buzzi 9). L'indirizzo "Via Brunetti 14 Milano" del sito ufficiale era stale: il cliente ha unificato officina + carrozzeria nello stesso indirizzo.
 
 ## 4. BYLO Group (holding) — content
 
-- [ ] **Storia / fondatori / famiglia** — utente ha detto "2 generazioni, 1 famiglia". Usato in `bylo-group/index.astro`. Non c'è una vera narrativa storica. Andrebbe scritta una sezione "La storia" con date, persone, eventi.
+- [x] **Storia / fondatori / famiglia** — DECISIONE CLIENTE 2026-05-05: niente date/numeri storici (anno fondazione, dipendenti, ecc.). La narrativa familiare "2 generazioni" resta nei copy ma senza dettagli specifici. Conteggio sedi corretto da 3 → 2 sia in IT che EN (officina+carrozzeria coabitano a Mazzo di Rho).
 - [ ] **Mission / vision** — il sito attuale dice "professionale, veloce e affidabile" come payoff. Salvato in `packages/ui/src/index.ts` → `GROUP.payoff`. Non lo uso esplicitamente nelle pagine; valutare se metterlo in evidenza.
 - [ ] **Centralino "gruppo"** — nelle pagine usiamo `+39 02 7862 0860` (centralino Transport) marcandolo come "Centralino gruppo / Group switchboard". Verificare se risponde davvero per richieste che non sono di logistica.
 
@@ -65,8 +67,8 @@ Questo file lista tutti i punti dei contenuti che sono **placeholder, deduzione 
 
 ## 7. Asset visivi mancanti
 
-- [ ] **Logo Tommy By** — oggi placeholder testuale stilizzato (Header/Footer racing). Quando arriva il logo reale, mettere in `apps/bylo-racing/public/logo.png` e aggiornare gli header/footer.
-- [ ] **Logo BYLO Transport** — oggi placeholder testuale stilizzato. Stesso pattern, in `apps/bylo-logistica/public/logo.png`.
+- [x] **Logo Tommy By** — DECISIONE CLIENTE 2026-05-05: si usa il logo BYLO Group anche su Tommy. Header/Footer di bylo-racing puntano a `/logo.png` (file copiato da bylo-group), niente fallback testuale.
+- [x] **Logo BYLO Transport** — DECISIONE CLIENTE 2026-05-05: si usa il logo BYLO Group anche su Transport. Stesso pattern: `apps/bylo-logistica/public/logo.png` è il logo Group.
 - [ ] **Foto mezzi** flotta Transport (per hero/landing) — oggi c'è solo l'animazione SVG di un camion.
 - [ ] **Foto sedi** (officina, carrozzeria, magazzino) — oggi assenti.
 - [ ] **Foto carrozzeria** già presente: `apps/bylo-racing/public/photos/carrozzeria-forno.{avif,webp,jpg}` (forno verniciatura). OK.

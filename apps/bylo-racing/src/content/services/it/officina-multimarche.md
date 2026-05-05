@@ -6,7 +6,8 @@ seo:
   description: Officina autorizzata Tommy By a Mazzo di Rho (MI), alle porte di Milano. Tagliandi multimarche con garanzie ufficiali, riparazioni meccaniche ed elettroniche, pneumatici, igienizzazione e auto sostitutive.
 category: officina
 title: Officina multimarche per auto e moto
-intro: La nostra officina lavora su auto e moto di qualsiasi marca. Tagliandi con garanzie ufficiali delle case costruttrici, riparazioni meccaniche ed elettroniche, servizio pneumatici, igienizzazione veicoli. Sede in Via Venanzio Buzzi 9, Mazzo di Rho (MI), alle porte di Milano.
+intro: >-
+  La nostra officina lavora su auto e moto di qualsiasi marca. Tagliandi con garanzie ufficiali delle case costruttrici, riparazioni meccaniche ed elettroniche, servizio pneumatici, igienizzazione veicoli. Sede in Via Venanzio Buzzi 9, Mazzo di Rho (MI), alle porte di Milano.
 bullets:
   - Tagliandi multimarche con mantenimento delle garanzie ufficiali
   - Riparazioni meccaniche ed elettroniche, sia per privati sia per flotte aziendali
@@ -16,11 +17,14 @@ bullets:
   - Lavoriamo su auto E moto di qualunque modello
 faq:
   - q: Posso fare il tagliando dell'auto in garanzia da voi senza perdere la garanzia ufficiale?
-    a: Sì. Siamo un'officina autorizzata e i nostri tagliandi mantengono la garanzia ufficiale della casa costruttrice, perché utilizziamo ricambi e procedure conformi alle specifiche del produttore.
+    a: >-
+      Sì. Siamo un'officina autorizzata e i nostri tagliandi mantengono la garanzia ufficiale della casa costruttrice, perché utilizziamo ricambi e procedure conformi alle specifiche del produttore.
   - q: Lavorate anche sulle moto?
-    a: Sì, l'officina è multimarche per auto e moto. Per la moto trattiamo manutenzione ordinaria, controllo elettronico, pneumatici e piccola meccanica.
+    a: >-
+      Sì, l'officina è multimarche per auto e moto, qualsiasi marca e modello.
   - q: Avete auto sostitutive?
-    a: Sì, per i casi in cui il veicolo deve fermarsi per più di un giorno mettiamo a disposizione un'auto sostitutiva (su disponibilità). Concordiamo l'auto sostitutiva al momento dell'apertura della pratica.
+    a: >-
+      Sì, per i casi in cui il veicolo deve fermarsi per più di un giorno mettiamo a disposizione un'auto sostitutiva (su disponibilità). Concordiamo l'auto sostitutiva al momento dell'apertura della pratica.
 relatedServices:
   - carrozzeria-e-verniciatura
   - revisioni-ministeriali

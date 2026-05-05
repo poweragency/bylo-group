@@ -8,14 +8,18 @@ origin: Milan
 destination: Rome
 distanceKm: 580
 transitTimeHours: 7
-intro: National route between the Milan logistics hub and Rome for ADR dangerous goods. Departures from our Ospiate di Bollate (Milan) site, arrival in the Lazio region. We run all served ADR classes (2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8, 9).
+intro: >-
+  National route between the Milan logistics hub and Rome for ADR dangerous goods. Departures from our Ospiate di Bollate (Milan) site, arrival in the Lazio region. We run all served ADR classes (2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8, 9).
 faq:
   - q: How long does the Milan-Rome trip take?
-    a: The distance is roughly 580 km via the A1 motorway, with a standard driving time of 6-7 hours. On ADR runs we work net of mandatory rest stops and any tunnel or urban-area time-slot restrictions. Exact timing is agreed at booking based on the load and the day.
+    a: >-
+      The distance is roughly 580 km via the A1 motorway, with a standard driving time of 6-7 hours. On ADR runs we work net of mandatory rest stops and any tunnel or urban-area time-slot restrictions. Exact timing is agreed at booking based on the load and the day.
   - q: Which ADR classes do you serve on this route?
-    a: All ADR classes served by BYLO Transport — 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 and 9. Classes 1 (explosives) and 7 (radioactives) are excluded.
+    a: >-
+      All ADR classes served by BYLO Transport — 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 and 9. Classes 1 (explosives) and 7 (radioactives) are excluded.
   - q: Can a Milan-Rome departure be scheduled same-day?
-    a: On regularly covered routes, yes. For urgent ADR shipments to Rome with standard classes we can organize departures within 12-24 hours if vehicle availability allows. Less common ADR classes may require more notice.
+    a: >-
+      On regularly covered routes, yes. For urgent ADR shipments to Rome with standard classes we can organize departures within 12-24 hours if vehicle availability allows. Less common ADR classes may require more notice.
 relatedServices:
   - adr-transport
 publishedAt: 2026-04-28

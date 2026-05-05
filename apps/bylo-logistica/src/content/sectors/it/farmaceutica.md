@@ -5,14 +5,18 @@ seo:
   title: Trasporti per il settore farmaceutico — BYLO Transport
   description: Trasporti ADR per industria farmaceutica e diagnostica. BYLO Transport movimenta reagenti, principi attivi e materiali di laboratorio non temperature-controlled.
 title: Trasporti per il settore farmaceutico
-intro: Il farmaceutico richiede precisione, tracciabilità e rispetto dei tempi. BYLO Transport supporta aziende farmaceutiche, biotech e diagnostiche italiane con trasporti ADR per reagenti, principi attivi e materiali sensibili a temperatura ambiente controllata.
+intro: >-
+  Il farmaceutico richiede precisione, tracciabilità e rispetto dei tempi. BYLO Transport supporta aziende farmaceutiche, biotech e diagnostiche italiane con trasporti ADR per reagenti, principi attivi e materiali sensibili a temperatura ambiente controllata.
 faq:
   - q: Trasportate medicinali finiti o solo materie prime?
-    a: Lavoriamo principalmente sulle materie prime e sugli intermedi (principi attivi, reagenti, solventi farmaceutici, materiali di laboratorio). Per medicinali finiti che richiedono cold chain (2-8°C o -20°C) non operiamo direttamente.
+    a: >-
+      Lavoriamo principalmente sulle materie prime e sugli intermedi (principi attivi, reagenti, solventi farmaceutici, materiali di laboratorio). Per medicinali finiti che richiedono cold chain (2-8°C o -20°C) non operiamo direttamente.
   - q: Quanto preavviso serve per organizzare un trasporto?
-    a: Per spedizioni standard 24-48 ore. Per urgenze o reagenti necessari per produzione in fermo possiamo attivare procedure prioritarie con disponibilità entro 12-24 ore, su tratte coperte di frequente.
+    a: >-
+      Per spedizioni standard 24-48 ore. Per urgenze o reagenti necessari per produzione in fermo possiamo attivare procedure prioritarie con disponibilità entro 12-24 ore, su tratte coperte di frequente.
   - q: Quali classi ADR sono tipiche del farmaceutico?
-    a: Solitamente classe 3 (solventi infiammabili come etanolo, isopropanolo, acetone), classe 8 (acidi e basi per analisi) e classe 6.1 (alcuni reagenti tossici). Tutte servite da BYLO Transport.
+    a: >-
+      Solitamente classe 3 (solventi infiammabili come etanolo, isopropanolo, acetone), classe 8 (acidi e basi per analisi) e classe 6.1 (alcuni reagenti tossici). Tutte servite da BYLO Transport.
 relatedServices:
   - trasporti-adr
   - magazzinaggio

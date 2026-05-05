@@ -5,14 +5,18 @@ seo:
   title: Trasporti per il settore chimico — BYLO Transport
   description: Trasporti ADR di BYLO Transport per industria chimica e petrolchimica. Solventi, acidi, basi, prodotti infiammabili e tossici sulle classi ADR 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 e 9.
 title: Trasporti per il settore chimico
-intro: L'industria chimica è uno dei principali utilizzatori di trasporti ADR. Solventi, acidi, basi, prodotti infiammabili o reattivi richiedono mezzi conformi e autisti con formazione specifica. BYLO Transport copre le classi ADR 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 e 9, su tratte nazionali e internazionali.
+intro: >-
+  L'industria chimica è uno dei principali utilizzatori di trasporti ADR. Solventi, acidi, basi, prodotti infiammabili o reattivi richiedono mezzi conformi e autisti con formazione specifica. BYLO Transport copre le classi ADR 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 e 9, su tratte nazionali e internazionali.
 faq:
   - q: Quali tipi di prodotti chimici trasportate?
-    a: Tutti i prodotti delle classi ADR 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 e 9 — gas, solventi, acidi, basi, ossidanti, perossidi organici, sostanze tossiche, corrosive e merci pericolose varie. Restano escluse le classi 1 (esplosivi) e 7 (radioattivi).
+    a: >-
+      Tutti i prodotti delle classi ADR 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 e 9 — gas, solventi, acidi, basi, ossidanti, perossidi organici, sostanze tossiche, corrosive e merci pericolose varie. Restano escluse le classi 1 (esplosivi) e 7 (radioattivi).
   - q: Come gestite l'incompatibilità chimica fra carichi diversi?
-    a: Ogni viaggio è preventivamente verificato sulla scheda di sicurezza (SDS) del prodotto. Carichi incompatibili (es. un acido e una base) non vengono caricati insieme; se necessario, organizziamo viaggi dedicati anche per spedizioni di volume contenuto.
+    a: >-
+      Ogni viaggio è preventivamente verificato sulla scheda di sicurezza (SDS) del prodotto. Carichi incompatibili (es. un acido e una base) non vengono caricati insieme; se necessario, organizziamo viaggi dedicati anche per spedizioni di volume contenuto.
   - q: Operate solo in Italia o anche all'estero per il chimico?
-    a: Sia in Italia sia all'estero. Le tratte internazionali sono organizzate caso per caso, verificando preventivamente le restrizioni ADR del paese di destinazione (gallerie, centri urbani, fasce orarie).
+    a: >-
+      Sia in Italia sia all'estero. Le tratte internazionali sono organizzate caso per caso, verificando preventivamente le restrizioni ADR del paese di destinazione (gallerie, centri urbani, fasce orarie).
 relatedServices:
   - trasporti-adr
   - logistica-integrata

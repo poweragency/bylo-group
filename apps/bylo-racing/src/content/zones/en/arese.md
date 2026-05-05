@@ -2,22 +2,38 @@
 locale: en
 seo:
   title: Workshop and body shop for Arese (Milan) | Tommy By
-  description: Tommy By serves Arese for workshop, body shop, inspections. Single location in Mazzo di Rho (Via Venanzio Buzzi 9), 10-12 minutes from Arese via SP233.
+  description: Tommy By for Arese — 7 km and 12 minutes via SP233 or A52. Multi-brand body shop, workshop, same-day inspections. Convenient for both Arese residents and visitors to Il Centro shopping mall.
 name: Arese
 province: MI
-intro: For clients in Arese our location in Mazzo di Rho (Via Venanzio Buzzi 9) is 10-12 minutes away via SP233 or the western Milan ring road. Multi-brand workshop for cars and motorcycles and body shop with water-based oven painting in the same building.
+intro: >-
+  Arese is one of the most mobile areas of north-western Milan, both for the presence of Il Centro shopping mall (one of Italy's largest) and the industrial history tied to the Alfa Romeo plant. Our location is 7 km from central Arese and reachable in 12 minutes via SP233 or the A52 link. We regularly host customers who combine a stop at Tommy By with a visit to Il Centro or the Alfa Romeo Historical Museum.
 faq:
-  - q: How far is your location from Arese?
-    a: Our Mazzo di Rho location is about 10-12 minutes from Arese, reachable via SP233 or the western Milan ring road.
-  - q: Do you also work on classic cars or vehicles linked to the historic Alfa Romeo Arese site?
-    a: We service multi-brand cars of any model, including classics, for routine maintenance and inspections. For full restorations or rebuilds of heavily damaged frames we refer specialist body shops.
-publishedAt: 2026-04-28
+  - q: Can I leave my car here and go to Il Centro mall while you work?
+    a: >-
+      Yes, many Arese customers do exactly this. The mall is 4-5 minutes from our location by car and has an internal shuttle. If the job takes half a day, leaving the car, going to the mall for shopping or lunch, and returning to pick it up is a frequent solution.
+  - q: Do you have customers connected to the historic Alfa Romeo plant or the Museum?
+    a: >-
+      Yes, we regularly work on both modern Alfa Romeos and on classic-era models still on the road. The Alfa Romeo Historical Museum in Arese is a cultural reference for many brand customers, and some bring us vehicles for ordinary maintenance preserving original specifications. For full restorations we refer specialist classic body shops.
+publishedAt: 2026-05-05
 ---
 
-## What we offer Arese clients
+## From Arese to Tommy By
 
-- **Body shop** in Mazzo di Rho for collision repair and full repainting
-- **Oven painting** with water-based paints
-- **Multi-brand workshop** at the same address for scheduled services, repairs, inspections
-- **Full tire service**
-- **Replacement cars** available for extended stays
+- **Distance**: 7 km
+- **Driving time**: 12 minutes
+- **Main roads**: SP233 Varesina, or A52 (Northern Ring Road) with Lainate-Arese exit
+- **Mall proximity**: 4 minutes by car to Il Centro shopping mall
+- **Museum proximity**: 8 minutes by car to the Alfa Romeo Historical Museum
+
+## Typical services for Arese customers
+
+- Full **body shop** with water-based oven painting for post-collision repair
+- **Services** for Alfa Romeo, FCA/Stellantis and full multi-brand range
+- **Electronic diagnostics** with multi-brand tools compatible with Stellantis systems
+- **Mandatory inspections** same-day
+- **Replacement cars** available for those needing mobility during the stay
+- Also work on **motorcycles** of any brand
+
+## Arese and its catchment
+
+Arese has 19,000 inhabitants and orbits two strong hubs: Il Centro shopping mall (drawing customers from across Lombardy) and the former Alfa Romeo plant area, now redeveloped but still iconic. For Arese town centre residents our location is a natural choice when quality body shop and workshop are needed without traveling into Milan.

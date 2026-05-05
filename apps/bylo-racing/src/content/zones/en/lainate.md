@@ -2,22 +2,38 @@
 locale: en
 seo:
   title: Workshop and body shop for Lainate (Milan) | Tommy By
-  description: Tommy By serves Lainate for workshop, body shop, inspections. Single location in Mazzo di Rho (Via Venanzio Buzzi 9), 10-12 minutes from Lainate via SP233.
+  description: Tommy By for Lainate — 8 km and 13 minutes via SP233. Body shop with water-based oven painting, multi-brand workshop, same-day inspections. Located in Mazzo di Rho.
 name: Lainate
 province: MI
-intro: For clients in Lainate our location in Mazzo di Rho (Via Venanzio Buzzi 9) is 10-12 minutes away via SP233. Multi-brand workshop for cars and motorcycles and body shop with water-based oven painting under the same roof.
+intro: >-
+  Lainate is the hinge municipality between the Milan metropolitan area and the Varese province, with its 25,000 inhabitants and strategic position on SP233 Varesina. Our location is 8 km away, reachable in 13 minutes mainly via SP233 southbound toward Rho. Lainate is also home to Villa Litta with the famous Nymphaeum water gardens, and to a historically active industrial-logistic cluster.
 faq:
-  - q: How far is your location from Lainate?
-    a: Our Mazzo di Rho location is about 10-12 minutes from Lainate via SP233.
-  - q: Do you work on motorcycles?
-    a: Yes, the workshop services cars and motorcycles of any brand for maintenance, mechanical/electronic repairs and tires.
-publishedAt: 2026-04-28
+  - q: Can I use the train station for the return trip from Lainate?
+    a: >-
+      Yes, Lainate-Grancia has a station on the S5/S6 train line and is an interchange point. From Mazzo di Rho, returning to Lainate station takes 10-12 minutes by car and there's a local bus service connecting the two areas. For longer stays we offer replacement cars subject to availability.
+  - q: Do you work for businesses in the Lainate industrial cluster?
+    a: >-
+      Yes, we have business customers among Lainate companies, particularly commercial fleets and service vehicles. We arrange scheduled delivery windows to minimize the impact on business operations, especially for fleet pickups.
+publishedAt: 2026-05-05
 ---
 
-## What we offer Lainate clients
+## Lainate → Mazzo di Rho route
 
-- **Body shop** in Mazzo di Rho with water-based oven painting
-- **Multi-brand workshop** at the same location for cars and motorcycles
-- **Scheduled services** with official manufacturer warranty preserved
-- **Mandatory inspections** same-day up to 3.5 tons
-- **Replacement cars** available
+- **Distance**: 8 km
+- **Driving time**: 13 minutes
+- **Main road**: SP233 Varesina southbound toward Rho
+- **Motorway alternative**: A8 Milan-Lakes, Lainate exit, then SP233
+- **Train station**: Lainate-Grancia (S5/S6 lines)
+
+## Services we provide Lainate customers
+
+- **Body shop** post-collision with water-based oven painting
+- **Multi-brand workshop** for cars and motorcycles, any brand and model
+- **Services** preserving the official warranty
+- **Inspections** same-day, up to 3.5 tons
+- Full **tire service** (including seasonal change and storage)
+- **Electronic diagnostics** with multi-brand tools
+
+## Lainate and its customer base
+
+Lainate has an interesting mix of residential, production area and transit artery (SP233). The municipality's industrial cluster hosts manufacturing and logistics companies generating constant demand for company vehicle maintenance. For Lainate town centre or Grancia village residents our location is the first "out of town" alternative that combines workshop and body shop in a single building.

@@ -5,14 +5,18 @@ seo:
   title: Transport for the chemical industry — BYLO Transport
   description: BYLO Transport's ADR transport for the chemical and petrochemical industry. Solvents, acids, bases, flammable and toxic products on ADR classes 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 and 9.
 title: Transport for the chemical industry
-intro: The chemical industry is one of the main users of ADR transport. Solvents, acids, bases, flammable and reactive products require compliant vehicles and drivers with specific training. BYLO Transport covers ADR classes 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 and 9, on national and international routes.
+intro: >-
+  The chemical industry is one of the main users of ADR transport. Solvents, acids, bases, flammable and reactive products require compliant vehicles and drivers with specific training. BYLO Transport covers ADR classes 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 and 9, on national and international routes.
 faq:
   - q: Which types of chemicals do you carry?
-    a: All products in ADR classes 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 and 9 — gases, solvents, acids, bases, oxidizers, organic peroxides, toxics, corrosives and miscellaneous dangerous goods. Classes 1 (explosives) and 7 (radioactives) are excluded.
+    a: >-
+      All products in ADR classes 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 and 9 — gases, solvents, acids, bases, oxidizers, organic peroxides, toxics, corrosives and miscellaneous dangerous goods. Classes 1 (explosives) and 7 (radioactives) are excluded.
   - q: How do you handle chemical incompatibility between different loads?
-    a: Every trip is verified beforehand against the product safety data sheet (SDS). Incompatible loads (e.g. an acid and a base) don't travel together; if needed, we organize dedicated trips even for smaller volumes.
+    a: >-
+      Every trip is verified beforehand against the product safety data sheet (SDS). Incompatible loads (e.g. an acid and a base) don't travel together; if needed, we organize dedicated trips even for smaller volumes.
   - q: Do you only operate in Italy or also abroad for chemicals?
-    a: Both. International runs are organized case by case, checking the destination country's ADR restrictions upfront (tunnels, urban centers, time slots).
+    a: >-
+      Both. International runs are organized case by case, checking the destination country's ADR restrictions upfront (tunnels, urban centers, time slots).
 relatedServices:
   - adr-transport
   - integrated-logistics

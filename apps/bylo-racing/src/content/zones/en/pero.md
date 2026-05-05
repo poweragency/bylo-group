@@ -2,23 +2,36 @@
 locale: en
 seo:
   title: Workshop and body shop for Pero (Milan) | Tommy By
-  description: Tommy By serves Pero for workshop, body shop, inspections. Single location in Mazzo di Rho (Via Venanzio Buzzi 9), 8-10 minutes from Pero via SS33 or A8.
+  description: Tommy By for Pero — 4 km and 8 minutes via the Sempione road. Body shop with water-based oven painting, multi-brand workshop, same-day inspections. Located at Via Venanzio Buzzi 9, Mazzo di Rho.
 name: Pero
 province: MI
-intro: For clients in Pero our location in Mazzo di Rho (Via Venanzio Buzzi 9) is 8-10 minutes away via the SS33 Sempione or A8. Multi-brand workshop for cars and motorcycles and body shop with water-based oven painting under the same roof — scheduled services, repairs, inspections and body shop work.
+intro: >-
+  Pero is Milan's western gateway, along the historic SS33 Sempione axis and at the entrance of the A50 western ring road. From Pero to our location it's 4 km and 8 minutes by car, a route many customers travel regularly for services and body shop work. Proximity to Fiera Milano (Rho Fiera, west side) means we also receive requests from exhibitors and service staff during trade events.
 faq:
-  - q: How far is your location from Pero?
-    a: Our Mazzo di Rho location is about 8-10 minutes by car from Pero, reachable via the SS33 Sempione or the A8 motorway.
-  - q: Do you offer replacement cars for clients coming from Pero?
-    a: Yes, subject to availability, for stays that exceed a day. We agree on the replacement car at the start of the case.
-publishedAt: 2026-04-28
+  - q: Is SS33 Sempione or A8 better from Pero?
+    a: >-
+      For most of Pero the SS33 Sempione is the most direct and usually quicker route. A8 makes sense if coming from north-west Pero or already on the ring road; in that case exit at Pero and briefly join SS33 to reach Via Venanzio Buzzi.
+  - q: Do you handle Fiera Milano exhibitors with vehicle issues during events?
+    a: >-
+      Yes, we sometimes receive urgent requests from fair staff and exhibitors during events. Where possible, we organize same-day or 24-hour interventions to minimize the impact on the trade-show schedule. For complex mechanical repairs, timing depends on parts availability for the specific model.
+publishedAt: 2026-05-05
 ---
 
-## What we offer Pero clients
+## From Pero to Tommy By
 
-- **Multi-brand workshop** in Mazzo di Rho (Via Venanzio Buzzi 9) for cars and motorcycles, any model
-- **Scheduled services** with official manufacturer warranty preserved
-- **Mechanical and electronic repairs**
-- **Mandatory inspections** up to 3.5 tons, same-day
-- **Body shop** at the same address for post-collision repairs and water-based oven painting
-- **Replacement cars** available
+- **Distance**: 4 km
+- **Driving time**: 8 minutes
+- **Main road**: SS33 Sempione (historic western entry to Milan)
+- **Alternative**: A50 western ring road with Pero exit
+
+## Most requested services by Pero customers
+
+- **Post-collision body shop** — Pero has dense traffic, typically with low-speed urban incidents
+- **Services** preserving the manufacturer's official warranty
+- **Oven painting** with water-based paints (low environmental impact)
+- **Mandatory inspections** same-day, up to 3.5 tons
+- **Multi-brand electronic diagnostics**
+
+## Pero in the north-western Milan context
+
+Pero has 11,000 inhabitants and grew around the Sempione axis and proximity to Milan. For residents our location is the first "out of Milan" alternative that offers oven body painting and a multi-brand workshop in the same building, avoiding Milan's ZTL traffic restrictions.

@@ -46,8 +46,7 @@ export const LEGAL_TRANSPORT = {
   vat: '13044730961',
   pec: 'bylotransportsrl@legalmail.it',
   ccia: 'Milano Monza Brianza MI-2701343',
-  // Albo Autotrasportatori MI/8906297N era nella memoria precedente ma NON
-  // dichiarato sul sito ufficiale: trattare come [DA VERIFICARE].
+  // Albo Nazionale Autotrasportatori — confermato dal cliente 2026-05-05.
   albo: 'Albo Autotrasportatori MI/8906297N',
   capital: '€ 50.000,00 i.v.',
   // Sede legale ipotizzata = sede operativa. Da confermare.

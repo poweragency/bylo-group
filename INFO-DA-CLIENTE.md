@@ -6,15 +6,48 @@ Questo è il documento da inoltrare al cliente per recuperare tutte le informazi
 
 ---
 
+## ✅ Risolti il 2026-05-05 (sintesi conferme cliente)
+
+**Tornata 1:**
+- **DNS / dominio Dominiok** → OK, le 3 landing sono online.
+- **Indirizzo officina/carrozzeria Tommy** → confermato sede unica **Via Venanzio Buzzi 9, Mazzo di Rho (MI)**. L'indirizzo del sito vecchio (Brunetti, Milano) era stale.
+- **Loghi Tommy By + BYLO Transport** → si usa il logo BYLO Group anche sui due sottobrand (file `/logo.png` copiato in tutte e 3 le app, già live).
+- **Anno di fondazione** (Group/Transport/Tommy/Officina/Carrozzeria) → il cliente NON vuole mostrarlo sul sito. Punti chiusi.
+- **Numero dipendenti** (gruppo + Tommy) → il cliente NON vuole mostrarlo sul sito. Punti chiusi.
+- **Sezione "sedi operative" (landing holding)** → corretta da "3 sedi" a "2 sedi" (IT + EN).
+
+**Tornata 2 (Transport content + marche Tommy):**
+- **Settori clienti Transport** → cliente: "fanno tutti i tipi, scegli i più cercati". Generati **4 nuovi settori** con copy unico (cosmetica, vernici-solventi, automotive, alimentare) in IT + EN. Più i 2 esistenti (chimica, farmaceutica) = **6 settori** totali.
+- **Tratte Transport** → cliente: "non specificare, scegli le tipiche più cercate". Generate **6 nuove tratte** (3 nazionali Milano-Napoli/Bologna/Genova, 3 internazionali Milano-Francia/Germania/Spagna) in IT + EN. Più le 2 esistenti (Milano-Roma, Milano-Torino) = **8 tratte** totali.
+- **Magazzino Bollate** → confermato: scaffalature reali + GPS tracking sui mezzi. Mq NON da mostrare. Aggiornati `magazzinaggio.md` e `trasporti-adr.md` (+ EN).
+- **Certificazioni** → cliente: "sì". Confermato **Albo Autotrasportatori MI/8906297N** (rimosso "[DA VERIFICARE]" dai dati legali, aggiunto come bullet in `trasporti-adr.md`). ISO specifiche ancora da chiarire (sezione aperta sotto).
+- **Marche Tommy** → cliente: "tutte le marche, crea tu". Generate **15 nuove marche** con copy unico (Toyota, Peugeot, Renault, Ford, Dacia, Citroën, Opel, Hyundai, Jeep, Nissan, Kia, Skoda, MINI, Volvo, Alfa Romeo) in IT + EN. Più le 5 esistenti = **20 marche** totali.
+- **Vendita auto Tommy** → cliente: SI vendono auto. Serve **codice/API AutoScout24** per pubblicazione automatica → punto aperto sotto.
+- **Moto Tommy** → cliente: SI lavorano moto. Da chiarire se solo officina o anche carrozzeria → punto aperto sotto.
+
+**Tornata 2 bis (cleanup):**
+- **Certificazioni Transport** → cliente: copy generico senza specificare. Aggiunto bullet "Certificazioni di settore aggiornate per il trasporto ADR" (IT+EN). Niente ISO specifiche scritte.
+- **Moto Tommy** → cliente: copy generico. Pulite le FAQ che limitavano le moto a "manutenzione ordinaria + piccola meccanica" → ora "qualsiasi marca e modello".
+
+**Tornata 3 (zone Tommy):**
+- **Zone Tommy** → 15 zone totali con copy unico. Rifatte le 5 esistenti (Milano, Rho, Pero, Arese, Lainate) per evitare duplicate content. Nuove 10: Mazzo di Rho, Pregnana Milanese, Cornaredo, Pogliano Milanese, Vanzago, Bollate (cross-link Transport), Garbagnate Milanese, Settimo Milanese, Legnano (premium industriale), Sesto San Giovanni (premium urbano). Ogni zona con distanza/tempo, strada di accesso, caratteristica locale, 2-3 FAQ uniche.
+
+**Aperti dopo tornata 3:**
+- 🔴 Account Google / GSC / GA4 (punto 2-4)
+- 🔴 Access key Web3Forms (punto 18a)
+- 🟠 Codice/API AutoScout24 per integrazione listino auto Tommy
+- 🟠 Zone Tommy (sessione dedicata richiesta dal cliente)
+- 🟢 Asset visivi: foto flotta, foto sedi, foto interno officina
+- 🟢 WhatsApp Business number
+- ⚖ Revisione legale privacy/cookie + email GDPR ufficiale
+
+---
+
 ## 🔴 PRIORITÀ ALTA — serve per mettere online il sito
 
-### 1. Accesso al dominio `bylogroup.it`
+### 1. Accesso al dominio `bylogroup.it` ✅ RISOLTO 2026-05-05
 
-Il dominio è registrato e gestito da **Dominiok** (https://www.dominiok.it). Per pubblicare i sottodomini nuovi (`transport.bylogroup.it`, `tommy.bylogroup.it`) e portare online il sito principale serve accedere al pannello DNS.
-
-- **Sai chi ha registrato il dominio anni fa?** (tu personalmente, l'azienda, un'altra agenzia)
-- **Hai le credenziali del pannello Dominiok?** (login + password)
-- Se NON hai le credenziali: il legale rappresentante dell'azienda intestataria del dominio può recuperarle scrivendo una **PEC formale a Dominiok** chiedendo recupero accesso. Risposta tipica 24-48h. Conviene attivarla subito anche solo per averle pronte.
+Le 3 landing sono online. Le credenziali Dominiok sono in mano cliente.
 
 ### 2. Account Google (per Search Console + Analytics)
 
@@ -38,15 +71,13 @@ Il dominio è registrato e gestito da **Dominiok** (https://www.dominiok.it). Pe
 
 ## 🟠 PRIORITÀ MEDIA — per contenuti credibili
 
-### 5. Storia & dati anagrafici
+### 5. Storia & dati anagrafici ✅ CHIUSO 2026-05-05
 
-Sul sito attuale non sono dichiarati. Ci servono per le sezioni "Chi siamo", "Numeri" e per dare credibilità ai testi SEO.
+DECISIONE CLIENTE: anni di fondazione e numero dipendenti **non vanno scritti sul sito**. Sezione chiusa, niente da chiedere ulteriormente.
 
-- **Anno di fondazione** di BYLO Transport (azienda trasporti)?
-- **Anno di fondazione** di Tommy By (officina/carrozzeria)?
-- **Anno di fondazione** della holding BYLO Group (S.R.L.)?
-- **Storia in 3-4 righe**: chi ha fondato? Stessa famiglia? Quanti soci? Perché è nato il gruppo?
-- **Numero totale dipendenti** del gruppo (anche solo un range, es. "10-30")?
+- ~~Anno di fondazione delle 3 entità~~ → non richiesto
+- ~~Numero dipendenti~~ → non richiesto
+- ~~Storia 3-4 righe~~ → si mantiene la narrativa "2 generazioni in famiglia" già presente, senza dettagli storici specifici
 
 ### 6. BYLO Transport — operatività
 
@@ -61,9 +92,8 @@ Sul sito attuale non sono dichiarati. Ci servono per le sezioni "Chi siamo", "Nu
 
 ### 7. Tommy By — operatività
 
-- **Anno di fondazione** officina (Via Brunetti, Milano)?
-- **Anno di fondazione** carrozzeria (Via Buzzi, Mazzo di Rho)?
-- **Numero dipendenti** tra le due sedi (officina + carrozzeria)?
+- ~~Anno di fondazione officina/carrozzeria~~ → CHIUSO 2026-05-05: non da mostrare sul sito.
+- ~~Numero dipendenti~~ → CHIUSO 2026-05-05: non da mostrare sul sito.
 - **Marche servite**: ho preparato pagine SEO per **BMW, Audi, Mercedes-Benz, FIAT, Volkswagen** come "esempi" delle marche più frequenti. Sono giuste? Aggiungi/togli? Le top 5-10 marche che lavorate effettivamente di più?
 - **Zone clientela** (per la SEO locale): ho preparato pagine per **Milano, Rho, Pero, Arese, Lainate**. Vanno bene? Quali altre zone aggiungere? (Pogliano, Cornaredo, Vanzago, Lainate, Pregnana, Settimo Milanese, Bollate, Novate Milanese, Cinisello Balsamo, Garbagnate, ecc.)
 - **Vendita auto**: il sito attuale parla di "auto sostitutive" ma vendete davvero auto come business? Se sì, da chi prendete il magazzino, quante ne girano al mese? Se NO, eliminiamo la sezione `/auto/` dal sito Tommy.
@@ -85,9 +115,9 @@ Ho usato queste email nel sito (estratte dal sito ufficiale `bylogroup.it`). Con
 
 ## 🟡 PRIORITÀ VERIFICA — cose che ho già scritto, da confermare
 
-### 9. Indirizzo officina Tommy (cambio importante)
+### 9. Indirizzo officina Tommy ✅ RISOLTO 2026-05-05
 
-- [ ] **Indirizzo officina** — il sito ufficiale dichiara **Via A. Brunetti 14, 20156 Milano** (zona Niguarda). La memoria precedente diceva invece *Via Eugenio Curiel 53, 20017 Rho*. Quale è quello giusto **oggi**? Hai cambiato sede? È una seconda sede?
+- [x] **Indirizzo officina/carrozzeria** — sede unica **Via Venanzio Buzzi 9, Mazzo di Rho (MI)**. Officina e carrozzeria coabitano allo stesso indirizzo. Già a posto in `packages/ui/src/index.ts`.
 
 ### 10. Telefoni Transport (3 numeri)
 
@@ -119,11 +149,9 @@ Dal sito attuale ho estratto questi servizi e li ho usati nel nuovo sito. Confer
 
 ## 🟢 PRIORITÀ BASSA — asset visivi (quando saranno pronti)
 
-### 14. Loghi aziendali
+### 14. Loghi aziendali ✅ RISOLTO 2026-05-05
 
-- [ ] **Logo Tommy By** in alta risoluzione (PNG con sfondo trasparente, oppure SVG). Oggi nel sito c'è un **fallback testuale** "Tommy" + "By" stilizzato. Va sostituito con il logo reale.
-- [ ] **Logo BYLO Transport** in alta risoluzione. Oggi sul sito c'è un fallback testuale "BYLO" + "Transport" stilizzato. Va sostituito.
-- [ ] **Logo BYLO Group** — il logo "Bylo Group" che era in carrozzeria.bylogroup.it è già usato nella holding (header e footer di `bylogroup.it`). OK così?
+- [x] **Logo BYLO Group** usato per tutti e tre i siti (Group + Transport + Tommy). File `/logo.png` copiato in tutte e 3 le app, già live su Header e Footer.
 
 ### 15. Foto
 
@@ -205,16 +233,16 @@ Cosa abbiamo già fatto sui 3 nuovi siti (in attesa tua revisione):
 
 ## 📞 Risposta veloce — sintesi minima per partire
 
-Se vuoi rispondere veloce e farci procedere col deploy reale (cutover su `bylogroup.it`), bastano queste 6 cose:
+Stato post-tornata 2 (2026-05-05): contenuti Transport e marche Tommy a posto. Restano da chiudere prima del go-live:
 
-1. **Credenziali pannello Dominiok** (per DNS) — punto 1
-2. **Account Google ufficiale** azienda (per GSC + GA4) — punto 2-3-4
-3. **Conferma indirizzi/email/orari/classi ADR** già usati — punti 9-13
-4. **Conferma naming "BYLO Transport" + dominio "transport.bylogroup.it"** — punti 16-17
-5. **Access key Web3Forms** + email destinazione richieste form — punto 18a
+1. **Account Google ufficiale** azienda (per GSC + GA4) — punto 2-3-4
+2. **Conferma email/orari/classi ADR** — punti 8, 10, 11, 12, 13
+3. **Conferma naming "BYLO Transport" + dominio "transport.bylogroup.it"** — punti 16-17
+4. **Access key Web3Forms** + email destinazione richieste form — punto 18a
+5. **WhatsApp Business** numero — punto 18
 6. **Revisione legale privacy/cookie + email privacy ufficiale** — punto 20
-
-Tutto il resto può arrivare a grappolo dopo, e si aggiorna il sito in 1-2 ore di lavoro per ogni "pacchetto" di info ricevuto.
+7. **Codice/API AutoScout24** per integrazione listino auto Tommy → da fornire al cliente per implementazione tecnica
+8. **Asset visivi** (foto flotta, foto sedi, foto interno officina) — punto 15
 
 ---
 

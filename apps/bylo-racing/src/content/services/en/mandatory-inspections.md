@@ -6,7 +6,8 @@ seo:
   description: Mandatory inspections for vehicles up to 3.5 tons at Tommy By in Milan. Authorized workshop, quick booking, certificate issued same-day.
 category: revisione
 title: Mandatory inspections up to 3.5 tons
-intro: We perform Italian mandatory inspections (revisioni ministeriali) for all vehicles up to 3.5 tons, both passenger cars and light commercial vehicles. Authorized workshop, fast booking, inspection certificate issued same-day.
+intro: >-
+  We perform Italian mandatory inspections (revisioni ministeriali) for all vehicles up to 3.5 tons, both passenger cars and light commercial vehicles. Authorized workshop, fast booking, inspection certificate issued same-day.
 bullets:
   - Inspections for cars, vans and light commercial vehicles up to 3.5 tons
   - Authorized inspection center — the inspection is ministerially valid
@@ -15,11 +16,14 @@ bullets:
   - Option to combine inspection with scheduled service to minimize vehicle downtime
 faq:
   - q: How long does an inspection take?
-    a: A standard inspection, with no issues, takes about 30-45 minutes. If anomalies are found that need fixing before the certificate is issued, the timing depends on the work; for minor issues we can fix same-day.
+    a: >-
+      A standard inspection, with no issues, takes about 30-45 minutes. If anomalies are found that need fixing before the certificate is issued, the timing depends on the work; for minor issues we can fix same-day.
   - q: When do I need to do the inspection?
-    a: Cars do their first inspection in the fourth year after registration, then every two years. Commercial vehicles and intensive-use vehicles follow more frequent cycles. We verify the exact deadline on the vehicle registration document when you book.
+    a: >-
+      Cars do their first inspection in the fourth year after registration, then every two years. Commercial vehicles and intensive-use vehicles follow more frequent cycles. We verify the exact deadline on the vehicle registration document when you book.
   - q: What if my car doesn't pass the inspection?
-    a: You'll get a "repeat" outcome with the list of anomalies to fix. You have one month to come back with the work done. We can directly perform the required work and re-submit the vehicle for inspection.
+    a: >-
+      You'll get a "repeat" outcome with the list of anomalies to fix. You have one month to come back with the work done. We can directly perform the required work and re-submit the vehicle for inspection.
 relatedServices:
   - multibrand-workshop
 publishedAt: 2026-04-28

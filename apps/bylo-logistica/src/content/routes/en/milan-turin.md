@@ -8,14 +8,18 @@ origin: Milan
 destination: Turin
 distanceKm: 140
 transitTimeHours: 2
-intro: Short route between Milan and Turin, two of the main industrial poles of North-West Italy. The short distance and the volume of chemical and automotive clients in both areas make this one of BYLO Transport's most frequent routes.
+intro: >-
+  Short route between Milan and Turin, two of the main industrial poles of North-West Italy. The short distance and the volume of chemical and automotive clients in both areas make this one of BYLO Transport's most frequent routes.
 faq:
   - q: How long does the Milan-Turin trip take?
-    a: The distance is roughly 140 km via the A4 motorway, with a driving time of 1.5-2 hours under standard conditions. On ADR runs the final time depends on mandatory rest stops and any time-slot restrictions in Turin's urban area.
+    a: >-
+      The distance is roughly 140 km via the A4 motorway, with a driving time of 1.5-2 hours under standard conditions. On ADR runs the final time depends on mandatory rest stops and any time-slot restrictions in Turin's urban area.
   - q: Can I do round trips in the same day?
-    a: Yes, this is one of the routes where we typically organize same-day round trips, both for direct deliveries and for goods pickup from North-West producers.
+    a: >-
+      Yes, this is one of the routes where we typically organize same-day round trips, both for direct deliveries and for goods pickup from North-West producers.
   - q: Which sectors move goods on this route?
-    a: Mainly chemicals and automotive (both producers and tier-1/tier-2 suppliers). Also pharmaceuticals and agri-food, depending on the product type.
+    a: >-
+      Mainly chemicals and automotive (both producers and tier-1/tier-2 suppliers). Also pharmaceuticals and agri-food, depending on the product type.
 relatedServices:
   - adr-transport
 publishedAt: 2026-04-28
