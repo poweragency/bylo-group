@@ -15,7 +15,10 @@ const waNum = officina.phone.replace(/[^\d]/g, '');
 
 const accessKey = import.meta.env.PUBLIC_WEB3FORMS_KEY ?? '';
 const isConfigured = accessKey.length > 0;
-const subject = `Nuova richiesta da ${BRAND_RACING.name}`;
+// Subject dinamico con placeholder Web3Forms: il valore di {{nome}} viene
+// sostituito con quello del campo "nome" del form, rendendo ogni email univoca
+// (riduce flag spam dei filtri Gmail/Outlook).
+const subject = `Richiesta {{nome}} - ${BRAND_RACING.name}`;
 ---
 
 <section id="contatti" class="section-pad bg-byl-white">
@@ -86,6 +89,7 @@ const subject = `Nuova richiesta da ${BRAND_RACING.name}`;
           <input type="hidden" name="access_key" value={accessKey} />
           <input type="hidden" name="subject" value={subject} />
           <input type="hidden" name="from_name" value={BRAND_RACING.name} />
+          <input type="hidden" name="replyto" value="{{email}}" />
           <input type="hidden" name="redirect" value="/grazie" />
           <input
             type="checkbox"
