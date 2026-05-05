@@ -82,7 +82,7 @@ const localBusinessSchema = {
     addressCountry: 'IT',
   },
   telephone: CONTACTS.hq.phone,
-  email: CONTACTS.hq.email,
+  email: [CONTACTS.hq.email, CONTACTS.hq.emailAdmin],
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',

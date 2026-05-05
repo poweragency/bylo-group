@@ -55,7 +55,7 @@ const orgSchema = {
         addressCountry: 'IT',
       },
       telephone: CONTACTS.hq.phone,
-      email: CONTACTS.hq.email,
+      email: [CONTACTS.hq.email, CONTACTS.hq.emailAdmin],
     },
     {
       '@type': 'Organization',

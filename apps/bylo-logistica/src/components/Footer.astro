@@ -63,17 +63,25 @@ const sectionPath = isEN ? {
           class="h-12 md:h-14 w-auto"
         />
         <p class="mt-6 text-white/60 max-w-md leading-relaxed">{t.tagline}</p>
-        <div class="mt-8 flex items-center gap-4">
-          <a
-            href={`mailto:${CONTACTS.hq.email}`}
-            class="text-sm text-white/80 hover:text-byl-yellow transition-colors"
-          >
-            {CONTACTS.hq.email}
-          </a>
-          <span class="text-white/30">·</span>
+        <div class="mt-8 flex flex-col gap-2 text-sm text-white/80">
+          <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+            <a
+              href={`mailto:${CONTACTS.hq.email}`}
+              class="hover:text-byl-yellow transition-colors"
+            >
+              {CONTACTS.hq.email}
+            </a>
+            <span class="text-white/30">·</span>
+            <a
+              href={`mailto:${CONTACTS.hq.emailAdmin}`}
+              class="hover:text-byl-yellow transition-colors"
+            >
+              {CONTACTS.hq.emailAdmin}
+            </a>
+          </div>
           <a
             href={`tel:${CONTACTS.hq.phone.replace(/\s/g, '')}`}
-            class="text-sm text-white/80 hover:text-byl-yellow transition-colors"
+            class="hover:text-byl-yellow transition-colors"
           >
             {CONTACTS.hq.phone}
           </a>

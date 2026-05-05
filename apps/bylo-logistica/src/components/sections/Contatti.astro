@@ -41,23 +41,33 @@ const subject = `Richiesta {{nome}} - ${BRAND.name}`;
             </div>
           </div>
 
-          <div class="grid grid-cols-2 gap-4">
+          <a
+            href={`tel:${CONTACTS.hq.phone.replace(/\s/g, '')}`}
+            class="group flex flex-col p-5 bg-white border border-byl-stone rounded-lg hover:border-byl-black transition-colors"
+          >
+            <span class="text-xs uppercase tracking-wider text-byl-mute">Telefono</span>
+            <span class="mt-1 font-semibold text-byl-black group-hover:text-byl-yellow-dark transition-colors">
+              {CONTACTS.hq.phone}
+            </span>
+          </a>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <a
-              href={`tel:${CONTACTS.hq.phone.replace(/\s/g, '')}`}
-              class="group flex flex-col p-5 bg-white border border-byl-stone rounded-lg hover:border-byl-black transition-colors"
+              href={`mailto:${CONTACTS.hq.email}`}
+              class="group flex flex-col p-4 bg-white border border-byl-stone rounded-lg hover:border-byl-black transition-colors"
             >
-              <span class="text-xs uppercase tracking-wider text-byl-mute">Telefono</span>
-              <span class="mt-1 font-semibold text-byl-black group-hover:text-byl-yellow-dark transition-colors">
-                {CONTACTS.hq.phone}
+              <span class="text-xs uppercase tracking-wider text-byl-mute">Operativo</span>
+              <span class="mt-1 font-medium text-byl-black group-hover:text-byl-yellow-dark transition-colors text-sm break-all">
+                {CONTACTS.hq.email}
               </span>
             </a>
             <a
-              href={`mailto:${CONTACTS.hq.email}`}
-              class="group flex flex-col p-5 bg-white border border-byl-stone rounded-lg hover:border-byl-black transition-colors"
+              href={`mailto:${CONTACTS.hq.emailAdmin}`}
+              class="group flex flex-col p-4 bg-white border border-byl-stone rounded-lg hover:border-byl-black transition-colors"
             >
-              <span class="text-xs uppercase tracking-wider text-byl-mute">Email</span>
-              <span class="mt-1 font-semibold text-byl-black group-hover:text-byl-yellow-dark transition-colors text-sm truncate">
-                {CONTACTS.hq.email}
+              <span class="text-xs uppercase tracking-wider text-byl-mute">Amministrazione</span>
+              <span class="mt-1 font-medium text-byl-black group-hover:text-byl-yellow-dark transition-colors text-sm break-all">
+                {CONTACTS.hq.emailAdmin}
               </span>
             </a>
           </div>
@@ -209,7 +219,7 @@ const subject = `Richiesta {{nome}} - ${BRAND.name}`;
 
           {!isConfigured && (
             <p class="mt-4 text-xs text-byl-mute italic">
-              ⚠ Form non ancora attivato. Per ora puoi scriverci a {CONTACTS.hq.email} oppure chiamarci al {CONTACTS.hq.phone}.
+              ⚠ Form non ancora attivato. Per ora puoi scriverci a {CONTACTS.hq.email} o {CONTACTS.hq.emailAdmin} oppure chiamarci al {CONTACTS.hq.phone}.
             </p>
           )}
         </form>
@@ -260,7 +270,7 @@ const subject = `Richiesta {{nome}} - ${BRAND.name}`;
           throw new Error(json.message || 'Submit failed');
         }
       } catch (err) {
-        feedback.innerHTML = `Errore nell'invio. Riprova oppure scrivici a <a href="mailto:operativo.t@bylogroup.it" class="underline">operativo.t@bylogroup.it</a>.`;
+        feedback.innerHTML = `Errore nell'invio. Riprova oppure scrivici a <a href="mailto:operativo.t@bylogroup.it" class="underline">operativo.t@bylogroup.it</a> o <a href="mailto:amministrazione.t@bylogroup.it" class="underline">amministrazione.t@bylogroup.it</a>.`;
         feedback.className = 'mt-4 text-sm text-red-600';
         feedback.classList.remove('hidden');
       } finally {
