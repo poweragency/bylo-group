@@ -11,10 +11,7 @@ const tipiServizio = [
 
 const accessKey = import.meta.env.PUBLIC_WEB3FORMS_KEY ?? '';
 const isConfigured = accessKey.length > 0;
-// Subject dinamico con placeholder Web3Forms: il valore di {{nome}} viene
-// sostituito con quello del campo "nome" del form, rendendo ogni email univoca
-// (riduce flag spam dei filtri Gmail/Outlook).
-const subject = `Richiesta {{nome}} - ${BRAND.name}`;
+const subject = `Nuova richiesta da ${BRAND.name}`;
 ---
 
 <section id="contatti" class="section-pad bg-byl-off">
@@ -91,7 +88,6 @@ const subject = `Richiesta {{nome}} - ${BRAND.name}`;
           <input type="hidden" name="access_key" value={accessKey} />
           <input type="hidden" name="subject" value={subject} />
           <input type="hidden" name="from_name" value={BRAND.name} />
-          <input type="hidden" name="replyto" value="{{email}}" />
           <input type="hidden" name="redirect" value="/grazie" />
           <input
             type="checkbox"
