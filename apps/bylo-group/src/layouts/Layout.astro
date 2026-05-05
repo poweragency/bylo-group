@@ -2,6 +2,7 @@
 import '@/styles/global.css';
 import { Seo, Hreflang, SchemaOrg } from '@bylo/ui/seo/index.ts';
 import CookieBanner from '@bylo/ui/legal/CookieBanner.astro';
+import GoogleAnalytics from '@bylo/ui/analytics/GoogleAnalytics.astro';
 import BackToTop from '@bylo/ui/components/BackToTop.astro';
 import { GROUP, LEGAL_TRANSPORT, LEGAL_TOMMY, CONTACTS, CONTACTS_RACING } from '@bylo/ui/index.ts';
 
@@ -97,6 +98,7 @@ const orgSchema = {
     />
     <Hreflang alternates={alternates} xDefault={altUrl('it')} />
     <SchemaOrg data={orgSchema} />
+    <GoogleAnalytics />
   </head>
   <body class="bg-byl-white text-byl-black antialiased">
     <slot />

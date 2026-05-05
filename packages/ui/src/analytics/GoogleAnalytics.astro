@@ -1,0 +1,54 @@
+---
+// Componente GA4 brand-coherent con il CookieBanner BYLO.
+// - GA4 carica SOLO se l'utente ha accettato la categoria "analytics".
+// - Se non c'è ancora consenso (primo accesso) niente carica, niente cookie GA4.
+// - Quando l'utente accetta dopo il primo accesso, GA4 si carica dinamicamente.
+// - Misurazione: PUBLIC_GA4_ID = Measurement ID del flusso web specifico
+//   per ciascuna app. Formato G-XXXXXXXXXX. Va settato come env var su Vercel
+//   (Project Settings → Environment Variables) per ognuno dei 3 progetti.
+
+const ga4Id = import.meta.env.PUBLIC_GA4_ID;
+---
+
+{ga4Id && (
+  <script is:inline define:vars={{ ga4Id }}>
+    (function () {
+      const STORAGE_KEY = 'bylo-cc';
+      let loaded = false;
+
+      function readConsent() {
+        try {
+          const raw = localStorage.getItem(STORAGE_KEY);
+          if (!raw) return null;
+          const data = JSON.parse(raw);
+          return data?.categories || null;
+        } catch (_) {
+          return null;
+        }
+      }
+
+      function loadGa4() {
+        if (loaded) return;
+        loaded = true;
+
+        const s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ga4Id;
+        document.head.appendChild(s);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { window.dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', ga4Id, { anonymize_ip: true });
+      }
+
+      const consent = readConsent();
+      if (consent && consent.analytics) loadGa4();
+
+      document.addEventListener('bylocookieconsent', (e) => {
+        if (e.detail?.categories?.analytics) loadGa4();
+      });
+    })();
+  </script>
+)}
