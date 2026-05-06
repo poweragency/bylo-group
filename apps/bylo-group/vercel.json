@@ -1,9 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": "astro",
-  "buildCommand": "cd ../.. && npm install && npm run build:group",
-  "outputDirectory": "dist",
-  "installCommand": "echo skip-default",
   "redirects": [
     { "source": "/benvenuti-su-bylogroup", "destination": "/", "permanent": true },
     { "source": "/benvenuti-su-bylogroup/", "destination": "/", "permanent": true },
@@ -19,6 +15,8 @@
     { "source": "/logistica/", "destination": "https://transport.bylogroup.it/", "permanent": true },
     { "source": "/trasporti-nazionali-di-merci-in-italia", "destination": "https://transport.bylogroup.it/", "permanent": true },
     { "source": "/trasporti-nazionali-di-merci-in-italia/", "destination": "https://transport.bylogroup.it/", "permanent": true },
+    { "source": "/trasporti-nazionali-di-merci-in-adr", "destination": "https://transport.bylogroup.it/servizi/trasporti-adr/", "permanent": true },
+    { "source": "/trasporti-nazionali-di-merci-in-adr/", "destination": "https://transport.bylogroup.it/servizi/trasporti-adr/", "permanent": true },
     { "source": "/trasporti", "destination": "https://transport.bylogroup.it/", "permanent": true },
     { "source": "/trasporti/", "destination": "https://transport.bylogroup.it/", "permanent": true },
     { "source": "/trasporti/:path*", "destination": "https://transport.bylogroup.it/", "permanent": true },
