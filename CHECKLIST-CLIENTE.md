@@ -29,13 +29,39 @@
 - **Cosa fare in call**: chiedere se può girare un fotografo o se ha già foto di buona qualità.
 
 ### 4. Revisione legale privacy + cookie policy
-- **Stato attuale**: pagine native già scritte da noi su template Garante, con disclaimer "Bozza" in cima.
-- **Cosa serve**:
-  - [ ] Revisione testi da commercialista o avvocato del gruppo.
-  - [ ] Email per richieste GDPR (oggi placeholder `privacy@bylogroup.it` — esiste? oppure `info@`?).
-  - [ ] Conferma sede legale delle 3 entità (ipotizzata uguale a sede operativa).
-  - [ ] DPO designato sì/no?
-- **Domanda al cliente**: "Vi serve davvero un legale per validare oppure usiamo testi nativi nostri così come sono? Costo legale ~200-500€ vs gratis nativo. Iubenda esistente lo aggiorniamo o dismettiamo?"
+
+**Stato attuale**: pagine native scritte da noi su template Garante Privacy. In cima compare il disclaimer "Bozza – in attesa di revisione legale". Cookie banner + consent flow GDPR funzionano correttamente.
+
+**Cosa succede se lasciamo così**:
+- Funzionalmente: niente di rotto.
+- Legalmente: zona grigia. I contenuti sono conformi (template Garante), ma il banner "Bozza" suggerisce a Garante/visitatore "non validata". In caso di audit o reclamo, BYLO è il titolare e si prende la responsabilità anche col banner.
+- Reputazionalmente: banner "Bozza" sopra le pagine non è bellissimo per B2B.
+
+**No, non possiamo copiare Iubenda esistente**:
+1. ToS Iubenda: il testo è "rented" via abbonamento, non "owned". Copiarlo viola i ToS se l'abbonamento non è attivo.
+2. È obsoleto: titolare dichiarato "BYLO TRANSPORT & COMMERCE Srl" (entità che non esiste più, oggi 3 srl distinte) e copre solo `bylogroup.it`, non i sottodomini.
+3. Aggiornamenti: copiandolo perdi il vantaggio principale Iubenda (update automatici per nuove norme).
+
+**Opzioni reali**:
+
+| Opzione | Costo | Rischio | Tempo |
+|---------|-------|---------|-------|
+| **A** — lasciamo "Bozza" finché cliente trova legale | 0€ | medio | indef |
+| **B** — togliamo "Bozza" senza validare, BYLO firma in proprio | 0€ | alto | subito |
+| **C** — validazione veloce dal commercialista/avvocato del gruppo (1-2h lettura) | ~150-300€ | basso | 1-2 sett |
+| **D** — rinnoviamo Iubenda + lo aggiorniamo per 3 entità + 3 sottodomini | ~80€/anno | basso | 1 sett |
+
+**Mia raccomandazione**: opzione **C**. Validazione veloce del commercialista del gruppo (la maggior parte delle PMI italiane fa così, costo basso, copertura piena, manteniamo le pagine native brand-coherent).
+
+**Domande al cliente**:
+- "BYLO ha già un commercialista o avvocato di riferimento? Può leggere le 2 pagine (privacy + cookie) in mezz'ora e confermare o segnare correzioni?"
+- Se sì: opzione C (consigliata).
+- Se no e vuole spendere zero: opzione B con consapevolezza del rischio.
+
+**Dati che servono comunque** (qualunque opzione):
+- [ ] Email per richieste GDPR — oggi placeholder `privacy@bylogroup.it`. Esiste o usiamo `info@`?
+- [ ] Conferma sede legale delle 3 entità (ipotizzata uguale a sede operativa).
+- [ ] DPO designato sì/no? (probabilmente no, BYLO < 250 dipendenti)
 
 ### 5. Email business BYLO (per ownership)
 - **Stato attuale**: tutti gli asset Google (GSC, GA4, GBP) sono sotto `operativo.poweragency@gmail.com` (account agenzia, in fiduciario).
