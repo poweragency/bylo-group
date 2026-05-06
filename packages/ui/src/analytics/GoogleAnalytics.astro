@@ -49,6 +49,27 @@ const ga4Id = import.meta.env.PUBLIC_GA4_ID;
       document.addEventListener('bylocookieconsent', (e) => {
         if (e.detail?.categories?.analytics) loadGa4();
       });
+
+      function track(eventName, params) {
+        if (typeof window.gtag !== 'function') return;
+        window.gtag('event', eventName, params || {});
+      }
+
+      document.addEventListener('click', (e) => {
+        const a = e.target.closest && e.target.closest('a[href]');
+        if (!a) return;
+        const href = a.getAttribute('href') || '';
+        const label = (a.textContent || '').trim().slice(0, 80);
+        if (href.startsWith('tel:')) {
+          track('phone_click', { phone_number: href.slice(4), link_text: label });
+        } else if (href.indexOf('wa.me') !== -1 || href.indexOf('api.whatsapp.com') !== -1) {
+          track('whatsapp_click', { link_url: href, link_text: label });
+        } else if (href.indexOf('autoscout24') !== -1) {
+          track('autoscout_click', { link_url: href, link_text: label });
+        } else if (href.startsWith('mailto:')) {
+          track('email_click', { email: href.slice(7).split('?')[0], link_text: label });
+        }
+      }, { passive: true });
     })();
   </script>
 )}
