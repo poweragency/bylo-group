@@ -9,7 +9,7 @@ destination: Francia (Lione, Parigi)
 distanceKm: 860
 transitTimeHours: 11
 intro: >-
-  Le tratte fra Italia e Francia sono fra le più frequentate del nostro segmento internazionale. Lione è il polo industriale francese di più rapido raggiungimento dal Nord Italia, Parigi richiede una pianificazione di 1-2 giorni ma è collegata regolarmente. Il vincolo principale sono i valichi alpini — Frejus o Monte Bianco — entrambi con regole ADR specifiche che impongono percorsi e orari precisi.
+  Italia-Francia è una delle nostre direttrici internazionali ricorrenti. Lione è la destinazione francese più rapida dal Nord Italia, Parigi richiede 1-2 giorni di pianificazione ma è coperta regolarmente. Il punto critico sono i valichi alpini — Frejus e Monte Bianco — che hanno regole ADR diverse, con percorsi e orari da verificare caso per caso.
 faq:
   - q: Quale valico alpino è preferibile per un trasporto ADR diretto in Francia?
     a: >-

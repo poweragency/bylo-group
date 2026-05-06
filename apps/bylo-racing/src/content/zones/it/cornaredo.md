@@ -32,6 +32,6 @@ publishedAt: 2026-05-05
 - **Diagnosi elettronica** multimarca
 - **Servizio pneumatici** completo
 
-## Cornaredo e il suo tessuto economico
+## Il bacino di Cornaredo
 
-Cornaredo ha 20.000 abitanti e ospita uno dei principali poli industriali italiani della chimica fine, con la sede di Bracco e altre realtà del comparto. Questo rende la zona ricca di pendolari e di flotte aziendali medie da gestire.
+Cornaredo ha 20.000 abitanti e a San Pietro all'Olmo si trova lo stabilimento Bracco SpA, uno dei poli italiani della chimica fine, con altre aziende del comparto nei dintorni. Questo significa molti pendolari e flotte aziendali medie che si rivolgono a noi per manutenzione e revisioni.

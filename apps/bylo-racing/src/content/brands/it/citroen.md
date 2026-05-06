@@ -5,7 +5,7 @@ seo:
   description: Tagliandi e riparazioni Citroën C3, C4, C5 Aircross, Berlingo presso Tommy By a Mazzo di Rho. Officina multimarca per motori PureTech e BlueHDi del gruppo Stellantis.
 name: Citroën
 intro: >-
-  Citroën in Italia è amata per il comfort di marcia, le sospensioni morbide tipiche del marchio (oggi nei Progressive Hydraulic Cushions) e il design distintivo. Lavoriamo regolarmente su C3, C3 Aircross, C4 (anche ë-C4), C5 Aircross e i veicoli commerciali Berlingo e Jumpy. La meccanica è in larga parte condivisa con Peugeot, Opel e Fiat (gruppo Stellantis), il che ci permette di tenere ricambistica intercambiabile.
+  Citroën in Italia è amata per il comfort di marcia, le sospensioni morbide tipiche del marchio (oggi nei Progressive Hydraulic Cushions) e il design distintivo. Lavoriamo regolarmente su C3, C3 Aircross, C4 (anche ë-C4), C5 Aircross e i commerciali Berlingo e Jumpy. La meccanica è in gran parte condivisa con Peugeot, Opel e Fiat (gruppo Stellantis): ricambi intercambiabili e tempi di approvvigionamento brevi.
 services:
   - officina-multimarche
   - revisioni-ministeriali
