@@ -9,6 +9,9 @@ export default defineConfig({
   legacy: {
     collections: true,
   },
+  build: {
+    inlineStylesheets: 'always',
+  },
   i18n: {
     defaultLocale: 'it',
     locales: ['it', 'en'],
