@@ -54,6 +54,7 @@ const serviceSchema = {
 <Layout
   title={service.data.seo.title}
   description={service.data.seo.description}
+  ogImage={`/og/servizi/${service.slug.split('/').pop()}.png`}
   noindex={service.data.seo.noindex}
 >
   <SchemaOrg data={serviceSchema} />

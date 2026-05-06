@@ -54,6 +54,7 @@ const routeSchema = {
 <Layout
   title={route.data.seo.title}
   description={route.data.seo.description}
+  ogImage={`/og/en/routes/${route.slug.split('/').pop()}.png`}
   noindex={route.data.seo.noindex}
 >
   <SchemaOrg data={routeSchema} />

@@ -52,6 +52,7 @@ const brandSchema = {
 <Layout
   title={brand.data.seo.title}
   description={brand.data.seo.description}
+  ogImage={`/og/marche/${brand.slug.split('/').pop()}.png`}
   noindex={brand.data.seo.noindex}
 >
   <SchemaOrg data={brandSchema} />

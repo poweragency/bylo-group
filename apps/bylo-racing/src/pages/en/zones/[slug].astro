@@ -51,6 +51,7 @@ const zoneSchema = {
 <Layout
   title={zone.data.seo.title}
   description={zone.data.seo.description}
+  ogImage={`/og/en/zones/${zone.slug.split('/').pop()}.png`}
   noindex={zone.data.seo.noindex}
 >
   <SchemaOrg data={zoneSchema} />

@@ -58,6 +58,7 @@ const sectorSchema = {
 <Layout
   title={sector.data.seo.title}
   description={sector.data.seo.description}
+  ogImage={`/og/en/sectors/${sector.slug.split('/').pop()}.png`}
   noindex={sector.data.seo.noindex}
 >
   <SchemaOrg data={sectorSchema} />
