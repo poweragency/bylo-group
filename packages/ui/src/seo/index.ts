@@ -8,3 +8,6 @@ export { default as InternalLinkBlock } from './InternalLinkBlock.astro';
 export type { FaqItem } from './Faq.astro';
 export type { Crumb } from './Breadcrumb.astro';
 export type { InternalLink } from './InternalLinkBlock.astro';
+
+export { renderOgSvg, renderOgPng } from './og.ts';
+export type { OgBrand, OgOptions } from './og.ts';
