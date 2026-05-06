@@ -4,6 +4,7 @@ import { Seo, Hreflang, SchemaOrg } from '@bylo/ui/seo/index.ts';
 import CookieBanner from '@bylo/ui/legal/CookieBanner.astro';
 import GoogleAnalytics from '@bylo/ui/analytics/GoogleAnalytics.astro';
 import BackToTop from '@bylo/ui/components/BackToTop.astro';
+import SkipToContent from '@bylo/ui/components/SkipToContent.astro';
 import { GROUP, LEGAL_TRANSPORT, LEGAL_TOMMY, CONTACTS, CONTACTS_RACING } from '@bylo/ui/index.ts';
 
 interface Props {
@@ -103,6 +104,7 @@ const orgSchema = {
     <GoogleAnalytics />
   </head>
   <body class="bg-byl-white text-byl-black antialiased">
+    <SkipToContent locale={currentLocale} />
     <slot />
     <BackToTop />
     <CookieBanner />
