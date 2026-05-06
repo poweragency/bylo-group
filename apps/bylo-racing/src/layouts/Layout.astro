@@ -6,6 +6,7 @@ import { Seo, Hreflang, SchemaOrg } from '@bylo/ui/seo/index.ts';
 import CookieBanner from '@bylo/ui/legal/CookieBanner.astro';
 import GoogleAnalytics from '@bylo/ui/analytics/GoogleAnalytics.astro';
 import BackToTop from '@bylo/ui/components/BackToTop.astro';
+import SkipToContent from '@bylo/ui/components/SkipToContent.astro';
 import {
   BRAND_RACING,
   GROUP,
@@ -168,8 +169,9 @@ const carrozzeriaSchema = {
     <GoogleAnalytics />
   </head>
   <body class="bg-byl-white text-byl-black antialiased">
+    <SkipToContent locale={currentLocale} />
     <Header />
-    <main>
+    <main id="main">
       <slot />
     </main>
     <Footer />
