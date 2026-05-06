@@ -6,7 +6,7 @@ seo:
   description: BYLO Transport moves raw materials and finished goods for cosmetics, fragrance and personal care. Alcohols, fragrance concentrates, essential oils, surfactant bases on ADR classes 3 and 9.
 title: Transport for cosmetics and fragrance
 intro: >-
-  Italian cosmetics is a global export champion, but most raw materials used in the sector (ethanol, fragrance concentrates, aerosol propellants) are classified as dangerous goods. For BYLO Transport the cosmetics segment is a natural fit: we move class 3 raw materials and class 9 finished goods with the flexibility required by the strong seasonality of the industry.
+  Italian cosmetics is a global export industry, and most raw materials used — ethanol, fragrance concentrates, aerosol propellants — are dangerous goods under ADR. We work regularly with cosmetic producers in Lombardy and Veneto on class 3 raw materials and class 2.1 / 9 finished goods, on a calendar that lives or dies on the September-November retail windows.
 faq:
   - q: Do you carry denatured ethanol and alcohol concentrates for cosmetics?
     a: >-
@@ -38,8 +38,8 @@ The end consumer rarely sees a hazard label on a cosmetic, but most of its raw m
 
 Finished goods — perfumes, deodorants, hairsprays, nail polishes, shaving foams, makeup removers — typically fall in class 2.1 (aerosols) or class 3 (alcoholic). Volume per unit is small, but commercial pallets reach meaningful volumes in B2B flows to large retail and perfumery chains.
 
-## What we make easy
+## How we work with cosmetic clients
 
-- Delivery planning aligned to retail calendars (spring collections, Christmas, new product launches).
-- Pre-filled ADR documentation for recurring shipments to the same consignees.
-- Vehicles with the right load distribution and securing for mixed pallets containing fragile items (glass, atomizers).
+- Deliveries aligned to retail calendars: spring collections, Christmas, new product launches.
+- Pre-filled ADR documentation for recurring shipments to the same consignees (cuts errors and loading time).
+- Mixed pallets with glass and atomizers: load distribution and securing planned to avoid breakage in transit.

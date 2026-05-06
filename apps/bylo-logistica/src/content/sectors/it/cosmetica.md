@@ -6,7 +6,7 @@ seo:
   description: BYLO Transport movimenta materie prime e prodotti finiti per il settore cosmetico, profumiero e detergenza. Alcoli, fragranze, oli essenziali, basi tensioattive con classi ADR 3 e 9.
 title: Trasporti per cosmetica e profumeria
 intro: >-
-  La cosmetica italiana è un'eccellenza che esporta in tutto il mondo, ma la maggior parte delle materie prime impiegate (alcol etilico, profumi concentrati, propellenti per spray) è classificata come merce pericolosa. Per BYLO Transport il settore cosmetico è un cliente naturale: gestiamo materie prime in classe 3 e prodotti finiti che ricadono in classe 9 con la flessibilità di chi conosce la stagionalità tipica del comparto.
+  La cosmetica italiana esporta in tutto il mondo, e la maggior parte delle materie prime usate — alcol etilico, profumi concentrati, propellenti per spray — è merce pericolosa ai sensi ADR. Lavoriamo da anni con produttori cosmetici lombardi e veneti su materie prime in classe 3 e prodotti finiti in classe 2.1 e 9, con i tempi di un settore che si gioca tutto sulle finestre retail di settembre-novembre.
 faq:
   - q: Trasportate alcol etilico denaturato e concentrati alcolici per cosmetica?
     a: >-
@@ -16,7 +16,7 @@ faq:
       Sì, gli aerosol con propellenti infiammabili rientrano in classe 2.1. Pianifichiamo il viaggio rispettando la temperatura massima di trasporto e organizzando lo stoccaggio sui mezzi in modo da evitare l'esposizione diretta al sole nelle ore centrali della giornata.
   - q: Riuscite a gestire i picchi pre-natalizi?
     a: >-
-      La cosmetica e profumeria hanno picchi marcati nei mesi di settembre-novembre per consegne destinate al retail natalizio. Programmare le partenze con 2-3 settimane di anticipo permette di garantire i mezzi anche nei periodi più caldi.
+      La cosmetica e profumeria hanno picchi forti tra settembre e novembre, sulle consegne per il retail natalizio. Per i mesi caldi conviene chiudere le partenze con 2-3 settimane di anticipo, così non si rischia di non trovare mezzi liberi.
 relatedServices:
   - trasporti-adr
   - logistica-integrata
@@ -38,8 +38,8 @@ Il packaging finale di un prodotto cosmetico è quasi sempre non pericoloso, ma 
 
 I prodotti finiti — profumi, deodoranti, lacche, smalti, schiume da barba, struccanti — sono tipicamente in classe 2.1 (aerosol) o classe 3 (alcolici). Le quantità in singola unità sono basse, ma le palette commerciali raggiungono volumi rilevanti nei flussi B2B verso GDO e profumerie.
 
-## Cosa rendiamo facile
+## Come lavoriamo con i clienti cosmetici
 
-- Pianificazione delle consegne in funzione dei calendari retail (collezioni primaverili, festività natalizie, lancio nuove referenze).
-- Documentazione ADR pre-compilata per spedizioni ricorrenti agli stessi destinatari.
-- Mezzi con baricentro e fissaggio adatto a carichi misti pallettizzati con prodotti fragili (vetro, atomizzatori).
+- Consegne pianificate sui calendari retail: collezioni primaverili, festività natalizie, lanci di nuove referenze.
+- Documentazione ADR pre-compilata per le spedizioni ricorrenti agli stessi destinatari (riduce errori e tempi di carico).
+- Carichi misti pallettizzati con vetro e atomizzatori: fissaggio e baricentro studiati per evitare rotture in viaggio.
