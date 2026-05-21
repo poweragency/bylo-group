@@ -2,52 +2,42 @@
 locale: it
 slug: milano-bologna
 seo:
-  title: Trasporti ADR Milano-Bologna — Direttrice quotidiana | BYLO Transport
-  description: Tratta Milano-Bologna di BYLO Transport. Direttrice ad alta frequenza per chimica, farmaceutica e meccanica emiliana. Tempo guida 2-3 ore via A1.
+  title: Trasporti ADR Milano-Bologna — A1 Direttrice del Sole | BYLO Transport
+  description: Tratta ADR Milano-Bologna su A1 Direttrice del Sole. ~210 km via Variante di Valico, distretto Motor Valley e Interporto Bologna come destinazioni industriali.
 origin: Milano
 destination: Bologna
 distanceKm: 210
 transitTimeHours: 3
 intro: >-
-  La Milano-Bologna è la nostra tratta nazionale ad alta frequenza. Distanze brevi, tempo di consegna in giornata, possibilità di andata-e-ritorno con carico di rientro. Il distretto emiliano è uno dei più dinamici per chi fornisce chimica, farmaceutica, automotive e meccanica industriale.
+  Direttrice corta ma critica del sistema autostradale italiano. La A1 fra Milano e Bologna è uno dei tratti merci più trafficati d'Europa, attraversato ogni giorno dal flusso pesante che collega la pianura padana al centro Italia. Per le merci pericolose la differenza fra una consegna lineare e una giornata persa la fa la lettura corretta dei codici tunnel sulla Variante di Valico e delle finestre di traffico fra Lodi e Modena.
 faq:
-  - q: Posso prenotare un Milano-Bologna con consegna in giornata?
+  - q: Conviene anticipare la partenza per evitare la congestione fra Milano e Bologna?
     a: >-
-      Sì. Per spedizioni ADR standard partiamo la mattina presto (4-6) e consegniamo entro fine mattinata. Per ritiri pomeridiani con consegna giorno seguente operiamo con preavviso di 24 ore. Per classi ADR meno comuni o tunnel-restricted può servire più tempo per la pianificazione.
-  - q: Operate carichi parziali (groupage) verso Bologna?
+      Sì. Il corridoio fra Lodi e Piacenza, e fra Modena e Bologna, registra densità di traffico pesante elevatissime dalle 7:00 alle 10:00 in direzione sud e dalle 16:00 alle 19:00 in direzione nord. Per i carichi ADR le partenze si organizzano nelle finestre meno trafficate quando il prodotto, gli orari di carico e le finestre di consegna lo consentono.
+  - q: La Variante di Valico impone restrizioni a tutte le classi ADR?
     a: >-
-      Sì, è una delle direttrici dove organizziamo gruppage ricorrenti. Bancali singoli o multipli vengono consolidati nell'hub di Bollate e raggruppati su un singolo viaggio verso il distretto emiliano, con consegne multiple in giornata.
-  - q: Quali tunnel ADR sulla A1 fra Milano e Bologna?
+      Le gallerie della Variante di Valico (Sparvo, Base Tunnel) hanno codici tunnel ADR specifici che possono escludere determinate sostanze ad alto rischio. Per quelle merci esiste l'alternativa storica via Pian del Voglio, percorribile ma più lenta. Il codice tunnel del prodotto si verifica sul documento di trasporto prima di confermare il percorso.
+  - q: Servite stabilimenti del distretto Motor Valley fra Modena e Bologna?
     a: >-
-      Il tratto è quasi interamente in pianura padana, con il varco appenninico che inizia oltre Bologna verso Firenze. Per fermarsi a Bologna o nei comuni emiliani limitrofi non si attraversano gallerie ADR-restricted significative. La pianificazione del percorso resta comunque parte della verifica pre-viaggio.
+      Sì, l'area Modena-Maranello-Sassuolo è naturale per la nostra tratta. Le aziende del distretto automotive emiliano e l'indotto componentistico hanno fabbisogno ricorrente di vernici, solventi, oli industriali e additivi che rientrano nelle classi 3 e 8 ADR. Operiamo sia su stabilimenti diretti sia su fornitori di filiera.
 relatedServices:
   - trasporti-adr
-publishedAt: 2026-05-05
+publishedAt: 2026-04-28
 ---
 
-## Sintesi tratta
+## Caratteristiche della tratta Milano-Bologna
 
-- **Origine**: hub di Ospiate di Bollate (MI)
-- **Destinazione**: Bologna città, provincia, distretto emiliano fino a Modena/Reggio Emilia
-- **Distanza**: ~210 km via A1 Milano-Bologna
-- **Tempo guida standard**: 2-3 ore
-- **Classi ADR servite**: 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8, 9
+I 210 km della A1 fra i due capoluoghi si coprono in circa 2 ore e mezza di guida pulita. Il tratto pianeggiante da Milano fino a Modena è lineare; oltre Modena inizia l'avvicinamento all'Appennino tosco-emiliano e l'innesto della Variante di Valico in prossimità di Sasso Marconi.
 
-## Perché funziona bene questa direttrice
+La densità di traffico merci sulla direttrice è tra le più alte d'Europa: i flussi che convergono da Piacenza, Parma e Modena alimentano la stessa corsia, generando colli di bottiglia ricorrenti. I cantieri di manutenzione, frequenti nella stagione estiva, possono allungare i tempi di mezz'ora o più rispetto alla percorrenza teorica.
 
-La Milano-Bologna è una delle più ottimizzate del nostro network:
+## Restrizioni ADR specifiche su questa direttrice
 
-- **Tratta in giornata** — partenza mattina, consegna mattina, rientro pomeriggio
-- **Possibilità di gruppage frequente** verso più destinatari emiliani
-- **Carico di ritorno** facile — l'Emilia è ricca di produttori che spediscono al Nord
-- **Pianura padana** — pochi vincoli geografici, niente gallerie ADR critiche
+- Codici tunnel della Variante di Valico (galleria Sparvo, Base Tunnel) da verificare sul documento di trasporto del prodotto
+- Limite di velocità a 80 km/h per i veicoli ADR su quasi tutto il tratto, con riduzioni in galleria
+- Aree di sosta attrezzate per mezzi ADR concentrate fra Piacenza Nord e Modena Sud: la pianificazione delle pause regolamentari è obbligatoria
+- Polo logistico Interporto Bologna soggetto a slot orari di ingresso per mezzi pesanti, da prenotare in anticipo
 
-## Settori che movimentiamo su Milano-Bologna
+## Tipologie di clienti che servono questa direttrice
 
-L'Emilia ospita poli importanti per i settori che serviamo:
-
-- **Farmaceutica** — distretto pharma di Modena/Bologna (multinazionali e contoterzisti)
-- **Chimica fine e specialty chemicals** — produttori specialistici del bolognese
-- **Meccanica industriale e packaging** — distretto della Packaging Valley emiliana
-- **Vernici e coatings** per il distretto piastrelle di Sassuolo
-- **Automotive sportivo** — fornitori di Ferrari, Lamborghini, Ducati, Pagani
+Il bacino emiliano concentra filiere ad alto consumo di chimica industriale. La Motor Valley fra Modena e Bologna (Ferrari, Lamborghini, Maserati, Ducati e il loro indotto) genera flussi continui di vernici, solventi e oli per la verniciatura e i banchi prova. Il distretto ceramico di Sassuolo richiede coloranti, additivi e smalti. L'area metropolitana di Bologna ospita poli farmaceutici e chimica fine. L'Interporto Bologna è snodo di consolidamento per il centro Italia. La zona Parma-Reggio Emilia integra packaging alimentare con detergenti e sanificanti di classe 8.

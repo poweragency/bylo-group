@@ -1,38 +1,46 @@
 ---
 locale: en
 seo:
-  title: Body shop and workshop in Rho (Milan) | Tommy By
-  description: Tommy By in Rho — location at Via Venanzio Buzzi 9 in Mazzo di Rho. Body shop, multi-brand workshop, inspections and services 1.5 km from Rho town centre, close to the A8 motorway and Fiera Milano.
+  title: Body shop and workshop in Rho | Tommy By
+  description: Tommy By is in the Rho municipality, in Mazzo di Rho. Workshop and body shop 3 km from central Rho, close to the Milan Trade Fair, the Rhodense hospital and the train stations.
 name: Rho
 province: MI
 intro: >-
-  Rho is the municipality of which Mazzo di Rho is a village, and a large share of Tommy By's historic customer base comes from Rho town centre and Corso Garibaldi. Our location is 1.5 km from the town centre and reachable in 4 minutes by car, also via the Sempione road. From Fiera Milano (Rho Fiera) we're 6 minutes via SS33.
+  Rho is our home municipality: Mazzo di Rho is one of its villages, and a good share of Tommy By's long-standing clientele comes from central Rho, Corso Garibaldi, the streets around the ASST Rhodense hospital and the Milan Trade Fair area (Rho-Pero). Our location is 3 km from the town centre, 6 minutes by car via Via Madonna or SP109. For many Rho residents we're "the local workshop" — the one you can reach without leaving your own town.
 faq:
-  - q: How far is Tommy By from Rho town centre?
+  - q: How far are you from central Rho?
     a: >-
-      Our Mazzo di Rho site is 1.5 km from Rho centre, about 4 minutes by car via Via Madonna or SP109. From Rho train station (S5/S6 lines) we're 5-6 minutes away.
-  - q: Can I drop in before or after visiting Fiera di Rho?
+      Three kilometres, 6 minutes by car via Via Madonna or SP109. From Corso Garibaldi the distances are the same. From Rho FS (S5/S6 lines, Milan-Domodossola regional) it's 5-6 minutes.
+  - q: Can I drop by before or after visiting the Milan Trade Fair?
     a: >-
-      Yes, Fiera Milano (Rho Fiera) is 6 minutes from our location via SS33 or the western Milan ring road. Many exhibitors and Fair visitors who have a vehicle issue during their stay drop in here without needing a significant detour from the return route.
-  - q: Do you work for dealers or workshops in central Rho?
+      Yes. Rho-Fiera is 6 minutes from our location via SS33 Sempione or the western ring road. Many exhibitors and Fair visitors who run into vehicle issues during their stay drop by without any significant detour on their way back.
+  - q: Do you work for dealerships or other workshops in Rho?
     a: >-
-      Yes, we receive subcontracted work from Rho dealers and multi-brand workshops who entrust us with post-collision body shop work or full repainting jobs.
+      Yes, we receive subcontracted work from Rho dealerships and multi-brand workshops who entrust us with post-collision body shop work and full repaint jobs, leveraging our water-based oven that many general workshops don't have in-house.
+  - q: For residents of Rho's other villages (Lucernate, Terrazzano), is it convenient?
+    a: >-
+      Yes, from all the villages within the Rho municipality our location is reachable within a few minutes without leaving the municipal boundaries. From Lucernate it's about 4 km, from Terrazzano 3 km.
 publishedAt: 2026-05-05
 ---
 
-## Tommy By for Rho residents and businesses
+## Tommy By for those living or working in Rho
 
-Rho has several workshops, but few offer workshop and body shop under the same roof. With us you get:
+We're the workshop within the Rho municipality: for the 50,000 residents of central Rho and the villages, our location is the closest one combining workshop, body shop with water-based oven painting and same-day inspections under one roof. For many Rho customers the advantage isn't only geographical: it's the option of handling the entire case (body shop + mechanical + inspection) without shuttling between different facilities.
 
-- **Body shop** with water-based oven painting, full post-collision repair
-- **Professional color matching booth** for accurate paint matching even on complex liveries
-- **Multi-brand workshop** for services and electronic diagnostics
-- **Mandatory inspections** same-day
-- **Replacement cars** available for longer stays
+## Routes to get here from Rho
 
-## Routes from Rho
+- From **central Rho and Corso Garibaldi**: 6 minutes via SP109 or Via Madonna
+- From **Rho FS station** (S5/S6 lines, Milan-Domodossola regional): 5-6 minutes
+- From the **Milan Trade Fair (Rho-Pero)**: 6 minutes via SS33 Sempione
+- From **Lucernate and Terrazzano**: 5-7 minutes, route within the municipal area
 
-- From **central Rho / Corso Garibaldi**: 4 minutes via SP109 or Via Madonna
-- From **Rho station** (S5/S6 lines): 5-6 minutes via SP109
-- From **Fiera Milano (Rho Fiera)**: 6 minutes via SS33 Sempione
-- From **west Rho / Mazzo di Rho**: immediate, same village
+## What makes Rho specific for our service
+
+Rho hosts the Milan Trade Fair (Rho-Pero), with 1.4 million visitors per year, the ASST Rhodense hospital and a station hub linking Milan and the Domodossola-Sempione axis. This combination generates constant traffic of commercial vehicles, taxis, chauffeur services and corporate shuttles. For Tommy By this means a stable corporate clientele among rental companies, local dealerships and small chauffeur operators serving the Fair.
+
+## Services typically requested by Rho customers
+
+- **Subcontracted body shop work** for Rho dealerships and multi-brand workshops
+- **Maintenance of chauffeur and shuttle fleets** serving the Fair
+- **Scheduled services** for residents working in central Milan
+- **Same-day MOT-equivalent inspections** up to 3.5 tons

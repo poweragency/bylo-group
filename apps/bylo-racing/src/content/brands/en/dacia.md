@@ -1,35 +1,40 @@
 ---
 locale: en
 seo:
-  title: Dacia workshop Milan | Tommy By
-  description: Dacia Sandero, Duster, Jogger and Spring services and repairs at Tommy By in Mazzo di Rho. Low running costs, affordable parts, mechanicals shared with Renault.
+  title: Dacia workshop Milan | Sandero, Duster, Jogger | Tommy By
+  description: Dacia Sandero, Duster, Jogger and Spring services at Tommy By in Mazzo di Rho. Renault-shared mechanicals, affordable parts, experience on the ECO-G LPG system.
 name: Dacia
 intro: >-
-  Dacia has won Italian drivers with a simple idea: the same Renault mechanicals at a lower price. Sandero and Duster are among the best-selling models in Europe, and in the workshop they behave like a simpler Renault — few luxury electronics, robust engines, among the lowest maintenance costs on the market. We work on the full range including the Spring EV and the Jogger Hybrid 140.
+  Dacia won over Italian drivers with a simple idea: Renault mechanicals at a lower price. The Sandero and Duster are among the best-selling models in Europe, and in the workshop they behave like a stripped-down Renault — minimal high-end electronics, robust TCe 90/100 engines, some of the lowest running costs in the market and long parts availability. We work across the range, including the Spring EV and the Jogger Hybrid 140. Tommy By is an independent multi-brand workshop: under EU Regulation 461/2010 (Block Exemption), the Dacia manufacturer's warranty stays valid when you service here, with parts of equivalent quality and the booklet stamped.
 services:
   - multibrand-workshop
   - mandatory-inspections
 faq:
-  - q: Are Dacia maintenance costs really lower?
+  - q: Do you have experience with the ECO-G LPG system on the Sandero and Duster?
     a: >-
-      Yes, for two reasons: the mechanicals are simple (Renault-derived engines with few luxury electronic components) and original Dacia parts are among the most affordable on the market. A full Sandero service typically costs less than the equivalent Renault Clio service, while using qualitatively comparable parts.
-  - q: Can Renault parts be used on Dacias?
+      Yes. The factory ECO-G installation on the Sandero and Duster is a sequential-injection LPG system controlled by a dedicated ECU, with a toroidal tank fitted in the spare-wheel well. We service the LPG injectors, replace the liquid- and gas-phase filters and handle the periodic tank recertification (10 years from the stamped manufacturing date). The petrol-to-LPG changeover happens automatically once the engine reaches operating temperature.
+  - q: Can Renault parts be fitted to Dacias?
     a: >-
-      Often yes, because the two brands share many components. Filters, brake pads, spark plugs, batteries are largely interchangeable between Sandero/Clio or Duster/Captur. This needs to be verified case by case using the part number to avoid calibration differences on specific sensors.
+      Often yes, because the two brands share many components on the CMF-B base. Filters, brake pads, spark plugs and batteries are largely interchangeable between the Sandero and Clio, or the Duster and Captur. It needs to be checked case by case against the part number to avoid calibration mismatches on specific sensors (ABS, ESP).
+  - q: Can the electric Dacia Spring be handled by a multi-brand workshop?
+    a: >-
+      Yes. The Spring is the product of the Renault-Dongfeng cooperation, and its HV electronics can be addressed with Renault-Nissan-compatible diagnostic tooling. We carry out standard maintenance (cabin filter, brakes, tyres, climate control) and run battery-pack diagnostics. For cell-level work on the HV battery we refer the car to a specialist centre.
 publishedAt: 2026-05-05
 ---
 
 ## Dacia models we handle
 
 - **Sandero / Sandero Stepway** — entry-level city car and crossover
-- **Logan** — sedan (out of catalog in Italy but still on the road)
+- **Logan** — saloon (no longer sold in Italy but still on the road)
 - **Duster** — best-selling SUV (also 4x4 and LPG)
-- **Jogger** — 7-seat family car (including Hybrid 140)
-- **Spring** — electric city car (Renault-Nissan-Mitsubishi and Dongfeng cooperation)
+- **Jogger** — seven-seat family car (including the Hybrid 140)
+- **Spring** — electric city car
 
 ## Typical Dacia maintenance points
 
-- **Bi-fuel LPG engines** — Sandero ECO-G and Duster ECO-G have factory LPG, require periodic tank revision
-- **TCe 90/100 and 1.5 dCi** — Renault-derived, identical at parts level
-- **Limited ADAS systems** — fewer post-service calibrations compared to premium brands
-- **Spring electric** — mechanicals and battery handled with Renault-Nissan compatible tools
+- **TCe 90/100** turbo petrol — Renault-derived, identical at the parts-bin level
+- **dCi 1.5** diesel (phasing out) — Renault base, robust and reliable
+- **ECO-G LPG bi-fuel** — see FAQ
+- **Hybrid 140** on the Jogger — the E-Tech system shared with the Renault Clio and Captur
+- **Limited electronics and ADAS content** — fewer post-service calibrations than on premium brands
+- **Long parts life** — Dacia price lists are among the most affordable on the market

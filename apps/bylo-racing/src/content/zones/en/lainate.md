@@ -1,39 +1,36 @@
 ---
 locale: en
 seo:
-  title: Workshop and body shop for Lainate (Milan) | Tommy By
-  description: Tommy By for Lainate — 8 km and 13 minutes via SP233. Body shop with water-based oven painting, multi-brand workshop, same-day inspections. Located in Mazzo di Rho.
+  title: Workshop and body shop for Lainate | Tommy By
+  description: Tommy By is 6 km from Lainate via SS233 Varesina. Workshop and body shop in Mazzo di Rho, convenient for residents, Grancia village and businesses in the ceramics-construction district.
 name: Lainate
 province: MI
 intro: >-
-  Lainate is the hinge municipality between the Milan metropolitan area and the Varese province, with its 25,000 inhabitants and strategic position on SP233 Varesina. Our location is 8 km away, reachable in 13 minutes mainly via SP233 southbound toward Rho. Lainate is also home to Villa Litta with the famous Nymphaeum water gardens, and to a historically active industrial-logistic cluster.
+  Lainate sits on the Varesina axis and acts as a hinge between the Milan metropolitan area and the Varese province. Twenty-six thousand inhabitants, a Villa Litta with its famous Baroque Nymphaeum among the cultural attractions of northern Milan, and an industrial district historically strong in ceramics and construction. Our location is 6 km away, reachable in 11 minutes via SS233 southbound. For Lainate residents it's one of the few routes where the motorway (A8 with the Lainate exit) and the provincial road don't differ meaningfully in travel time.
 faq:
-  - q: Can I use the train station for the return trip from Lainate?
+  - q: From Villa Litta or the historic centre, which route is best?
     a: >-
-      Yes, Lainate-Grancia has a station on the S5/S6 train line and is an interchange point. From Mazzo di Rho, returning to Lainate station takes 10-12 minutes by car and there's a local bus service connecting the two areas. For longer stays we offer replacement cars subject to availability.
-  - q: Do you work for businesses in the Lainate industrial cluster?
+      From central Lainate (Villa Litta area) SS233 southbound is the most direct route, around 11 minutes. From Lainate-Grancia it's better to drop down to Pero via SS33 Sempione, slightly longer but smoother. A8 with the Lainate exit only makes sense if you're already coming in from the north (Castellanza or Saronno) — for anyone leaving from Lainate itself you don't gain time.
+  - q: Do you work for businesses in the ceramics and construction sector with commercial vehicles?
     a: >-
-      Yes, we have business customers among Lainate companies, particularly commercial fleets and service vehicles. We arrange scheduled delivery windows to minimize the impact on business operations, especially for fleet pickups.
+      Yes, among Lainate's business clientele are small and medium-sized firms in the construction and ceramics sectors running light commercial vehicles (panel vans, trucks up to 3.5 tons). For these vehicles we handle MOT-equivalent inspections, scheduled services and body shop work for typical on-site damage (scratches, knocks, light panel repair). We arrange work during slower periods on the construction schedule to minimize downtime.
+  - q: Can I use Lainate-Grancia station if I want to drop the car off in the morning?
+    a: >-
+      Yes. Lainate-Grancia station is on the S5/S6 line, and from Mazzo di Rho the return trip takes 10-12 minutes by car. Some customers get a ride in the morning, leave the car with us and continue by train; others prefer a replacement car for the day.
 publishedAt: 2026-05-05
 ---
 
-## Lainate → Mazzo di Rho route
+## How to get here from Lainate
 
-- **Distance**: 8 km
-- **Driving time**: 13 minutes
-- **Main road**: SP233 Varesina southbound toward Rho
-- **Motorway alternative**: A8 Milan-Lakes, Lainate exit, then SP233
-- **Train station**: Lainate-Grancia (S5/S6 lines)
+The natural route is SS233 Varesina, which crosses Lainate north to south and runs straight into the Mazzo di Rho area. Six kilometres, 11 minutes. From eastern Lainate, SP109 through Pogliano and Vanzago is a good alternative — slightly longer but with less morning traffic. From Grancia, SS33 Sempione toward Pero is the better choice.
 
-## Services we provide Lainate customers
+## Lainate between Villa Litta and industrial warehouses
 
-- **Body shop** post-collision with water-based oven painting
-- **Multi-brand workshop** for cars and motorcycles, any brand and model
-- **Services** preserving the official warranty
-- **Inspections** same-day, up to 3.5 tons
-- Full **tire service** (including seasonal change and storage)
-- **Electronic diagnostics** with multi-brand tools
+Lainate's profile is twofold: high-end residential around Villa Litta and the historic centre, industrial and artisanal toward the production zones to the east. Historically the ceramics and construction district left a concentration of small businesses with light commercial vehicles, today joined by logistics services. On the residential side, Lainate has an above-average level of household income, with a concentration of mid-to-high-tier cars and second vehicles (convertibles, weekend sports cars) requiring careful maintenance.
 
-## Lainate and its customer base
+## Services most requested by Lainate customers
 
-Lainate has an interesting mix of residential, production area and transit artery (SP233). The municipality's industrial cluster hosts manufacturing and logistics companies generating constant demand for company vehicle maintenance. For Lainate town centre or Grancia village residents our location is the first "out of town" alternative that combines workshop and body shop in a single building.
+- **Maintenance of classic and youngtimer weekend cars**, especially in spring before returning to the road
+- **Body shop work on light commercial vehicles** for small construction and ceramics businesses
+- **Services and diagnostics** on mid-to-high-tier cars with complex electronic systems
+- **Seasonal tire service** with on-site storage

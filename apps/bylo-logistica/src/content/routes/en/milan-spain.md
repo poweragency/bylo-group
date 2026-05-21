@@ -2,48 +2,44 @@
 locale: en
 slug: milan-spain
 seo:
-  title: ADR transport Milan-Spain — Barcelona, Madrid, French Riviera route | BYLO Transport
-  description: BYLO Transport runs ADR shipments between Italy and Spain via Frejus or Ventimiglia. Main routes Barcelona and Madrid, long-haul with two-driver service for 48-72 hours delivery.
+  title: ADR transport Milan-Spain — Ventimiglia, ZBE Barcelona-Madrid, Tarragona hub | BYLO Transport
+  description: ADR route Milan-Spain via Ventimiglia and the AP-7. Spanish regulation, ZBE Barcelona-Madrid, the Tarragona petrochemical hub and Barcelona industry.
 origin: Milan
 destination: Spain (Barcelona, Madrid)
 distanceKm: 1100
 transitTimeHours: 14
 intro: >-
-  Spain is our longest international corridor, with distances exceeding 1,000 km point-to-point. Industrial Catalonia (Barcelona, Tarragona) is reachable in 48 hours; Madrid and the central peninsula require 72 hours. We operate via Frejus or via Ventimiglia-French Riviera depending on ADR constraints, time-window needs and vehicle availability.
+  Spain is a corridor with three border passages: Italy-France, France-Spain, and finally entry into the low-emission zones of the Catalan and Madrid metropolitan areas. A solid thousand kilometres along the coast on motorway, with ADR rules that shift meaningfully at the La Jonquera-Le Perthus border.
 faq:
-  - q: How long for a Milan-Barcelona shipment?
+  - q: Are additional permits needed for the Barcelona ZBE?
     a: >-
-      Distance is around 1,100 km, total driving time 12-14 hours excluding mandatory rest. A standard shipment departs morning of day 1 and delivers by end-of-day 2 (48 hours total). With two drivers we can compress to 24-30 hours for urgent shipments.
-  - q: Can ADR transport reach Madrid?
+      The Zona de Bajas Emisiones de Barcelona is active 24/7 on weekdays for heavy vehicles without a DGT B environmental sticker or higher, and includes a 07:00-20:00 band with stricter constraints. For ADR deliveries inside the metropolitan area the vehicle must be registered through the Catalan authentication system for foreign trucks, and entry must take place with Euro VI engines. Madrid 360 (the successor to Madrid Central) applies the same logic with concentric zones and a ZBEDEP.
+  - q: Does Spanish ADR regulation differ much from European ADR?
     a: >-
-      Yes, Madrid is reachable in 72 hours standard via Zaragoza-Madrid. The route crosses Catalonia and continues on the Spanish A2. For recurring shipments to the Madrid chemical hub or the Toledo pharmaceutical cluster we set up dedicated procedures, including consolidation stops in Barcelona.
-  - q: Which Alpine routes serve Spain?
+      The framework is European ADR transposed via the Real Decreto on dangerous goods transport. The most relevant practical difference is on accompanying documentation: roadside checks by the Guardia Civil de Tráfico require an international CMR, the Safety Data Sheet, written instructions for the driver available in Spanish, and a special authorisation for certain substances. The traceability of the carrier's ADR safety adviser is systematically verified on class 1 (not served) and class 7 (not served) goods.
+  - q: Is it better to route via Frejus-Toulouse or via Ventimiglia for Catalonia?
     a: >-
-      The most direct route is via Ventimiglia (A10 Liguria → French autoroute A8 Côte d'Azur → A9 Languedoc → Spanish border at La Jonquera). Alternative via Frejus → Lyon → Toulouse → Barcelona, slightly shorter but with tighter tunnel constraints. The choice depends on the cargo's ADR class.
+      For Barcelona and Catalonia in general the preferred route is the coastal one: A10 Ligure to Ventimiglia, French A8 along the Côte d'Azur, A9 Languedoc to La Jonquera, Spanish AP-7. It is slightly longer than the inland alternative (Frejus-Lyon-Toulouse-Barcelona) but smoother and with lighter ADR tunnel constraints. The inland route is preferable when the final destination is more central (Zaragoza, Madrid) and the coastal detour can be avoided.
 relatedServices:
   - adr-transport
 publishedAt: 2026-05-05
 ---
 
-## Route summary
+## The Milan-Spain route at a glance
 
-- **Origin**: Ospiate di Bollate (Milan) hub
-- **Main destinations**: Barcelona (~1,100 km), Tarragona (~1,150 km), Zaragoza (~1,400 km), Madrid (~1,700 km), Valencia (~1,500 km)
-- **Routes**: via Ventimiglia-Côte d'Azur-Catalonia or via Frejus-Lyon-Toulouse
-- **Delivery time**: Catalonia 48h, Madrid and central Spain 72h
-- **ADR classes served**: 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8, 9
+Destinations spread across the western Mediterranean arc and the central plateau: Barcelona at 1,100 km, Tarragona at 1,150, Valencia at 1,500, Zaragoza at 1,400, Madrid at 1,700. The coastal corridor (Genoa, Ventimiglia, Nice, Marseille, Montpellier, La Jonquera) runs smoothly but carries high tolls; the inland alternative (Frejus, Lyon, Toulouse) sees lighter traffic but more articulated tunnel codes at the Alpine crossings.
 
-## Long-haul planning
+The distance comfortably exceeds the daily driving limit and forces planning over 48 to 72 hours with multiple mandatory rests, or two-driver operation for the most urgent shipments.
 
-Shipments over 1,000 km have constraints beyond short routes:
+## ADR restrictions on this corridor
 
-- **Multiple driver rest periods** (daily, weekly)
-- **Two-driver service** on booking for urgent shipments
-- **Bilingual documentation** (Italian, French or Spanish) and international CMR
-- **Alpine tunnels** with upfront ADR category verification
-- **Cumulative tolls** Italy-France-Spain included in the final quote
-- **Return cargo** organized case by case (Catalonia has more availability than Madrid)
+- ZBE Barcelona with DGT authentication required for foreign vehicles
+- Madrid 360 with concentric zones and ADR time windows
+- Frejus or Mont Blanc tunnel codes if the inland route is chosen
+- Spanish ADR regulation with mandatory local-language documentation at the check
+- Cumulative tolls across three motorway jurisdictions (Italy, France, Spanish AP-7) factored into the quote
+- Multiple driver rests to be planned in service areas equipped with ADR parking
 
-## Sectors served
+## Client profiles served on this corridor
 
-Most frequent Spanish clients operate in: chemicals and petrochemicals around the Tarragona cluster (Repsol, Dow), Catalan pharmaceuticals (Almirall, Esteve, Grifols), Basque Country and Valencia automotive (Ford, SEAT/CUPRA, Mercedes-Benz Vitoria), cosmetics and fragrance in Barcelona (Puig).
+Catalonia concentrates some of the most extensive chemical supply chains in the Mediterranean. The Tarragona petrochemical hub (Repsol, Dow, Covestro, Bayer) moves chemical intermediates, polymers and specialty chemicals with continuous flows toward Italy. Barcelona hosts pharmaceuticals (Almirall, Esteve, Grifols, Ferrer), cosmetics (Puig) and specialty chemicals. Zaragoza is an automotive and logistics node. Madrid concentrates pharmaceuticals, healthcare and research. Valencia integrates the Castellón tile district with a demand for dyes and additives comparable to Sassuolo. The Basque Country adds automotive (Mercedes-Benz Vitoria) and steel production.

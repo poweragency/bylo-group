@@ -1,38 +1,46 @@
 ---
 locale: it
 seo:
-  title: Carrozzeria e officina a Rho (MI) | Tommy By
-  description: Tommy By a Rho — sede in Via Venanzio Buzzi 9 a Mazzo di Rho. Carrozzeria, officina multimarche, revisioni e tagliandi a 1,5 km dal centro Rho, vicino al casello A8 e alla Fiera Milano.
+  title: Carrozzeria e officina a Rho | Tommy By
+  description: Tommy By è nel comune di Rho, a Mazzo di Rho. Officina e carrozzeria a 3 km dal centro Rho, vicino alla Fiera Milano-Rho, all'ospedale Rhodense e alle stazioni dei treni.
 name: Rho
 province: MI
 intro: >-
-  Rho è il comune di cui Mazzo di Rho è frazione, e gran parte della clientela storica di Tommy By arriva proprio dal centro Rho e dal corso Garibaldi. La nostra sede dista 1,5 km dal centro città e si raggiunge in 4 minuti d'auto, anche via Sempione. Per chi viene dalla Fiera Milano (Rho Fiera) siamo a 6 minuti via SS33.
+  Rho è il nostro comune di riferimento: Mazzo di Rho è la sua frazione, e una buona parte della clientela storica di Tommy By arriva proprio dal centro Rho, dal corso Garibaldi, dalle vie attorno all'ospedale ASST Rhodense e dalla zona della Fiera Milano-Rho. La nostra sede è a 3 km dal centro città, 6 minuti d'auto via Via Madonna o SP109. Per molti rhodensi siamo "l'officina del comune" — quella che si raggiunge senza uscire dal proprio territorio.
 faq:
-  - q: Quanto è distante Tommy By dal centro Rho?
+  - q: Quanto distate dal centro di Rho?
     a: >-
-      La sede di Mazzo di Rho è a 1,5 km dal centro Rho, circa 4 minuti d'auto via Via Madonna o SP109. Da Rho stazione (linea ferroviaria S5/S6) siamo raggiungibili in 5-6 minuti.
+      Tre chilometri, 6 minuti d'auto via Via Madonna o SP109. Da corso Garibaldi siamo nelle stesse distanze. Da Rho FS (linea S5/S6, regionali Milano-Domodossola) sono 5-6 minuti.
   - q: Posso passare prima o dopo aver visitato la Fiera di Rho?
     a: >-
-      Sì, la Fiera Milano (Rho Fiera) è a 6 minuti dalla nostra sede via SS33 del Sempione o via tangenziale ovest. Molti espositori e visitatori della Fiera che hanno problemi al veicolo durante la trasferta passano da noi senza dover deviare significativamente dal percorso di rientro.
-  - q: Lavorate per concessionarie o officine di Rho centro?
+      Sì. Rho-Fiera è a 6 minuti dalla nostra sede via SS33 del Sempione o via tangenziale ovest. Molti espositori e visitatori della Fiera con problemi al veicolo durante la trasferta passano da noi senza deviare significativamente dal percorso di rientro.
+  - q: Lavorate per concessionarie o altre officine di Rho?
     a: >-
-      Sì, riceviamo richieste in subappalto da concessionarie e officine multimarche di Rho che ci affidano lavorazioni di carrozzeria post-sinistro o lavori di verniciatura completa.
+      Sì, riceviamo richieste in subappalto da concessionarie e officine multimarche di Rho che ci affidano lavorazioni di carrozzeria post-sinistro e verniciature complete, sfruttando il nostro forno ad acqua che molte officine generaliste non hanno internamente.
+  - q: Per chi vive nelle frazioni di Rho (Lucernate, Terrazzano), siete comodi?
+    a: >-
+      Sì, da tutte le frazioni del comune di Rho la nostra sede è raggiungibile in pochi minuti senza uscire dai confini comunali. Da Lucernate sono circa 4 km, da Terrazzano 3 km.
 publishedAt: 2026-05-05
 ---
 
 ## Tommy By per chi vive o lavora a Rho
 
-A Rho ci sono diverse officine, ma poche offrono officina e carrozzeria nello stesso edificio. Da noi:
+Siamo l'officina nel comune di Rho: per i 50.000 residenti di Rho centro e delle frazioni la nostra sede è la più vicina che combini officina, carrozzeria con verniciatura a forno ad acqua e revisioni in giornata sotto lo stesso tetto. Per molti clienti rhodensi il vantaggio non è solo geografico: è la possibilità di gestire la pratica intera (carrozzeria + meccanica + revisione) senza spostamenti fra strutture diverse.
 
-- **Carrozzeria** con verniciatura a forno ad acqua, riparazioni post-sinistro complete
-- **Tintometro professionale** per abbinamento tinta preciso anche su livree complesse
-- **Officina multimarche** per tagliandi e diagnosi elettronica
-- **Revisioni** ministeriali in giornata
-- **Auto sostitutive** disponibili in caso di fermo prolungato
+## Le strade per arrivare da Rho
 
-## Strade per arrivare da Rho
+- Da **centro Rho e corso Garibaldi**: 6 minuti via SP109 o Via Madonna
+- Da **Rho stazione FS** (linee S5/S6, regionali Milano-Domodossola): 5-6 minuti
+- Da **Fiera Milano-Rho**: 6 minuti via SS33 del Sempione
+- Da **Lucernate e Terrazzano**: 5-7 minuti, percorso interno al comune
 
-- Da **centro Rho / Corso Garibaldi**: 4 minuti via SP109 o Via Madonna
-- Da **Rho stazione FS** (linea S5/S6): 5-6 minuti via SP109
-- Da **Fiera Milano (Rho Fiera)**: 6 minuti via SS33 del Sempione
-- Da **Rho ovest / Mazzo di Rho**: ovviamente immediato, nello stesso paese
+## Cosa rende Rho specifica per il servizio
+
+Rho ospita Fiera Milano-Rho (1.4 milioni di visitatori l'anno), l'ospedale ASST Rhodense, hub stazione FS di scambio fra Milano e l'asse Domodossola-Sempione. Questa combinazione genera un traffico costante di mezzi commerciali, taxi, NCC, navette aziendali. Per Tommy By questo si traduce in una clientela aziendale stabile fra le società di noleggio, le concessionarie locali e i piccoli operatori NCC che servono la Fiera.
+
+## Servizi tipicamente richiesti dai clienti di Rho
+
+- **Carrozzeria in subappalto** per concessionarie e officine multimarche di Rho
+- **Manutenzione di flotte NCC e navette** che servono la Fiera
+- **Tagliandi programmati** per residenti che lavorano in centro città
+- **Revisioni ministeriali in giornata** fino a 35 quintali

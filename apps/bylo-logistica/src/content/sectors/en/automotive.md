@@ -2,56 +2,52 @@
 locale: en
 slug: automotive
 seo:
-  title: Transport for the automotive industry — Parts, oils, batteries | BYLO Transport
-  description: BYLO Transport serves the automotive industry with shipments of oils, lubricants, lithium batteries, technical parts and consumables for assembly lines and dealer workshops.
+  title: Transport for industrial automotive — Lithium batteries, refrigerants, oils | BYLO Transport
+  description: BYLO Transport serves the Motor Valley and the Turin cluster with transport of lithium batteries (UN3480/3481), R1234yf refrigerants, additivated engine oils and electrolytes for assembly lines.
 title: Transport for industrial automotive
 intro: >-
-  Automotive is a sector with intense logistical flows and rigid production calendars. BYLO Transport supports component manufacturers, parts distributors and dealer workshops with a blend of ADR shipments (oils, batteries, paints) and general freight (mechanical parts, non-hazardous spares). Our Bollate site is 30 minutes from the main Northern Italian plants.
+  Italian automotive is going through a deep transition: new-generation refrigerants, electrification, lithium-ion batteries that are becoming the critical component by weight, value and regulation. BYLO Transport is structured for the sector's technical flows, where meeting assembly-line JIT slots counts as much as ADR compliance on the load. Automotive logistics doesn't forgive late deliveries, and it doesn't forgive missing paperwork either when a lithium battery shows up at the plant.
 faq:
-  - q: Do you carry lithium batteries from electric vehicles?
+  - q: Do you carry lithium batteries for both assembly lines and end-of-life flows?
     a: >-
-      Yes, lithium batteries fall under ADR class 9 and are among the cargo we ship. Each battery requires homologated UN3480/UN3481 packaging, specific documentation and a vehicle suited to a potential thermal event. For recurring shipments to assembly lines or specialist workshops we put standardized procedures in place.
-  - q: Can you manage JIT pickups with tight delivery windows?
+      Yes, both new batteries (UN3480 pure lithium-ion, UN3481 when contained in or packed with equipment) and used batteries headed for reconditioning. Damaged or defective batteries require special P911/LP906 packaging and reinforced procedures — they're a category on their own. For end-of-life electric vehicles the regime changes further, since the ELV directive comes into play along with registration on the Italian Environmental Managers Register for the carrier.
+  - q: Are new-generation refrigerants like R1234yf ADR?
     a: >-
-      For automotive production lines we know that the delivery slot is the critical constraint. We operate with 24-48 hours notice for windowed deliveries (e.g. 7:00-9:00 at the Brescia plant) and plan the return leg to close the round trip the same day.
-  - q: Do you carry waste oils or end-of-life fluids as waste?
+      Yes, R1234yf falls under class 2.1 (flammable gas, UN 3161), unlike the previous R134a which was class 2.2 non-flammable. This changes vehicle requirements, tunnel restrictions and emergency procedures. The MAC directive transition has effectively shifted the entire aftermarket and OEM supply toward products under a stricter ADR regime — a point that workshops often discover only after receiving their first delivery.
+  - q: Do you work with the Motor Valley and the Stellantis Turin cluster?
     a: >-
-      Transporting ADR waste (waste oils, brake fluids, antifreeze) requires registration with the Italian Environmental Managers Register, separate from the Road Hauliers Register. For new product transport (engine oils, lubricants, antifreeze) we operate directly. For waste flows we recommend verifying active registrations at the time of the request.
+      These are the two main basins for Italian automotive and BYLO Transport covers both with recurring routes. Motor Valley (Modena, Maranello, Bologna) for premium marques and racing components; the Turin cluster and Mirafiori-Caselle for Stellantis and the aerospace supply chain. North-South routes toward Pomigliano, Cassino and Termoli are organized on a weekly schedule.
 relatedServices:
   - adr-transport
   - integrated-logistics
 publishedAt: 2026-05-05
 ---
 
-## What we move for automotive
+## Which automotive products require ADR transport
 
-The sector covers three flow families:
+The sector is no longer limited to oils and paints. The technological transition is shifting the weight of dangerous-goods transport toward new categories:
 
-**Raw materials and consumables (ADR)**
-- Engine oils, industrial lubricants, hydraulic fluids (class 9 when classified)
-- Antifreeze and coolants
-- Brake fluids (class 8, corrosive)
-- Paints and body shop products (class 3)
-- **Lithium batteries** — EVs, hybrids, scooters (class 9, UN3480/UN3481)
-- Airbags and pretensioners (class 9, explosive substances not classified as 1)
+- **Lithium-ion batteries** — UN3480 (pure), UN3481 (with equipment), ADR class 9 with special provisions 188, 230, 376
+- **Refrigerants** — R1234yf class 2.1 flammable, R744 (CO2) class 2.2, ammonia for industrial plants class 2.3
+- **Additivated engine oils and synthetic esters** — class 9 when classified as hazardous to the aquatic environment
+- **Line paints for cataphoresis and finishing** — class 3, variable flash point
+- **Electrolytes for batteries and lead-acid accumulators** — class 8 (sulfuric acid)
+- **Structural adhesives and sealants** for body assembly — some in class 3, some exempt
 
-**Technical parts (non-ADR)**
-- Mechanical, plastic, electronic components
-- Tires (not under ADR)
-- Glass, bumpers, body panels
+Airbags and seatbelt pretensioners contain pyrotechnic components but fall under UN3268 (safety devices), not class 1 explosives.
 
-**Workshop consumables**
-- Filters, spark plugs, brake pads
-- Cleaning materials (some class 3)
+## Italian automotive clusters
 
-## Timing and planning
+Three hubs concentrate most of the logistics demand:
 
-Automotive thinks in terms of delivery slots. We operate with:
+- **Motor Valley** — the Modena-Maranello-Bologna backbone with Ferrari, Lamborghini, Pagani, Dallara, Maserati and the entire racing-grade components industry
+- **Stellantis cluster** — Mirafiori and Caselle Torino, the components supply chain in the Pinerolo area and lower Piedmont, extending into aerospace (Leonardo, Avio Aero)
+- **Southern plants** — Pomigliano d'Arco, Cassino, Atessa, Melfi, Termoli for the new battery production sites
 
-- **Morning slots** for deliveries at shift start (5-9 AM)
-- **JIT with 24-48h notice** for windowed pickups and deliveries
-- **Round trips** Bollate → plant → return with backhaul cargo to optimize cost
+Add to these the spread-out components districts: bearings in Turin and Vicenza, plastics in Modena, electronics in Catania.
 
-## Nearby plants
+## Operational specifics of automotive transport
 
-From our Bollate site we reach the main Northern Italian automotive hubs in 30-90 minutes: industrial areas of Bergamo, Brescia, Varese, Modena, Turin. For more distant hubs (Pomigliano, Cassino, Termoli) we operate scheduled trips.
+The JIT slot is the main constraint. Lines don't stop: a delivery outside the window triggers contractual penalties and in some cases halts production. BYLO Transport organizes 24-48 hour advance notice with tight time windows, integrating return planning to close the round trip within the day.
+
+On the regulatory front, alongside ADR, substances under REACH and SVHC control require supply-chain documentation; the ELV directive impacts end-of-life flows; for lithium batteries the new EU Battery Regulation 2023/1542 is progressively raising traceability requirements.

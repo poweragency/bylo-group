@@ -2,56 +2,51 @@
 locale: en
 slug: food
 seo:
-  title: Transport for the food industry — Raw materials and additives | BYLO Transport
-  description: BYLO Transport moves raw materials, additives and non-perishable finished goods for the food industry. Alcoholic concentrates, preservatives, technical ingredients. National and international coverage.
+  title: ADR transport for the food industry — Aromas, additives, CO2 | BYLO Transport
+  description: Transport of alcoholic aromas, E-series additives, preservatives and technical gases for the Italian food valley. BYLO Transport covers the ADR side of the food sector, leaving perishables to the cold chain.
 title: Transport for the food industry
 intro: >-
-  The Italian food industry moves enormous volumes of raw materials and technical products every day. BYLO Transport does not run cold chain (refrigerated perishables, frozen goods), but covers the wide tier of ambient-temperature freight: technical ingredients, additives, alcohols, packaging, non-perishable finished goods.
+  In the food industry, "ADR" isn't the first word that comes to mind — yet alcoholic aromas, preservatives, carbon dioxide for carbonation and several E-series additives all fall squarely under dangerous goods regulation. BYLO Transport covers this technical tier of the Italian food sector: the flows that don't go through refrigeration but are just as critical to production, from confectionery and spirits producers to the businesses of the Italian food valley (Parma-Modena) and carbonated beverage makers.
 faq:
-  - q: Do you carry fresh or frozen food in cold chain?
+  - q: Is ethyl alcohol used in food aromas ADR? And when does the exemption apply?
     a: >-
-      No. We don't run refrigerated vehicles and don't operate cold chain. We carry food products at ambient temperature — dry ingredients, canned goods, oils, wine and alcoholic beverages, technical ingredients, packaging and production materials.
-  - q: Are alcoholic concentrates and food-grade alcohol aromas ADR?
+      Ethyl alcohol above 24% by volume falls under ADR class 3 (UN 1170). Concentrated natural aromas, liqueur bases, vanilla extracts in alcohol and pastry-grade distillates are all subject to it. Limited-quantity (LQ) per-package exemptions exist and can ease constraints on small shipments, but they need to be verified case by case against the product's Safety Data Sheet (SDS).
+  - q: Do you also carry food-grade CO2 for beverage carbonation and plant supply?
     a: >-
-      Yes, high-strength food alcohols (extracts, natural aromas, liqueur bases, industrial distillates) fall under ADR class 3. We work regularly with Lombardy's spirits and confectionery producers to move these raw materials.
-  - q: How do you separate food and ADR cargo on the vehicle?
+      Carbon dioxide is class 2.2 (non-flammable, non-toxic gas) and is among the classes we handle. For beverage producers it's a continuous raw material, often with weekly deliveries on annual contracts. When volumes call for it we work with dedicated tankers; for smaller quantities, with cylinders on pallets.
+  - q: How do you reconcile HACCP with a vehicle that previously carried ADR cargo?
     a: >-
-      For mixed loads (food non-ADR + ADR component) we check class compatibility before loading. When food is in sealed primary packaging and ADR classes are compatible, we arrange physical separation on the vehicle. For producers requiring strict cleanliness standards (HACCP, BRC) we operate with dedicated vehicles.
+      Incompatibility is managed on two levels. First, on mixed loads we operate with vehicles dedicated to the HACCP/BRC supply chain, with no rotation through generic industrial chemistry. Second, cargo bay cleaning follows a tracked procedure with a washing certificate issued by specialist facilities. For producers running supply-chain audits, this documentation is part of the standard service.
 relatedServices:
   - adr-transport
   - integrated-logistics
 publishedAt: 2026-05-05
 ---
 
-## What we move for food
+## Which food industry products require ADR transport
 
-**At ambient temperature**
-- Dry ingredients (flour, sugars, modified starches) on pallets or big bags
-- Preserves, oil, glass/can-packed products
-- Alcoholic and non-alcoholic beverages in retail and industrial packaging
-- Primary and secondary packaging (cardboard, glass, plastic)
-- Food additives, aromas, colorants
+The surprise for newcomers to the sector is that a significant share of food raw materials qualifies as dangerous goods in the regulatory sense:
 
-**ADR component (class 3)**
-- Alcohols and distillates for the spirits industry
-- Concentrated alcoholic aromas
-- High-strength natural extracts
-- Food-grade solvents (ethyl acetate in small volumes)
+- **Concentrated alcoholic aromas** and natural extracts in ethyl alcohol — UN 1170, class 3 above 24% vol
+- **Carbon dioxide** for beverage carbonation, cryogenic freezing, modified-atmosphere packaging — UN 1013, class 2.2
+- **E-series additives** in pure form, especially E300 (ascorbic acid in certain forms), preservatives such as benzoates (E210-213) and sorbates (E200-203) when in concentrated solution
+- **Industrial enzymes** in liquid form with reactive carriers
+- **Industrial food-grade ethanol** (plant sanitization, extractions, liqueur bases)
 
-## What we DON'T carry
+The finished product on the supermarket shelf isn't ADR, but the upstream flow into production almost always is.
 
-For clarity:
+## Italian food clusters relevant to ADR
 
-- We don't run **cold chain** (refrigerated, frozen, ATP)
-- We don't carry **fresh perishables** (dairy, meat, fresh fish products)
-- We don't operate as a certified **organic-food carrier** (separate dedicated register)
+Geography matters. The hubs generating demand for food-grade ADR transport are:
 
-For these flows we point clients to specialist operators with suitable equipment.
+- **Italian food valley** — Parma for pasta, cheese and preserves; Modena for balsamic vinegar and regional specialties; the entire backbone from Piacenza to Bologna
+- **Lombardy confectionery cluster** — Cremona, Lodi and the area orbiting major groups such as Bauli, Balconi, Loison
+- **Veneto spirits district** — Bassano del Grappa and the foothills
+- **Sicilian wine cluster** — distilleries, aromas for regional liqueurs
+- **Carbonated beverages cluster** — soft drink production with steady CO2 consumption
 
-## Cleanliness standards
+## Seasonality and sector-specific operating constraints
 
-Food has tighter cleanliness standards than general industrial freight. For HACCP and BRC producers we operate with:
+Food has peaks that generic chemistry doesn't. The wine harvest (September-October) pulls volumes of oenological aromas and additives. The pre-Christmas window (September-November) pulls spirits and confectionery. Summer pulls carbonated drinks and therefore CO2. Planning recurring departures around these curves avoids getting stuck in September when everyone is asking for the same slot.
 
-- Dedicated vehicles (no cross-contamination from previous cargo)
-- Certified cleaning of the cargo bay between shipments
-- Transport documentation suitable for supply-chain audits
+On the regulatory side, beyond ADR the sector imposes HACCP, in many cases BRC or IFS along the transport chain, and for those serving large retail a certified cargo-bay cleanliness standard. Washing documentation is part of the journey kit, not an extra.

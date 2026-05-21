@@ -1,44 +1,36 @@
 ---
 locale: it
 seo:
-  title: Officina e carrozzeria per clienti di Milano | Tommy By
-  description: Tommy By per i milanesi — 14 km e 20 minuti dal centro Milano via tangenziale ovest. Officina multimarche, carrozzeria con verniciatura a forno ad acqua, fuori dalle ZTL Area B/C.
+  title: Officina e carrozzeria per Milano (fuori Area B) | Tommy By
+  description: Tommy By per chi vive a Milano. 14 km dal centro, fuori da Area B e Area C, raggiungibile anche con veicoli Euro 5 diesel in restrizione. Stazione Rho FS a 5 minuti dalla sede.
 name: Milano
 province: MI
 intro: >-
-  Per chi vive a Milano la nostra sede a Mazzo di Rho è la prima alternativa "fuori porta" che combina officina e carrozzeria nello stesso edificio. La distanza dal centro Milano è di circa 14 km, percorribili in 20 minuti via tangenziale ovest A50 (uscita Pero o Cusago) — completamente fuori dalle ZTL Area B e Area C, quindi accessibile senza vincoli a qualsiasi tipologia di veicolo.
+  Per chi vive a Milano il problema non è quasi mai trovare un'officina — in città ce ne sono centinaia. Il problema, sempre più spesso, è trovarne una raggiungibile con il proprio veicolo, soprattutto se diesel Euro 5 fermo in Area B, o se si cerca una verniciatura a forno ad acqua che in città è rara per vincoli logistici. La nostra sede a Mazzo di Rho è 14 km dal centro Milano, completamente fuori da Area B e Area C, raggiungibile in 20 minuti via tangenziale ovest A50 fuori dai picchi.
 faq:
-  - q: Sono fuori dall'Area B di Milano?
+  - q: Posso arrivare con un'auto Euro 5 diesel ferma in Area B?
     a: >-
-      Sì, Mazzo di Rho è completamente fuori dall'Area B di Milano. Anche i veicoli con limitazioni di accesso al capoluogo (diesel pre-Euro 4, alcune categorie commerciali) possono raggiungere la nostra sede senza problemi. Questa è una delle ragioni per cui molti milanesi scelgono di portare l'auto da noi invece di un'officina interna alla città.
+      Sì. Mazzo di Rho è fuori dal perimetro Area B, quindi anche veicoli con limitazioni di accesso a Milano (diesel pre-Euro 4 in fascia oraria, alcune categorie commerciali) possono raggiungerci senza restrizioni. È una delle ragioni più frequenti per cui clienti milanesi scelgono noi anziché un'officina interna alla città: il veicolo che non può entrare in Milano può comunque uscire e arrivare da noi senza problemi.
   - q: Da quale zona di Milano siete più convenienti?
     a: >-
-      Per il quadrante nord-ovest di Milano (Lampugnano, San Siro, Quarto Cagnino, Quinto Romano, Trenno, Baggio) siamo molto comodi — 15-20 minuti di tangenziale ovest. Per zone come Centro, Porta Garibaldi, Loreto, Cordusio i tempi salgono a 30-35 minuti dipendendo dal traffico. Per Milano sud-est (Linate, Mecenate) un'officina più vicina può essere una scelta migliore.
-  - q: Posso prendere il treno per il rientro dopo aver lasciato l'auto?
+      Per il quadrante nord-ovest (Lampugnano, San Siro, Quarto Cagnino, Quinto Romano, Trenno, Baggio) sono 15-20 minuti via tangenziale. Per il centro storico (Cordusio, Porta Garibaldi, Brera) si va su 30-35 minuti dipendendo dal traffico. Per Milano sud-est (Linate, Mecenate, Rogoredo) un'officina più vicina al perimetro est ha più senso.
+  - q: Posso prendere il treno per rientrare dopo aver lasciato l'auto?
     a: >-
-      Sì. La stazione di Rho FS (linee S5, S6, regionali Milano-Domodossola) dista 5 minuti d'auto dalla nostra sede. Da Rho si è in centro Milano in 12-15 minuti di treno (Milano Cadorna o Milano Centrale a seconda della linea).
+      Sì. La stazione di Rho FS è sulle linee S5, S6 e regionali Milano-Domodossola. Da Mazzo alla stazione sono 5 minuti d'auto (o in taxi locale). Da Rho FS il rientro su Milano Cadorna o Milano Centrale richiede 12-18 minuti.
 publishedAt: 2026-05-05
 ---
 
-## Da Milano centro a Tommy By
+## Da Milano a Mazzo di Rho: come arrivare
 
-- **Distanza**: 14 km dal centro
-- **Tempo in auto**: 20 minuti via tangenziale ovest A50 (fuori dai picchi orari)
-- **Uscite consigliate**: Pero o Cusago lungo la A50
-- **Treno**: linea S5/S6 fino a Rho FS, poi 5 minuti d'auto/taxi
-- **Fuori da Area B e Area C**: nessuna restrizione di accesso
+Il percorso standard è la tangenziale ovest A50, uscita Pero (o Cusago per chi viene da sud-ovest). Quattordici chilometri dal centro, 20 minuti fuori dai picchi del mattino e della sera. Da Milano nord-ovest (San Siro, Lampugnano) si può evitare la tangenziale e seguire la SS33 del Sempione, leggermente più lunga ma con tempi simili. Per chi arriva da fuori Milano via treno, Rho FS è hub sulle linee suburbane e regionali, ben servito sia da Milano Centrale sia da Cadorna.
 
-## Per quali milanesi siamo più indicati
+## Milano e le sue Aree limitate
 
-- Residenti del quadrante **nord-ovest** (San Siro, Lampugnano, Trenno, Baggio, Quinto Romano)
-- Possessori di veicoli che hanno **restrizioni Area B** ma vogliono comunque un'officina di qualità
-- Clienti che vogliono **carrozzeria + officina nello stesso edificio**, evitando il ping-pong tra strutture diverse a Milano
-- Clienti che cercano **verniciatura a forno ad acqua** che molte officine cittadine non offrono per vincoli logistici
+L'Area B di Milano (che copre quasi tutto il territorio comunale) e l'Area C (cerchia dei bastioni) limitano sempre più categorie di veicoli — diesel Euro 5 fermi in fasce orarie, alcune Euro 4, categorie commerciali Euro 3. Il risultato è che molti milanesi hanno un'auto perfettamente funzionante ma confinata al perimetro extraurbano. Mazzo di Rho è fuori da entrambe le Aree: l'auto può circolare senza restrizioni dal cancello di casa fino a Mazzo, anche se in Milano non può rientrare in determinati orari. Per molti questo trasforma una limitazione amministrativa in un motivo concreto per scegliere un'officina extraurbana.
 
-## Servizi
-- **Officina multimarche** per auto e moto
-- **Carrozzeria** post-sinistro con verniciatura a forno ad acqua
-- **Tagliandi** che mantengono la garanzia ufficiale del costruttore
-- **Revisioni ministeriali** in giornata
-- **Auto sostitutive** disponibili per fermi prolungati
-- **Diagnosi elettronica** con strumentazione multimarca
+## Per quali milanesi ha più senso Tommy By
+
+- **Possessori di veicoli in restrizione Area B** che cercano un'officina di qualità raggiungibile senza vincoli
+- **Residenti del quadrante nord-ovest** che hanno l'auto naturalmente "in zona" verso ovest
+- **Clienti che vogliono officina + carrozzeria nello stesso edificio**, evitando il ping-pong tipico fra strutture milanesi
+- **Chi cerca verniciatura a forno ad acqua**, raramente offerta dalle officine cittadine per vincoli di spazio e ambientali

@@ -1,46 +1,36 @@
 ---
 locale: it
 seo:
-  title: Officina e carrozzeria per Legnano (MI) | Tommy By
-  description: Tommy By per Legnano — 18 km e 22 minuti via A8 Milano-Laghi. Officina multimarche, carrozzeria con verniciatura a forno ad acqua, particolarmente indicata per flotte aziendali del distretto manifatturiero legnanese.
+  title: Carrozzeria e officina per Legnano | Tommy By
+  description: Tommy By a 13 km da Legnano via A8. Per clienti del distretto tessile Olona e flotte aziendali, officina e carrozzeria a Mazzo di Rho con programmazione dedicata ai 13 minuti di tragitto.
 name: Legnano
 province: MI
 intro: >-
-  Legnano è il polo manifatturiero storico dell'alto milanese, con i suoi 60.000 abitanti e un distretto industriale che include realtà del tessile, della meccanica e della logistica. La nostra sede dista 18 km e si raggiunge in 22 minuti via A8 Milano-Laghi (uscita Castellanza-Legnano). Per i clienti di Legnano siamo la scelta naturale quando si vuole evitare le officine cittadine cercando capacità di lavorazione industriale per flotte e veicoli commerciali, o quando serve carrozzeria con verniciatura a forno per riparazioni complete.
+  Legnano è una città di sessantamila abitanti, il vero polo dell'alto milanese: cuore storico del distretto tessile lungo l'Olona, palio cittadino che ogni giugno richiama decine di migliaia di persone, ospedale ASST Ovest Milanese, area industriale che da Castellanza si estende verso Legnano sud. La nostra sede dista 13 km e si raggiunge in 18 minuti via A8 Milano-Laghi, uscita Castellanza-Legnano. È più lontana delle officine di paese, ma per chi cerca carrozzeria completa o un'officina che gestisca contemporaneamente più mezzi aziendali può valere il tragitto.
 faq:
-  - q: Per una flotta aziendale di Legnano vale la pena fare 22 minuti di tragitto?
+  - q: Per i clienti di Legnano è ragionevole il viaggio fino a Mazzo di Rho?
     a: >-
-      Per flotte di 5-15 mezzi sì, soprattutto se si concentrano i tagliandi e le revisioni in pochi giorni programmati. Possiamo concordare ritiri/consegne a finestre orarie precise per minimizzare l'impatto sull'operatività e gestire più mezzi in parallelo. Per flotte più piccole o per singoli veicoli, un'officina di Legnano potrebbe essere più rapida sul singolo intervento.
-  - q: Quale uscita autostradale conviene da Legnano?
+      Per la manutenzione ordinaria di un singolo veicolo, no — Legnano ha ottime officine locali a 10 minuti da casa. Per flotte di 5-15 veicoli ha senso, perché concentriamo tagliandi e revisioni in giornate programmate e gestiamo più mezzi in parallelo. Per riparazioni di carrozzeria post-sinistro complete con verniciatura a forno ad acqua, ha senso quando l'officina locale non ha l'attrezzatura interna e dovrebbe comunque sub-appaltare.
+  - q: Quale uscita autostradale è più rapida da Legnano?
     a: >-
-      Da Legnano centro o dalla zona industriale est conviene la A8 con uscita Castellanza, poi proseguire verso Lainate-Mazzo di Rho. Da Legnano sud (Cerro Maggiore, Rescaldina) si può anche uscire a Lainate direttamente. Da Legnano ovest (frazione Olcella) la SS33 del Sempione è una valida alternativa, leggermente più lunga ma con tempi simili nei picchi di traffico.
-  - q: Lavorate sui veicoli commerciali leggeri (furgoni)?
+      Da Legnano centro e zona ospedale conviene la A8 con uscita Castellanza, poi SP233 verso Rho. Da Legnano sud (Cerro Maggiore, San Vittore Olona) si può anche uscire a Lainate direttamente. La SS33 del Sempione è un'alternativa senza pedaggio ma più lenta nei picchi orari.
+  - q: Lavorate sui furgoni del distretto tessile e logistico?
     a: >-
-      Sì, lavoriamo su veicoli leggeri commerciali fino a 35 quintali (revisioni ministeriali in giornata). Tipologie servite: Ford Transit/Custom, Fiat Ducato, Mercedes Sprinter, Renault Master/Trafic, Iveco Daily, Peugeot Boxer. Per i tagliandi e le riparazioni meccaniche standard l'officina è dimensionata anche per furgoni.
+      Sì, su veicoli commerciali leggeri fino a 35 quintali (revisioni in giornata): Ford Transit/Custom, Fiat Ducato, Mercedes Sprinter, Iveco Daily, Renault Master, Peugeot Boxer. Per flotte aziendali dell'area Castellanza-Legnano concordiamo programmazione delle scadenze per evitare fermi imprevisti.
 publishedAt: 2026-05-05
 ---
 
-## Da Legnano a Tommy By
+## Da Legnano a Mazzo di Rho
 
-- **Distanza**: 18 km da Legnano centro
-- **Tempo in auto**: 22 minuti
-- **Strada principale**: A8 Milano-Laghi (uscita Castellanza-Legnano), poi SP233
-- **Alternativa**: SS33 del Sempione, leggermente più lunga ma senza pedaggio
-- **Da zona industriale est**: A8 diretta, 20-22 minuti
+Il tragitto base è A8 Milano-Laghi, uscita Castellanza-Legnano, poi SP233 verso Lainate-Rho. Tredici chilometri, 18 minuti fuori dai picchi. La A8 nei giorni feriali può rallentarsi fra le 7:30 e le 9 (uscita verso Milano dei pendolari) e nelle ore di rientro 18-19. Per chi viene da Legnano sud, l'uscita Lainate è una valida alternativa che evita il tratto Castellanza-Lainate. La SS33 del Sempione è una rotta secondaria, gratuita ma più lenta.
 
-## Per chi è pensato Tommy By a Legnano
+## Legnano e il suo distretto
 
-- **Flotte aziendali** di piccole-medie imprese del distretto manifatturiero
-- **Veicoli commerciali leggeri** (furgoni fino a 35 quintali) per revisioni e tagliandi
-- **Privati** che cercano carrozzeria di qualità per riparazioni complete
-- **Pendolari** Legnano-Milano che hanno l'auto già "in zona" durante la giornata
+Sessantamila abitanti rendono Legnano una delle principali città della provincia, non un comune satellite. Il distretto tessile lungo l'Olona, anche se ridimensionato rispetto al picco del Novecento, mantiene una rete di piccole-medie imprese del settore manifatturiero, logistico e meccanico. L'ospedale ASST Ovest Milanese e l'indotto sanitario aggiungono un altro strato di mobilità. Per Tommy By il cliente tipico legnanese non è il singolo privato che cerca l'officina sotto casa (ne ha già di buone a Legnano), ma il responsabile flotte di una piccola impresa che cerca un partner per gestire 8-15 veicoli aziendali con scadenze programmate.
 
-## Servizi
+## Cosa offriamo che vale i 18 minuti di tragitto
 
-- Officina **multimarche** per auto, moto e veicoli commerciali leggeri
-- Carrozzeria con **verniciatura a forno ad acqua** sotto lo stesso tetto
-- **Tagliandi** che mantengono la garanzia ufficiale del costruttore
-- **Revisioni ministeriali** in giornata, fino a 35 quintali
-- **Diagnosi elettronica** multimarca per centraline motore, ABS, ESP, ADAS
-- **Auto sostitutive** disponibili per fermi prolungati
-- **Pianificazione finestre** ritiro/consegna per flotte aziendali
+- **Programmazione finestre ritiro/consegna** per flotte aziendali del distretto
+- **Gestione parallela** di più veicoli aziendali nella stessa giornata
+- **Carrozzeria completa con verniciatura a forno ad acqua** sotto lo stesso tetto, senza sub-appalti esterni
+- **Diagnosi elettronica avanzata** su veicoli commerciali leggeri con sistemi ADAS recenti

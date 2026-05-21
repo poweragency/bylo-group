@@ -2,44 +2,43 @@
 locale: en
 slug: milan-rome
 seo:
-  title: Milan-Rome ADR transport — BYLO Transport
-  description: BYLO Transport's Milan-Rome route for ADR dangerous goods. Departures from our Bollate (Milan) hub, arrival in the Lazio region. ADR classes 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 and 9.
+  title: ADR transport Milan-Rome — A1 Autosole, Variante di Valico, LTZ Fascia Verde | BYLO Transport
+  description: ADR route Milan-Rome on the A1 Autosole, ~580 km. Variante di Valico tunnel codes, the Rome Fascia Verde and Anello Ferroviario LTZ, and the Pomezia-Latina pharmaceutical hub.
 origin: Milan
 destination: Rome
 distanceKm: 580
 transitTimeHours: 7
 intro: >-
-  National route between the Milan logistics hub and Rome for ADR dangerous goods. Departures from our Ospiate di Bollate (Milan) site, arrival in the Lazio region. We run all served ADR classes (2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8, 9).
+  Five hundred and eighty kilometres of Autosole, the country's historic spine. The A1 Milan-Rome is the national logistics backbone and one of the most heavily studied freight corridors on the continent. For ADR transport, the difficulty is not the distance but the succession of Apennine variants with uneven tunnel codes and Rome's urban regulation, structured across multiple concentric rings.
 faq:
-  - q: How long does the Milan-Rome trip take?
+  - q: Are there ADR-specific restrictions when crossing the Variante di Valico?
     a: >-
-      The distance is roughly 580 km via the A1 motorway, with a standard driving time of 6-7 hours. On ADR runs we work net of mandatory rest stops and any tunnel or urban-area time-slot restrictions. Exact timing is agreed at booking based on the load and the day.
-  - q: Which ADR classes do you serve on this route?
+      Yes. The Variante di Valico between Sasso Marconi and Barberino di Mugello crosses tunnels with differentiated ADR tunnel categories (the Sparvo tunnel and the Base Tunnel are the longest). Some higher-risk class 3 substances and class 2 gases have a tunnel code that excludes the main alignment, forcing a detour onto the historical route via Pian del Voglio with longer transit times. The check is performed against section 14 of the Safety Data Sheet before the trip is confirmed.
+  - q: How does an ADR vehicle enter Rome?
     a: >-
-      All ADR classes served by BYLO Transport — 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 and 9. Classes 1 (explosives) and 7 (radioactives) are excluded.
-  - q: Can a Milan-Rome departure be scheduled same-day?
+      The Rome urban area is structured concentrically: Anello Ferroviario, Fascia Verde, historic-centre LTZ. For ADR vehicles bound for industrial destinations (Pomezia, Latina, Tivoli, Fiumicino) we use the GRA and the A24, A12 or Pontina connections without entering the LTZ. For deliveries inside the Fascia Verde, time windows and heavy-vehicle exemptions must be verified case by case with the municipality.
+  - q: Which Lazio industrial hubs are reached most frequently by ADR shipments?
     a: >-
-      On regularly covered routes, yes. For urgent ADR shipments to Rome with standard classes we can organize departures within 12-24 hours if vehicle availability allows. Less common ADR classes may require more notice.
+      The Pomezia-Latina-Aprilia pharmaceutical hub is the recurring destination for fine chemistry and active ingredients: the area concentrates production sites of pharma multinationals (Catalent, Abbott, Recordati, Angelini) and CDMOs. The Tivoli and Guidonia area adds traditional industrial chemistry. The Fiumicino-Civitavecchia area serves airport and port interchange flows. Frosinone and Anagni host pharmaceuticals and fine chemistry along the A1 south axis.
 relatedServices:
   - adr-transport
 publishedAt: 2026-04-28
 ---
 
-## Route summary
+## The Milan-Rome route at a glance
 
-- **Origin**: Ospiate di Bollate hub (Milan)
-- **Destination**: Rome and province
-- **Distance**: ~580 km via A1 Milan-Naples
-- **Standard driving time**: 6-7 hours (net of mandatory rest stops)
-- **ADR classes served on this route**: 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8, 9
+The Autosole covers the 580 km in 6-7 hours of clean driving. The flat stretch up to Bologna ends with the start of the Variante di Valico, the first Apennine crossing. From Florence to Orvieto the road eases out, broken by the minor Chiusi pass and the tunnels of the Siena-Orvieto stretch. The final approach to Rome runs along the smooth A1 Diramazione Roma Nord or the Roma Sud, with the GRA distributing traffic toward the peripheral industrial hubs.
 
-## Operational notes
+Freight density along the corridor remains high throughout the daytime; A1 maintenance works, particularly on the Orte-Rome section, are a recurring source of delay.
 
-For ADR transport on the Milan-Rome route we evaluate:
+## ADR restrictions on this corridor
 
-- **Tunnel restrictions** along the A1 (some require specific ADR tunnel codes)
-- **Mandatory rest planning** under driver regulations
-- **Load compatibility** (some ADR goods can't travel together)
-- **Full on-board documentation** for the inspection points along the main motorway corridors
+- Variante di Valico with tunnel codes to be cross-referenced against the product's Safety Data Sheet
+- The Allerona tunnel and other structures south of Orvieto with localised limits
+- LTZ Rome Fascia Verde with a daytime ban on heavy-vehicle access
+- Anello Ferroviario with separate regulation for ADR vehicles
+- ADR-authorised rest areas concentrated between Roncobilaccio and Orte, to be scheduled for the mandatory break
 
-Every trip starts with a check on the product safety data sheet and the preparation of ADR documentation.
+## Client profiles served on this corridor
+
+Southern Lazio's pharmaceutical hub is among the largest in Italy. Pomezia, Latina and Aprilia concentrate active-ingredient and formulation plants: demand for solvents (class 3) and caustic reagents (class 8) is structural. The Frosinone-Anagni area completes the pharmaceutical quadrant toward the south. The Tivoli and Guidonia plants add traditional industrial chemistry. Fiumicino airport and the port of Civitavecchia generate flows of specialty fuels and additives. The city of Rome itself hosts laboratories, healthcare and research with more fragmented but consistent consumption.

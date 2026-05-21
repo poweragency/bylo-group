@@ -1,36 +1,40 @@
 ---
 locale: en
 seo:
-  title: MINI workshop Milan | Tommy By
-  description: MINI Cooper, Cooper S, Countryman, Clubman and electric MINI E services at Tommy By in Mazzo di Rho. Multi-brand workshop for the MINI range from the BMW group.
+  title: MINI workshop Milan | Cooper, Countryman, Cooper SE | Tommy By
+  description: MINI Cooper, Cooper S, Countryman, Clubman and electric MINI services at Tommy By in Mazzo di Rho. Same BMW mechanicals, iDrive CBS management.
 name: MINI
 intro: >-
-  MINI has been part of the BMW group since 2000 and it shows technically: BMW engines, BMW chassis, BMW electronics. The difference is the personality — iconic design, colorful trims, fun character — but in the workshop the work is the same as on a BMW of equivalent segment, with BMW-compatible diagnostic tools. We work on Cooper, Cooper S, Cooper SE electric, Countryman (also PHEV), Clubman.
+  MINI has been part of the BMW group since 2000, and that shows on the technical side: BMW engines (the B38 / B48, shared with the 1 Series, X1 and X2), a BMW chassis (the UKL1 / UKL2 platform) and BMW electronics with iDrive and Condition Based Service. The difference lies in the personality — iconic design, colourful trims, a deliberately fun character — but in the workshop the job is the same as on a BMW of equivalent segment, with compatible diagnostic equipment and full CBS management. Tommy By is an independent multi-brand workshop: under EU Regulation 461/2010 (Block Exemption), the MINI manufacturer's warranty stays valid when you service here, with parts of equivalent quality and the booklet stamped.
 services:
   - multibrand-workshop
   - mandatory-inspections
 faq:
-  - q: Does a MINI use the same services as a BMW?
+  - q: Does a MINI follow the same service plan and CBS as a BMW?
     a: >-
-      Yes, BMW Group intervals apply to MINI too. Third-generation MINI (F55/F56 from 2014 and F60 Countryman from 2017) is based on the BMW group UKL platform, shared with Series 1, X1 and X2. Service, original parts (LL oils, filters, brake pads) and diagnostic procedures are BMW.
-  - q: The MINI Cooper SE electric has limited range — is there specific maintenance to optimize it?
+      Yes. The BMW Group intervals and the Condition Based Service (CBS) system apply to MINI as well. The third-generation MINI (F55 / F56 from 2014, F60 Countryman from 2017) is built on the UKL platform of the BMW Group. The scheduled service, original parts (LongLife oils, filters, brake pads) and the iDrive CBS reset procedures are all BMW.
+  - q: Do you handle the MINI iDrive system and CBS with diagnostic equipment?
     a: >-
-      First-generation Cooper SE (2020-2024) has a 32 kWh battery with real-world range 190-220 km. There's no "maintenance" that improves range, but periodic HV system checks (battery cooling, electrical isolation) preserve performance over time. New-generation Cooper SE LFP batteries (2024+) require specific attention to the calibration cycle.
+      Yes. We read CBS through iDrive (engine oil, micro-filter, pads, brake fluid), carry out the work and then run the correct reset with compatible diagnostic equipment. The manual cluster reset only covers a subset of items and does not respect the BMW logic.
+  - q: The electric MINI Cooper SE has limited range — does it need specific maintenance?
+    a: >-
+      The first-generation Cooper SE (2020-2024) carries a 32 kWh battery with a real-world range of 190-220 km. No maintenance work will increase range, but periodic HV system checks (battery cooling, electrical isolation) preserve performance over time. The LFP batteries of the new-generation Cooper SE (2024+) need specific attention to the calibration cycle.
 publishedAt: 2026-05-05
 ---
 
 ## MINI models we handle
 
-- **Cooper** (3 and 5-door, also convertible)
-- **Cooper S** and **Cooper JCW** (sporty versions)
+- **Cooper** (3-door and 5-door, including the cabriolet)
+- **Cooper S** and **Cooper JCW** (the sporty versions)
 - **Cooper SE** electric (first and new generation)
-- **Countryman** (also PHEV and electric)
-- **Clubman** (estate with barn-door rear)
+- **Countryman** (including PHEV and electric)
+- **Clubman** (the estate with "barn-door" rear access)
 
 ## Technical specifics
 
-- **BMW B38 and B48 engines** — 3-cylinder 1.5 turbo or 4-cylinder 2.0 turbo petrol
-- **ZF Steptronic gearbox** — 7-speed automatic (DKG version on JCW)
-- **iDrive system** shared with BMW (versions 6 and 7)
-- **Run Flat tires** — runflat tires fitted, attention to pressures
-- **MINI identity** — many cosmetic personalizations (Union Jack, contrasts) but BMW mechanicals
+- **BMW B38 and B48 engines** — three-cylinder 1.5 turbo or four-cylinder 2.0 turbo petrol (shared BMW B-series)
+- **ZF Steptronic gearbox** — seven-speed automatic (DKG version on the JCW)
+- **iDrive and CBS system** — shared with BMW (versions 6 and 7)
+- **UKL1 / UKL2 platform** — shared with the BMW 1 Series, X1 and X2
+- **Run-flat tyres** — fitted as standard, pay attention to inflation pressures
+- **LongLife oil** — LL-01 / 04 / 12 specifications depending on engine

@@ -1,35 +1,40 @@
 ---
 locale: en
 seo:
-  title: Ford workshop Milan | Tommy By
-  description: Ford Fiesta, Focus, Kuga, Puma services and repairs at Tommy By in Mazzo di Rho. Multi-brand workshop for EcoBoost petrol and EcoBlue diesel engines.
+  title: Ford workshop Milan | Fiesta, Focus, Kuga, Transit | Tommy By
+  description: Ford Fiesta, Focus, Kuga, Puma and Transit LCV services at Tommy By in Mazzo di Rho. Experience on the 1.0 EcoBoost and the oil-bath timing belt issue.
 name: Ford
 intro: >-
-  Ford's Italian range revolves around the Fiesta, Focus, Puma, Kuga and the Transit/Connect LCVs. In recent years the offering has shifted toward mild-hybrid (MHEV) on the EcoBoost 1.0 engines and full-hybrid (FHEV) on the Kuga. We work regularly on the full range, with particular attention to the 3-cylinder 1.0 EcoBoost engine and the wet timing belt issues on pre-2018 models.
+  Ford's Italian range revolves around the Fiesta, Focus, Puma, Kuga and the Transit, Connect and Custom commercial vehicles. In recent years the line-up has shifted toward mild-hybrid (MHEV) versions of the 1.0 EcoBoost and the full-hybrid (FHEV) Kuga. We regularly cover the full range, with particular focus on the 1.0 GTDI three-cylinder EcoBoost and the sealing issues of the oil-bath timing belt on 2012-2018 models. Tommy By is an independent multi-brand workshop: under EU Regulation 461/2010 (Block Exemption), your Ford manufacturer's warranty stays valid when you service here, with parts of equivalent quality and the booklet stamped.
 services:
   - multibrand-workshop
   - mandatory-inspections
 faq:
-  - q: Does the EcoBoost 1.0 engine have known issues?
+  - q: Do you have experience with the oil-bath belt on the 1.0 GTDI EcoBoost?
     a: >-
-      Yes, on the 3-cylinder EcoBoost 1.0 (Fiesta, Focus, EcoSport before ~2018) the oil-bath timing belt was prone to premature degradation, with residue debris that clogs the oil pump. Ford issued a recall campaign. We run a preventive inspection of the timing system and, on at-risk units, suggest the upgrade to the new version.
-  - q: Do you also work on Ford Transit and Custom commercial vehicles?
+      Yes. On the 1.0 three-cylinder EcoBoost (Fiesta, Focus and EcoSport, roughly 2012-2018), the oil-bath timing belt degraded early, releasing debris that clogs the oil pump and can ultimately destroy the engine. Ford issued a recall campaign. We run a preventive inspection and, on at-risk cars, recommend the upgrade to the newer belt with a shorter interval.
+  - q: Do you also service Ford Transit, Custom and Connect vans?
     a: >-
-      Yes, a significant part of our local customer base (tradespeople and small businesses in Mazzo, Rho, Pero) uses Transit Custom or Connect vans. We carry out services, brakes, shock absorbers, tires and engine diagnostics. For Transits with special bodywork we cover the standard automotive side.
+      Yes. A meaningful share of our local customer base — tradespeople and small businesses in Mazzo, Rho and Pero — uses a Transit Custom or Connect every day. We handle scheduled services, brakes, dampers, tyres and EcoBlue diesel engine diagnostics. MOT-equivalent inspection is available up to 3.5 tonnes.
+  - q: Can the SYNC infotainment system be updated?
+    a: >-
+      SYNC 3 and SYNC 4 support FOTA updates when the car is connected and a FordPass account is active. We can check the firmware status during the scheduled service and apply manual USB updates on versions that allow them. After battery replacement, a re-pairing of Bluetooth devices may be needed.
 publishedAt: 2026-05-05
 ---
 
-## Ford models we see most often
+## The Ford models we see most often
 
 - **City and B-segment** — Fiesta (including ST), Puma (including Puma ST)
-- **C-segment** — Focus (including Focus ST and RS), Kuga (also PHEV)
-- **Large SUVs** — Edge (out of range in Italy but still on the road)
-- **LCVs** — Transit, Transit Custom, Connect, Courier
+- **C-segment** — Focus (including Focus ST and RS), Kuga (including PHEV)
+- **Large SUVs** — Edge (no longer sold in Italy but still on the road)
+- **Commercial vehicles** — Transit, Transit Custom, Connect, Courier
 
 ## Ford technical specifics
 
-- **EcoBoost 1.0 turbo 3-cylinder** — lively engine but with timing belt attention (see FAQ)
-- **EcoBoost 1.5 and 2.0** — 4-cylinder version, more solid, also on Focus ST/Puma ST
-- **EcoBlue 1.5 and 2.0** — current diesel engines, equipped with SCR (AdBlue)
-- **MHEV and FHEV** — mild or full hybridization on Kuga, Puma and Focus
-- **Sync 3 / Sync 4** — infotainment with FOTA updates when supported
+- **EcoBoost 1.0 GTDI three-cylinder** — lively engine but with timing-belt attention (see FAQ)
+- **EcoBoost 1.5 and 2.0** — the more solid four-cylinder versions, also fitted to the Focus ST and Puma ST
+- **EcoBlue 1.5 and 2.0 diesel** — equipped with SCR (AdBlue)
+- **Historic TDCi** — pre-EcoBlue diesel still widely on the road
+- **MHEV and FHEV** — mild or full hybridisation on the Kuga, Puma and Focus
+- **SelectShift** — automatic transmission
+- **SYNC 3 / SYNC 4** — infotainment with FOTA updates where supported
