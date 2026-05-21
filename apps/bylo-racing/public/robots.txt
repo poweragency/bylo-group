@@ -1,4 +1,12 @@
 User-agent: *
 Allow: /
 
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-includes/
+Disallow: /wp-login.php
+Disallow: /xmlrpc.php
+Disallow: /?p=
+Disallow: /?page_id=
+
 Sitemap: https://tommy.bylogroup.it/sitemap-index.xml
