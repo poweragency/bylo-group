@@ -1,36 +1,41 @@
 ---
 locale: en
 seo:
-  title: Hyundai workshop Milan | Tommy By
-  description: Hyundai i10, i20, Tucson, Kona and Bayon services at Tommy By in Mazzo di Rho. Multi-brand workshop for hybrid range and IONIQ 5/6 electric models.
+  title: Hyundai workshop Milan | Tucson, Kona, IONIQ 5 | Tommy By
+  description: Hyundai i10, i20, Tucson, Kona and IONIQ 5/6 services at Tommy By in Mazzo di Rho. 5-year warranty management and Smartstream / E-GMP diagnostics.
 name: Hyundai
 intro: >-
-  Hyundai has grown significantly in Italian preferences thanks to the official 5-year warranty and a mature hybrid and electric lineup. We work regularly on Tucson (the brand's best-seller), i20, Bayon, Kona, IONIQ 5 and IONIQ 6. Hyundai's engineering philosophy emphasizes high reliability at affordable cost, which translates in the workshop to predictable, well-documented interventions.
+  Hyundai has climbed steadily up Italian buyers' shortlists thanks to its 5-year manufacturer's warranty (longer than the EU standard) and a mature hybrid and electric range. We regularly work on the Tucson (the brand's best-seller), the i20, the Bayon, the Kona, and on the IONIQ 5 and IONIQ 6. Hyundai's engineering philosophy is reliability at a contained cost, which translates in the workshop into predictable, well-documented jobs. Tommy By is an independent multi-brand workshop: under EU Regulation 461/2010 (Block Exemption), the Hyundai 5-year warranty stays valid when you service here, provided the work is carried out at the prescribed intervals, with parts of equivalent quality and the booklet stamped.
 services:
   - multibrand-workshop
   - mandatory-inspections
 faq:
-  - q: Do I keep the Hyundai 5-year warranty by servicing here?
+  - q: Do you handle the Hyundai 5-year warranty without voiding it?
     a: >-
-      Yes. Hyundai's legal 5-year warranty doesn't require services at an authorized dealer, but requires services performed at the specified intervals, with original or certified equivalent parts and documented in the booklet. We carry out services meeting these requirements and stamp the maintenance log.
-  - q: Do you work on IONIQ 5 and IONIQ 6 electric models?
+      Yes. The Hyundai 5-year warranty does not require services to be carried out at an authorised dealer, but it does require them to be performed at the prescribed intervals, with original parts or certified equivalents, and documented in the service booklet. We carry out the scheduled service respecting these requirements and stamp the maintenance log correctly.
+  - q: Do you work on the IONIQ 5 and IONIQ 6 on the 800V E-GMP platform?
     a: >-
-      Yes. The E-GMP platform of IONIQ 5/6 is manageable with compatible multi-brand diagnostic tools. We carry out standard maintenance (cabin filters, brakes, tires, A/C) and HV battery health checks. For complex HV cell-level interventions we point to Hyundai specialist centers.
+      Yes. The 800V E-GMP platform can be handled with compatible multi-brand diagnostic tooling. We carry out standard maintenance (cabin filter, brakes, tyres, climate control), check the state of health of the HV battery pack and manage the battery cooling system. For complex cell-level work on the HV battery we refer the car to a Hyundai specialist centre.
+  - q: Do you have diagnostics compatible with SmartSense ADAS and Bluelink?
+    a: >-
+      Yes. SmartSense is Hyundai's ADAS package (autonomous emergency braking, lane keeping, adaptive cruise): after windscreen or bumper replacement, the cameras and radar need to be calibrated, and we carry this out with compatible equipment. For Bluelink (telematics and app), connectivity is managed by the customer, but we can update the infotainment firmware when releases are available.
 publishedAt: 2026-05-05
 ---
 
-## Most frequent Hyundai models
+## The Hyundai models we see most often
 
 - **City car** — i10
 - **B-segment** — i20 (including N), Bayon, Kona (including Hybrid and Electric)
 - **C-segment** — i30 (including N), Tucson (Hybrid and PHEV)
-- **D-segment / large SUV** — Santa Fe, Staria
+- **D-segment and large SUVs** — Santa Fe, Staria
 - **Dedicated EVs** — IONIQ 5, IONIQ 6, IONIQ 9 (incoming)
 
 ## Key Hyundai technologies
 
-- **Smartstream** — turbo petrol engine family (T-GDi 1.0, 1.6) and hybrids
-- **CRDi** — common-rail diesel (phasing out on post-2024 range)
-- **HEV/PHEV system** proprietary, shared with Kia
+- **Smartstream** — petrol turbo engine family GDi (T-GDi 1.0, 1.6) and hybrids
+- **CRDi** — common-rail diesel (phasing out on the post-2024 range)
+- **HEV / PHEV system** — proprietary hybrid set-up shared with Kia
+- **7DCT** — dual-clutch gearbox shared with Kia
 - **E-GMP** — 800V modular electric platform (IONIQ 5/6, Kia EV6)
-- **Bluelink** — connectivity with remote services, dedicated app
+- **SmartSense** — ADAS package with post-service calibration
+- **Bluelink** — connectivity with remote services and a dedicated app

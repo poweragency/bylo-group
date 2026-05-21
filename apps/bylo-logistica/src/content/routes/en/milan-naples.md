@@ -2,46 +2,45 @@
 locale: en
 slug: milan-naples
 seo:
-  title: ADR transport Milan-Naples — Long-haul A1 | BYLO Transport
-  description: BYLO Transport's Milan-Naples route for ADR dangerous goods. Long-haul motorway transit via A1, with time-window and tunnel restrictions to plan around.
+  title: ADR transport Milan-Naples — Long-haul A1, LTZ Rome and Naples | BYLO Transport
+  description: ADR route Milan-Naples on the A1 Autosole, ~775 km. Variante di Valico, LTZ Rome and Naples, natural extension to the Taranto-Brindisi petrochemical hub.
 origin: Milan
 destination: Naples
 distanceKm: 770
 transitTimeHours: 9
 intro: >-
-  The Milan-Naples corridor is the longest of our recurring domestic routes. Almost 800 km on the Autostrada del Sole, requiring careful planning of mandatory rest periods, ADR restrictions on tunnels and ring roads, and delivery slots in the Campania industrial cluster.
+  Seven hundred and seventy-five kilometres from the Po Valley to the Campanian plain, crossing the Tuscan-Emilian and central Apennines. It is the longest recurring shipment on our domestic network: the trip requires planning that integrates mandatory rest periods, ADR-sensitive tunnel crossings and urban entry into two structured low-traffic zones, first Rome and then Naples.
 faq:
-  - q: How many days for an ADR shipment to Naples leaving from Bollate?
+  - q: Can a delivery to Naples be done by a single driver in one day?
     a: >-
-      Standard shipments deliver within 2 working days (departure day 1, mandatory rest, delivery morning day 2). For especially sensitive ADR cargo or consignees with narrow delivery windows we can run a 24-hour trip with two drivers, on booking.
-  - q: How do you manage ADR restrictions on the Naples ring road?
+      Net driving time of 8-9 hours exceeds the daily limit of 9 driving hours for a single driver. Standard planning includes an intermediate 11-hour rest, with delivery the following day. For urgent shipments we evaluate the two-driver-in-cab formula, which allows the distance to be covered in continuous operation while respecting each driver's individual driving-hours limits.
+  - q: How is ADR entry into the Naples urban area handled?
     a: >-
-      The eastern Naples ring road has time-window restrictions for heavy ADR vehicles. We plan entry within permitted slots and, where needed, route via the Caianello/Capodichino link to avoid urban crossing. The exact path depends on the ADR class and the precise delivery point.
-  - q: Do you offer backhaul cargo to optimize cost?
+      The Naples metropolitan area has the historic-centre LTZ and time bands for heavy vehicles on the eastern ring road. For ADR deliveries to Pomigliano, Acerra, Nola and the eastern industrial axis we use the A30 Caserta-Salerno or A16 Napoli-Canosa connections, avoiding any urban crossing. Delivery windows in the industrial hubs are typically between 7:00 and 14:00.
+  - q: Does the route naturally extend toward Taranto and Brindisi?
     a: >-
-      On Milan-Naples the return leg is organized case by case. We look for return loads from southern clients (automotive, agri-food, packaging) to reduce empty mileage. When return cargo is scheduled, the one-way pricing of the leg improves significantly.
+      Yes. For many clients the Naples delivery is an intermediate point on a corridor that continues onto the Ionian petrochemical hub of Taranto and Brindisi via the A16 and the SS7 Appia. It is a natural extension of the Tyrrhenian corridor and one of the reasons the A1 south of Rome sees heavy ADR flows directed to the deep south.
 relatedServices:
   - adr-transport
 publishedAt: 2026-05-05
 ---
 
-## Route summary
+## The Milan-Naples route at a glance
 
-- **Origin**: Ospiate di Bollate (Milan) hub
-- **Destination**: Naples metropolitan area and Caserta province
-- **Distance**: ~770 km via A1 Milan-Naples
-- **Standard driving time**: 8-9 hours (excluding mandatory rest)
-- **ADR classes served**: 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8, 9
+The 775 km of the A1 Autosole are the most important long-haul corridor on the Italian network. The critical section is the Apennine crossing between Bologna and Florence, where the Variante di Valico has replaced most of the old Autosole alignment with tunnels carrying a varied tunnel-category profile. From Florence to Rome the road settles into a more fluid layout, broken by the minor Chiusi pass and the tunnels of the Siena-Orvieto stretch. The final approach to Rome runs along the smooth A1 Diramazione Roma Nord or the Roma Sud, with the GRA distributing traffic toward the peripheral industrial hubs.
 
-## Key points along the route
+Freight density along the corridor stays high throughout the daytime; recurring maintenance works on the A1, particularly between Orte and Rome, are a regular source of delay.
 
-Milan-Naples has some specifics that set it apart from short routes:
+Net driving times exceed the daily driving limit and require a split-day plan with an intermediate rest, or two-driver operation for tight-window shipments.
 
-- **Driver mandatory rest** after 4h30 of driving — planning includes a stop in an equipped service area, a critical ADR factor.
-- **Apennine pass tunnels** — the section between Sasso Marconi and Firenzuola crosses numerous tunnels with class-specific ADR restrictions to verify.
-- **Naples ring-road restrictions** — time windows, heavy-vehicle bans, some urban zones forbidden to ADR cargo.
-- **Return cargo** — opportunities to backhaul are less frequent than on Rome/Bologna corridors.
+## ADR restrictions on this corridor
 
-## Sectors served on this corridor
+- Variante di Valico tunnel codes and the Mugello tunnels to verify for the product being moved
+- LTZ Rome with the Fascia Verde and the Anello Ferroviario excluding daytime heavy-vehicle access
+- LTZ Naples with stricter limitations for ADR in the Capodichino area and the centre
+- ADR-authorised rest areas for the mandatory break: concentrated between Roma Sud and Caserta Nord
+- Reduced speed limits for ADR vehicles on extended tunnel stretches south of Florence
 
-The Campania industrial cluster is served mainly for: chemicals and pharmaceuticals around Naples, automotive at Pomigliano and the FCA cluster, raw materials for the cosmetics-leather district of Solofra (AV), agricultural products and food raw materials.
+## Client profiles served on this corridor
+
+Southern Italy is a natural destination for industrial supply chains that need a constant chemical input. The Caserta area hosts pharmaceuticals and cosmetics with sites belonging to major groups. Pomigliano d'Arco and Nola combine automotive (Stellantis) with advanced logistics. The Acerra plain concentrates power-equipment manufacturing. The extension via Salerno reaches the Ionian petrochemical hub of Taranto and Brindisi, with demand for chemical intermediates, solvents and additives for cracking and refining. The corridor also serves the Campanian agri-food sector and the Solofra cosmetics-leather district.

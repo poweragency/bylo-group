@@ -2,37 +2,32 @@
 locale: en
 seo:
   title: Workshop and body shop for Pogliano Milanese | Tommy By
-  description: Tommy By for Pogliano Milanese — 6 km and 10 minutes via SP109. Multi-brand services, body shop with water-based oven painting, same-day inspections. Located in Mazzo di Rho.
+  description: Tommy By for Pogliano Milanese, 6 km via SP109. Workshop and body shop in Mazzo di Rho, convenient for residents looking for quality body shop work not available locally.
 name: Pogliano Milanese
 province: MI
 intro: >-
-  Pogliano Milanese is 6 km north-west of our location, reachable in 10 minutes via SP109. The municipality has about 8,000 inhabitants and runs along the Villoresi Canal, with a typically residential customer base and some small commercial and craft businesses along the main streets.
+  Pogliano Milanese is a municipality of 8,000 inhabitants located 6 km north-west of our location, reachable in 11 minutes via SP109. The territory is predominantly residential with a farming tradition, away from the heavy traffic of the Sempione or the A8. For Pogliano residents our location is the first alternative when water-based oven body painting is needed, or when you want to combine workshop and body shop in a single visit — services that small local workshops don't always offer.
 faq:
-  - q: Is it worth coming to Mazzo di Rho or looking for a workshop closer to Pogliano?
+  - q: Is it worth coming to Mazzo di Rho or finding a workshop closer to Pogliano?
     a: >-
-      It depends on the kind of work needed. For a quick tire swap or minor mechanical work, a workshop in town may be more convenient. For body shop with water-based oven painting, full post-collision repair or services preserving the official warranty, it's worth the 10-minute drive to have workshop and body shop in the same place.
-  - q: How long does a mandatory inspection take from Pogliano?
+      It depends on the work. For a tire change or a minor mechanical job, a workshop in town is more immediate. For body shop work with water-based oven painting, full post-collision repair or services preserving the official warranty, the 11-minute drive is worth it to get everything under one roof.
+  - q: How long does an MOT-equivalent inspection take from Pogliano?
     a: >-
-      Inspections are done same-day, typically in 2-3 hours. From Pogliano many customers arrive in the morning, drop off the car and return to pick it up in the late afternoon. Inspections can be booked for a specific slot to reduce waiting if needed.
+      The inspection is done same-day, typically with 2-3 hours of effective working time. From Pogliano most customers arrive mid-morning, leave the car and come back to pick it up in the late afternoon. If needed, the inspection can be booked for a specific slot to reduce waiting time.
 publishedAt: 2026-05-05
 ---
 
-## Getting here from Pogliano
+## How to get here from Pogliano
 
-- **Distance**: 6 km
-- **Driving time**: 10 minutes
-- **Main road**: SP109 south-east toward Vanzago and Mazzo di Rho
-- **Alternative**: SP172 through Vanzago
+The main route is SP109 south-eastbound toward Vanzago and Mazzo di Rho. Six kilometres, 11 minutes. As an alternative, SP172 through Vanzago offers similar timing along a route running through quieter residential areas. For those leaving from western Pogliano (closer to Vanzago) times drop further, to around 9 minutes.
 
-## What we offer Pogliano customers
+## Pogliano and its character
 
-- **Multi-brand workshop** for any car and motorcycle make and model
-- Body shop with **water-based oven painting** under one roof
-- **Services** with original or certified equivalent parts
-- **Mandatory inspections** same-day
-- **Replacement cars** available for longer stays
-- Full **tire service** (check, mounting, storage)
+Pogliano is one of the smallest municipalities in Tommy By's catchment, and that defines the local customer profile: less corporate traffic, fewer commercial fleets, more family cars owned by residents living in detached houses or small apartment blocks. The customer-workshop relationship tends to be more stable and long-term, built around regular maintenance of one or two vehicles per household. The territory's farming tradition also shows up in occasional light agricultural service vehicles or the pickup truck still used for small family businesses.
 
-## When Tommy By makes sense for Pogliano
+## Most common work for Pogliano customers
 
-Typically the choice of those who work in Mazzo di Rho, Rho or along the Sempione axis and already have the car practically "in the area" during the day, or those specifically looking for a quality body shop that most general workshops in town don't offer.
+- **Regular routine maintenance** on family cars, scheduled services and inspections
+- **Body shop work for occasional collisions** (Pogliano has light traffic, jobs are rarer but more complete when they do happen)
+- **Seasonal tire service** with storage
+- **Electronic diagnostics** when a warning light won't go out after a local check

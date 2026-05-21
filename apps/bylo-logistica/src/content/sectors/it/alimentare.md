@@ -2,56 +2,51 @@
 locale: it
 slug: alimentare
 seo:
-  title: Trasporti per il settore alimentare — Materie prime e additivi | BYLO Transport
-  description: BYLO Transport movimenta materie prime, additivi e prodotti finiti non deperibili per l'industria alimentare. Concentrati alcolici, conservanti, ingredienti tecnici. Coperture nazionale e internazionale.
+  title: Trasporti ADR per industria alimentare — Aromi, additivi, CO2 | BYLO Transport
+  description: Trasporto di aromi alcolici, additivi E, conservanti e gas tecnici per la food valley emiliana. BYLO Transport copre la componente ADR del settore alimentare, lasciando il deperibile alla catena del freddo.
 title: Trasporti per il settore alimentare
 intro: >-
-  L'industria alimentare italiana muove ogni giorno volumi enormi di materie prime e prodotti tecnici. BYLO Transport non gestisce la catena del freddo (deperibili refrigerati, surgelati), ma copre l'ampia fascia di trasporti a temperatura ambiente: ingredienti tecnici, additivi, alcoli, packaging, prodotti finiti non deperibili.
+  Nell'alimentare la parola "ADR" non viene in mente per prima — eppure aromi alcolici, conservanti, anidride carbonica per la gassatura e diversi additivi della serie E rientrano a pieno titolo nella regolamentazione delle merci pericolose. BYLO Transport copre questa fascia tecnica del food italiano, quella che non passa dal frigorifero ma che è altrettanto critica per la produzione: dalle aziende dolciarie e liquoristiche alle imprese della food valley emiliana fino ai produttori di bevande gassate.
 faq:
-  - q: Trasportate alimenti freschi o surgelati con catena del freddo?
+  - q: L'alcol etilico per aromi alimentari è ADR? E quando si applica la deroga?
     a: >-
-      No. Non disponiamo di mezzi frigoriferi e non operiamo in catena del freddo. Trasportiamo prodotti alimentari a temperatura ambiente — ingredienti secchi, conserve, oli, vino e bevande alcoliche, ingredienti tecnici, packaging e materiali per produzione.
-  - q: I concentrati alcolici e gli aromi alcolici sono ADR?
+      L'alcol etilico in concentrazione superiore al 24% in volume rientra in classe 3 ADR (UN 1170). Aromi naturali concentrati, basi per liquori, estratti di vaniglia in alcol, distillati per uso pasticceria sono tutti soggetti. Esistono esenzioni per quantità limitate per collo (LQ) che possono ridurre i vincoli su piccole spedizioni, ma vanno verificate caso per caso sulla scheda di sicurezza del prodotto.
+  - q: Trasportate anche CO2 alimentare per gassatura bevande e impianti?
     a: >-
-      Sì, gli alcoli alimentari ad alta gradazione (estratti, aromi naturali, basi per liquori, distillati industriali) ricadono in classe 3 ADR. Lavoriamo regolarmente con produttori del comparto liquoristico e dolciario lombardo per il movimento di queste materie prime.
-  - q: Come gestite la separazione tra alimentare e ADR sul mezzo?
+      L'anidride carbonica è in classe 2.2 (gas non infiammabile, non tossico) e fa parte delle classi che movimentiamo. Per i produttori di bevande è una materia prima continua, spesso con consegne settimanali su contratti annuali. Quando il volume lo richiede si lavora con cisterne dedicate; per quantità minori, con bombole in pallet.
+  - q: Come si concilia HACCP con un mezzo che ha trasportato ADR in precedenza?
     a: >-
-      Per carichi misti (parte alimentare non ADR + parte ADR) verifichiamo la compatibilità delle classi di pericolo prima del carico. Quando l'alimentare è in confezione primaria sigillata e gli ADR sono in classe compatibile, il viaggio è organizzato con separazione fisica sul mezzo. Per produttori che richiedono uno standard di pulizia stretto (HACCP, BRC) operiamo con mezzi dedicati.
+      L'incompatibilità è gestita su due livelli. Primo, sui carichi misti operiamo con mezzi dedicati per filiera HACCP/BRC, senza alternanza con chimica industriale generica. Secondo, sulla pulizia del vano carico esiste una procedura tracciata con certificato di lavaggio rilasciato da impianti specializzati. Per produttori con audit di filiera questa documentazione è parte standard del servizio.
 relatedServices:
   - trasporti-adr
   - logistica-integrata
 publishedAt: 2026-05-05
 ---
 
-## Cosa trasportiamo per l'alimentare
+## Quali prodotti dell'industria alimentare richiedono il trasporto ADR
 
-**A temperatura ambiente**
-- Ingredienti secchi (farine, zuccheri, amidi modificati) in pallet o big bag
-- Conserve, olio, prodotti in vetro/lattina
-- Bevande alcoliche e analcoliche in confezione retail e industriale
-- Packaging primario e secondario (cartoncino, vetro, plastica)
-- Additivi alimentari, aromi, coloranti
+La sorpresa per chi entra nel settore è che una parte significativa delle materie prime food è merce pericolosa nel senso normativo:
 
-**Componente ADR (classe 3)**
-- Alcoli e distillati per industria liquoristica
-- Aromi alcolici concentrati
-- Estratti naturali ad alta gradazione
-- Solventi alimentari (etile acetato in piccoli volumi)
+- **Aromi alcolici concentrati** ed estratti naturali in alcol etilico — UN 1170, classe 3 sopra il 24% vol
+- **Anidride carbonica** per gassatura bevande, congelamento criogenico, atmosfera protettiva nei packaging — UN 1013, classe 2.2
+- **Additivi della serie E** in forma pura, soprattutto E300 (acido ascorbico in alcune forme), conservanti come benzoati (E210-213) e sorbati (E200-203) quando in soluzione concentrata
+- **Enzimi industriali** in forma liquida con vettori reattivi
+- **Etanolo per uso industriale alimentare** (sanificazione impianti, estrazioni, basi liquoristiche)
 
-## Cosa NON trasportiamo
+Il prodotto finito sullo scaffale del supermercato non è ADR, ma il flusso a monte verso la produzione lo è quasi sempre.
 
-Per chiarezza:
+## Distretti italiani del food rilevanti per ADR
 
-- Non gestiamo la **catena del freddo** (refrigerati, surgelati, ATP)
-- Non gestiamo il **deperibile fresco** (latticini, carni, prodotti ittici freschi)
-- Non operiamo come **trasportatore di prodotti biologici** certificato (esiste un albo dedicato)
+La geografia conta. I poli che generano richiesta di trasporto ADR alimentare sono:
 
-Per questi flussi rimandiamo a operatori specializzati con allestimenti idonei.
+- **Food valley emiliana** — Parma per pasta, formaggi e conserve; Modena per aceto balsamico e prodotti tipici; tutta la dorsale che da Piacenza arriva a Bologna
+- **Polo dolciario lombardo** — Cremona, Lodi e l'area che gravita su grandi gruppi come Bauli, Balconi, Loison
+- **Distretto liquoristico veneto** — Bassano del Grappa e la pedemontana
+- **Polo siciliano del vino** — distillerie, aromi per liquori regionali
+- **Polo gassate** — produzione di bevande analcoliche con consumi CO2 costanti
 
-## Standard di pulizia
+## Stagionalità e vincoli operativi specifici
 
-L'alimentare ha standard di pulizia più rigidi del settore industriale generico. Per produttori HACCP e BRC operiamo con:
+Il food ha picchi che il chimico generico non ha. La vendemmia (settembre-ottobre) tira i volumi di aromi e additivi enologici. Il pre-natale (settembre-novembre) tira la liquoristica e il dolciario. L'estate tira le bevande gassate e quindi la CO2. Pianificare le partenze ricorrenti con queste curve in mente evita di rimanere fermi a settembre quando tutti chiedono lo stesso slot.
 
-- Mezzi dedicati (no contaminazione crociata da carichi precedenti)
-- Pulizia certificata del vano carico tra una spedizione e l'altra
-- Documentazione di trasporto idonea ai controlli di filiera
+Sul lato normativo, oltre all'ADR il settore impone HACCP, in molti casi BRC o IFS sulla filiera trasporti, e per chi serve la GDO uno standard di pulizia certificato del vano carico. La documentazione di lavaggio fa parte del corredo del viaggio, non è un extra.

@@ -2,44 +2,43 @@
 locale: it
 slug: milano-torino
 seo:
-  title: Trasporti ADR Milano-Torino — BYLO Transport
-  description: Tratta Milano-Torino di BYLO Transport per merci pericolose ADR. Distanza breve, alta frequenza per il triangolo industriale del Nord-Ovest.
+  title: Trasporti ADR Milano-Torino — A4, polo automotive Mirafiori, Canavese | BYLO Transport
+  description: Tratta ADR Milano-Torino su A4, ~125 km. Polo automotive Mirafiori-Stellantis, aerospaziale Leonardo, distretto Canavese chimica fine e accessi valichi alpini.
 origin: Milano
 destination: Torino
 distanceKm: 140
 transitTimeHours: 2
 intro: >-
-  Tratta breve fra Milano e Torino, due dei principali poli industriali del Nord-Ovest. La distanza ridotta e il volume di clienti chimici e automotive in entrambe le aree rendono questa tratta una delle più frequenti per BYLO Transport.
+  Centoventicinque chilometri di A4 collegano due capitali industriali storiche del Paese. La direttrice è breve, scorrevole e pianeggiante, ma il bacino industriale che serve è denso e specializzato come pochi in Europa: l'asse torinese concentra automotive, aerospaziale e chimica fine in raggio ridotto, oltre a essere la porta di accesso ai valichi alpini francesi e svizzeri.
 faq:
-  - q: Quanto dura il viaggio Milano-Torino?
+  - q: La consegna a Torino può essere strutturata come servizio express in giornata?
     a: >-
-      La distanza è di circa 140 km via A4, il tempo di guida è di 1.5-2 ore in condizioni standard. Su tratte ADR il tempo finale dipende dalle soste obbligatorie e dalle fasce orarie con limitazioni in zona urbana di Torino.
-  - q: Si possono fare viaggi A/R in giornata?
+      Sì. Con 1 ora e 30 minuti di guida netta fra l'hub e la prima cintura torinese, la formula andata-consegna-rientro in giornata è sostenibile per la maggior parte delle merci ADR. Le finestre di carico-scarico negli stabilimenti automotive sono solitamente programmate con slot rigidi: la pianificazione tiene conto di questi vincoli per garantire il rientro entro il turno.
+  - q: Quali finestre di consegna applicano gli stabilimenti dell'asse Mirafiori-Grugliasco?
     a: >-
-      Sì, è una delle tratte tipiche su cui organizziamo andata e ritorno in giornata, sia per consegne dirette sia per ritiro merce dai produttori del Nord-Ovest.
-  - q: Quali settori movimentano merce su questa tratta?
+      Gli stabilimenti Stellantis (Mirafiori, ex Bertone-Grugliasco oggi Maserati) operano con slot di consegna nelle finestre mattutine, tipicamente fra 6:00 e 13:00. La logistica interna è codificata: prenotazione preventiva, accesso al varco con badge dedicato, scarico a banchina assegnata. Per merci ADR si applica un protocollo aggiuntivo di ricezione documentale. La pianificazione del viaggio incorpora tempi di attesa al varco.
+  - q: La tratta serve come tappa intermedia per spedizioni verso la Francia?
     a: >-
-      Principalmente settore chimico e automotive (sia produttori sia indotto). Anche farmaceutica e agroalimentare, in funzione della tipologia di prodotto.
+      Sì. Torino è la porta naturale per i valichi del Frejus (autostrada A32 Torino-Bardonecchia, traforo verso Modane) e del Monte Bianco (via A5 Torino-Aosta-Courmayeur). Per alcune spedizioni internazionali la sosta intermedia a Torino consente carico aggiuntivo o cambio autista prima del valico. Il Gran San Bernardo via Svizzera è alternativa per destinazioni nord-occidentali.
 relatedServices:
   - trasporti-adr
 publishedAt: 2026-04-28
 ---
 
-## Sintesi tratta
+## Caratteristiche della tratta Milano-Torino
 
-- **Origine**: hub di Ospiate di Bollate (MI)
-- **Destinazione**: Torino e provincia
-- **Distanza**: ~140 km via A4 Milano-Torino
-- **Tempo guida standard**: 1.5-2 ore
-- **Classi ADR servite su questa tratta**: 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8, 9
+I 125 km della A4 fra Milano e Torino sono interamente pianeggianti, con tracciato rettilineo che attraversa la pianura padana occidentale. Il flusso di traffico è denso negli orari di punta sui tratti Milano-Magenta e Settimo Torinese-Torino, dove convergono i flussi pendolari urbani. Le aree di servizio attrezzate sono concentrate a Brughiero, Novara e Greggio.
 
-## Vantaggio della tratta breve
+L'avvicinamento a Torino offre molteplici varianti: tangenziale est verso Stupinigi e Mirafiori, tangenziale ovest verso il Canavese e gli innesti A5 per Aosta. La logistica industriale torinese si distribuisce in cintura nord (aerospazio e meccanica) e cintura sud (automotive e indotto).
 
-Una tratta di 140 km consente:
+## Restrizioni ADR specifiche su questa direttrice
 
-- **Andata e ritorno in giornata** per una stessa motrice, con riduzione dei costi
-- **Possibilità di consegne urgenti** in poche ore dalla richiesta
-- **Sosta breve** con minor esposizione di costi notturni e parcheggio in aree ADR
-- **Frequenza elevata**, utile per chi ha flussi continui fra i due poli industriali
+- A4 a tre corsie quasi su tutto il tratto: condizioni di guida favorevoli per veicoli ADR
+- ZTL Torino centro storico con vincoli di accesso, evitabile per consegne industriali in cintura
+- Innesto A32 verso Frejus con codici tunnel ADR specifici per chi prosegue verso la Francia
+- Innesto A5 verso Aosta-Monte Bianco con valutazione preventiva del codice tunnel per il valico
+- Slot di consegna rigorosi negli stabilimenti automotive: pianificazione di carico-scarico essenziale
 
-Per chi muove merci ADR fra il triangolo Lombardia-Piemonte è la tratta a più alto rapporto efficienza/costo per BYLO Transport.
+## Tipologie di clienti che servono questa direttrice
+
+Torino concentra una varietà di filiere ad alto consumo di chimica industriale. Il polo automotive Mirafiori (Stellantis) e l'asse Grugliasco-Rivoli (Maserati, indotto componentistico FCA-Stellantis) richiedono vernici, solventi, oli e additivi tecnici in continuità. Il polo aerospaziale di Caselle e Torino-nord (Leonardo Aerostrutture, Avio Aero, Thales Alenia Space) integra fluidi tecnici, lubrificanti speciali e materiali compositi. Il Canavese (Ivrea, Settimo Torinese, Borgaro) ospita chimica fine, elettronica e packaging, con domanda di reattivi e ausiliari di processo. L'asse Pinerolo-Bra integra agroalimentare e meccanica di precisione.

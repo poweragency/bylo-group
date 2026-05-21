@@ -2,45 +2,56 @@
 locale: en
 slug: chemicals
 seo:
-  title: Transport for the chemical industry — BYLO Transport
-  description: BYLO Transport's ADR transport for the chemical and petrochemical industry. Solvents, acids, bases, flammable and toxic products on ADR classes 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 and 9.
+  title: ADR transport for the chemical industry — Solvents, acids, bases | BYLO Transport
+  description: Transport of solvents (toluene, xylene, MEK), mineral acids, bases, peroxides and hypochlorites for the Italian chemical sector. BYLO Transport covers Marghera, Ravenna, Ferrara, Brindisi and secondary chemistry in the North.
 title: Transport for the chemical industry
 intro: >-
-  The chemical industry is one of the main users of ADR transport. Solvents, acids, bases, flammable and reactive products require compliant vehicles and drivers with specific training. BYLO Transport covers ADR classes 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 and 9, on national and international routes.
+  Chemistry is the historic customer of ADR transport: for every liter of solvent moved there's a Safety Data Sheet (SDS) to comply with, a compatibility matrix to verify, a geographic or time-window restriction to consider. BYLO Transport operates in Italy's main chemical clusters with an approach that always starts from the product's SDS and ends with a verified loading plan. In chemistry, what makes the difference isn't the vehicle — it's documentation management and route-restriction know-how.
 faq:
-  - q: Which types of chemicals do you carry?
+  - q: How do you manage chemical incompatibility between different loads on the same truck?
     a: >-
-      All products in ADR classes 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 and 9 — gases, solvents, acids, bases, oxidizers, organic peroxides, toxics, corrosives and miscellaneous dangerous goods. Classes 1 (explosives) and 7 (radioactives) are excluded.
-  - q: How do you handle chemical incompatibility between different loads?
+      Verification starts from the Safety Data Sheet of each product on board, cross-checked against the ADR compatibility table 7.5.2.1. Prohibited combinations (acid + base, oxidizer + flammable, peroxide + organic matter) rule out mixed loading on principle. For conditionally compatible pairings we assess packaging (IBCs vs drums vs bottles), quantities and physical arrangement in the bay. When the matrix doesn't close, we run a dedicated trip.
+  - q: Do you operate in the Marghera, Mantova, Ravenna, Ferrara, Brindisi clusters?
     a: >-
-      Every trip is verified beforehand against the product safety data sheet (SDS). Incompatible loads (e.g. an acid and a base) don't travel together; if needed, we organize dedicated trips even for smaller volumes.
-  - q: Do you only operate in Italy or also abroad for chemicals?
+      Yes, these are the country's main chemical hubs. Marghera and Mantova for base chemistry and plastics; Ravenna for fertilizers, rubber and intermediates; Ferrara for polyethylene and specialties; Brindisi-Taranto for petrochemicals. Coverage also includes smaller clusters such as Lacchiarella, the Bormida valley and the Settimo Torinese axis, plus the secondary chemistry operations scattered across the North.
+  - q: Do you handle ADR cross-docking for small quantities from multiple shippers?
     a: >-
-      Both. International runs are organized case by case, checking the destination country's ADR restrictions upfront (tunnels, urban centers, time slots).
+      Chemical groupage is a specific service, not a downsized generic shipment. It requires verified compatibility across all products in the load, a documented loading plan and in many cases the designation of an ADR safety advisor for the consolidated shipment. We handle it for smaller volumes when the flow has recurring frequency and shippers accept shared traceability of the round.
 relatedServices:
   - adr-transport
   - integrated-logistics
 publishedAt: 2026-04-28
 ---
 
-## What we bring to the chemical sector
+## Which chemical products require ADR transport
 
-Italian chemical and petrochemical companies face a constant challenge: moving dangerous products while meeting safety standards, tight timing and growing regulatory pressure.
+Chemistry is the sector with the widest variety of dangerous classes in circulation. The recurring families:
 
-BYLO Transport offers:
+- **Flammable solvents** — toluene, xylene, methyl ethyl ketone (MEK), acetone, alcohols, esters (class 3)
+- **Mineral acids** — hydrochloric, sulfuric, nitric, phosphoric (class 8)
+- **Strong bases** — sodium hydroxide, potassium hydroxide in solution (class 8)
+- **Organic peroxides** — benzoyl peroxide, concentrated hydrogen peroxide (class 5.2, special regime with temperature control)
+- **Hypochlorites and oxidizers** — sodium hypochlorite in solution, chlorates (class 5.1)
+- **Toxic substances** — cyanides, isocyanates, certain synthesis intermediates (class 6.1)
 
-- **Vehicles suited to the served ADR classes** — tractors and smaller vehicles for lighter loads.
-- **ADR-trained, licensed drivers** — periodically refreshed training.
-- **Route planning** — respecting ADR restrictions on tunnels, time slots and urban centers.
-- **Full trip documentation** — DDT, ADR regulation, safety data sheet, written driver instructions.
+Each family has different operational restrictions: organic peroxides require active temperature control, hypochlorites release chlorine if contaminated, acids and bases can never share the bay.
 
-## Examples of products we move
+## Italian chemical clusters
 
-- Industrial solvents (toluene, xylene, acetone, alcohols)
-- Acids and bases (hydrochloric, sulfuric, sodium hydroxide)
-- Paints and coatings
-- Detergents and industrial cleaning products
-- Cosmetic raw materials
-- Additives for plastic and rubber production
+Industrial geography concentrates demand in specific points:
 
-If your product isn't on the list, contact us with the safety data sheet: ADR compatibility checks are quick once we have the product's ADR data.
+- **Marghera and Mantova** — base chemistry, plastics, intermediates
+- **Ravenna** — fertilizers, rubber, specialties (Versalis, Yara)
+- **Ferrara** — polyethylene, polypropylene, pharma-chemical specialties
+- **Brindisi-Taranto** — integrated petrochemicals
+- **Lacchiarella and lower Lombardy** — secondary chemistry, additives, formulations
+- **Bormida valley** — historical chemistry of lower Piedmont
+- **Settimo Torinese** — industrial paints, intermediates
+
+To these add the dense network of formulators, industrial detergent producers and chemical labs in the Milan-Bergamo-Brescia triangle.
+
+## Regulatory and operational specifics
+
+Beyond ADR, the chemical sector is regulated by CLP (labeling and classification), REACH (registration of substances above one tonne per year), Seveso III for major-accident-hazard sites. The extended Safety Data Sheet (eSDS) is mandatory for any dangerous substance placed on the European market and is the operational reference document for the carrier.
+
+On the logistics side, route restrictions are significant: some Alpine tunnels have specific ADR categories, night transit is forbidden for certain substances, cities enforce time windows. Route planning is part of the service, not an extra.

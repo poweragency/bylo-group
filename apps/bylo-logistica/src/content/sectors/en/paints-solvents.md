@@ -2,47 +2,55 @@
 locale: en
 slug: paints-solvents
 seo:
-  title: Transport for paints and solvents — Coatings industry | BYLO Transport
-  description: BYLO Transport moves paints, enamels, thinners and industrial solvents for construction, automotive and woodworking. ADR class 3 prevalent, national and international coverage.
+  title: Transport of industrial paints and solvents — Construction, wood, body shops | BYLO Transport
+  description: BYLO Transport covers the paints and solvents flow for Italian producers (Cromology, Mapei, San Marco, Basf), construction distributors, body shops and the wood industry. Spring-summer peak managed on schedule.
 title: Transport for paints and solvents
 intro: >-
-  Paints, enamels, primers, thinners, anti-rust: the vast majority of products from the coatings industry fall in ADR class 3 (flammable liquids). BYLO Transport is sized for the sector's supply chain, from large chemical manufacturers to specialist distributors serving hardware stores, construction, body shops and the woodworking industry.
+  Few sectors have a seasonality as pronounced as paint and coatings: the Italian construction market concentrates a significant share of volumes between March and September, when outdoor sites and seasonal renovations pull demand for enamels, primers, anti-rust products and thinners. BYLO Transport is sized to absorb this peak without cutting corners on ADR compliance: solvents are class 3 and pigments containing heavy metals can fall under class 6.1, and in both cases the compatibility matrix can't be sidestepped to close a round at the end of the day.
 faq:
-  - q: Do you carry paint cans and drums without volume limits?
+  - q: Is there seasonality in demand for paint and solvent transport?
     a: >-
-      We operate from a single small pallet (5-10 cans) up to a full truckload (FCL). For class 3 paint shipments, the practical limit is the ADR-certified vehicle and the product's classification, not a commercial cap on our side.
-  - q: Do you collect from large chemical producers for capillary distribution?
+      Yes, and it's one of the most pronounced in Italian chemistry. The peak runs from March to September with the most intense months between April and June, when the Italian construction market opens outdoor sites. For industrial coating (wood, metal, body shops) the curve is flatter but still oriented toward the first half of the year. Booking recurring slots well ahead of peak months isn't optional: ADR-compliant vehicles for class 3 are a scarce resource against demand.
+  - q: How do you handle water-based paints versus solvent-based?
     a: >-
-      Yes, it's a recurring flow. Typical collections happen at Northern Italian production hubs (Bergamo, Brescia, Varese) and are then redistributed to dealers across Italy. Groupage or mixed groupage shipments need early planning to verify ADR compatibility.
-  - q: Are chlorinated solvents and specific thinners (acetone, xylene, toluene) included?
+      Water-based paints often aren't ADR, but on the vehicle they frequently travel in mixed loads with solvent-based products that are. The compatibility check still applies to the entire load, not only to the ADR portion. There's also an intermediate case: some water-based products contain biocides or pigments that fall under class 9 for ecotoxicity. The single product's SDS is the reference, not the commercial label on the can.
+  - q: Are pigments containing heavy metals (lead, chromium, cadmium) still in circulation?
     a: >-
-      Yes, they fall under the ADR classes we ship (class 3 prevalent, some class 6.1 for toxicity). We verify each product's safety data sheet and arrange separate loads where incompatibility requires it.
+      The VOC directive and European regulatory pressure have progressively replaced many traditional pigments, but some remain in use for specific industrial applications (marine anti-corrosion, road markings, certain colors lacking full substitutes). When classified as acutely or chronically toxic they fall under ADR class 6.1 or class 9. The transport regime changes compared to a plain class 3 solvent: packaging, labeling and in some cases dedicated vehicle.
 relatedServices:
   - adr-transport
   - integrated-logistics
 publishedAt: 2026-05-05
 ---
 
-## Product families we cover
+## Which paint sector products require ADR transport
 
-The paints and coatings industry is varied — each segment has different logistical needs, but the common backbone is ADR class 3 (flammable liquids). We move:
+The paint sector accounts for the largest class 3 volumes moved in Italy after base chemistry. The main families:
 
-- **Solvent-based paints** for construction (wall enamels, wood primers, anti-rust)
-- **Water-based paints** (not ADR, but often in mixed loads with ADR goods)
-- **Universal and specific thinners** (nitro, synthetic, polyurethane)
-- **Industrial pure solvents** — acetone, xylene, toluene, ethyl acetate (class 3 with low flash point)
-- **Primers, undercoats, anti-rust** (solvent-based class 3, water-based separately)
-- **Colorants and pigment pastes** (class 9 when environmentally hazardous)
+- **Pure industrial solvents** — acetone, methyl ethyl ketone (MEK), ethylbenzene, n-hexane, toluene, xylene (class 3, variable flash point)
+- **Formulated thinners** — nitro thinner, synthetic thinner, polyurethane thinner, mineral spirits (class 3)
+- **Solvent-based paints** — enamels, primers, anti-rust products, wood and metal paints (class 3 with varying flash points)
+- **Heavy-metal pigments** — some chromates, some lead- or cadmium-based pigments in residual industrial use (class 6.1)
+- **Water-based products with biocides or ecotoxic pigments** (class 9)
+- **Catalysts and two-component hardeners** — some in class 8 for corrosivity, some in class 3
 
-## Customer profile
+Pure water-based paints often aren't ADR, but they rarely travel alone: real-world flows are mixed loads.
 
-We work with:
+## Italian producers in the sector
 
-- **Large chemical manufacturers** — pickups from plant, redistribution to dealers
-- **Distributors for construction and hardware retail** — capillary groupage, mixed pallets
-- **Body shops and industrial workshops** — JIT deliveries on demand, small but frequent batches
-- **Woodworking and furniture industry** — finishing paints for serial production
+The Italian paint industry has a few historic names and a dense network of mid-sized and small formulators:
 
-## Load compatibility
+- **Cromology** (formerly Materis Paints) — group with Max Meyer, Baldini Vernici, construction brands
+- **Mapei** — Milan, with a paints division for construction alongside the adhesives business
+- **San Marco Group** — Marcon (VE), group including Boero, Tassani brands
+- **Sikkens / AkzoNobel Italia** — Cernusco sul Naviglio, industrial and wood paints
+- **Inver / IVM Chemicals** — wood paints, serving the Brianza and Veneto furniture districts
+- **Distributors and specialist hardware** — dense regional network redistributing to body shops and construction sites
 
-A constant point of attention is compatibility between different products. Solvents and oxidizers, bases and acids don't travel together: we plan delivery rounds checking the full cargo list against the ADR compatibility matrix.
+To these add many formulation operations for vertical niches: marine paints in La Spezia and Viareggio, industrial paints across the Triveneto, wood paints in the Brianza furniture district.
+
+## Operational and regulatory specifics of the paint sector
+
+The VOC directive (2004/42/EC, transposed in Italy by Legislative Decree 161/2006) has reshaped the entire sector over the past twenty years, compressing the use of organic solvents in construction products and shifting the market toward water-based formulations. The logistical effect is twofold: pure class 3 volumes have shrunk but not disappeared, and the new water-based formulations have introduced class 9 components via biocides and pigments.
+
+On the seasonality front, beyond the spring-summer peak of outdoor construction, industrial and marine coating have their own calendars: marine refitting concentrates loads in early spring and late summer; wood furniture follows cycles tied to Milan Design Week and autumn trade fairs. Scheduling recurring departures around these cycles avoids running out of capacity at critical moments.

@@ -1,37 +1,36 @@
 ---
 locale: it
 seo:
-  title: Officina e carrozzeria per Pregnana Milanese (MI) | Tommy By
-  description: Tommy By per i clienti di Pregnana Milanese — sede a Mazzo di Rho, 4 km e 8 minuti via SP109. Officina multimarche, carrozzeria, revisioni in giornata.
+  title: Officina e carrozzeria per Pregnana Milanese | Tommy By
+  description: Tommy By a 3 km da Pregnana Milanese, raggiungibile anche con la stazione FS Milano-Novara. Officina e carrozzeria a Mazzo di Rho, sede del gruppo BYLO Group.
 name: Pregnana Milanese
 province: MI
 intro: >-
-  Pregnana Milanese è uno dei comuni più vicini alla nostra sede — 4 km e 8 minuti d'auto via SP109. Per i pregnanesi siamo l'alternativa naturale alle officine del paese quando serve sia officina che carrozzeria nello stesso posto, o quando si cerca un servizio di carrozzeria con verniciatura a forno ad acqua che molte officine generaliste non hanno.
+  Pregnana Milanese è uno dei comuni più vicini alla nostra sede: 3 km, 6 minuti d'auto via SP109. Con i suoi 7.000 abitanti è un comune di piccola taglia ma con una caratteristica utile per chi vuole lasciare l'auto in officina: la stazione ferroviaria sulla linea Milano-Novara (linea S6), che permette di muoversi senza dipendere dall'auto sostitutiva.
 faq:
-  - q: Da Pregnana posso usare i mezzi pubblici per arrivare?
+  - q: Da Pregnana posso usare il treno per arrivare e tornare?
     a: >-
-      Sì, la stazione di Pregnana è sulla linea S6 Treviglio-Novara. Il tragitto da Pregnana a Rho stazione è 1 fermata; poi dalla stazione di Rho la nostra sede è raggiungibile a piedi in circa 25 minuti o in pochi minuti d'auto. Per chi viene a piedi dopo aver lasciato l'auto, il rientro a Pregnana è agevole.
+      La stazione di Pregnana è sulla linea S6 Treviglio-Novara. Da Pregnana a Rho FS è una fermata; poi da Rho stazione la nostra sede è a 5 minuti d'auto. Più comodamente, alcuni clienti si fanno accompagnare in auto la mattina, lasciano la propria macchina da noi e prendono il treno per la giornata di lavoro.
   - q: Lavorate anche su veicoli aziendali con sede a Pregnana?
     a: >-
-      Sì, alcune aziende di Pregnana e dell'area produttiva di Vanzago-Pregnana ci affidano la manutenzione di flotte commerciali e veicoli di servizio. Per flotte oltre i 5 mezzi possiamo concordare condizioni dedicate e finestre di ritiro/consegna programmate.
+      Sì, abbiamo clientela fra le piccole aziende dell'area produttiva ai confini con Vanzago. Per flotte oltre i 5 mezzi concordiamo programmazione di tagliandi e revisioni a finestre dedicate, in modo da evitare fermi imprevisti sulla flotta operativa.
+  - q: Da Pregnana est si arriva più rapido via Vanzago o via Rho?
+    a: >-
+      Da Pregnana est il percorso via Vanzago su SP109 è il più diretto, 6 minuti. Da Pregnana sud (verso Cornaredo) può convenire la SP172, leggermente più lunga ma con tratti meno trafficati nelle ore di punta.
 publishedAt: 2026-05-05
 ---
 
-## Vicinanza alla sede
+## Da Pregnana alla sede
 
-- **Distanza**: 4 km
-- **Tempo in auto**: 8 minuti
-- **Strade principali**: SP109 (Pregnana-Rho), poi Via Venanzio Buzzi
-- **Mezzi pubblici**: linea ferroviaria S6 (1 fermata a Rho)
+Il tragitto base è SP109 in direzione est verso Mazzo di Rho. Tre chilometri, 6 minuti. Per chi parte dalla zona della stazione FS i tempi sono simili. Da Pregnana sud (zona via Roma) si può seguire la SP172 attraverso le aree agricole verso Cornaredo, leggermente più lunga ma più scorrevole nei picchi mattutini.
 
-## Cosa fa Tommy By per Pregnana
+## Pregnana fra residenziale e piccola produzione
 
-- Officina multimarche per **auto e moto**, qualsiasi marca e modello
-- Carrozzeria con **verniciatura a forno ad acqua** nello stesso edificio
-- Tagliandi che mantengono la **garanzia ufficiale** del costruttore
-- **Revisioni ministeriali** in giornata
-- **Auto sostitutive** disponibili per fermi prolungati
+Pregnana è un comune residenziale di taglia piccola con un'area produttiva ai confini con Vanzago, dove sono insediate aziende manifatturiere e logistiche di dimensione contenuta. La presenza della stazione ferroviaria sulla linea Milano-Novara rende Pregnana un punto di pendolarismo strutturale verso Milano, e questo si traduce in una quota della clientela locale che lavora in città cinque giorni su sette. Per Tommy By il vantaggio specifico di servire Pregnana è la combinazione "vicinanza fisica" (3 km, raggiungibile facilmente anche con un piacere di accompagnamento) e "treno disponibile" (per chi vuole proseguire in giornata senza auto sostitutiva).
 
-## Pregnana e il suo tessuto produttivo
+## Servizi più richiesti dai clienti di Pregnana
 
-Pregnana ha circa 7.000 abitanti e include una zona produttiva ai confini con Vanzago dove sono insediate aziende manifatturiere e logistiche. La nostra clientela locale comprende sia residenti del centro abitato sia piccole imprese che hanno qualche veicolo aziendale o una flotta leggera da mantenere.
+- **Lasciare l'auto la mattina presto** prima del treno per Milano, ritiro a fine giornata
+- **Tagliandi e revisioni programmate** su auto di famiglia
+- **Manutenzione su veicoli aziendali** delle piccole imprese dell'area produttiva
+- **Carrozzeria su danni accumulati** che non valgono un'officina cittadina ma richiedono lavorazione professionale

@@ -1,37 +1,36 @@
 ---
 locale: en
 seo:
-  title: Workshop and body shop for Pero (Milan) | Tommy By
-  description: Tommy By for Pero — 4 km and 8 minutes via the Sempione road. Body shop with water-based oven painting, multi-brand workshop, same-day inspections. Located at Via Venanzio Buzzi 9, Mazzo di Rho.
+  title: Workshop and body shop for Pero | Tommy By
+  description: Tommy By is 4 km and 8 minutes from Pero via SS33 Sempione. Workshop and body shop in Mazzo di Rho, convenient for residents and for exhibitors and staff at the Milan Trade Fair (Rho-Pero).
 name: Pero
 province: MI
 intro: >-
-  Pero is Milan's western gateway, along the historic SS33 Sempione axis and at the entrance of the A50 western ring road. From Pero to our location it's 4 km and 8 minutes by car, a route many customers travel regularly for services and body shop work. Proximity to Fiera Milano (Rho Fiera, west side) means we also receive requests from exhibitors and service staff during trade events.
+  Pero is Milan's western gateway, along SS33 Sempione and at the entrance to the A50 western ring road. Eleven thousand inhabitants, a transit position that means the town is constantly crossed by traffic flowing in and out of the city. Our location is 4 km away, reachable in 8 minutes by car. Proximity to the Milan Trade Fair (Rho-Pero) adds a second customer base: exhibitors, setup crews and service staff who, during trade shows, find themselves far from home with a vehicle issue.
 faq:
-  - q: Is SS33 Sempione or A8 better from Pero?
+  - q: From Pero, is SS33 Sempione or A8 the better choice?
     a: >-
-      For most of Pero the SS33 Sempione is the most direct and usually quicker route. A8 makes sense if coming from north-west Pero or already on the ring road; in that case exit at Pero and briefly join SS33 to reach Via Venanzio Buzzi.
-  - q: Do you handle Fiera Milano exhibitors with vehicle issues during events?
+      For most of Pero, SS33 is the most direct and usually the quickest route. A8 makes sense only if you're coming from north-western Pero or already on the ring road; in that case exit at Pero and rejoin SS33 briefly toward Mazzo di Rho. During the morning rush on A50, SS33 stays smoother.
+  - q: Do you handle Milan Trade Fair (Rho-Pero) exhibitors with vehicle issues during events?
     a: >-
-      Yes, we sometimes receive urgent requests from fair staff and exhibitors during events. Where possible, we organize same-day or 24-hour interventions to minimize the impact on the trade-show schedule. For complex mechanical repairs, timing depends on parts availability for the specific model.
+      Yes, during trade shows we sometimes receive urgent requests from Fair staff and exhibitors. Where possible we organize same-day or 24-hour interventions to reduce the impact on the show schedule. For complex mechanical repairs the timing depends on parts availability for the specific model.
+  - q: Are there public transport options from Pero to your location?
+    a: >-
+      The M1 metro line terminates at Rho-Fiera, from where Mazzo is 6-7 minutes by car or taxi. Some Pero customers leave the car, take local transport and come back in the afternoon.
 publishedAt: 2026-05-05
 ---
 
-## From Pero to Tommy By
+## Pero to Mazzo di Rho route
 
-- **Distance**: 4 km
-- **Driving time**: 8 minutes
-- **Main road**: SS33 Sempione (historic western entry to Milan)
-- **Alternative**: A50 western ring road with Pero exit
+Four kilometres, 8 minutes. SS33 Sempione is the natural route: you enter Mazzo from the south-east and arrive directly in the Via Venanzio Buzzi area. For those already on the A50 western ring road (coming from Milan or the south), the Pero exit is the most convenient, followed by a short stretch on SS33. During opening and closing times of the Fair pavilions, the Rho-Fiera area gets congested — better to allow 12-15 minutes instead of 8.
 
-## Most requested services by Pero customers
+## Pero and the daily flow on SS33
 
-- **Post-collision body shop** — Pero has dense traffic, typically with low-speed urban incidents
-- **Services** preserving the manufacturer's official warranty
-- **Oven painting** with water-based paints (low environmental impact)
-- **Mandatory inspections** same-day, up to 3.5 tons
-- **Multi-brand electronic diagnostics**
+Pero has 11,000 residents, but its identity is shaped by the traffic crossing it: SS33 Sempione is one of the historic western access routes into Milan, used every day by tens of thousands of vehicles. This reflects in the typical cases we see from Pero customers: a significant share of low-speed urban incidents (roundabouts, traffic lights), side scratches from manoeuvring, bumper knocks from stop-and-go traffic. Having workshop + body shop in the same building is particularly convenient because many jobs need both skill sets.
 
-## Pero in the north-western Milan context
+## What Pero customers most often bring in
 
-Pero has 11,000 inhabitants and grew around the Sempione axis and proximity to Milan. For residents our location is the first "out of Milan" alternative that offers oven body painting and a multi-brand workshop in the same building, avoiding Milan's ZTL traffic restrictions.
+- **Post-collision body shop work** — typical damage from SS33 and junction traffic
+- **Quick interventions during trade shows** for exhibitors and technical staff away from home
+- **Quick-appointment services** before the morning commute back to Milan
+- **Multi-brand electronic diagnostics** after dashboard warning lights appear

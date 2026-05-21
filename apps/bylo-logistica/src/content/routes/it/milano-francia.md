@@ -2,47 +2,41 @@
 locale: it
 slug: milano-francia
 seo:
-  title: Trasporti ADR Milano-Francia — Lione, Parigi, valichi alpini | BYLO Transport
-  description: Trasporti BYLO Transport dall'Italia verso la Francia. Direttrici Lione, Parigi e nord-est francese via Frejus o Monte Bianco. Pianificazione ADR per gallerie alpine.
+  title: Trasporti ADR Milano-Francia — Frejus, Monte Bianco, Rhône-Alpes | BYLO Transport
+  description: Tratta ADR Milano-Francia via valichi Frejus e Monte Bianco. Vincoli RTMD francese, distretto chimico Rhône-Alpes e zone urbane Lyon-Paris a regolamentazione speciale.
 origin: Milano
 destination: Francia (Lione, Parigi)
 distanceKm: 860
 transitTimeHours: 11
 intro: >-
-  Italia-Francia è una delle nostre direttrici internazionali ricorrenti. Lione è la destinazione francese più rapida dal Nord Italia, Parigi richiede 1-2 giorni di pianificazione ma è coperta regolarmente. Il punto critico sono i valichi alpini — Frejus e Monte Bianco — che hanno regole ADR diverse, con percorsi e orari da verificare caso per caso.
+  La Francia è una direttrice internazionale a doppio scenario regolatorio. La normativa ADR è europea, ma il recepimento nazionale (Arrêté RTMD) introduce dettagli operativi specifici: parcheggi ADR autorizzati, regimi delle zone a circolazione limitata e procedure di scorta in alcuni valichi alpini. La scelta del tunnel di transito è la decisione che pesa di più sulla riuscita del viaggio.
 faq:
-  - q: Quale valico alpino è preferibile per un trasporto ADR diretto in Francia?
+  - q: Come si decide fra Frejus e Monte Bianco per una spedizione ADR?
     a: >-
-      Dipende dalla classe ADR e dalla destinazione finale. Il Frejus (autostrada Torino-Bardonecchia, traforo) ha categorie tunnel ADR specifiche e talvolta esclude alcune merci di classe 3 ad alto rischio. Il Monte Bianco è più restrittivo per le classi ADR e ha periodi di chiusura programmata. Verifichiamo caso per caso il percorso autorizzato per la specifica spedizione.
-  - q: Quanto dura una spedizione ADR Milano-Lione?
+      Il Frejus è classificato tunnel categoria B/D a seconda dei segmenti orari ed è generalmente più permissivo per le sostanze liquide infiammabili. Il Monte Bianco applica categorie più restrittive (T1B/T4) con divieti specifici per alcune materie della classe 3 e per gas. La scelta dipende dal codice tunnel ADR del prodotto, riportato sulla scheda di sicurezza, e dalla destinazione finale: il Frejus serve naturalmente Rhône-Alpes e il sud, il Monte Bianco è più diretto verso Borgogna e Île-de-France.
+  - q: Cosa cambia nella documentazione ADR per la Francia rispetto all'Italia?
     a: >-
-      Distanza ~525 km, tempo di guida 6-7 ore al netto del riposo obbligatorio e dell'attesa alla galleria. Una spedizione partita la mattina arriva tipicamente entro la sera dello stesso giorno per consegna mattino successivo. Per Lione operiamo regolarmente con clienti del distretto chimico di Pierre-Bénite e dell'industria farmaceutica del Rodano.
-  - q: La documentazione ADR è la stessa per tratte internazionali?
+      La sostanza è la stessa per il regolamento ADR europeo, ma in Francia si applica l'Arrêté RTMD (Règlement pour le Transport des Marchandises Dangereuses), che recepisce ADR e aggiunge vincoli su parcheggi notturni autorizzati, segnaletica di stazionamento e procedure di emergenza. Le istruzioni scritte per il conducente devono essere disponibili anche in francese al momento dei controlli.
+  - q: Ci sono restrizioni nelle aree urbane di Lione e Parigi per i veicoli ADR?
     a: >-
-      Sì, la regolamentazione ADR è europea. Per spedizioni in Francia servono gli stessi documenti delle tratte nazionali (DDT, scheda di sicurezza, regolamento ADR, istruzioni scritte per il conducente) tradotti o disponibili in lingua francese al momento di un eventuale controllo.
+      Sì. Lione ha la zona a faibles émissions metropolitana con limitazioni per i mezzi pesanti per fascia Crit'Air. Parigi e l'Île-de-France applicano la ZFE con vincoli su Euro 5 e inferiori, e alcuni arrondissement hanno divieti orari per il transito di merci pericolose. La consegna nella periferia industriale (Pierre-Bénite per Lione, Saint-Ouen-l'Aumône per Parigi) è solitamente fattibile in finestre concordate.
 relatedServices:
   - trasporti-adr
 publishedAt: 2026-05-05
 ---
 
-## Sintesi tratta
+## Caratteristiche della tratta Milano-Francia
 
-- **Origine**: hub di Ospiate di Bollate (MI)
-- **Destinazioni principali**: Lione (~525 km), Parigi (~860 km), Strasburgo (~770 km), nord-est francese
-- **Valichi**: Frejus (T4 Bardonecchia-Modane) o Monte Bianco (T1 Courmayeur-Chamonix)
-- **Tempo di consegna**: Lione 24h, Parigi 24-48h
-- **Classi ADR servite**: 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8, 9
+Le destinazioni si distribuiscono su un arco molto ampio: Lione a 525 km via Frejus, Parigi a 860 km via Monte Bianco e Borgogna, Strasburgo a 770 km via Gottardo o Brennero seguendo il Reno. Le autostrade francesi più rilevanti sono la A43 e A6 da Lione verso nord, e la A7 da Lione verso il Mediterraneo. La rete è scorrevole ma a pedaggio elevato, con stazioni di servizio attrezzate ADR concentrate sulle direttrici principali.
 
-## Pianificazione del valico
+## Restrizioni ADR specifiche su questa direttrice
 
-Per ogni spedizione ADR verso la Francia il valico è il punto critico della pianificazione:
+- Codice tunnel del prodotto da incrociare con la categoria del valico scelto (Frejus o Monte Bianco)
+- Parcheggi notturni ADR autorizzati limitati: prenotazione consigliata per spedizioni multi-giorno
+- ZFE Lyon e ZFE Paris con vincoli Crit'Air sulla motorizzazione del veicolo
+- Periodi di chiusura programmata dei valichi (manutenzione invernale o esercitazioni di sicurezza)
+- Convogli scortati richiesti in alcuni casi per gas tossici e materie radioattive (classe 7, non servita)
 
-- **Verifica della categoria tunnel ADR** della galleria scelta — il Frejus e il Monte Bianco non hanno la stessa categoria, e alcune merci possono passare in uno ma non nell'altro
-- **Orari di transito** — i due valichi hanno fasce orarie ADR e talvolta convogli scortati
-- **Riposo obbligatorio del conducente** prima dell'attraversamento, in area di servizio attrezzata
-- **Documentazione bilingue** se richiesta dal cliente francese o dalla dogana
-- **Periodi di chiusura** (manutenzione programmata, neve invernale) — pianifichiamo l'instradamento alternativo via Ventimiglia/Costa Azzurra
+## Tipologie di clienti che servono questa direttrice
 
-## Settori serviti su questa direttrice
-
-I clienti francesi più frequenti operano in: chimica fine e specialty chemicals della Vallée de la Chimie a sud di Lione, farmaceutica del distretto di Lione-Saint-Étienne, automotive del bacino parigino (PSA, Renault), cosmetica e profumeria con destinazione magazzini IDF.
+L'asse industriale francese è denso di consumatori di chimica. La Vallée de la Chimie a sud di Lione (Saint-Fons, Pierre-Bénite, Feyzin) è uno dei poli petrolchimici europei più attivi, con presenza storica di Arkema, Solvay e Kem One. L'area di Lione-Saint-Étienne ospita farmaceutica e cosmetica. Il bacino parigino integra automotive (Renault, Stellantis) e cosmetica di alta gamma. La zona di Strasburgo si affaccia sul Reno con interscambio chimico verso la Germania.

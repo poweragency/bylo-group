@@ -2,51 +2,42 @@
 locale: it
 slug: milano-genova
 seo:
-  title: Trasporti ADR Milano-Genova — Porto e gallerie A7 | BYLO Transport
-  description: Tratta Milano-Genova di BYLO Transport. Direttrice di import-export verso il porto di Genova, con pianificazione gallerie liguri e restrizioni ADR specifiche.
+  title: Trasporti ADR Milano-Genova — A7 dei Giovi e porto | BYLO Transport
+  description: Tratta ADR Milano-Genova sulla A7 dei Giovi. Gallerie continue, pendenze, porto di Genova come snodo import-export e ZTL portuale per merci pericolose.
 origin: Milano
 destination: Genova
 distanceKm: 145
 transitTimeHours: 2
 intro: >-
-  La direttrice Milano-Genova è breve come distanza ma complessa come pianificazione. Le lunghe gallerie liguri impongono restrizioni ADR puntuali, e il porto di Genova-Voltri è uno snodo chiave per import-export di chimica, materie prime e prodotti finiti via container.
+  Centocinquanta chilometri scarsi che valgono per complessità più di una tratta europea. La A7 dei Giovi attraversa la dorsale appenninica con una sequenza di gallerie quasi ininterrotta, pendenze importanti e una larghezza di sede ridotta. Il porto di Genova al termine della corsa è terzo del Mediterraneo per traffico container e snodo critico di import-export per chimica e materie prime.
 faq:
-  - q: Tutte le classi ADR possono attraversare le gallerie liguri?
+  - q: Come si gestisce il transito nelle gallerie A7 con codice tunnel?
     a: >-
-      No, le gallerie autostradali liguri hanno categorie tunnel ADR differenti (B, C, D, E secondo classificazione UE). Alcune merci di classe 1 e 7 sono escluse a priori (e noi non le serviamo), per le altre verifichiamo caso per caso il percorso autorizzato. Su Genova-Voltri esistono percorsi alternativi via SS1 con tempi più lunghi ma minori restrizioni.
-  - q: Operate i ritiri da terminal container del porto?
+      La A7 fra Tortona e Genova attraversa una serie di gallerie (Turchino, Borzoli, Giovi) classificate in diverse categorie tunnel ADR. Per merci con codice tunnel B o superiore l'instradamento sulla A7 diretta richiede verifica preventiva, e in alcuni casi si opta per il percorso alternativo via A26 dei Trafori più la SS456 del Turchino o, per quantità modeste, la SS35 dei Giovi. Il piano di viaggio si decide dopo aver letto la sezione 14 della scheda di sicurezza del prodotto.
+  - q: Quali sono i vincoli di accesso alla ZTL portuale di Genova per mezzi ADR?
     a: >-
-      Sì, ritiriamo container scarichi-merce sfusa o pallet dai terminal della Lanterna e di Voltri-Pra, con consegna nel Nord Italia entro la giornata o entro il giorno seguente in base allo slot di carico. Per merci ADR servono documentazione e classificazione corrette dal momento dello sdoganamento.
-  - q: I costi della Milano-Genova sono allineati alle altre tratte brevi?
+      I terminal del porto di Genova (Calata Sanità, Voltri-Prà, Sampierdarena) operano con prenotazione slot e regolamento di accesso interno. Per i veicoli ADR esistono percorsi dedicati all'interno dell'area portuale, e l'accesso al varco è subordinato alla presentazione del DGR e al rispetto delle finestre orarie definite dall'Autorità di Sistema Portuale del Mar Ligure Occidentale.
+  - q: La ricostruzione del ponte ha cambiato i tempi della tratta?
     a: >-
-      La distanza è simile alla Milano-Bologna, ma il costo per spedizione può essere leggermente superiore quando il percorso ADR-compatibile richiede deviazioni rispetto alla A7 diretta. La quotazione finale dipende dalla classe della merce e dalla finestra di consegna richiesta.
+      Il nuovo Genova San Giorgio ha restituito alla A10 la sua piena capacità sulla direttrice Genova-Ponente, ma rimangono cantieri ricorrenti su gallerie liguri della A7, A10 e A12 per messa in sicurezza. Le riduzioni di carreggiata possono allungare i tempi anche di un'ora rispetto al teorico. Per le consegne il calcolo dei tempi tiene conto della situazione cantieri al momento della prenotazione.
 relatedServices:
   - trasporti-adr
 publishedAt: 2026-05-05
 ---
 
-## Sintesi tratta
+## Caratteristiche della tratta Milano-Genova
 
-- **Origine**: hub di Ospiate di Bollate (MI)
-- **Destinazione**: porto di Genova, area metropolitana, riviera ligure
-- **Distanza**: ~145 km via A7 Milano-Genova
-- **Tempo guida standard**: 2 ore (al netto di eventuali deviazioni ADR)
-- **Classi ADR servite**: 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8, 9
+Centocinquanta chilometri di A7 dei Giovi che concentrano alcune delle complessità più note della rete italiana. Dopo il tratto pianeggiante fino a Tortona, la strada inizia la salita appenninica con pendenze che superano il 5% in più tratti e una sequenza pressoché continua di gallerie sui versanti del Turchino e del Borzoli. La sede stradale storica, con due corsie strette e poche piazzole, è il vincolo strutturale: i sorpassi fra mezzi pesanti sono difficili e gli incidenti generano colli di bottiglia immediati.
 
-## Pianificazione gallerie
+L'arrivo a Genova porta nell'area metropolitana più densa della Liguria, con interconnessioni a A10 verso ponente, A12 verso levante e l'innesto portuale.
 
-La A7 fra Tortona e Genova attraversa una serie di gallerie sulle pendici dell'Appennino ligure. Per il trasporto ADR la pianificazione è obbligatoria:
+## Restrizioni ADR specifiche su questa direttrice
 
-- **Verifica della categoria tunnel** per la specifica classe ADR del prodotto
-- **Eventuale instradamento alternativo** via Bocchetta o SS1 quando necessario
-- **Coordinamento con autorità portuali** per ritiri/consegne all'interno dei terminal del porto
-- **Documentazione predisposta** per controlli più frequenti su questa direttrice
+- Categoria tunnel multipla sulla A7 dei Giovi (Turchino, Borzoli, Galleria dei Giovi): verifica obbligatoria del codice tunnel del prodotto
+- Pendenze costanti che richiedono motrici adeguate e calcolo della potenza specifica
+- Accesso ZTL portuale con prenotazione slot e percorsi ADR dedicati nei terminal
+- Restrizioni post-Morandi su alcuni tratti della A10 con limiti di velocità e cantieri permanenti
 
-## Flussi tipici
+## Tipologie di clienti che servono questa direttrice
 
-Il porto di Genova è la destinazione di:
-
-- Container in **import** con materie prime chimiche, additivi, materiali industriali
-- Container in **export** con prodotti finiti del distretto industriale lombardo
-- Spedizioni dirette verso fornitori e clienti del **distretto petrolchimico ligure** (raffineria Iplom di Busalla, raffineria di Sannazzaro)
-- Movimentazione di **lubrificanti e oli** per la cantieristica del Tigullio
+Genova è interfaccia naturale fra il sistema produttivo del Nord Italia e il commercio marittimo internazionale. Il porto movimenta materie prime chimiche in ingresso e prodotti finiti del distretto lombardo in uscita, con i terminal di Voltri-Prà specializzati nel container e Sampierdarena nelle rinfuse. La raffineria Iplom di Busalla e il polo della Val Polcevera alimentano flussi di derivati petroliferi. La cantieristica di Sestri Ponente e del Tigullio assorbe lubrificanti, vernici e solventi specifici. L'asse Genova-Milano resta uno dei collegamenti ferro-gomma più rilevanti per chimica e farmaceutica destinata all'export via mare.

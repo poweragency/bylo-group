@@ -2,44 +2,54 @@
 locale: en
 slug: cosmetics
 seo:
-  title: Transport for cosmetics and fragrance industry — BYLO Transport
-  description: BYLO Transport moves raw materials and finished goods for cosmetics, fragrance and personal care. Alcohols, fragrance concentrates, essential oils, surfactant bases on ADR classes 3 and 9.
+  title: Transport for cosmetics and fragrance — Alcohol, aerosols, fragrances | BYLO Transport
+  description: "BYLO Transport moves cosmetic raw materials for the Crema-Lodi cluster and niche perfumery: alcohols, essential oils, aerosol propellants, preservatives. Pre-Christmas peaks managed on schedule."
 title: Transport for cosmetics and fragrance
 intro: >-
-  Italian cosmetics is a global export industry, and most raw materials used — ethanol, fragrance concentrates, aerosol propellants — are dangerous goods under ADR. We work regularly with cosmetic producers in Lombardy and Veneto on class 3 raw materials and class 2.1 / 9 finished goods, on a calendar that lives or dies on the September-November retail windows.
+  Italian cosmetics ranks among the world's leading industries by per-capita export, and it has a distinct logistical trait: the finished product on the perfumery counter is almost never ADR, but the raw materials used to make it almost always are. Fragranced alcohols in class 3, aerosol propellants in class 2.1, certain essential oils in class 9: the upstream flow into the Crema-Lodi cluster and toward the major Lombardy contract manufacturers is dominated by dangerous goods. BYLO Transport knows the sector's commercial windows — the pre-Christmas peaks that concentrate half the deliveries into two months — and plans accordingly.
 faq:
-  - q: Do you carry denatured ethanol and alcohol concentrates for cosmetics?
+  - q: Are deodorant sprays and other cosmetic aerosols ADR?
     a: >-
-      Yes, ethanol (both denatured and pure) is classified under ADR class 3 and is one of the classes we ship regularly. We move IBCs, drums and multi-bottle pallets for cosmetic manufacturers in Lombardy and Veneto.
-  - q: Are finished aerosol products such as deodorants and hairsprays ADR?
+      Yes, cosmetic aerosols with flammable propellants (butane, propane, isobutane) are UN 1950 in class 2.1. Aerosols with non-flammable gases such as compressed nitrogen still fall under class 2.2. Limited-quantity per-package exemptions lighten the documentary regime on retail pallets, but the product remains subject to ADR at significant volumes. The critical operational point is the maximum storage temperature on the vehicle, especially in the summer months.
+  - q: Is denatured ethyl alcohol for perfumes and alcoholic creams also subject to excise duty?
     a: >-
-      Yes, aerosols with flammable propellants fall under class 2.1. We plan the trip respecting the maximum allowed transport temperature and arrange the load on the vehicle to avoid direct sun exposure during the hottest hours.
-  - q: Can you manage pre-Christmas peaks?
+      Yes, beyond ADR class 3 classification, denatured alcohol for industrial cosmetic use is subject to the excise regime. Movement between bonded warehouse and producer requires an e-AD (electronic Administrative Document). We carry the product, but fiscal management of the e-AD remains with the shipper holding the warehouse license; our role is that of a carrier compliant with the regime.
+  - q: Raw materials imported from abroad — how does the cosmetics last mile work?
     a: >-
-      Cosmetics and fragrance have sharp peaks between September and November for retail deliveries ahead of Christmas. Scheduling departures 2-3 weeks in advance secures the right vehicle even in the busiest weeks.
+      Many premium cosmetic raw materials (rare essential oils, exclusive fragrance formulas, active ingredients) come from non-EU suppliers. The typical flow is the port of Genoa or Malpensa airport, customs clearance, and then last mile toward the Crema-Lodi cluster or the niche perfumery labs. BYLO Transport covers this post-customs national leg, with ADR documentation tied into the customs documentation.
 relatedServices:
   - adr-transport
   - integrated-logistics
 publishedAt: 2026-05-05
 ---
 
-## Cosmetic raw materials we move
+## Which cosmetic products require ADR transport
 
-The end consumer rarely sees a hazard label on a cosmetic, but most of its raw materials carry one. BYLO Transport covers:
+The cosmetic paradox is simple: the final packaging on the perfumery counter almost never travels under a dangerous-goods regime, but the flow bringing raw materials into the plant is dominated by ADR.
 
-- **Denatured ethanol** for perfumes, lotions, alcoholic creams (class 3)
-- **Fragrance concentrates and essential oils** (class 3 when low flash point)
-- **Aerosol propellants** in tanks or cylinders (class 2.1)
-- **Anionic and non-ionic surfactants** in drums (some class 8)
-- **Preservatives and antimicrobials** in small volumes
-- **Pigments and colorants** not flammable (class 9 when hazardously classified)
+- **Denatured ethyl alcohol** for perfumes, lotions, alcoholic creams, roll-on deodorants (UN 1170, class 3)
+- **Essential oils and absolutes** — bergamot, lemon, eucalyptus, some florals with low flash point (class 3, some in class 9 for ecotoxicity)
+- **Fragrance concentrates** on alcohol or solvent bases
+- **Aerosol propellants** — butane, propane, isobutane for deodorants, hairsprays, shaving foams, mousses (class 2.1)
+- **Preservatives and antimicrobials** — some in alcoholic solution, some with toxicological classification
+- **Concentrated surfactants** for shampoo and shower-gel bases (some in class 8 for pH)
+- **Pearlescent pigments and colorants** — some in class 9
 
-## Finished goods
+Retail finished products in an ADR class are limited: aerosols, a few high-strength perfumes, solvent-based nail polishes.
 
-Finished goods — perfumes, deodorants, hairsprays, nail polishes, shaving foams, makeup removers — typically fall in class 2.1 (aerosols) or class 3 (alcoholic). Volume per unit is small, but commercial pallets reach meaningful volumes in B2B flows to large retail and perfumery chains.
+## The Italian cosmetics cluster
 
-## How we work with cosmetic clients
+Italy's cosmetic industry has a clearly defined geographic core:
 
-- Deliveries aligned to retail calendars: spring collections, Christmas, new product launches.
-- Pre-filled ADR documentation for recurring shipments to the same consignees (cuts errors and loading time).
-- Mixed pallets with glass and atomizers: load distribution and securing planned to avoid breakage in transit.
+- **Crema-Lodi and lower Lombardy** — the most important contract-manufacturing cluster in Europe, home to Intercos, Chromavis, and dozens of labs producing for major international brands
+- **Milanese and Florentine niche perfumery** — author-perfume labs, often with small volumes but high frequency
+- **Bologna-Modena cluster** — some natural and organic cosmetics operations
+- **Ligurian Riviera** — distillation of essential oils and aromatic raw materials
+
+Most premium technical raw materials and active ingredients arrive from abroad, transiting through Genoa, Malpensa or border customs.
+
+## Cosmetics seasonality and operating constraints
+
+The sector's commercial calendar dictates logistics. Retail cosmetics concentrate a very significant share of deliveries between September and December, to stock shelves for the Christmas period. March-April sees a smaller secondary peak for spring launches. Locking in departures well in advance of these periods isn't optional: it means having vehicles available.
+
+On the regulatory front, beyond ADR, the sector follows EU Cosmetics Regulation 1223/2009, which requires traceability, a registered Responsible Person and a product dossier. Cosmetic GMP (ISO 22716) demands cleanliness standards across the supply chain, including the transport stage for sensitive raw materials. More structured producers require a cargo bay washing certificate between shipments of different products.

@@ -1,11 +1,11 @@
 ---
 locale: it
 seo:
-  title: Officina Alfa Romeo Milano | Tommy By
-  description: Tagliandi e riparazioni Alfa Romeo Giulia, Stelvio, Tonale, Junior e Giulietta presso Tommy By a Mazzo di Rho. Officina multimarca con esperienza sui motori 2.0 turbo e ibrido Tonale.
+  title: Officina Alfa Romeo Milano | Giulia, Stelvio, Tonale | Tommy By
+  description: Tagliandi e riparazioni Alfa Romeo Giulia, Stelvio, Tonale e Giulietta presso Tommy By a Mazzo di Rho. Esperienza su motori GME T4, MultiAir, JTD e sistema DNA.
 name: Alfa Romeo
 intro: >-
-  Alfa Romeo è il marchio italiano sportivo del gruppo Stellantis, e per molti milanesi è la marca di famiglia. Lavoriamo regolarmente su Giulietta (modello storico ancora circolante in volumi), Giulia, Stelvio, Tonale (anche PHEV) e la nuova Junior (anche elettrica). Le tecnologie chiave sono i motori 2.0 turbo MultiAir benzina (Giulia/Stelvio), i diesel JTDM common rail e i sistemi DNA / DNA Pro per la gestione assetto.
+  Alfa Romeo è il marchio sportivo italiano del gruppo Stellantis e per molti milanesi è la marca di famiglia. Lavoriamo regolarmente su Giulietta (modello storico ancora circolante in volumi), Giulia, Stelvio, Tonale (anche PHEV Q4) e la nuova Junior (anche elettrica). Le tecnologie chiave sono i motori GME T4 2.0 turbo benzina di Giulia/Stelvio, i 2.2 MultiJet diesel, gli storici Twin Spark e JTD, e i sistemi DNA / DNA Pro per la gestione assetto. Tommy By è officina multimarca indipendente: in base al Reg. UE 461/2010 la garanzia ufficiale Alfa Romeo resta valida facendo qui i tagliandi, purché eseguiti agli intervalli previsti con ricambi di qualità equivalente e libretto timbrato.
 services:
   - officina-multimarche
   - revisioni-ministeriali
@@ -13,9 +13,12 @@ faq:
   - q: I motori 1.4 MultiAir delle Giulietta hanno problemi di consumo olio?
     a: >-
       Sui MultiAir di prima generazione (Giulietta 2010-2014 circa) si è osservato in alcune unità un consumo olio sopra la media e qualche caso di degradazione precoce della catena distribuzione. Eseguiamo la diagnosi durante il tagliando e segnaliamo eventuali interventi (sostituzione catena, valvole). Sui MultiAir di seconda generazione il problema è marginale.
+  - q: Gestite il selettore DNA / DNA Pro e la trazione Q4 sulle Stelvio/Tonale?
+    a: >-
+      Sì. Il sistema DNA gestisce mappa motore, sterzo, sospensioni e — sulle Q4 — la ripartizione coppia fra asse anteriore e posteriore (frizione multidisco gestita elettronicamente). Eseguiamo la diagnosi di malfunzionamenti tramite strumentazione compatibile Stellantis e la sostituzione olio scatola trasferimento Q4 secondo intervallo.
   - q: La Giulia Quadrifoglio richiede manutenzione speciale per il motore Ferrari-derived?
     a: >-
-      Il 2.9 V6 biturbo della Quadrifoglio è progettato in collaborazione con i tecnici Ferrari e ha intervalli di manutenzione più stringenti rispetto ai 2.0 standard: olio motore ogni 15.000 km invece di 30.000, controllo cinghia turbocompressore, attenzione alla temperatura olio. Possiamo eseguire i tagliandi standard e segnalarvi eventuali interventi più complessi che richiedono officina specializzata.
+      Il 2.9 V6 biturbo della Quadrifoglio è progettato in collaborazione con i tecnici Ferrari (centro tecnico Balocco) e ha intervalli di manutenzione più stringenti: olio motore ogni 15.000 km invece di 30.000, controllo cinghia turbocompressore, attenzione alla temperatura olio. Possiamo eseguire i tagliandi standard e indirizzare interventi più complessi a centro specializzato.
 publishedAt: 2026-05-05
 ---
 
@@ -31,8 +34,9 @@ publishedAt: 2026-05-05
 ## Tecnologie chiave
 
 - **MultiAir** — sistema attuazione valvole elettro-idraulico (motori 1.4 e 1.75)
-- **2.0 turbo benzina** (Giulia/Stelvio) — 200/280 CV, AWD Q4 sulle versioni superiori
+- **GME T4 2.0 turbo** (Giulia/Stelvio) — 200/280 CV, AWD Q4 sulle versioni superiori
+- **2.2 MultiJet diesel** — common rail, gestione FAP e AdBlue su Euro 6d
 - **2.9 V6 biturbo** Ferrari-derived (Quadrifoglio) — 510 CV, manutenzione specifica
 - **DNA / DNA Pro** — selettore mappa motore, sospensioni e sterzo
-- **JTDM** common rail diesel (in uscita di gamma)
+- **Connect 8.8"** — infotainment con CarPlay/Android Auto
 - **Sistema PHEV Q4** sul Tonale — base condivisa con Jeep Compass 4xe e Renegade 4xe

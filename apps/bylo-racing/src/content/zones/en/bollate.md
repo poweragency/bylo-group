@@ -2,37 +2,32 @@
 locale: en
 seo:
   title: Workshop and body shop for Bollate (Milan) | Tommy By
-  description: Tommy By for Bollate — 8 km and 13 minutes via SP233 or A52. Multi-brand workshop and body shop at the same Mazzo di Rho location. Bollate is also home to BYLO Transport (BYLO Group).
+  description: Tommy By is 4 km from Bollate, 7 minutes via SP233. Workshop and body shop under one roof in Mazzo di Rho. Bollate (Ospiate) is also home to BYLO Transport, the other company of the group.
 name: Bollate
 province: MI
 intro: >-
-  Bollate is one of the most populated municipalities in north-western Milan (36,000 inhabitants) and hosts the operating site of BYLO Transport, the transport company of BYLO Group, which also includes Tommy By. For Bollate residents our location is 8 km away, reachable in 13 minutes via SP233 or the A52 link. The relationship with the area is twofold: for cars we're Tommy By in Mazzo di Rho, for ADR transport and logistics it's BYLO Transport in Ospiate di Bollate.
+  Bollate is the most populated municipality among those gravitating around our location: 36,000 inhabitants spread across the historic centre, the villages (Ospiate, Cassina Nuova, Cascina del Sole) and the industrial belt along the A4-A52 axis. The relationship between Tommy By and Bollate runs in two directions: for cars it's us in Mazzo di Rho, for ADR transport of dangerous goods it's BYLO Transport, the other company of BYLO Group, headquartered right in Ospiate. From central Bollate to our workshop it's 4 km and 7 minutes via SP233.
 faq:
   - q: Are Tommy By and BYLO Transport the same company?
     a: >-
-      They're part of the same group (BYLO Group) but two distinct companies with two specializations: Tommy By handles workshop, body shop and light vehicles; BYLO Transport handles ADR transport and logistics for dangerous goods. The two locations are separate: Tommy By in Mazzo di Rho (Via Venanzio Buzzi 9), BYLO Transport in Ospiate di Bollate (Via Ghisalba 7).
-  - q: Which route is best for central Bollate customers?
+      They're part of the same group (BYLO Group) but two distinct companies with separate specializations. Tommy By runs the workshop, body shop and light vehicle work from Mazzo di Rho (Via Venanzio Buzzi 9). BYLO Transport runs ADR transport of dangerous goods and integrated logistics from Ospiate di Bollate (Via Ghisalba 7). For anyone looking for ADR transport, [BYLO Transport](https://transport.bylogroup.it) is the group's reference.
+  - q: From Cascina del Sole or Cassina Nuova, which route is fastest?
     a: >-
-      From central Bollate the most direct route is SP233 south-west toward Rho-Mazzo, about 13 minutes. From western Bollate (Ospiate, Cascina del Sole) it's faster to take SP109 from Garbagnate-Bollate and arrive in 10-12 minutes. From the ring road (A52), exit at Bollate and continue on SP233 as a good alternative.
+      From the western villages of Bollate the quickest route is SP109 through Vanzago, avoiding central Bollate. It takes 10-12 minutes versus 13 via SP233 from the centre. From Ospiate, on the other hand, SS233 or the A52 link with the Bollate exit is the better choice.
 publishedAt: 2026-05-05
 ---
 
-## Bollate → Mazzo di Rho
+## From Bollate to Mazzo di Rho
 
-- **Distance**: 8 km from Bollate centre
-- **Driving time**: 13 minutes
-- **Main roads**: SP233 from Bollate, or A52 (Northern Ring Road) with Bollate exit
-- **Alternative**: SP109 from western Bollate via Vanzago
+The standard route is SP233 south-westbound, 4 km, 7 minutes from central Bollate. For those leaving from Ospiate (where BYLO Transport is based) the distance drops to 3 km and the time to 5 minutes. From Cassina Nuova and Cascina del Sole the route runs through Vanzago via SP109, slightly longer but often with smoother traffic. Anyone already on the ring road can exit at Bollate or at Pero, either works.
 
-## What we offer Bollate
+## Bollate and its dual profile
 
-- **Multi-brand workshop** for cars and motorcycles, any brand and model
-- Body shop with **water-based oven painting** in the same building
-- **Services** preserving the manufacturer's official warranty
-- **Mandatory inspections** same-day, up to 3.5 tons
-- **Multi-brand electronic diagnostics**
-- **Replacement cars** available for longer stays
+Bollate is a mid-sized municipality with two souls: residential toward the historic centre and the Parco delle Groane area, industrial-logistic along the Ospiate-A52 axis. The train station on the Milan-Como line makes Bollate one of the structural commuter towns into Milan. For Tommy By this translates into a mixed customer base: residents looking for a reliable workshop close to home, professionals who drop the car off in the morning and continue by train, small businesses in the industrial district with light commercial vehicles.
 
-## Bollate, BYLO Transport and the group
+## Services most requested by Bollate customers
 
-For Bollate customers it's useful to know that BYLO Group, which Tommy By is part of, has its transport company — **[BYLO Transport](https://transport.bylogroup.it)** — right in Bollate, at Via Ghisalba 7 in Ospiate. For ADR transport of dangerous goods or integrated logistics services, that's the group's natural reference. For workshop and body shop on light vehicles (cars and motorcycles) the reference site remains Tommy By in Mazzo di Rho.
+- **Scheduled services** with official warranty retention, by morning appointment before the return to work
+- **Seasonal tire service** with on-site storage
+- **Body shop** work on light commercial vehicles for small businesses in the Ospiate district
+- **Coordination with BYLO Transport** for customers running both ADR heavy vehicles and light commercial fleets

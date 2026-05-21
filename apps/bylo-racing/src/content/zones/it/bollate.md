@@ -2,37 +2,32 @@
 locale: it
 seo:
   title: Officina e carrozzeria per Bollate (MI) | Tommy By
-  description: Tommy By per Bollate — 8 km e 13 minuti via SP233 o A52. Officina multimarche e carrozzeria nella stessa sede a Mazzo di Rho. Bollate ospita anche la sede di BYLO Transport (gruppo BYLO Group).
+  description: Tommy By a 4 km da Bollate, 7 minuti via SP233. Officina e carrozzeria sotto lo stesso tetto a Mazzo di Rho. A Bollate (Ospiate) ha sede anche BYLO Transport, l'altra azienda del gruppo.
 name: Bollate
 province: MI
 intro: >-
-  Bollate è uno dei comuni più popolosi del nord-ovest milanese (36.000 abitanti) e ospita la sede operativa di BYLO Transport, l'azienda di trasporti del gruppo BYLO Group di cui fa parte anche Tommy By. Per i residenti di Bollate la nostra sede dista 8 km e si raggiunge in 13 minuti via SP233 o tramite il raccordo A52. Il rapporto con il territorio è doppio: per le auto siamo Tommy By a Mazzo di Rho, per i trasporti ADR e la logistica è BYLO Transport a Ospiate di Bollate.
+  Bollate è il comune più popoloso fra quelli che gravitano sulla nostra sede: 36.000 abitanti distribuiti fra centro storico, frazioni (Ospiate, Cassina Nuova, Cascina del Sole) e l'asse industriale a ridosso della A4-A52. Il rapporto fra Tommy By e Bollate è doppio: per le auto siamo noi a Mazzo di Rho, per i trasporti ADR di merci pericolose è BYLO Transport, l'altra società del gruppo BYLO Group, che ha sede proprio a Ospiate. Da Bollate centro alla nostra officina sono 4 km e 7 minuti via SP233.
 faq:
   - q: Tommy By e BYLO Transport sono la stessa azienda?
     a: >-
-      Fanno parte dello stesso gruppo (BYLO Group) ma sono due società distinte con due specializzazioni: Tommy By gestisce officina, carrozzeria e veicoli leggeri, BYLO Transport gestisce i trasporti ADR e la logistica per merci pericolose. Le due sedi sono distinte: Tommy By a Mazzo di Rho (Via Venanzio Buzzi 9), BYLO Transport a Ospiate di Bollate (Via Ghisalba 7).
-  - q: Per i clienti del centro Bollate quale strada conviene?
+      Fanno parte dello stesso gruppo (BYLO Group) ma sono due società distinte con specializzazioni separate. Tommy By gestisce officina, carrozzeria e veicoli leggeri da Mazzo di Rho (Via Venanzio Buzzi 9). BYLO Transport gestisce trasporti ADR di merci pericolose e logistica integrata da Ospiate di Bollate (Via Ghisalba 7). Per chi cerca trasporti ADR, [BYLO Transport](https://transport.bylogroup.it) è il riferimento del gruppo.
+  - q: Da Cascina del Sole o Cassina Nuova quale strada è più veloce?
     a: >-
-      Da Bollate centro il percorso più diretto è la SP233 in direzione sud-ovest verso Rho-Mazzo, circa 13 minuti. Per chi viene da Bollate ovest (Ospiate, Cascina del Sole) è più rapido prendere la SP109 da Garbagnate-Bollate e arrivare in 10-12 minuti. Per chi è già in tangenziale (A52), uscire a Bollate e proseguire su SP233 è una buona alternativa.
+      Dalle frazioni occidentali di Bollate il percorso più rapido è la SP109 che passa per Vanzago, evitando il centro di Bollate. Sono 10-12 minuti contro i 13 della SP233 dal centro. Da Ospiate, invece, conviene la SS233 o il raccordo A52 con uscita Bollate.
 publishedAt: 2026-05-05
 ---
 
-## Bollate → Mazzo di Rho
+## Da Bollate a Mazzo di Rho
 
-- **Distanza**: 8 km dal centro Bollate
-- **Tempo in auto**: 13 minuti
-- **Strade principali**: SP233 da Bollate, oppure A52 (Tangenziale Nord) con uscita Bollate
-- **Alternativa**: SP109 da Bollate ovest passando per Vanzago
+Il tragitto base è SP233 in direzione sud-ovest, 4 km, 7 minuti dal centro Bollate. Per chi parte da Ospiate (dove ha sede BYLO Transport) i chilometri scendono a 3 e il tempo a 5 minuti. Da Cassina Nuova e Cascina del Sole il percorso passa per Vanzago via SP109, leggermente più lungo ma con traffico spesso più scorrevole. Chi è già in tangenziale può uscire a Bollate o a Pero, indifferentemente.
 
-## Cosa offriamo a Bollate
+## Bollate e il suo doppio profilo
 
-- Officina **multimarche** per auto e moto, qualsiasi marca e modello
-- Carrozzeria con **verniciatura a forno ad acqua** nello stesso edificio
-- **Tagliandi** che mantengono la garanzia ufficiale del costruttore
-- **Revisioni** ministeriali in giornata, fino a 35 quintali
-- **Diagnosi** elettronica multimarca
-- **Auto sostitutive** disponibili per fermi prolungati
+Bollate è un comune di taglia media con due anime: residenziale verso il centro storico e la zona del Parco delle Groane, industriale-logistica lungo l'asse Ospiate-A52. La stazione ferroviaria sulla linea Milano-Como rende Bollate uno dei comuni di pendolarismo strutturale verso Milano. Per Tommy By questo significa una clientela mista: residenti che cercano un'officina affidabile vicino a casa, professionisti che lasciano l'auto la mattina e proseguono in treno, piccole imprese del distretto industriale con veicoli commerciali.
 
-## Bollate, BYLO Transport e il gruppo
+## Servizi più richiesti dai clienti di Bollate
 
-Per i clienti di Bollate è utile sapere che BYLO Group, di cui Tommy By fa parte, ha la sua azienda di trasporti — **[BYLO Transport](https://transport.bylogroup.it)** — proprio nel comune di Bollate, in Via Ghisalba 7 a Ospiate. Per chi cerca trasporti ADR di merci pericolose o servizi di logistica integrata, è il riferimento naturale del gruppo. Per officina e carrozzeria su veicoli leggeri (auto e moto) la sede di riferimento resta Tommy By a Mazzo di Rho.
+- **Tagliandi programmati** con mantenimento garanzia ufficiale, su appuntamento mattutino prima del rientro al lavoro
+- **Servizio pneumatici stagionale** con custodia in struttura
+- **Carrozzeria** su veicoli aziendali leggeri per piccole imprese del distretto Ospiate
+- **Coordinamento con BYLO Transport** per clienti che hanno sia mezzi pesanti ADR sia veicoli aziendali leggeri

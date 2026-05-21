@@ -2,37 +2,32 @@
 locale: en
 seo:
   title: Workshop and body shop for Settimo Milanese | Tommy By
-  description: Tommy By for Settimo Milanese — 9 km and 14 minutes via SP172 or A50. Multi-brand workshop, body shop with water-based oven painting, same-day inspections.
+  description: Tommy By for Settimo Milanese, 10 km via SP114 or A4. Workshop and body shop in Mazzo di Rho for residents of the newer areas and for those looking for water-based oven painting.
 name: Settimo Milanese
 province: MI
 intro: >-
-  Settimo Milanese is a municipality of 20,000 inhabitants south of Cornaredo and west of Baggio, developed as a residential area in the post-2000s with single-family houses and small apartment blocks. Our location is 9 km away, reachable in 14 minutes via SP172 through Cornaredo, or via the A50 western ring road with Settimo Milanese exit.
+  Settimo Milanese is one of the inner-ring Milan municipalities that has changed most in the last twenty years: grown as a residential area of detached houses and mid-recent apartment blocks, on the border with the Parco delle Cave in Milan. Nineteen thousand inhabitants, a population on average younger and more dynamic than the provincial average. Our location is 10 km away, reachable in 15 minutes via A4 with the Pero exit or via SP114. The typical Settimo customer is one who combines work in Milan, residence just outside the city, and the need for quality body shop work that isn't always available in small local workshops.
 faq:
-  - q: Settimo already has several workshops — why come all the way to Mazzo di Rho?
+  - q: Settimo has several local workshops — why come all the way to Mazzo di Rho?
     a: >-
-      Settimo has good local workshops for routine maintenance and tires. The difference with Tommy By is the body shop with water-based oven painting in the same building. For purely standard mechanical work, a local workshop can be faster; for managing a full collision case or services on warranty-tracked cars requiring specific parts, it's worth the 14-minute drive.
-  - q: How does slot booking work if I want a specific time?
+      Settimo has good local workshops for routine maintenance and tires. The difference is body shop work with water-based oven painting in the same building. For standard mechanical work only, a local workshop is faster. For a full collision case or a service under warranty with specific parts, the 15-minute drive is worth it.
+  - q: How does booking a specific slot work?
     a: >-
-      The slot is agreed when opening the case. For Settimo Milanese the most requested slots are very early morning (7:30-8:30) for those going to work, and late afternoon (5:30-6:00 PM) for those returning. Scheduling the arrival reduces waiting for inspections or standard services.
+      The slot is agreed when opening the case. For Settimo the most requested slots are very early morning (7:30-8:30 AM) for those heading to work, and late afternoon (5:30-6 PM) for those returning. Scheduling arrival reduces waiting on standard inspections and services.
 publishedAt: 2026-05-05
 ---
 
-## Settimo → Mazzo di Rho route
+## Settimo to Mazzo di Rho route
 
-- **Distance**: 9 km
-- **Driving time**: 14 minutes
-- **Main road**: SP172 northbound (through Cornaredo)
-- **Alternative**: A50 western ring road with Settimo Milanese-Cusago exit
+Ten kilometres, 15 minutes outside peak hours. Two main routes: the A4 Milan-Turin with the Pero exit (faster but tolled), or SP114 which crosses Cornaredo northbound (toll-free, similar timing). For those leaving from western Settimo (Vighignolo area) SP114 is the natural choice. From eastern Settimo (near the Cave) it can be more convenient to join A50 at Cusago and exit at Pero.
 
-## What we offer Settimo customers
+## Settimo and its recent profile
 
-- **Multi-brand workshop** for cars and motorcycles, any brand and model
-- Body shop with **water-based oven painting** in the same building
-- **Services** preserving the manufacturer's official warranty
-- **Mandatory inspections** same-day
-- **Replacement cars** available for longer stays
-- Full **tire service** (mounting, balancing, storage)
+Unlike the historic municipalities of the catchment (Rho, Bollate, Pero), Settimo is a relatively recently urbanized municipality: most of the residential fabric has grown since the 1990s, with detached houses and small apartment blocks. This translates into an on-average younger population, with school-age children, and a vehicle fleet leaning toward recent family cars (3-7 years old) equipped with complex electronic systems and ADAS. For Tommy By the typical Settimo customer is the one looking for a workshop capable of handling advanced diagnostics, not just traditional mechanical repairs.
 
-## Settimo Milanese and its profile
+## What Settimo customers most often bring in
 
-Settimo is one of the inner-ring Milan municipalities that grew over the last 20-25 years as a mid-tier residential area. Current population is about 20,000, with a meaningful share commuting to Milan. For this customer base our location is the first convenient "out of town" alternative when quality body shop work is needed.
+- **Services on recent cars** with ADAS systems and complex ECUs
+- **Advanced electronic diagnostics** after ECU warnings or electrical malfunctions
+- **Body shop work on urban collisions** picked up on the commute to Milan
+- **Seasonal tire service** with on-site storage
