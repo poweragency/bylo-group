@@ -2,9 +2,13 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     { "source": "/en/zone/milano", "destination": "/en/zones/milan", "permanent": true },
+    { "source": "/en/zone/milano/", "destination": "/en/zones/milan/", "permanent": true },
     { "source": "/en/marche/:slug", "destination": "/en/brands/:slug", "permanent": true },
+    { "source": "/en/marche/:slug/", "destination": "/en/brands/:slug/", "permanent": true },
     { "source": "/en/zone/:slug", "destination": "/en/zones/:slug", "permanent": true },
-    { "source": "/en/auto/:slug", "destination": "/auto/:slug", "permanent": true }
+    { "source": "/en/zone/:slug/", "destination": "/en/zones/:slug/", "permanent": true },
+    { "source": "/en/auto/:slug", "destination": "/auto/:slug", "permanent": true },
+    { "source": "/en/auto/:slug/", "destination": "/auto/:slug/", "permanent": true }
   ],
   "headers": [
     {
