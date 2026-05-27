@@ -31,8 +31,8 @@ const defaultTitle = isEN
   ? 'Tommy By — Auto Repair, Body Shop and Used Car Sales near Milan'
   : 'Tommy By — Officina, Carrozzeria e Vendita Auto a Mazzo di Rho';
 const defaultDescription = isEN
-  ? 'Multi-brand authorized auto repair shop, body shop with water-based oven painting, and selected used car sales. Tommy By, in Mazzo di Rho near Milan.'
-  : 'Officina autorizzata multimarca, carrozzeria con verniciatura a forno ad acqua e vendita auto selezionate. Tommy By, a Mazzo di Rho (alle porte di Milano).';
+  ? 'Multi-brand authorized auto repair shop, body shop with water-based oven painting, and selected used car sales. Tommy By (formerly BYLO Racing), in Mazzo di Rho near Milan.'
+  : 'Officina autorizzata multimarca, carrozzeria con verniciatura a forno ad acqua e vendita auto selezionate. Tommy By (già BYLO Racing), a Mazzo di Rho (alle porte di Milano).';
 
 const {
   title = defaultTitle,
@@ -78,6 +78,7 @@ const officinaSchema = {
   '@type': 'AutoRepair',
   '@id': `${siteOrigin}/#officina`,
   name: `${BRAND_RACING.name} — Officina`,
+  alternateName: BRAND_RACING.formerName,
   legalName: LEGAL_TOMMY.name,
   url: siteOrigin,
   logo: `${siteOrigin}/logo.png`,
@@ -108,6 +109,7 @@ const carrozzeriaSchema = {
   '@type': 'AutoBodyShop',
   '@id': `${siteOrigin}/#carrozzeria`,
   name: `${BRAND_RACING.name} — Carrozzeria`,
+  alternateName: BRAND_RACING.formerName,
   legalName: LEGAL_TOMMY.name,
   url: siteOrigin,
   logo: `${siteOrigin}/logo.png`,
