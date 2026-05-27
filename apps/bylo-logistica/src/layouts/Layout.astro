@@ -13,6 +13,7 @@ import {
   LEGAL_TRANSPORT,
   CONTACTS,
 } from '@bylo/ui/index.ts';
+import { i18nRoutes } from '@/lib/i18n-routes';
 
 interface Props {
   title?: string;
@@ -43,21 +44,15 @@ const {
 const siteOrigin = Astro.site?.toString().replace(/\/$/, '') ?? '';
 const path = Astro.url.pathname;
 
-function altUrl(target: 'it' | 'en'): string {
-  if (target === 'it') {
-    const stripped = path.replace(/^\/en(\/|$)/, '/');
-    return `${siteOrigin}${stripped}`;
-  }
-  if (path.startsWith('/en/') || path === '/en') {
-    return `${siteOrigin}${path}`;
-  }
-  return `${siteOrigin}/en${path === '/' ? '' : path}`;
-}
-
+// hreflang basati sulla controparte REALE (segmento + slug tradotti). Quando la
+// pagina non ha controparte, l'alternato viene omesso invece di puntare a un 404.
+const itPath = i18nRoutes.alternateUrl(path, 'it');
+const enPath = i18nRoutes.alternateUrl(path, 'en');
 const alternates = [
-  { hreflang: 'it', href: altUrl('it') },
-  { hreflang: 'en', href: altUrl('en') },
+  ...(itPath ? [{ hreflang: 'it', href: `${siteOrigin}${itPath}` }] : []),
+  ...(enPath ? [{ hreflang: 'en', href: `${siteOrigin}${enPath}` }] : []),
 ];
+const xDefaultHref = `${siteOrigin}${itPath ?? enPath ?? path}`;
 
 // LocalBusiness JSON-LD per la sede di Bollate
 const localBusinessSchema = {
@@ -133,7 +128,7 @@ const localBusinessSchema = {
       noindex={noindex}
       siteName={BRAND.name}
     />
-    <Hreflang alternates={alternates} xDefault={altUrl('it')} />
+    <Hreflang alternates={alternates} xDefault={xDefaultHref} />
     <SchemaOrg data={localBusinessSchema} />
     <GoogleAnalytics />
   </head>
