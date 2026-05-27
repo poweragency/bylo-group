@@ -1,4 +1,6 @@
 ---
+import { i18nRoutes } from '@/lib/i18n-routes';
+
 const currentLocale = (Astro.currentLocale ?? 'it') as 'it' | 'en';
 const isEN = currentLocale === 'en';
 
@@ -49,9 +51,8 @@ const nav = [
   { href: contattiAnchor, label: t.contatti },
 ];
 
-const switchHref = isEN
-  ? Astro.url.pathname.replace(/^\/en(\/|$)/, '/')
-  : `/en${Astro.url.pathname === '/' ? '' : Astro.url.pathname}`;
+// Controparte REALE nella lingua opposta (segmento + slug tradotti); mai un 404.
+const switchHref = i18nRoutes.switchUrl(Astro.url.pathname, isEN ? 'it' : 'en');
 ---
 
 <header

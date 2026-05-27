@@ -28,6 +28,15 @@ export default defineConfig({
           en: 'en-US',
         },
       },
+      // Escludi le pagine noindex (ringraziamento) dalla sitemap: una pagina
+      // noindex in sitemap genera il warning "Esclusa per noindex" in GSC.
+      filter: (page) => !/\/(grazie|thanks)\/?$/.test(page),
+      // lastmod = data di build: segnale di freschezza/priorita' per Google,
+      // leva principale contro "Rilevata ma non indicizzata".
+      serialize: (item) => {
+        item.lastmod = new Date().toISOString();
+        return item;
+      },
     }),
   ],
   vite: {
