@@ -92,6 +92,9 @@ export const CONTACTS = {
 
 export const BRAND_RACING = {
   name: 'Tommy By',
+  // Nome precedente al rebrand: usato per consolidare l'equity SEO della
+  // vecchia ricerca "BYLO Racing" (schema alternateName + footer + meta).
+  formerName: 'BYLO Racing',
   parent: 'BYLO Group',
   legalName: LEGAL_TOMMY.name,
   domain: 'tommy.bylogroup.it',
