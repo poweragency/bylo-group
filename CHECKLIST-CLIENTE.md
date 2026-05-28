@@ -21,13 +21,15 @@
 
 ## 🟠 IMPORTANTI — completano la qualità del sito
 
-### 3. Foto reali del cliente
-- [ ] **Foto flotta Transport** — mezzi in viaggio, in magazzino, autisti. Oggi solo animazione SVG.
-- [ ] **Foto sedi** — facciate esterne magazzino Bollate, officina e carrozzeria Mazzo di Rho.
-- [ ] **Foto interno officina** — banchi, ponti, attrezzature.
-- [ ] **Foto interno carrozzeria** — c'è già `carrozzeria-forno.jpg`, va bene così?
-- [x] **🆕 Foto NUOVE per scheda Google Business Tommy** ✅ FATTO 2026-05-28 — sostituite le foto con vecchia insegna "Bylo Racing" sulla scheda Maps. (Le foto reali servono ancora per il SITO, vedi bullet sopra.)
-- **Cosa fare in call**: chiedere se può girare un fotografo o se ha già foto di buona qualità. Le foto Tommy nuove sono propedeutiche al rename GBP (vedi §10).
+### 3. Foto reali del cliente — DECISIONE 2026-05-28: cliente NON fornisce foto per il sito
+
+Il cliente ha deciso di **non fornire foto reali per il sito**. Si resta con le illustrazioni SVG / icone / mappe attuali, che vanno bene così. Punto chiuso — non riproporre.
+
+- [~] **Foto flotta Transport** — il cliente non la fornisce → resta l'animazione SVG del camion nell'hero (oggi con scritta "BYLO GROUP"). OK così.
+- [~] **Foto sedi** (facciate Bollate + Mazzo di Rho) — non fornite → restano le mappe Google nelle sezioni "Dove siamo". OK così.
+- [~] **Foto interno officina** — non fornita → resta la griglia a icone della sezione Officina Tommy. OK così.
+- [x] **Foto interno carrozzeria** ✅ FATTO 2026-05-28 — cliente ha fornito foto reale della cabina (verniciatura/tintometro/preparazione), sostituita su tommy.bylogroup.it.
+- [x] **🆕 Foto NUOVE per scheda Google Business Tommy** ✅ FATTO 2026-05-28 — sostituite le foto con vecchia insegna "Bylo Racing" sulla scheda Maps.
 
 ### 4. Revisione legale privacy + cookie policy
 
