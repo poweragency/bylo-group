@@ -1,7 +1,7 @@
 # Checklist call cliente BYLO — cose da chiudere
 
-> Stato 2026-05-06: i 3 siti sono live e tecnicamente completi.
-> Tutto ciò che resta è input/decisione del cliente.
+> Stato 2026-05-07: i 3 siti sono live e tecnicamente completi. Indicizzazione Google in corso.
+> Tutto ciò che resta è input/decisione del cliente + setup GBP.
 
 ---
 
@@ -26,7 +26,8 @@
 - [ ] **Foto sedi** — facciate esterne magazzino Bollate, officina e carrozzeria Mazzo di Rho.
 - [ ] **Foto interno officina** — banchi, ponti, attrezzature.
 - [ ] **Foto interno carrozzeria** — c'è già `carrozzeria-forno.jpg`, va bene così?
-- **Cosa fare in call**: chiedere se può girare un fotografo o se ha già foto di buona qualità.
+- [x] **🆕 Foto NUOVE per scheda Google Business Tommy** ✅ FATTO 2026-05-28 — sostituite le foto con vecchia insegna "Bylo Racing" sulla scheda Maps. (Le foto reali servono ancora per il SITO, vedi bullet sopra.)
+- **Cosa fare in call**: chiedere se può girare un fotografo o se ha già foto di buona qualità. Le foto Tommy nuove sono propedeutiche al rename GBP (vedi §10).
 
 ### 4. Revisione legale privacy + cookie policy
 
@@ -106,18 +107,64 @@ Sono dati già scritti sul sito (in content + schema.org), basati su sito vecchi
 
 ## 🟢 DECISIONI BRANDING — da concordare
 
-### 10. Rinomina scheda Google Business "BYLO RACING Automotive" → "Tommy By"
-- **Cosa**: la scheda GBP ha ancora il vecchio nome "BYLO RACING Automotive". Per coerenza col nuovo brand andrebbe rinominata "Tommy By".
-- **Trade-off**:
-  - ✅ Coerenza brand naming sito ↔ Maps ↔ documenti
-  - ⚠️ Google "ricalibra" 24-48h → temporaneo lieve calo segnale Maps locale (poi torna)
-- **Decisione**: lo facciamo subito? Aspettiamo a quando il sito è "stabilizzato"?
+### 10. Scheda Google Business automotive — rename ESEGUITO dal cliente (2026-05-28)
 
-### 11. Mission/payoff in evidenza
+**Stato verificato 2026-05-28** (screenshot dashboard GBP "gestito da te"):
+
+| Dato GBP | Valore |
+|---|---|
+| Nome attuale | `ByloGroup - carrozzeria, officina, centro revisioni, vendita auto` ✅ rinominato dal cliente |
+| Categoria | Meccanico e assistenza automobili a Rho |
+| Indirizzo | Via Venanzio Buzzi, 9, 20017 Rho MI ✅ |
+| Telefono | 02 3349 0890 |
+| Recensioni Google | **4.2 ★ — 54 recensioni** 💎 PRESERVATE dopo il rename |
+| Gestione | "Il profilo di questa attività è gestito da te" — account agenzia ha accesso ✅ |
+| Foto attuali | Ancora presenti scatti con vecchia insegna "Bylo Racing" → cleanup foto §3 aperto |
+
+**Cosa è andato bene**: il vecchio nome keyword-stuffed "Revisioni Auto, Moto e Camper - Bylo Racing" è stato sostituito, le 54 recensioni e il rating 4.2★ sono salvi, e l'account agenzia ora gestisce la scheda (prima non c'era accesso owner diretto).
+
+**Decisione del cliente**: ha scelto `ByloGroup - carrozzeria, officina, centro revisioni, vendita auto`, NON "Tommy By" come avevamo raccomandato. Scelta del cliente, da rispettare.
+
+**Due punti residui — DECISI 2026-05-28:**
+
+1. **Keyword stuffing → si lascia così, rischio documentato.** Il tail `- carrozzeria, officina, centro revisioni, vendita auto` resta una violazione delle guidelines ("no keywords in business name") e il rischio sospensione persiste, ma il cliente vuole tenerlo. Non si tocca. Se Google segnala/sospende, si accorcia a solo `ByloGroup` in quel momento.
+2. **Disallineamento brand sito ↔ GBP → si accetta.** Sito automotive resta "Tommy By" (`tommy.bylogroup.it`, TOMMY BY S.R.L.), GBP resta "ByloGroup - ...". Segnale local SEO leggermente più debole accettato come scelta del cliente. Niente allineamento in nessuna direzione.
+
+**Azioni GBP — CHIUSE:**
+- [x] **Foto sostituite** (2026-05-28) — rimosse le foto con vecchia insegna "Bylo Racing", caricati scatti attuali dall'account agenzia. ✅
+
+**§10 completata.** Resta solo il long-term: insegna fisica nuova sull'edificio (§12), coerente col brand scelto dal cliente.
+
+### 11. 🆕 Apertura scheda Google Business per BYLO Transport
+
+**Stato attuale**: nessuna GBP separata visibile per BYLO Transport (sede Bollate, Via Ghisalba 7). Ne esiste solo una per Tommy/officina.
+
+**Vale la pena aprirla?**
+- ✅ **SÌ se il cliente cerca** "trasportatori ADR Milano nord", "logistica Bollate", "spedizioniere Lombardia" — Google Maps è canale di acquisto B2B nel settore trasporti
+- ✅ Indirizzo Bollate è distinto da Mazzo di Rho → Google la accetta come scheda separata, niente conflitto duplicate
+- ⚠️ Richiede verifica Google (cartolina ~10gg) e setup completo (orari, foto, descrizione, categoria "Servizio di trasporto merci")
+
+**Categoria primaria suggerita**: "Servizio di trasporto merci"
+**Categorie secondarie**: "Servizio di logistica", "Magazzinaggio"
+
+**Domanda al cliente**:
+- "Apriamo scheda Google Business separata per BYLO Transport (Bollate)? È un'attività che richiede ~1h di setup + 10gg di verifica via cartolina. Senza scheda non appare nel pannello mappa quando cercano trasporti in zona Milano nord."
+
+### 12. Insegna fisica nuova "Tommy By" (long-term)
+
+**Stato**: edificio Mazzo di Rho oggi senza insegna (vecchia "Bylo Racing" rimossa, nuova non installata).
+
+**Impatto**:
+- Sul GBP: senza insegna, il rename funziona ma Google ha un trust signal in meno. Long-term l'insegna è il segnale "ground truth" più forte.
+- Per i clienti fisici: arrivano via GPS senza riferimento visivo all'arrivo.
+
+**Decisione**: budget + tempistiche per nuova insegna. Non urgente (il GBP rename funziona senza), ma da pianificare.
+
+### 13. Mission/payoff in evidenza
 - **Stato**: il payoff "Professionale, veloce e affidabile" è in `packages/ui/src/index.ts` ma NON visualizzato esplicitamente nelle pagine.
 - **Domanda al cliente**: "Vuoi che lo mettiamo in evidenza (es. sotto il logo nell'header, o come slogan in landing)? Oppure resta solo come metadato interno?"
 
-### 12. Iubenda esistente vs pagine native
+### 14. Iubenda esistente vs pagine native
 - **Stato**: c'è una privacy policy Iubenda obsoleta (titolare "BYLO TRANSPORT & COMMERCE Srl") sul vecchio sito. Le nostre pagine native sono già pronte e gratuite.
 - **Trade-off**:
   - **Pagine native** (gratis): aggiornamenti manuali, brand-coherent
@@ -126,19 +173,41 @@ Sono dati già scritti sul sito (in content + schema.org), basati su sito vecchi
 
 ---
 
-## 📊 STATO INDICIZZAZIONE GOOGLE — informativo
+## 📊 STATO INDICIZZAZIONE GOOGLE — aggiornato 2026-05-07
 
-Stato al 2026-05-06 (sitemap inviata 2 giorni fa):
+Sitemap sottomessa il 2026-05-05, prima review GSC fatta il 2026-05-07.
 
-- **152 URL totali** dichiarate al crawler (group 6 + transport 48 + tommy 98)
-- **0 indicizzate finora** = normale, Google ci mette 7-30 giorni
-- **Redirect 301 attivi**: tutti i 29 URL legacy WordPress reindirizzano correttamente ai nuovi URL (fix 2026-05-06).
-- **Prossimo check**: tra 5-7 giorni su GSC → Indicizzazione → Pagine.
+| Sito | Indicizzate | Sitemap | Azione fatta oggi | Prossima |
+|---|---|---|---|---|
+| `bylogroup.it` (group) | **8 / 8** ✅ | 8 URL | Nessuna (tutto a posto) | Monitor passivo |
+| `transport.bylogroup.it` | 0 / 48 | 48 URL | Richiesta indicizzazione su 8 URL prioritarie (servizi + tratte top + settori top) | Check tra 5-7gg |
+| `tommy.bylogroup.it` | 0 / 95 | 95 URL | Richiesta indicizzazione su 6 URL prioritarie (home + 3 servizi + 2 zone). Restano 2 brand domani (audi, bmw) — limite quota giornaliero | Domani: 2 brand + eventualmente Lainate, Legnano. Check tra 5-7gg |
 
-Comunicazione al cliente: *"Tra 1-2 settimane vedrai apparire le pagine nuove nei risultati di Google. Nel frattempo i vecchi URL WordPress che Google aveva indicizzato vengono automaticamente reindirizzati ai nuovi (niente perdita di posizionamento)."*
+**Cose viste e già spiegate**:
+- Pulizia residua URL legacy WordPress: 2 in 404 (`wp-admin/*`, `wp-content/uploads/*`) + 5 in noindex (era WP che metteva noindex automatico) → **comportamento atteso**, si autopuliscono in 4-6 settimane via crawl naturale di Google. Non richiedono azione.
+- Redirect 301 da 29 URL legacy WordPress: tutti attivi e funzionanti.
+
+**Per Transport e Tommy** (sottodomini nuovi senza storia su Google): 1-4 settimane per indicizzazione progressiva è normale. Google tratta i sottodomini come domini distinti, eredita poca trust dal root.
+
+Comunicazione al cliente: *"Group è già completamente indicizzato (cercando 'bylogroup' su Google appaiono i sitelinks principali). Transport e Tommy stanno entrando progressivamente: in 2-4 settimane saranno completi. Stato monitorato attivamente, prossimo check tra 5-7 giorni."*
 
 ---
 
 ## 🎯 SUMMARY one-liner per il cliente
 
-> *"Tecnicamente i 3 siti sono pronti e già live. Per chiudere al 100% mi servono da te: numero WhatsApp + accesso AutoScout + foto reali + revisione legale (o ok per le pagine native nostre) + 4-5 conferme dati operativi (orari, telefoni, classi ADR, email). Tempo Google per indicizzazione completa: 2-4 settimane."*
+> *"Tecnicamente i 3 siti sono pronti e live, e Google sta già indicizzando (Group completo, Transport e Tommy in corso, completi in 2-4 settimane). Per chiudere al 100% mi servono da te: (a) numero WhatsApp, (b) accesso AutoScout, (c) foto reali (incluse quelle nuove per la scheda Google Tommy), (d) revisione legale (o ok pagine native), (e) accessi/conferma per fare cleanup scheda Google Tommy (rischio sospensione attivo per nome con keyword), (f) decisione su apertura scheda Google separata per Transport, (g) 4-5 conferme dati operativi (orari, telefoni, classi ADR, email)."*
+
+---
+
+## 🚦 PRIORITÀ OPERATIVE — ordine raccomandato
+
+Da fare in questa sequenza per massimizzare valore + minimizzare rischio:
+
+1. **🚨 GBP Tommy cleanup (§10)** — rinomina `Revisioni Auto, Moto e Camper - Bylo Racing` → `Tommy By` per evitare sospensione. Foto nuove prima, poi rename. Richiede coordinamento cliente per accesso admin.
+2. **🟠 Foto reali (§3)** — qualsiasi cosa il cliente abbia, anche da telefono. Servono sia per il sito (sostituire SVG flotta animata) sia per il GBP Tommy nuovo.
+3. **🟠 Email business BYLO (§5)** — sblocca trasferimento ownership di GSC/GA4/GBP da Power Agency al cliente.
+4. **🟠 Privacy/Cookie revisione (§4)** — opzione C (commercialista cliente) consigliata. Sblocca rimozione disclaimer "Bozza".
+5. **🟡 Conferme dati operativi (§6, 7, 8, 9)** — call di 30 min, copre tutto.
+6. **🔴 WhatsApp + AutoScout (§1, 2)** — richieste già fatte, in attesa risposta.
+7. **🆕 GBP Transport (§11)** — decidere se aprirla. Se sì, schedulare 1h di setup + 10gg verifica cartolina.
+8. **🟢 Insegna fisica nuova (§12)** + payoff (§13) + Iubenda (§14) — decisioni a basso impatto immediato, da chiudere quando si ha tempo.
