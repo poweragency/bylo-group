@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '@/layouts/Layout.astro';
-import { Faq, Breadcrumb, InternalLinkBlock, SchemaOrg } from '@bylo/ui/seo/index.ts';
+import { Faq, Breadcrumb, InternalLinkBlock, SchemaOrg, pickSiblings } from '@bylo/ui/seo/index.ts';
 
 export async function getStaticPaths() {
   const brands = await getCollection('brands', ({ data }) => data.locale === 'en');
@@ -28,6 +28,15 @@ const related = allServices
     label: s.data.title,
     description: s.data.intro.length > 140 ? s.data.intro.slice(0, 140) + '…' : s.data.intro,
   }));
+
+// SEO interlinking: other brands (deterministic cyclic ring).
+const allBrands = await getCollection('brands', ({ data }) => data.locale === 'en');
+allBrands.sort((a, b) => a.data.name.localeCompare(b.data.name));
+const otherBrands = pickSiblings(allBrands, brand.slug, 4, (b) => b.slug).map((b) => ({
+  href: `/en/brands/${b.slug.split('/').pop()}/`,
+  label: b.data.name,
+  description: b.data.intro.length > 140 ? b.data.intro.slice(0, 140) + '…' : b.data.intro,
+}));
 
 const siteOrigin = Astro.site?.toString().replace(/\/$/, '') ?? '';
 const cleanSlug = brand.slug.split('/').pop();
@@ -83,6 +92,15 @@ const brandSchema = {
       title={`Services we do on ${brand.data.name}`}
       eyebrow="Related services"
       links={related}
+      columns={2}
+    />
+  )}
+
+  {otherBrands.length > 0 && (
+    <InternalLinkBlock
+      title="Other brands we service"
+      eyebrow="Related brands"
+      links={otherBrands}
       columns={2}
     />
   )}

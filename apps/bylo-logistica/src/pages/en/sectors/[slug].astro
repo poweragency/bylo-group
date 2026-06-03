@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '@/layouts/Layout.astro';
-import { Faq, Breadcrumb, InternalLinkBlock, SchemaOrg } from '@bylo/ui/seo/index.ts';
+import { Faq, Breadcrumb, InternalLinkBlock, SchemaOrg, pickSiblings } from '@bylo/ui/seo/index.ts';
 import { BRAND } from '@bylo/ui/index.ts';
 
 export async function getStaticPaths() {
@@ -29,6 +29,15 @@ const related = allServices
     label: s.data.title,
     description: s.data.intro.length > 140 ? s.data.intro.slice(0, 140) + '…' : s.data.intro,
   }));
+
+// SEO interlinking: other sectors (deterministic cyclic ring).
+const allSectors = await getCollection('sectors', ({ data }) => data.locale === 'en');
+allSectors.sort((a, b) => a.data.title.localeCompare(b.data.title));
+const otherSectors = pickSiblings(allSectors, sector.slug, 4, (s) => s.slug).map((s) => ({
+  href: `/en/sectors/${s.slug}/`,
+  label: s.data.title,
+  description: s.data.intro.length > 140 ? s.data.intro.slice(0, 140) + '…' : s.data.intro,
+}));
 
 const siteOrigin = Astro.site?.toString().replace(/\/$/, '') ?? '';
 const sectorSchema = {
@@ -89,6 +98,15 @@ const sectorSchema = {
       title="Services typically requested by clients in this sector"
       eyebrow="Related services"
       links={related}
+      columns={2}
+    />
+  )}
+
+  {otherSectors.length > 0 && (
+    <InternalLinkBlock
+      title="Other sectors we serve"
+      eyebrow="Related sectors"
+      links={otherSectors}
       columns={2}
     />
   )}

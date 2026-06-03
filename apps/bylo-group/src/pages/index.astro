@@ -2,6 +2,7 @@
 import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
+import { InternalLinkBlock } from '@bylo/ui/seo/index.ts';
 import {
   GROUP,
   LEGAL_TRANSPORT,
@@ -10,6 +11,22 @@ import {
   CONTACTS_RACING,
   CONTACTS_GROUP,
 } from '@bylo/ui/index.ts';
+
+// Link cross-dominio dall'hub (massima autorita') verso le pagine profonde di
+// transport e tommy. Passa link equity ai sottodomini con pagine "Rilevate ma
+// non indicizzate". URL assoluti curati: aggiornare se cambiano gli slug.
+const transportLinks = [
+  { href: 'https://transport.bylogroup.it/tratte/milano-roma/', label: 'Trasporti ADR Milano–Roma', description: 'Tratta nazionale per merci pericolose, classi ADR 2–9.', external: true },
+  { href: 'https://transport.bylogroup.it/tratte/milano-bologna/', label: 'Trasporti ADR Milano–Bologna', description: 'Collegamento veloce sull’asse A1 con mezzi dedicati.', external: true },
+  { href: 'https://transport.bylogroup.it/settori/chimica/', label: 'Logistica per la chimica', description: 'Trasporto e stoccaggio di prodotti chimici e solventi.', external: true },
+  { href: 'https://transport.bylogroup.it/settori/farmaceutica/', label: 'Logistica per il farmaceutico', description: 'Filiera controllata per il settore farmaceutico.', external: true },
+];
+const tommyLinks = [
+  { href: 'https://tommy.bylogroup.it/zone/milano/', label: 'Officina e carrozzeria a Milano', description: 'Auto e moto multimarca, alle porte di Milano.', external: true },
+  { href: 'https://tommy.bylogroup.it/zone/rho/', label: 'Officina e carrozzeria a Rho', description: 'Sede di Mazzo di Rho, comodo accesso da A4/A8.', external: true },
+  { href: 'https://tommy.bylogroup.it/marche/bmw/', label: 'Officina BMW', description: 'Tagliandi, diagnosi elettronica e carrozzeria BMW.', external: true },
+  { href: 'https://tommy.bylogroup.it/marche/mercedes-benz/', label: 'Officina Mercedes-Benz', description: 'Manutenzione e riparazioni Mercedes-Benz.', external: true },
+];
 
 const title = 'BYLO Group — Trasporti, logistica e automotive';
 const description =
@@ -281,6 +298,20 @@ const locations = [
         </div>
       </div>
     </section>
+
+    <!-- SERVIZI IN EVIDENZA (cross-dominio, SEO link equity) -->
+    <InternalLinkBlock
+      title="Trasporti ADR e logistica in evidenza"
+      eyebrow="BYLO Transport"
+      links={transportLinks}
+      columns={2}
+    />
+    <InternalLinkBlock
+      title="Officina e carrozzeria in evidenza"
+      eyebrow="Tommy By"
+      links={tommyLinks}
+      columns={2}
+    />
 
     <!-- CONTATTI CORPORATE -->
     <section id="contatti" class="section-pad bg-byl-white">

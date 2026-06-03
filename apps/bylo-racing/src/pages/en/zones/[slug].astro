@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '@/layouts/Layout.astro';
-import { Faq, Breadcrumb, InternalLinkBlock, SchemaOrg } from '@bylo/ui/seo/index.ts';
+import { Faq, Breadcrumb, InternalLinkBlock, SchemaOrg, pickSiblings } from '@bylo/ui/seo/index.ts';
 
 export async function getStaticPaths() {
   const zones = await getCollection('zones', ({ data }) => data.locale === 'en');
@@ -25,6 +25,15 @@ const related = allServices.map((s) => ({
   href: `/en/services/${s.slug}/`,
   label: s.data.title,
   description: s.data.intro.length > 140 ? s.data.intro.slice(0, 140) + '…' : s.data.intro,
+}));
+
+// SEO interlinking: other zones (deterministic cyclic ring).
+const allZones = await getCollection('zones', ({ data }) => data.locale === 'en');
+allZones.sort((a, b) => a.data.name.localeCompare(b.data.name));
+const otherZones = pickSiblings(allZones, zone.slug, 6, (z) => z.slug).map((z) => ({
+  href: `/en/zones/${z.slug.split('/').pop()}/`,
+  label: z.data.name,
+  description: z.data.intro.length > 140 ? z.data.intro.slice(0, 140) + '…' : z.data.intro,
 }));
 
 const siteOrigin = Astro.site?.toString().replace(/\/$/, '') ?? '';
@@ -83,4 +92,13 @@ const zoneSchema = {
     links={related}
     columns={3}
   />
+
+  {otherZones.length > 0 && (
+    <InternalLinkBlock
+      title="Other zones we serve"
+      eyebrow="Nearby zones"
+      links={otherZones}
+      columns={3}
+    />
+  )}
 </Layout>
