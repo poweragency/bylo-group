@@ -22,9 +22,15 @@ const t = {
 }[currentLocale];
 
 const base = isEN ? '/en' : '';
-const switchHref = isEN
-  ? Astro.url.pathname.replace(/^\/en(\/|$)/, '/')
-  : `/en${Astro.url.pathname === '/' ? '' : Astro.url.pathname}`;
+// Sul 404 (pathname /404 o /404/) lo switch deve puntare alla home della
+// lingua, non a /en/404 che non esiste -> evita link rotto.
+const cleanPath = Astro.url.pathname.replace(/\/$/, '');
+const isNotFound = cleanPath === '/404' || cleanPath === '/en/404';
+const switchHref = isNotFound
+  ? (isEN ? '/' : '/en')
+  : isEN
+    ? Astro.url.pathname.replace(/^\/en(\/|$)/, '/')
+    : `/en${Astro.url.pathname === '/' ? '' : Astro.url.pathname}`;
 ---
 
 <header class="sticky top-0 z-50 bg-byl-white border-b border-byl-stone">

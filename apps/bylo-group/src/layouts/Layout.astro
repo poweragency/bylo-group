@@ -23,7 +23,16 @@ const htmlLang = currentLocale === 'en' ? 'en' : 'it';
 const siteOrigin = Astro.site?.toString().replace(/\/$/, '') ?? '';
 const path = Astro.url.pathname;
 
+// La 404 non ha controparte localizzata: gli hreflang devono puntare alla
+// home della lingua, non a /404 o /en/404 (che genererebbe alternate verso
+// pagine inesistenti).
+const cleanPath = path.replace(/\/$/, '');
+const isNotFound = cleanPath === '/404' || cleanPath === '/en/404';
+
 function altUrl(target: 'it' | 'en'): string {
+  if (isNotFound) {
+    return target === 'en' ? `${siteOrigin}/en` : `${siteOrigin}/`;
+  }
   if (target === 'it') {
     const stripped = path.replace(/^\/en(\/|$)/, '/');
     return `${siteOrigin}${stripped}`;
