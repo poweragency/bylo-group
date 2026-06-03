@@ -28,7 +28,15 @@
     { "source": "/officina", "destination": "https://tommy.bylogroup.it/", "permanent": true },
     { "source": "/officina/", "destination": "https://tommy.bylogroup.it/", "permanent": true },
     { "source": "/carrozzeria", "destination": "https://tommy.bylogroup.it/", "permanent": true },
-    { "source": "/carrozzeria/", "destination": "https://tommy.bylogroup.it/", "permanent": true }
+    { "source": "/carrozzeria/", "destination": "https://tommy.bylogroup.it/", "permanent": true },
+    { "source": "/en/group", "destination": "/en/", "permanent": true },
+    { "source": "/en/group/", "destination": "/en/", "permanent": true },
+    { "source": "/en/contact", "destination": "/en/#contact", "permanent": true },
+    { "source": "/en/contact/", "destination": "/en/#contact", "permanent": true },
+    { "source": "/wp-admin", "destination": "/", "permanent": true },
+    { "source": "/wp-admin/:path*", "destination": "/", "permanent": true },
+    { "source": "/wp-content/:path*", "destination": "/", "permanent": true },
+    { "source": "/wp-includes/:path*", "destination": "/", "permanent": true }
   ],
   "headers": [
     {
