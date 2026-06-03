@@ -1,9 +1,9 @@
 User-agent: *
 Allow: /
 
-Disallow: /wp-admin/
-Disallow: /wp-content/
-Disallow: /wp-includes/
+# I path WP legacy (/wp-admin, /wp-content, /wp-includes) ora fanno 301 -> /
+# via vercel.json: NON vanno bloccati qui, altrimenti Google non ricrawla e
+# non vede il redirect, lasciando i 404 storici nell'indice.
 Disallow: /wp-login.php
 Disallow: /xmlrpc.php
 Disallow: /?p=
