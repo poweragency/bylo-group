@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '@/layouts/Layout.astro';
-import { Faq, Breadcrumb, InternalLinkBlock, SchemaOrg } from '@bylo/ui/seo/index.ts';
+import { Faq, Breadcrumb, InternalLinkBlock, SchemaOrg, pickSiblings } from '@bylo/ui/seo/index.ts';
 import { BRAND } from '@bylo/ui/index.ts';
 
 export async function getStaticPaths() {
@@ -29,6 +29,15 @@ const related = allServices
     label: s.data.title,
     description: s.data.intro.length > 140 ? s.data.intro.slice(0, 140) + '…' : s.data.intro,
   }));
+
+// SEO interlinking: other routes (deterministic cyclic ring).
+const allRoutes = await getCollection('routes', ({ data }) => data.locale === 'en');
+allRoutes.sort((a, b) => a.data.origin.localeCompare(b.data.origin));
+const otherRoutes = pickSiblings(allRoutes, route.slug, 4, (r) => r.slug).map((r) => ({
+  href: `/en/routes/${r.slug}/`,
+  label: `${r.data.origin} → ${r.data.destination}`,
+  description: r.data.intro.length > 140 ? r.data.intro.slice(0, 140) + '…' : r.data.intro,
+}));
 
 const siteOrigin = Astro.site?.toString().replace(/\/$/, '') ?? '';
 const routeSchema = {
@@ -106,6 +115,15 @@ const routeSchema = {
       title="Services typically used on this route"
       eyebrow="Related services"
       links={related}
+      columns={2}
+    />
+  )}
+
+  {otherRoutes.length > 0 && (
+    <InternalLinkBlock
+      title="Other routes we serve"
+      eyebrow="Related routes"
+      links={otherRoutes}
       columns={2}
     />
   )}
