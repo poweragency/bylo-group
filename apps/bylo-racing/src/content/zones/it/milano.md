@@ -17,6 +17,9 @@ faq:
   - q: Posso prendere il treno per rientrare dopo aver lasciato l'auto?
     a: >-
       Sì. La stazione di Rho FS è sulle linee S5, S6 e regionali Milano-Domodossola. Da Mazzo alla stazione sono 5 minuti d'auto (o in taxi locale). Da Rho FS il rientro su Milano Cadorna o Milano Centrale richiede 12-18 minuti.
+  - q: Posso far verniciare o riparare la carrozzeria portando l'auto da Milano?
+    a: >-
+      Sì. Molti clienti milanesi scelgono la nostra carrozzeria proprio perché la verniciatura a forno ad acqua è difficile da trovare in città. Siamo fuori da Area B e Area C, quindi l'auto vi arriva senza vincoli di accesso, e qui trovi officina e carrozzeria nello stesso edificio.
 publishedAt: 2026-05-05
 ---
 
@@ -27,6 +30,10 @@ Il percorso standard è la tangenziale ovest A50, uscita Pero (o Cusago per chi 
 ## Milano e le sue Aree limitate
 
 L'Area B di Milano (che copre quasi tutto il territorio comunale) e l'Area C (cerchia dei bastioni) limitano sempre più categorie di veicoli — diesel Euro 5 fermi in fasce orarie, alcune Euro 4, categorie commerciali Euro 3. Il risultato è che molti milanesi hanno un'auto perfettamente funzionante ma confinata al perimetro extraurbano. Mazzo di Rho è fuori da entrambe le Aree: l'auto può circolare senza restrizioni dal cancello di casa fino a Mazzo, anche se in Milano non può rientrare in determinati orari. Per molti questo trasforma una limitazione amministrativa in un motivo concreto per scegliere un'officina extraurbana.
+
+## Carrozzeria per Milano, fuori da Area B
+
+La verniciatura a forno ad acqua è rara nelle officine interne a Milano, per vincoli di spazio e ambientali. La nostra carrozzeria è a 14 km dal centro, fuori da Area B e Area C: puoi portare l'auto da verniciare o da riparare dopo un sinistro anche se è un veicolo soggetto a restrizione di accesso in città. Diagnosi con foto, raddrizzatura, sostituzione parti e verniciatura completa nello stesso edificio dell'officina. Vedi il [processo della carrozzeria](/servizi/carrozzeria-e-verniciatura/).
 
 ## Per quali milanesi ha più senso Tommy By
 
