@@ -2,9 +2,9 @@
 locale: it
 slug: chimica
 seo:
-  title: Trasporti ADR per industria chimica — Solventi, acidi, basi | BYLO Transport
-  description: Trasporto di solventi (toluene, xilene, MEK), acidi minerali, basi, perossidi e ipocloriti per il polo chimico italiano. BYLO Transport copre Marghera, Ravenna, Ferrara, Brindisi e il chimico secondario del Nord.
-title: Trasporti per il settore chimico
+  title: Trasporti chimica liquida e ADR — solventi, acidi, basi | BYLO Transport
+  description: "Trasporto di chimica liquida ADR: solventi (toluene, xilene, MEK), acidi minerali, basi, perossidi e ipocloriti. BYLO Transport copre Marghera, Ravenna, Ferrara, Brindisi."
+title: Trasporto chimica liquida e merci pericolose ADR
 intro: >-
   La chimica è il cliente storico del trasporto ADR: per ogni litro di solvente movimentato c'è una scheda di sicurezza da rispettare, una matrice di compatibilità da verificare, una restrizione geografica o oraria da considerare. BYLO Transport opera nei principali poli chimici italiani con un approccio che parte sempre dalla SDS del prodotto e arriva al piano di carico verificato. La differenza, nel chimico, non la fa il mezzo — la fa la gestione documentale e la conoscenza delle restrizioni di rotta.
 faq:
@@ -17,13 +17,16 @@ faq:
   - q: Gestite il cross-docking ADR per piccole quantità da più committenti?
     a: >-
       Il gruppage chimico è un servizio specifico, non un trasporto generico ridotto. Richiede compatibilità verificata fra tutti i prodotti del carico, un piano di carico documentato e in molti casi la designazione di un consulente ADR per la spedizione complessiva. Lo gestiamo per piccoli volumi quando il flusso ha frequenza ricorrente e i committenti accettano la tracciabilità condivisa del giro.
+  - q: Trasportate chimica liquida sia in cisterna sia in fusti o IBC?
+    a: >-
+      Sì. La chimica liquida viaggia in cisterna dedicata, in cisternette IBC o in fusti a seconda del prodotto e della quantità. Il contenitore incide sul piano di carico: in cisterna dedicata conta la verifica del residuo precedente, nel carico in IBC o fusti conta la matrice di compatibilità fra prodotti diversi. Verifichiamo entrambi i casi a partire dalla scheda di sicurezza.
 relatedServices:
   - trasporti-adr
   - logistica-integrata
 publishedAt: 2026-04-28
 ---
 
-## Quali prodotti chimici richiedono il trasporto ADR
+## Chimica liquida: quali prodotti richiedono il trasporto ADR
 
 La chimica è il settore con la più ampia varietà di classi pericolose movimentate. Le famiglie ricorrenti:
 

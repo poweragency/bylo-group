@@ -2,9 +2,9 @@
 locale: it
 slug: farmaceutica
 seo:
-  title: Trasporti per industria farmaceutica — Solventi farma, API, intermedi | BYLO Transport
-  description: BYLO Transport movimenta solventi farma (etanolo, isopropanolo, acetone), intermedi di sintesi e materiali di laboratorio per i poli Pomezia-Latina, Verona e Milano. GDP-compatibile, temperatura ambiente controllata.
-title: Trasporti per il settore farmaceutico
+  title: Trasporto principi attivi farmaceutici (API) e solventi farma | BYLO Transport
+  description: "BYLO Transport movimenta principi attivi farmaceutici (API), solventi farma (etanolo, IPA, acetone) e intermedi di sintesi per i poli Pomezia-Latina, Verona e Milano. Temperatura ambiente controllata."
+title: Trasporto principi attivi farmaceutici (API) e solventi ADR
 intro: >-
   Il farmaceutico ha una struttura logistica che gli altri settori non hanno: il farmaco finito viaggia in cold chain certificata, gli intermedi di sintesi e i solventi di processo viaggiano in ADR. BYLO Transport opera sulla seconda fascia — quella che non richiede 2-8 gradi ma richiede tracciabilità GDP, scheda di sicurezza in ordine, e una conoscenza dei tempi della produzione farma che non perdonano. Un fermo impianto per mancanza di solvente costa quanto un fermo di una linea automotive, talvolta di più.
 faq:
@@ -17,13 +17,16 @@ faq:
   - q: Come si gestisce un'urgenza per reagente o solvente per produzione in fermo?
     a: >-
       Il fermo produzione per mancata fornitura è lo scenario peggiore. Su tratte ricorrenti (Pomezia-Latina, Verona, Milano, area Brescia per produzione API conto terzi) la disponibilità entro 12-24 ore è realisticamente attivabile. Il vincolo non è la pianificazione del viaggio in sé ma la documentazione ADR completa, che richiede SDS aggiornata e codice di classificazione corretto: se quei dati sono pronti dal cliente, il mezzo parte rapidamente.
+  - q: Trasportate principi attivi farmaceutici (API)?
+    a: >-
+      Sì, nella forma che rientra in regime ADR. I principi attivi (API) in soluzione o sospensione e i solventi di processo associati viaggiano come merce ADR (tipicamente classe 3, alcuni in 6.1). Gli API in forma solida packaged spesso non sono ADR. In entrambi i casi gestiamo tracciabilità per lotto e temperatura ambiente controllata quando richiesta; non operiamo in cold chain 2-8°C.
 relatedServices:
   - trasporti-adr
   - magazzinaggio
 publishedAt: 2026-04-28
 ---
 
-## Quali prodotti del farmaceutico richiedono il trasporto ADR
+## Principi attivi farmaceutici, solventi e intermedi in regime ADR
 
 Il settore farma muove tre famiglie distinte, e solo due rientrano in regime ADR:
 
