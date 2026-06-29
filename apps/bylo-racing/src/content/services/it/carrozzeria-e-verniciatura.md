@@ -2,12 +2,12 @@
 locale: it
 slug: carrozzeria-e-verniciatura
 seo:
-  title: Carrozzeria e verniciatura a forno ad acqua a Mazzo di Rho | Tommy By
-  description: Carrozzeria Tommy By a Mazzo di Rho. Riparazioni dopo sinistro, verniciatura a forno con vernici ad acqua a basso impatto ambientale.
+  title: Carrozzeria a Rho — verniciatura a forno ad acqua | Tommy By
+  description: "Carrozzeria a Rho (sede a Mazzo di Rho, 3 km dal centro): riparazioni dopo sinistro e verniciatura a forno con vernici ad acqua. Preventivo con foto."
 category: carrozzeria
-title: Carrozzeria con verniciatura a forno ad acqua
+title: Carrozzeria a Rho con verniciatura a forno ad acqua
 intro: >-
-  La carrozzeria di Mazzo di Rho gestisce riparazioni dopo sinistro, ritocchi, verniciatura completa. Utilizziamo esclusivamente vernici ad acqua, una scelta che riduce l'impatto ambientale senza compromettere la qualità della finitura.
+  La carrozzeria di Tommy By è a Rho — sede a Mazzo di Rho, 3 km dal centro città — e gestisce riparazioni dopo sinistro, ritocchi e verniciatura completa per residenti e aziende di Rho e del nord-ovest milanese. Utilizziamo esclusivamente vernici ad acqua, una scelta che riduce l'impatto ambientale senza compromettere la qualità della finitura.
 bullets:
   - Riparazione carrozzeria dopo collisione e piccoli urti
   - Verniciatura a forno con vernici ad acqua, a basso impatto ambientale
@@ -25,6 +25,9 @@ faq:
   - q: Lavorate con assicurazioni?
     a: >-
       Gestiamo direttamente la pratica con la compagnia del cliente quando necessario, occupandoci della parte tecnica e documentale. Non abbiamo convenzioni preferenziali con specifiche assicurazioni — lavoriamo con tutte.
+  - q: Dove si trova la vostra carrozzeria rispetto al centro di Rho?
+    a: >-
+      La carrozzeria è nella nostra sede di Mazzo di Rho, frazione del comune di Rho, in Via Venanzio Buzzi 9: 3 km dal centro di Rho, circa 6 minuti d'auto. Serviamo abitualmente clienti di Rho, delle frazioni (Lucernate, Terrazzano) e del nord-ovest milanese.
 relatedServices:
   - officina-multimarche
 publishedAt: 2026-04-28
@@ -42,3 +45,7 @@ publishedAt: 2026-04-28
 
 - Non eseguiamo wrapping (rivestimento in pellicola) come servizio standard.
 - Non ricostruiamo telai pesantemente danneggiati su veicoli storici (rivolgersi a carrozzieri specialisti).
+
+## Carrozzeria a Rho e dintorni
+
+Siamo la carrozzeria di riferimento nel comune di Rho: oltre ai clienti privati, lavoriamo in subappalto per concessionarie e officine multimarche della zona che non hanno un forno di verniciatura interno. Per residenti e aziende di Rho significa gestire la riparazione post-sinistro senza spostare il veicolo verso Milano. Vedi tutti i dettagli sul territorio nella pagina [officina e carrozzeria a Rho](/zone/rho/).

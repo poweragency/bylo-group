@@ -2,7 +2,7 @@
 locale: it
 seo:
   title: Carrozzeria e officina a Rho | Tommy By
-  description: Tommy By è nel comune di Rho, a Mazzo di Rho. Officina e carrozzeria a 3 km dal centro Rho, vicino alla Fiera Milano-Rho, all'ospedale Rhodense e alle stazioni dei treni.
+  description: "Officina e carrozzeria a Rho (Mazzo di Rho): riparazioni post-sinistro, verniciatura a forno ad acqua e revisioni. A 3 km dal centro di Rho, vicino alla Fiera Milano-Rho."
 name: Rho
 province: MI
 intro: >-
@@ -20,6 +20,9 @@ faq:
   - q: Per chi vive nelle frazioni di Rho (Lucernate, Terrazzano), siete comodi?
     a: >-
       Sì, da tutte le frazioni del comune di Rho la nostra sede è raggiungibile in pochi minuti senza uscire dai confini comunali. Da Lucernate sono circa 4 km, da Terrazzano 3 km.
+  - q: Fate riparazioni di carrozzeria post-sinistro per chi abita a Rho?
+    a: >-
+      Sì. Gestiamo l'intera riparazione post-sinistro nella sede di Mazzo di Rho: diagnosi con foto, raddrizzatura, sostituzione parti e verniciatura a forno con vernici ad acqua. Per i residenti di Rho significa non dover portare l'auto fino a Milano.
 publishedAt: 2026-05-05
 ---
 
@@ -33,6 +36,10 @@ Siamo l'officina nel comune di Rho: per i 50.000 residenti di Rho centro e delle
 - Da **Rho stazione FS** (linee S5/S6, regionali Milano-Domodossola): 5-6 minuti
 - Da **Fiera Milano-Rho**: 6 minuti via SS33 del Sempione
 - Da **Lucernate e Terrazzano**: 5-7 minuti, percorso interno al comune
+
+## Carrozzeria a Rho con verniciatura a forno ad acqua
+
+Per chi a Rho cerca una carrozzeria, il nostro vantaggio è avere il forno di verniciatura ad acqua e il tintometro professionale internamente: molte officine generaliste della zona non li hanno e ci affidano le verniciature in subappalto. Gestiamo riparazioni post-sinistro complete — diagnosi, raddrizzatura, sostituzione parti e verniciatura — senza dover spostare il veicolo verso Milano. Vedi il [processo completo della carrozzeria](/servizi/carrozzeria-e-verniciatura/).
 
 ## Cosa rende Rho specifica per il servizio
 
