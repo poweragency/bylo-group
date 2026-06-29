@@ -3,13 +3,13 @@ locale: en
 slug: milan-turin
 seo:
   title: ADR transport Milan-Turin — A4, Mirafiori automotive hub, Canavese | BYLO Transport
-  description: ADR route Milan-Turin on the A4, ~125 km. Mirafiori-Stellantis automotive hub, Leonardo aerospace, Canavese fine-chemistry district and access to the Alpine passes.
+  description: ADR route Milan-Turin on the A4, ~140 km. Mirafiori-Stellantis automotive hub, Leonardo aerospace, Canavese fine-chemistry district and access to the Alpine passes.
 origin: Milan
 destination: Turin
 distanceKm: 140
 transitTimeHours: 2
 intro: >-
-  One hundred and twenty-five kilometres of A4 connect two of the country's historic industrial capitals. The corridor is short, smooth and flat, but the industrial basin it serves is as dense and specialised as any in Europe: the Turin axis concentrates automotive, aerospace and fine chemistry in a small radius, and is also the gateway to the French and Swiss Alpine passes.
+  One hundred and forty kilometres of A4 connect two of the country's historic industrial capitals. The corridor is short, smooth and flat, but the industrial basin it serves is as dense and specialised as any in Europe: the Turin axis concentrates automotive, aerospace and fine chemistry in a small radius, and is also the gateway to the French and Swiss Alpine passes.
 faq:
   - q: Can a Turin delivery be structured as a same-day express service?
     a: >-
@@ -27,7 +27,7 @@ publishedAt: 2026-04-28
 
 ## The Milan-Turin route at a glance
 
-The 125 km of the A4 between Milan and Turin are entirely flat, on a straight alignment crossing the western Po Valley. Traffic density is heavy at peak hours on the Milan-Magenta and Settimo Torinese-Turin stretches, where urban commuter flows converge. Equipped service areas are concentrated at Brughiero, Novara and Greggio.
+The 140 km of the A4 between Milan and Turin are entirely flat, on a straight alignment crossing the western Po Valley. Traffic density is heavy at peak hours on the Milan-Magenta and Settimo Torinese-Turin stretches, where urban commuter flows converge. Equipped service areas are concentrated at Brughiero, Novara and Greggio.
 
 The approach to Turin offers multiple variants: the eastern ring road toward Stupinigi and Mirafiori, the western ring road toward Canavese and the A5 connections to Aosta. Turin's industrial logistics are split between the northern ring (aerospace and engineering) and the southern ring (automotive and supplier base).
 

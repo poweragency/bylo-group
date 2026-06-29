@@ -2,7 +2,7 @@
 import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
-import { InternalLinkBlock } from '@bylo/ui/seo/index.ts';
+import { InternalLinkBlock, Faq } from '@bylo/ui/seo/index.ts';
 import {
   GROUP,
   LEGAL_TRANSPORT,
@@ -15,6 +15,37 @@ import {
 const title = 'BYLO Group — Transport, logistics and automotive';
 const description =
   'BYLO Group is the holding behind BYLO Transport (ADR transport and logistics) and Tommy By (multi-brand auto and motorcycle repair and body shop). A family-run Italian business.';
+
+// Group FAQ: real on-page content (GEO/AI lever) + FAQPage schema from <Faq>.
+// Answers based only on facts already on the site (services, locations, ADR
+// classes): no invented figures, no founding year/headcount (excluded by the
+// client). To be validated with the client.
+const faq = [
+  {
+    q: 'What is BYLO Group?',
+    a: 'BYLO Group is the family-run holding behind two complementary companies: <strong>BYLO Transport</strong>, active in ADR transport and logistics, and <strong>Tommy By</strong>, a multi-brand auto and motorcycle repair and body shop. The two businesses operate independently but team up whenever a single point of contact is needed for needs that span transport and automotive.',
+  },
+  {
+    q: 'What is the difference between BYLO Transport and Tommy By?',
+    a: 'BYLO Transport handles the transport of dangerous goods (ADR) and integrated logistics, from its operating site in Ospiate di Bollate (Milan). Tommy By is the group’s multi-brand workshop and body shop, in Mazzo di Rho (Milan), for maintenance, repairs, body work and inspections of cars and motorcycles.',
+  },
+  {
+    q: 'Where are the group’s locations?',
+    a: 'The group has two operating sites in Lombardy, both just outside Milan with quick access to the A4/A8 motorways: BYLO Transport in Ospiate di Bollate (Via Ghisalba 7) and Tommy By in Mazzo di Rho (Via Venanzio Buzzi 9).',
+  },
+  {
+    q: 'Can BYLO Transport carry dangerous goods?',
+    a: 'Yes. BYLO Transport specialises in ADR transport of dangerous goods across classes 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 and 9, with ADR-licensed drivers and compliant vehicles, on national and international routes.',
+  },
+  {
+    q: 'Which vehicles does Tommy By work on?',
+    a: 'Tommy By is a multi-brand workshop and body shop: it works on cars and motorcycles of any make and model. It offers scheduled services, mechanical and electronic repairs, tyres, body work with water-based oven painting and mandatory inspections up to 3.5 tonnes.',
+  },
+  {
+    q: 'How do I contact the right company?',
+    a: 'For transport and logistics, write to or call BYLO Transport; for the workshop and body shop, contact Tommy By. You will find all the dedicated contact details in the contact section of this site and on the two companies’ websites.',
+  },
+];
 
 const numbers = [
   { value: '2', label: 'Family generations' },
@@ -313,6 +344,9 @@ const tommyLinks = [
       links={tommyLinks}
       columns={2}
     />
+
+    <!-- FAQ (real content + FAQPage schema) -->
+    <Faq items={faq} eyebrow="FAQ" title="Frequently asked questions about BYLO Group" />
 
     <!-- CONTACT -->
     <section id="contact" class="section-pad bg-byl-white">
