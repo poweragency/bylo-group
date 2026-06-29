@@ -2,14 +2,14 @@
 locale: it
 slug: milano-roma
 seo:
-  title: Trasporti ADR Milano-Roma — A1 Autosole, Variante di Valico, ZTL Fascia Verde | BYLO Transport
-  description: Tratta ADR Milano-Roma su A1 Autosole, ~580 km. Codici tunnel Variante di Valico, ZTL Roma Fascia Verde e Anello Ferroviario, polo farmaceutico Pomezia-Latina.
+  title: Trasporti ADR Milano-Roma e Roma sud — A1 Autosole, polo Pomezia-Latina | BYLO Transport
+  description: Tratta ADR Milano-Roma su A1 Autosole, ~580 km. Variante di Valico, ZTL Roma Fascia Verde e polo farmaceutico Pomezia-Latina (Roma sud).
 origin: Milano
 destination: Roma
 distanceKm: 580
 transitTimeHours: 7
 intro: >-
-  Cinquecentottanta chilometri di Autosole, l'asse storico del Paese. La A1 Milano-Roma è la spina dorsale logistica nazionale e una delle direttrici più studiate del continente per traffico merci. Per il trasporto ADR la complicazione non è la distanza, ma la successione di varianti appenniniche con codici tunnel disomogenei e la regolamentazione urbana romana, articolata su più anelli concentrici.
+  Cinquecentottanta chilometri di Autosole, l'asse storico del Paese. La A1 Milano-Roma è la spina dorsale logistica nazionale e una delle direttrici più studiate del continente per traffico merci. Per il trasporto ADR la complicazione non è la distanza, ma la successione di varianti appenniniche con codici tunnel disomogenei e la regolamentazione urbana romana, articolata su più anelli concentrici. Il bacino di destinazione più rilevante è il polo farmaceutico di Pomezia-Latina, a sud di Roma (Roma sud).
 faq:
   - q: Ci sono restrizioni ADR specifiche nel passaggio della Variante di Valico?
     a: >-

@@ -2,14 +2,14 @@
 locale: en
 slug: milan-rome
 seo:
-  title: ADR transport Milan-Rome — A1 Autosole, Variante di Valico, LTZ Fascia Verde | BYLO Transport
-  description: ADR route Milan-Rome on the A1 Autosole, ~580 km. Variante di Valico tunnel codes, the Rome Fascia Verde and Anello Ferroviario LTZ, and the Pomezia-Latina pharmaceutical hub.
+  title: ADR transport Milan-Rome and Rome south — A1 Autosole, Pomezia-Latina hub | BYLO Transport
+  description: ADR route Milan-Rome on the A1 Autosole, ~580 km. Variante di Valico tunnel codes, the Rome Fascia Verde LTZ, and the Pomezia-Latina pharmaceutical hub (Rome south).
 origin: Milan
 destination: Rome
 distanceKm: 580
 transitTimeHours: 7
 intro: >-
-  Five hundred and eighty kilometres of Autosole, the country's historic spine. The A1 Milan-Rome is the national logistics backbone and one of the most heavily studied freight corridors on the continent. For ADR transport, the difficulty is not the distance but the succession of Apennine variants with uneven tunnel codes and Rome's urban regulation, structured across multiple concentric rings.
+  Five hundred and eighty kilometres of Autosole, the country's historic spine. The A1 Milan-Rome is the national logistics backbone and one of the most heavily studied freight corridors on the continent. For ADR transport, the difficulty is not the distance but the succession of Apennine variants with uneven tunnel codes and Rome's urban regulation, structured across multiple concentric rings. The most relevant destination basin is the Pomezia-Latina pharmaceutical hub, south of Rome (Rome south).
 faq:
   - q: Are there ADR-specific restrictions when crossing the Variante di Valico?
     a: >-
