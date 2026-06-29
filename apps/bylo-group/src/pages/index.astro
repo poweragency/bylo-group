@@ -2,7 +2,7 @@
 import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
-import { InternalLinkBlock } from '@bylo/ui/seo/index.ts';
+import { InternalLinkBlock, Faq } from '@bylo/ui/seo/index.ts';
 import {
   GROUP,
   LEGAL_TRANSPORT,
@@ -31,6 +31,37 @@ const tommyLinks = [
 const title = 'BYLO Group — Trasporti, logistica e automotive';
 const description =
   'La holding BYLO Group riunisce BYLO Transport (trasporti ADR e logistica) e Tommy By (officina e carrozzeria multimarca auto e moto in Lombardia).';
+
+// FAQ del gruppo: contenuto reale in pagina (leva GEO/AI) + FAQPage schema
+// emesso da <Faq>. Risposte basate solo su fatti gia' presenti sul sito
+// (servizi, sedi, classi ADR): nessun numero inventato, niente anno
+// fondazione/dipendenti (esclusi per scelta cliente). Da validare col cliente.
+const faq = [
+  {
+    q: 'Che cos’è BYLO Group?',
+    a: 'BYLO Group è la holding familiare che riunisce due aziende complementari: <strong>BYLO Transport</strong>, attiva nei trasporti ADR e nella logistica, e <strong>Tommy By</strong>, officina e carrozzeria multimarca per auto e moto. Le due imprese operano in modo indipendente ma collaborano quando serve un interlocutore unico per esigenze che attraversano trasporti e automotive.',
+  },
+  {
+    q: 'Che differenza c’è tra BYLO Transport e Tommy By?',
+    a: 'BYLO Transport si occupa di trasporto di merci pericolose (ADR) e logistica integrata, con sede operativa a Ospiate di Bollate (MI). Tommy By è l’officina e carrozzeria multimarca del gruppo, a Mazzo di Rho (MI), per manutenzione, riparazioni, carrozzeria e revisioni di auto e moto.',
+  },
+  {
+    q: 'Dove si trovano le sedi del gruppo?',
+    a: 'Il gruppo ha due sedi operative in Lombardia, entrambe alle porte di Milano con accesso rapido alle autostrade A4/A8: BYLO Transport a Ospiate di Bollate (Via Ghisalba 7) e Tommy By a Mazzo di Rho (Via Venanzio Buzzi 9).',
+  },
+  {
+    q: 'BYLO Transport può trasportare merci pericolose?',
+    a: 'Sì. BYLO Transport è specializzata nel trasporto ADR di merci pericolose sulle classi 2, 3, 4.1, 4.2, 5.1, 5.2, 6.1, 8 e 9, con autisti dotati di patentino ADR e mezzi conformi alla normativa, su tratte nazionali e internazionali.',
+  },
+  {
+    q: 'Su quali veicoli lavora Tommy By?',
+    a: 'Tommy By è un’officina e carrozzeria multimarca: lavora su auto e moto di qualsiasi marca e modello. Offre tagliandi, riparazioni meccaniche ed elettroniche, pneumatici, carrozzeria con verniciatura a forno ad acqua e revisioni ministeriali fino a 35 quintali.',
+  },
+  {
+    q: 'Come contatto l’azienda giusta?',
+    a: 'Per trasporti e logistica scrivi o chiama BYLO Transport; per officina e carrozzeria contatta Tommy By. Trovi tutti i recapiti dedicati nella sezione contatti di questo sito e sui siti delle due aziende.',
+  },
+];
 
 const numbers = [
   { value: '2', label: 'Generazioni in famiglia' },
@@ -312,6 +343,9 @@ const locations = [
       links={tommyLinks}
       columns={2}
     />
+
+    <!-- FAQ (contenuto reale + FAQPage schema) -->
+    <Faq items={faq} eyebrow="FAQ" title="Domande frequenti sul gruppo BYLO" />
 
     <!-- CONTATTI CORPORATE -->
     <section id="contatti" class="section-pad bg-byl-white">

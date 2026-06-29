@@ -3,13 +3,13 @@ locale: it
 slug: milano-torino
 seo:
   title: Trasporti ADR Milano-Torino — A4, polo automotive Mirafiori, Canavese | BYLO Transport
-  description: Tratta ADR Milano-Torino su A4, ~125 km. Polo automotive Mirafiori-Stellantis, aerospaziale Leonardo, distretto Canavese chimica fine e accessi valichi alpini.
+  description: Tratta ADR Milano-Torino su A4, ~140 km. Polo automotive Mirafiori-Stellantis, aerospaziale Leonardo, distretto Canavese chimica fine e accessi valichi alpini.
 origin: Milano
 destination: Torino
 distanceKm: 140
 transitTimeHours: 2
 intro: >-
-  Centoventicinque chilometri di A4 collegano due capitali industriali storiche del Paese. La direttrice è breve, scorrevole e pianeggiante, ma il bacino industriale che serve è denso e specializzato come pochi in Europa: l'asse torinese concentra automotive, aerospaziale e chimica fine in raggio ridotto, oltre a essere la porta di accesso ai valichi alpini francesi e svizzeri.
+  Centoquaranta chilometri di A4 collegano due capitali industriali storiche del Paese. La direttrice è breve, scorrevole e pianeggiante, ma il bacino industriale che serve è denso e specializzato come pochi in Europa: l'asse torinese concentra automotive, aerospaziale e chimica fine in raggio ridotto, oltre a essere la porta di accesso ai valichi alpini francesi e svizzeri.
 faq:
   - q: La consegna a Torino può essere strutturata come servizio express in giornata?
     a: >-
@@ -27,7 +27,7 @@ publishedAt: 2026-04-28
 
 ## Caratteristiche della tratta Milano-Torino
 
-I 125 km della A4 fra Milano e Torino sono interamente pianeggianti, con tracciato rettilineo che attraversa la pianura padana occidentale. Il flusso di traffico è denso negli orari di punta sui tratti Milano-Magenta e Settimo Torinese-Torino, dove convergono i flussi pendolari urbani. Le aree di servizio attrezzate sono concentrate a Brughiero, Novara e Greggio.
+I 140 km della A4 fra Milano e Torino sono interamente pianeggianti, con tracciato rettilineo che attraversa la pianura padana occidentale. Il flusso di traffico è denso negli orari di punta sui tratti Milano-Magenta e Settimo Torinese-Torino, dove convergono i flussi pendolari urbani. Le aree di servizio attrezzate sono concentrate a Brughiero, Novara e Greggio.
 
 L'avvicinamento a Torino offre molteplici varianti: tangenziale est verso Stupinigi e Mirafiori, tangenziale ovest verso il Canavese e gli innesti A5 per Aosta. La logistica industriale torinese si distribuisce in cintura nord (aerospazio e meccanica) e cintura sud (automotive e indotto).
 

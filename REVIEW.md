@@ -23,6 +23,7 @@ Questo file lista tutti i punti dei contenuti che sono **placeholder, deduzione 
 - [x] **Tratte tipiche internazionali** — DECISIONE CLIENTE 2026-05-05: non specificare nulla, generare le tipiche più cercate. Generate **Milano-Francia, Milano-Germania, Milano-Spagna** in IT + EN con vincoli tunnel reali (Frejus, Brennero, Gottardo, Ventimiglia).
 - [x] **Settori clienti reali** — DECISIONE CLIENTE 2026-05-05: non specificare, generare quelli più cercati. Aggiunti **cosmetica, vernici-solventi, automotive, alimentare** in IT + EN con copy unico (no duplicate content). Mantenuti chimica + farmaceutica.
 - [x] **Tratte ipotizzate**: DECISIONE CLIENTE 2026-05-05: il cliente conferma Milano-Roma e Milano-Torino come "ok come SEO", chiede di generare altre tipiche. Aggiunte **Milano-Napoli, Milano-Bologna, Milano-Genova** in IT + EN.
+- [x] **Distanza Milano-Torino** — RISOLTA 2026-06-29 (PR seo/pr4-item-cliente): incoerenza tra testo ("125 km") e frontmatter (`distanceKm: 140`). La distanza stradale A4 Milano-Torino è ~140 km → allineati seo.description, intro e corpo a 140 km (IT `milano-torino.md` + EN `milan-turin.md`).
 - [x] **Certificazioni** — DECISIONE CLIENTE 2026-05-05: copy generico, niente ISO specifiche. Aggiunto bullet "Certificazioni di settore aggiornate per il trasporto ADR" in `trasporti-adr.md` (IT+EN). Confermato Albo Autotrasportatori MI/8906297N (rimosso `[DA VERIFICARE]` da `LEGAL_TRANSPORT.albo`).
 - [ ] **Onboarding tempi/processo logistica integrata** — in `services/it/logistica-integrata.md` ho usato un processo generico (4 step). Verificare se corrisponde al modo reale di operare.
 - [ ] **FAQ chimica/farmaceutica** — i 6 Q&A nei file settori sono contenuto SEO-plausibile ma generico. Da rileggere con il cliente per verificare che le risposte rispettino come l'azienda descrive davvero i propri servizi.
@@ -47,6 +48,7 @@ Questo file lista tutti i punti dei contenuti che sono **placeholder, deduzione 
 ## 4. BYLO Group (holding) — content
 
 - [x] **Storia / fondatori / famiglia** — DECISIONE CLIENTE 2026-05-05: niente date/numeri storici (anno fondazione, dipendenti, ecc.). La narrativa familiare "2 generazioni" resta nei copy ma senza dettagli specifici. Conteggio sedi corretto da 3 → 2 sia in IT che EN (officina+carrozzeria coabitano a Mazzo di Rho).
+- [ ] **FAQ home group** — AGGIUNTE 2026-06-29 (PR seo/pr4-item-cliente): 6 Q&A in pagina su `bylogroup.it` (IT+EN) con FAQPage schema (leva GEO/AI). Risposte basate solo su fatti già pubblicati (servizi, sedi, classi ADR), nessun numero inventato, niente anno fondazione/dipendenti (esclusi per scelta cliente). **Da far rileggere al cliente** per conferma tono/accuratezza.
 - [ ] **Mission / vision** — il sito attuale dice "professionale, veloce e affidabile" come payoff. Salvato in `packages/ui/src/index.ts` → `GROUP.payoff`. Non lo uso esplicitamente nelle pagine; valutare se metterlo in evidenza.
 - [ ] **Centralino "gruppo"** — nelle pagine usiamo `+39 02 7862 0860` (centralino Transport) marcandolo come "Centralino gruppo / Group switchboard". Verificare se risponde davvero per richieste che non sono di logistica.
 
