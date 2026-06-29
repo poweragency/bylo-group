@@ -1,6 +1,39 @@
 ---
+import { getCollection } from 'astro:content';
 import Layout from '@/layouts/Layout.astro';
+import { InternalLinkBlock } from '@bylo/ui/seo/index.ts';
 import { CONTACTS } from '@bylo/ui/index.ts';
+
+// Deep links to the EN spoke pages: passes link equity from the homepage and
+// enriches an otherwise thin EN landing. Generated from the collections.
+const slugOf = (s) => s.split('/').pop();
+const trunc = (s, n = 120) => {
+  const c = s.replace(/\s+/g, ' ').trim();
+  return c.length > n ? c.slice(0, n).replace(/\s+\S*$/, '') + '…' : c;
+};
+const bySlug = (a, b) => a.slug.localeCompare(b.slug);
+
+const services = (await getCollection('services', ({ data }) => data.locale === 'en')).sort(bySlug);
+const sectors = (await getCollection('sectors', ({ data }) => data.locale === 'en')).sort(bySlug);
+const routes = (await getCollection('routes', ({ data }) => data.locale === 'en')).sort(bySlug);
+
+const serviziLinks = services.map((s) => ({
+  href: `/en/services/${slugOf(s.slug)}/`,
+  label: s.data.title,
+  description: trunc(s.data.intro),
+}));
+const settoriLinks = sectors.map((s) => ({
+  href: `/en/sectors/${slugOf(s.slug)}/`,
+  label: s.data.title,
+  description: trunc(s.data.intro),
+}));
+const tratteLinks = routes.map((r) => ({
+  href: `/en/routes/${slugOf(r.slug)}/`,
+  label: `${r.data.origin}–${r.data.destination}`,
+  description: r.data.distanceKm
+    ? `~${r.data.distanceKm} km${r.data.transitTimeHours ? `, ~${r.data.transitTimeHours} h drive` : ''}`
+    : undefined,
+}));
 ---
 
 <Layout>
@@ -57,4 +90,23 @@ import { CONTACTS } from '@bylo/ui/index.ts';
       </div>
     </div>
   </section>
+
+  <InternalLinkBlock
+    title="Our transport and logistics services"
+    eyebrow="Explore"
+    links={serviziLinks}
+    columns={3}
+  />
+  <InternalLinkBlock
+    title="Sectors we serve"
+    eyebrow="Vertical expertise"
+    links={settoriLinks}
+    columns={3}
+  />
+  <InternalLinkBlock
+    title="Most requested ADR routes"
+    eyebrow="Where we operate"
+    links={tratteLinks}
+    columns={2}
+  />
 </Layout>
