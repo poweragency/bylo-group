@@ -2,6 +2,7 @@
 import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/Header.astro';
 import Footer from '@/components/Footer.astro';
+import { InternalLinkBlock } from '@bylo/ui/seo/index.ts';
 import {
   GROUP,
   LEGAL_TRANSPORT,
@@ -85,6 +86,23 @@ const locations = [
     address: CONTACTS_RACING.officina.address,
     phone: CONTACTS_RACING.officina.phone,
   },
+];
+
+// Cross-domain deep links from the hub (top authority) to the EN pages of
+// transport and tommy. Mirrors the IT homepage: passes link equity to the
+// sub-sites. Absolute curated URLs pointing to the /en/ routes — update if
+// the slugs change.
+const transportLinks = [
+  { href: 'https://transport.bylogroup.it/en/routes/milan-rome/', label: 'ADR transport Milan–Rome', description: 'National route for dangerous goods, ADR classes 2–9.', external: true },
+  { href: 'https://transport.bylogroup.it/en/routes/milan-bologna/', label: 'ADR transport Milan–Bologna', description: 'Fast link on the A1 corridor with dedicated vehicles.', external: true },
+  { href: 'https://transport.bylogroup.it/en/sectors/chemicals/', label: 'Logistics for chemicals', description: 'Transport and storage of chemicals and solvents.', external: true },
+  { href: 'https://transport.bylogroup.it/en/sectors/pharmaceutical/', label: 'Logistics for pharma', description: 'Controlled supply chain for the pharmaceutical sector.', external: true },
+];
+const tommyLinks = [
+  { href: 'https://tommy.bylogroup.it/en/zones/milan/', label: 'Workshop and body shop in Milan', description: 'Multi-brand cars and motorcycles, just outside Milan.', external: true },
+  { href: 'https://tommy.bylogroup.it/en/zones/rho/', label: 'Workshop and body shop in Rho', description: 'Mazzo di Rho location, easy access from A4/A8.', external: true },
+  { href: 'https://tommy.bylogroup.it/en/brands/bmw/', label: 'BMW service', description: 'Services, electronic diagnostics and BMW body repairs.', external: true },
+  { href: 'https://tommy.bylogroup.it/en/brands/mercedes-benz/', label: 'Mercedes-Benz service', description: 'Maintenance and repairs for Mercedes-Benz.', external: true },
 ];
 ---
 
@@ -281,6 +299,20 @@ const locations = [
         </div>
       </div>
     </section>
+
+    <!-- FEATURED SERVICES (cross-domain, SEO link equity) -->
+    <InternalLinkBlock
+      title="Featured ADR transport and logistics"
+      eyebrow="BYLO Transport"
+      links={transportLinks}
+      columns={2}
+    />
+    <InternalLinkBlock
+      title="Featured workshop and body shop"
+      eyebrow="Tommy By"
+      links={tommyLinks}
+      columns={2}
+    />
 
     <!-- CONTACT -->
     <section id="contact" class="section-pad bg-byl-white">

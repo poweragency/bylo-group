@@ -48,6 +48,17 @@ const alternates = [
   { hreflang: 'en', href: altUrl('en') },
 ];
 
+// WebSite: identita' del sito per Google (knowledge panel / sitelinks).
+// Niente SearchAction: il sito non ha una ricerca interna reale, dichiararla
+// fittizia e' controproducente.
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: GROUP.name,
+  url: GROUP.website,
+  inLanguage: ['it-IT', 'en-US'],
+};
+
 const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -109,7 +120,7 @@ const orgSchema = {
       siteName={GROUP.name}
     />
     <Hreflang alternates={alternates} xDefault={altUrl('it')} />
-    <SchemaOrg data={orgSchema} />
+    <SchemaOrg data={[websiteSchema, orgSchema]} />
     <GoogleAnalytics />
   </head>
   <body class="bg-byl-white text-byl-black antialiased">

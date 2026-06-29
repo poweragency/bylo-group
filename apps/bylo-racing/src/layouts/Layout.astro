@@ -70,6 +70,23 @@ const standardHours = [
   },
 ];
 
+// Coordinate sede di Mazzo di Rho (Via Venanzio Buzzi 9). Approssimate sul
+// civico: confermare/affinare col Google Business Profile quando il cliente
+// trasferisce l'ownership degli asset Google.
+const SEDE_GEO = {
+  '@type': 'GeoCoordinates',
+  latitude: 45.5247,
+  longitude: 9.0089,
+};
+
+// Bacino di utenza locale dichiarato (coerente con le pagine /zone): Mazzo di
+// Rho, Rho e la citta' metropolitana di Milano. Leva per il Local Pack/Maps.
+const AREA_SERVED = [
+  { '@type': 'City', name: 'Mazzo di Rho' },
+  { '@type': 'City', name: 'Rho' },
+  { '@type': 'AdministrativeArea', name: 'Città metropolitana di Milano' },
+];
+
 // 2 LocalBusiness distinte (AutoRepair + AutoBodyShop) coabitanti nella
 // stessa sede di Mazzo di Rho. Entry separate per dare a Google entita'
 // distinte sui due servizi.
@@ -99,6 +116,8 @@ const officinaSchema = {
   telephone: CONTACTS_RACING.officina.phone,
   email: CONTACTS_RACING.officina.email,
   openingHoursSpecification: standardHours,
+  geo: SEDE_GEO,
+  areaServed: AREA_SERVED,
   description: isEN
     ? 'Multi-brand authorized workshop for cars and motorcycles in Mazzo di Rho (Milan). Scheduled services with official manufacturer warranty, mechanical and electronic repairs, tires, vehicle sanitization, replacement cars. Mandatory inspections up to 3.5 tons.'
     : 'Officina autorizzata multimarche per auto e moto a Mazzo di Rho (MI). Tagliandi con garanzie ufficiali delle case, riparazioni meccaniche ed elettroniche, pneumatici, igienizzazione, auto sostitutive. Revisioni ministeriali fino a 35 quintali.',
@@ -130,6 +149,8 @@ const carrozzeriaSchema = {
   telephone: CONTACTS_RACING.carrozzeria.phone,
   email: CONTACTS_RACING.carrozzeria.email,
   openingHoursSpecification: standardHours,
+  geo: SEDE_GEO,
+  areaServed: AREA_SERVED,
   description: isEN
     ? 'Body shop with water-based oven painting in Mazzo di Rho (Milan). Collision repairs, full repainting, professional spectrophotometer for precise color matching.'
     : 'Carrozzeria con verniciatura a forno ad acqua a Mazzo di Rho (MI). Riparazioni post-sinistro, verniciatura completa, tintometro professionale per abbinamento tinta preciso.',
