@@ -2,9 +2,9 @@
 locale: en
 slug: chemicals
 seo:
-  title: ADR transport for the chemical industry — Solvents, acids, bases | BYLO Transport
-  description: Transport of solvents (toluene, xylene, MEK), mineral acids, bases, peroxides and hypochlorites for the Italian chemical sector. BYLO Transport covers Marghera, Ravenna, Ferrara, Brindisi and secondary chemistry in the North.
-title: Transport for the chemical industry
+  title: ADR transport for liquid chemicals — solvents, acids, bases | BYLO Transport
+  description: "ADR transport of liquid chemicals: solvents (toluene, xylene, MEK), mineral acids, bases, peroxides and hypochlorites. BYLO Transport covers Marghera, Ravenna, Ferrara, Brindisi."
+title: ADR transport for liquid chemicals and the chemical industry
 intro: >-
   Chemistry is the historic customer of ADR transport: for every liter of solvent moved there's a Safety Data Sheet (SDS) to comply with, a compatibility matrix to verify, a geographic or time-window restriction to consider. BYLO Transport operates in Italy's main chemical clusters with an approach that always starts from the product's SDS and ends with a verified loading plan. In chemistry, what makes the difference isn't the vehicle — it's documentation management and route-restriction know-how.
 faq:

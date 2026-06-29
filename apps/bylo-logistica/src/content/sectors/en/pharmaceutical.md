@@ -2,9 +2,9 @@
 locale: en
 slug: pharmaceutical
 seo:
-  title: Transport for the pharmaceutical industry — Pharma solvents, APIs, intermediates | BYLO Transport
-  description: BYLO Transport moves pharma solvents (ethanol, isopropanol, acetone), synthesis intermediates and lab materials for the Pomezia-Latina, Verona and Milan clusters. GDP-compatible, controlled ambient temperature.
-title: Transport for the pharmaceutical industry
+  title: ADR transport for active pharmaceutical ingredients (APIs) and solvents | BYLO Transport
+  description: "BYLO Transport moves active pharmaceutical ingredients (APIs), pharma solvents (ethanol, IPA, acetone) and synthesis intermediates for the Pomezia-Latina, Verona and Milan clusters. Controlled ambient temperature."
+title: ADR transport for active pharmaceutical ingredients (APIs) and solvents
 intro: >-
   Pharma has a logistical structure other sectors don't share: the finished drug travels in certified cold chain, while synthesis intermediates and process solvents travel under ADR. BYLO Transport operates on the second tier — the one that doesn't require 2-8°C but does require GDP traceability, a clean Safety Data Sheet (SDS), and an understanding of pharma production timing that doesn't forgive mistakes. A plant stoppage due to missing solvent costs as much as an automotive line stoppage, sometimes more.
 faq:
